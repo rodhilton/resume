@@ -15,7 +15,6 @@ experience:
         - Cross-Platform team member, working on multi-dependency Common Services Tier as well as various customer-facing web-based applications. [Scala, SBT]
         - Developed high-demand feature allowing cable subscribers to view previous bills online, seamlessly connecting 5 different backend systems with 100% unit test code coverage.  [Groovy, Grails, Gradle, Java, JavaScript, JQuery, Sinon.JS, node.js, PhantomJS].
         - Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases
-# Should mention one-click deploy stuff and ground-up rewrite of coldfusion app
     - company: Rally Software
       title: Java Web Applications Developer
       time: 2008-2011

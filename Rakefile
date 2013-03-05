@@ -1,8 +1,6 @@
 require 'rake/clean'
 require 'yaml'
 
-#TODO: fail build if pdftk resume_public.pdf dump_data output | grep -i NumberOfPages returns a number > 2
-
 CLEAN.include("*.html", "*.tex", "*.log", "*.pdf")
 
 data_files = "resume.yaml,skills.yaml"

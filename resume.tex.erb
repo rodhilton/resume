@@ -1,0 +1,113 @@
+<% load 'common.rb' %>
+
+<% 
+  def latex_links(one)
+    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "\\href{\\2}{\\3}")
+  end
+
+  def latex_desc(bla)
+    bla.gsub(/%/, "\\%")
+  end
+%>
+
+% LaTeX resume using res.cls
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{hyperref}
+\usepackage{ifthen}
+\usepackage{tabularx} 
+
+\hypersetup{
+   pdfborder={0 0 0},
+   colorlinks=true,
+    linkcolor=red,          % color of internal links
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+\setlength{\textwidth}{6.1in} % set width of text portion
+\setlength{\textheight}{9.5in} % increase text height to fit resume on 1 page
+\newsectionwidth{5pt}  % So the text is not indented under section headings
+
+% Macros -----
+
+\newenvironment{resumesection}[1]
+{
+\section{\uppercase{#1}}
+}
+{
+}
+
+% End Macros ----
+
+
+\begin{document}
+
+\begin{tabular*}{\resumewidth}{@{\extracolsep{\fill}} l c r }
+  <%= flags[:email] %> & 
+	\large\bf <%= name %> & 
+	<%= flags[:phone] %> \\
+\end{tabular*}
+
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+
+\begin{resume}
+  
+\begin{resumesection}{Summary}
+\begin{list}{$ \cdot $}{\leftmargin=.5em} \itemsep 2pt
+<% summary.each do |summary_item| %>
+	\item <%= summary_item %>
+
+<% end %>
+\end{list}
+\end{resumesection}
+
+\begin{resumesection}{Skills}
+\begin{list}{$ \cdot $}{\leftmargin=.5em}
+\itemsep 2pt
+	\item {\bf Accomplished:} <%= skill_list(skills.uniq{|b| b.name}, 7, 10).gsub(/\#/, "\\#") %>
+  \item {\bf Advanced:} <%= skill_list(skills.uniq{|b| b.name}, 5, 6).gsub(/\#/, "\\#") %>
+  \item {\bf Novice:} <%= skill_list(skills.uniq{|b| b.name}, 0, 4).gsub(/\#/, "\\#") %>
+\end{list}
+\end{resumesection}
+
+\begin{resumesection}{Experience}
+<% experience.jobs.each do |job| %>
+{\bf <%= job.title %>} \hfill <%= job.company %> (<%= job.time %>)
+\begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
+\footnotesize
+	<% job.accomplishments.each do |accomplishment| %>
+		\item <%= latex_links(latex_desc(accomplishment)) %>
+	<% end %>
+\end{list}
+<% end %>
+
+\end{resumesection}
+
+<% if flags[:certifications] %>
+\begin{resumesection}{Certifications}
+\begin{list}{$ \cdot $}{\leftmargin=.5em} \itemsep 2pt
+<% certifications.each do |certification| %>
+	\item <%= certification.title %> <%= "- #{certification.subject}" if certification.subject %> - <%= certification.time %>
+<% end %>
+\end{list}
+\end{resumesection}
+<% end %>
+
+
+\begin{resumesection}{Education}
+<% education.degrees.each do |degree| %>
+{\bf <%= degree.title %>} \hfill <%= degree.school %> (<%= display_schoolyear(degree.time) %>)
+		\begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
+		\footnotesize
+			\item <%= latex_links(degree.note) %>
+  	<% if flags[:expand_school ]%>
+			\item Coursework: <%= degree.coursework %>
+  	<% end %>
+		\end{list}
+<% end %>
+\end{resumesection}
+
+\end{resume}
+\end{document}

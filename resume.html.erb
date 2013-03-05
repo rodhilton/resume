@@ -1,0 +1,66 @@
+<% load 'common.rb' %>
+
+<h2>SUMMARY</h2>
+<ul>
+    <% summary.each do |summary_item| %>
+        <li><%= summary_item %></li>
+    <% end %>
+</ul>
+
+<hr/>
+<h2>TECHNICAL SKILLS</h2>
+<ul>
+    <% u_skills = skills.uniq{|b| b.name} %>
+    <li><b>Accomplished</b>: <%= skill_list(u_skills, 7, 10) %></li>
+    <li><b>Advanced</b>: <%= skill_list(u_skills, 5, 6) %></li>
+    <li><b>Novice</b>: <%= skill_list(u_skills, 0, 4) %></li>
+</ul>
+
+<hr/>
+<h2>WORK EXPERIENCE</h2>
+<ul>
+<% experience.jobs.each do |job| %>
+    <li>
+        <b><%= job.title %></b> - <i><%= job.company %></i> - <%= job.time %><br/>
+        <ul>
+            <% job.accomplishments.each do |accomplishment| %>
+                <li><%= accomplishment %></li>
+            <% end %>
+        </ul>
+    </li>
+<% end %>
+</ul>
+
+<% if flags[:certifications] %>
+<hr/>
+<h2>CERTIFICATIONS</h2>
+<ul>
+    <% certifications.each do |certification| %>
+        <li>
+            <b><%= certification.title %></b>
+            <i>
+                <% unless certification.subject.nil? %>
+                    - <%= certification.subject %>
+                <% end %>
+                - <%= certification.time %>
+            </i>
+        </li>
+    <% end %>
+</ul>
+<% end %>
+
+<hr/>
+<h2>EDUCATION</h2>
+<ul>
+<% education.degrees.each do |degree| %>
+    <li>
+        <b><%= degree.title %></b> - <i><%= degree.school %></i> - <%= display_schoolyear(degree.time) %>
+            <ul>
+                <li><%= degree.note %></li>
+                <% if flags[:expand_school] %>
+                  <li>Coursework: <%= degree.coursework %></li>
+                <% end %>
+            </ul>
+    </li>
+<% end %>
+</ul>

@@ -1,0 +1,97 @@
+name: Rod Hilton
+
+summary:
+  - Passionate, motivated, hard-working problem-solver with strong Computer Science background.
+  - Follower of good engineering practices such as Test-Driven Design, Pair Programming, Continuous Integration, and Refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
+  - 10+ years experience developing web-based applications in a variety of programming languages.
+  - 8+ years experience developing in Java for back-end server applications, web applications, web services, applets, and client applications.
+
+experience:
+  jobs:
+    - company: Time Warner Cable
+      title: Senior Web Developer
+      time: 2011-Present
+      accomplishments:
+        - Cross-Platform team member, working on multi-dependency Common Services Tier as well as various customer-facing web-based applications. [Scala, SBT]
+        - Developed high-demand feature allowing cable subscribers to view previous bills online, seamlessly connecting 5 different backend systems with 100% unit test code coverage.  [Groovy, Grails, Gradle, Java, JavaScript, JQuery, Sinon.JS, node.js, PhantomJS].
+        - Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases
+# Should mention one-click deploy stuff and ground-up rewrite of coldfusion app
+    - company: Rally Software
+      title: Java Web Applications Developer
+      time: 2008-2011
+      accomplishments:
+        - Helped develop SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases. [Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS]
+        - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system. [Java, Eclipse, Android SDK]
+        - Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
+        - Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
+    - company: OpenLogic, Inc
+      title: Software Engineer
+      time: 2007-2008
+      accomplishments:
+        - Developed multi-tenancy open source software management application <a href="http://www.openlogic.com/olex/">OLEX</a>.  OLEX provided enterprise-friendly functionality to the process of requesting, approving, and downloading open source software. [Ruby, Rails, JavaScript, AJAX, HTML, CSS, MySQL, Java]
+        - Created RESTful web services used by <a href="http://www.osscensus.org/">Open Source Census</a> initiative. Web services provided all data functionality to the site, including complex reports that aggregated immense amounts of data stored in a warehouse schema. [Ruby, Rails, MySQL]
+        - Contributed to company-sponsored open source <a href="http://ossdiscovery.opensource.collab.net/">OSS Discovery 2.0</a> application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census. [JRuby, Java]
+        - Developed OLE, a J2EE enterprise software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts. [Java, JSP, Servlets, JSF, JavaScript, Spring, Groovy, Hibernate, PostgreSQL, Geronimo]
+        - Received Most Valuable Player Award - January 2008
+    - company: Acxiom/InsightAmerica
+      title: Senior Software Developer
+      time: 2004-2007
+      accomplishments:
+        - Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.  [Java, SQL Server, ColdFusion]
+        - Refactored multi-dependency enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
+        - Architected centralized data access layer used by company's 10+ enterprise ColdFusion applications.  Helped design a Java/ColdFusion bridge library to allow interaction with layer, improving system performance and stability and increasing level of code reuse between applications. [Java, ColdFusion]
+        - Led developer workshops on topics including thread safety, computational arithmetic, and regular expressions.
+        - Received Special Recognition Award for Outstanding Performance - September, 2006.
+    - company: Truth-N-Beauty Software
+      title: Lead Software Developer
+      time: 2001-2004
+      accomplishments:
+        - Developed over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks. Simulations allowed students to manipulate experimental parameters in virtual environment to see real-time changes.  Customers included McGraw-Hill, Brooks-Cole, and NASA. [Java, Applets, Flash, ActionScript]
+        - Led team for a number of multi-component projects. Assigned work, kept people on task, and integrated final products.  Was responsible for managing deadlines and releases, and maintained a record of consistent on-time delivery.
+        - Created a powerful framework for all products that performed essential common tasks. Functionality included customized Java classloader for applets that detected the user's system capabilities and adjusted the features of the simulation accordingly as well as a universal loading screen. [Java, Applets]
+        - Created an AWT-based graphical toolkit for use in all applications to provide for company-wide consistency in separately developed applications as well as speedy GUI development. [Java, AWT]
+        - Developed company web site and portfolio sites used to land new customers and allow existing customers to easily browser work-in-progress simulations and make suggestions, streamlining the code/revise process. [ASP, VBScript]
+<% if flags[:expand_school] %>
+    - company: University of Rochester
+      title: Computer Science Teaching Assistant
+      time: 2001-2004
+      accomplishments:
+        - Teaching Assistant and Workshop Leader for three different Computer Science classes over 6 semesters.
+        - Led workshops on procedural programming, object-oriented programming, algorithms, run-time analysis, inductive proofs, and data structures. Workshop became so popular that it had to be split into two separate sessions.
+        - Helped professors refine their lessons based on student feedback to help focus on problem-areas for students. Was partially responsible for one of the highest pass-through rates for the introductory C.S. classes in school history.
+        - Led groups of students in semester projects; responsible for guiding students through UML design work, assigning tasks, and integrating final projects.
+<% end %>
+
+certifications:
+  - title: Certified ScrumMaster
+    time: 2009
+  - title: Sun Certified Java Developer
+    subject: J2SE 5.0
+    time: 2008
+  - title: Sun Certified Web Component Developer
+    subject: J2EE 1.4
+    time: 2006
+  - title: Sun Certified Java Programmer
+    subject: J2SE 5.0
+    time: 2005
+
+education:
+  degrees:
+    - title: Ph.D, Computer Science
+      school: University of Colorado at Denver
+      location: Denver, CO
+      time: 2011-2016
+      note: Specialization in Theory and Algorithms
+      coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory
+    - title: M.S., Software Engineering
+      school: Regis University
+      location: Denver, CO
+      time: 2005-2009
+      note: "Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>"
+      coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
+    - title: B.S., Computer Science
+      school: University of Rochester
+      location: Rochester, NY
+      time: 2000-2004
+      note: Focus on Systems
+      coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms.

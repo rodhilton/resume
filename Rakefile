@@ -13,9 +13,18 @@ file "resume_academic.tex" do |t|
   sh "templator/templator -d #{data_files} resume.tex.erb -f expand_school > resume_academic.tex"
 end
 
+file "resume_full.tex" do |t|
+  sh "templator/templator -d #{data_files} resume.tex.erb -f expand_school -f certifications -f complete_history > resume_full.tex"
+end
+
 task :latex_public => ["resume_public.tex"] do |t|
   sh "pdflatex resume_public.tex"
   rm "resume_public.tex"
+end
+
+task :latex_full => ["resume_full.tex"] do |t|
+  sh "pdflatex resume_full.tex"
+  rm "resume_full.tex"
 end
 
 task :latex_school => ["resume_academic.tex"] do |t|
@@ -36,7 +45,7 @@ task :latex_private => ["resume_private.tex"] do |t|
   rm "resume_private.tex"
 end
   
-task :latex => [:latex_public, :latex_private, :latex_school]
+task :latex => [:latex_public, :latex_private, :latex_school, :latex_full]
 
 file "resume_public.html" do |t|
     sh "templator/templator -d #{data_files} resume.html.erb > resume_public.html"

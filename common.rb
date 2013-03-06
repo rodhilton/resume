@@ -1,6 +1,14 @@
-def display_schoolyear(time)
-  endyear = time.match(/\d+-(\d+)/)[1].to_i
-  ( (endyear > Time.new.year) ? "Anticipated " : "") + endyear.to_s
+MAX_JOB_AGE=10
+
+def display_schoolyear(degree, expand_school_flag) 
+  endyear = degree.time.match(/\d+-(\d+)/)[1].to_i
+  if(endyear > Time.new.year) 
+  	"(Anticipated #{endyear})"
+  elsif(expand_school_flag)
+  	"(#{endyear})"
+  else
+  	""
+  end
 end
 
 def skill_list(skills, low, high) 
@@ -10,4 +18,12 @@ def skill_list(skills, low, high)
         sort { |x,y| x.rusty <=> y.rusty }.
         collect{|s| s.name}.join(", ")
 
+end
+
+def trim_jobs(jobs) 
+	jobs.select do |job|
+		start_year, end_year = job.time.split("-")
+		current_year = Time.new.year
+		end_year == "Present" or current_year - end_year.to_i < MAX_JOB_AGE
+	end
 end

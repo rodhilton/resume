@@ -73,7 +73,8 @@
 \end{resumesection}
 
 \begin{resumesection}{Experience}
-<% experience.jobs.each do |job| %>
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
+<% job_list.each do |job| %>
 \begin{minipage}{\linewidth} 
 {\bf <%= job.title %>} \hfill <%= job.company %> (<%= job.time %>)
 \begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
@@ -100,14 +101,14 @@
 
 \begin{resumesection}{Education}
 <% education.degrees.each do |degree| %>
-{\bf <%= degree.title %>} \hfill <%= degree.school %> (<%= display_schoolyear(degree.time) %>)
-		\begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
+{\bf <%= degree.title %>} \hfill <%= degree.school %> <%= display_schoolyear(degree, flags[:expand_school ]) %>
+	 <% if flags[:expand_school ]%>
+    \begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
 		\footnotesize
 			\item <%= latex_links(degree.note) %>
-  	<% if flags[:expand_school ]%>
 			\item Coursework: <%= degree.coursework %>
-  	<% end %>
 		\end{list}
+    <% end %>
 <% end %>
 \end{resumesection}
 

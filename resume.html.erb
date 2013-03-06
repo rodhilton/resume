@@ -19,7 +19,8 @@
 <hr/>
 <h2>WORK EXPERIENCE</h2>
 <ul>
-<% experience.jobs.each do |job| %>
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
+<% job_list.each do |job| %>
     <li>
         <b><%= job.title %></b> - <i><%= job.company %></i> - <%= job.time %><br/>
         <ul>
@@ -54,13 +55,13 @@
 <ul>
 <% education.degrees.each do |degree| %>
     <li>
-        <b><%= degree.title %></b> - <i><%= degree.school %></i> - <%= display_schoolyear(degree.time) %>
+        <b><%= degree.title %></b> - <%= degree.school %> <i><%= display_schoolyear(degree, flags[:expand_school ]) %></i>
+        <% if flags[:expand_school] %>
             <ul>
                 <li><%= degree.note %></li>
-                <% if flags[:expand_school] %>
                   <li>Coursework: <%= degree.coursework %></li>
-                <% end %>
             </ul>
+        <% end %>
     </li>
 <% end %>
 </ul>

@@ -74,6 +74,7 @@
 
 \begin{resumesection}{Experience}
 <% experience.jobs.each do |job| %>
+\begin{minipage}{\linewidth} 
 {\bf <%= job.title %>} \hfill <%= job.company %> (<%= job.time %>)
 \begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
 \footnotesize
@@ -81,6 +82,7 @@
 		\item <%= latex_links(latex_desc(accomplishment)) %>
 	<% end %>
 \end{list}
+\end{minipage}
 <% end %>
 
 \end{resumesection}

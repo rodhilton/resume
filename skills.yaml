@@ -36,7 +36,7 @@ skills:
     rating: 6
     rusty: 3
   - name: PostgreSQL
-    rating: 4
+    rating: 3
     rusty: 2
   - name: SQL Server
     rating: 4

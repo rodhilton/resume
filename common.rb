@@ -19,8 +19,8 @@ def skill_list(skills, low, high)
     skills.
         select { |skill| skill.rating >= low && skill.rating <= high}.
         select { |skill| skill.rusty < 6 }.
-        sort { |x,y| x.rusty <=> y.rusty }.
-        collect{|s| s.name}.join(", ")
+        sort { |x,y| x.rating == y.rating ? x.rusty <=> y.rusty : y.rating <=> x.rating}.
+        collect{|s| s.name }.join(", ")
 
 end
 

@@ -134,3 +134,6 @@ skills:
   - name: C#
     rating: 4
     rusty: 6
+  - name: Python
+    rating: 7
+    rusty: 3

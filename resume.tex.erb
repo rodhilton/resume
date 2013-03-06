@@ -66,9 +66,10 @@
 \begin{resumesection}{Skills}
 \begin{list}{$ \cdot $}{\leftmargin=.5em}
 \itemsep 2pt
-	\item {\bf Accomplished:} <%= skill_list(skills.uniq{|b| b.name}, 7, 10).gsub(/\#/, "\\#") %>
-  \item {\bf Advanced:} <%= skill_list(skills.uniq{|b| b.name}, 5, 6).gsub(/\#/, "\\#") %>
-  \item {\bf Novice:} <%= skill_list(skills.uniq{|b| b.name}, 0, 4).gsub(/\#/, "\\#") %>
+<% u_skills = unique_skills(skills) %>
+	\item {\bf Accomplished:} <%= skill_list(u_skills, 7, 10).gsub(/\#/, "\\#") %>
+  \item {\bf Advanced:} <%= skill_list(u_skills, 5, 6).gsub(/\#/, "\\#") %>
+  \item {\bf Novice:} <%= skill_list(u_skills, 0, 4).gsub(/\#/, "\\#") %>
 \end{list}
 \end{resumesection}
 

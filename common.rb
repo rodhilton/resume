@@ -11,6 +11,10 @@ def display_schoolyear(degree, expand_school_flag)
   end
 end
 
+def unique_skills(skills)
+	skills.sort_by{|s| s["rating"] }.reverse.inject([]) { |memo,x| memo << x unless memo.detect { |item| item["name"] == x["name"] }; memo }
+end
+
 def skill_list(skills, low, high) 
     skills.
         select { |skill| skill.rating >= low && skill.rating <= high}.

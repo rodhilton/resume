@@ -10,7 +10,7 @@
 <hr/>
 <h2>TECHNICAL SKILLS</h2>
 <ul>
-    <% u_skills = skills.uniq{|b| b.name} %>
+    <% u_skills = unique_skills(skills) %>
     <li><b>Accomplished</b>: <%= skill_list(u_skills, 7, 10) %></li>
     <li><b>Advanced</b>: <%= skill_list(u_skills, 5, 6) %></li>
     <li><b>Novice</b>: <%= skill_list(u_skills, 0, 4) %></li>

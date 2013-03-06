@@ -1,7 +1,7 @@
 require 'rake/clean'
 require 'yaml'
 
-CLEAN.include("*.html", "*.tex", "*.log", "*.pdf")
+CLEAN.include("*.html", "*.tex", "*.log", "*.pdf", "*.md")
 
 data_files = "resume.yaml,skills.yaml"
 
@@ -15,6 +15,10 @@ end
 
 file "resume_full.tex" do |t|
   sh "templator/templator -d #{data_files} resume.tex.erb -f expand_school -f certifications -f complete_history > resume_full.tex"
+end
+
+file "resume_public.md" do |t|
+  sh "templator/templator -d #{data_files} resume.md.erb > resume_public.md"
 end
 
 task :latex_public => ["resume_public.tex"] do |t|
@@ -51,7 +55,7 @@ file "resume_public.html" do |t|
     sh "templator/templator -d #{data_files} resume.html.erb > resume_public.html"
 end
 
-task :resume_public => ["resume_public.html"]
+task :resume_public => ["resume_public.html", "resume_public.md"]
 
 task :upload_resume => [:resume_public, :latex_public] do |t|
   pub = YAML.load_file("public.yaml")

@@ -1,0 +1,57 @@
+<% load 'common.rb' %>
+<%
+def markdown_links(one)
+    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "[\\3](\\2)")
+end
+%>
+
+
+# Summary
+<% summary.each do |summary_item| %>
+* <%= summary_item %>
+<% end %>
+
+----
+
+# Technical Skills
+
+<% u_skills = unique_skills(skills) %>
+* __Accomplished__: <%= skill_list(u_skills, 7, 10) %>
+* __Advanced__: <%= skill_list(u_skills, 5, 6) %>
+* __Novice__: <%= skill_list(u_skills, 0, 4) %>
+
+----
+
+# Work Experience
+
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
+<% job_list.each do |job| %>
+*  __<%= job.title %>__ - _<%= job.company %>_ - <%= job.time %>
+            <% job.accomplishments.each do |accomplishment| %>
+    * <%= markdown_links(accomplishment) %>
+            <% end %>
+<% end %>
+
+<% if flags[:certifications] %>
+---- 
+# Certifications 
+    <% certifications.each do |certification| %>
+* __<%= certification.title %>__
+        <% unless certification.subject.nil? %>
+        - <%= certification.subject %>
+        <% end %>
+    * _<%= certification.time %>_
+    <% end %>
+<% end %>
+
+----
+
+# Education
+
+<% education.degrees.each do |degree| %>
+* __<%= degree.title %>__ - <%= degree.school %> <%= display_schoolyear(degree, flags[:expand_school ]) %>
+        <% if flags[:expand_school] %>
+    * <%= degree.note %>
+    * Coursework: <%= degree.coursework %>
+        <% end %>
+<% end %>

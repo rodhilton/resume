@@ -102,7 +102,7 @@
 
 \begin{resumesection}{Education}
 <% education.degrees.each do |degree| %>
-{\bf <%= degree.title %>} \hfill <%= degree.school %> <%= display_schoolyear(degree, flags[:expand_school ]) %>
+{\bf <%= degree.title %>} \hfill <%= degree.school %> \textit{ <%= display_schoolyear(degree, flags[:expand_school ]) %>}
 	 <% if flags[:expand_school ]%>
     \begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
 		\footnotesize

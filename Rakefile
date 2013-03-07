@@ -1,7 +1,7 @@
 require 'rake/clean'
 require 'yaml'
 
-CLEAN.include("*.html", "*.tex", "*.log", "*.pdf", "*.md")
+CLEAN.include("*.html", "*.tex", "*.log", "*.pdf", "resume*.md")
 
 data_files = "resume.yaml,skills.yaml"
 

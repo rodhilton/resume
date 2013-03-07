@@ -1,11 +1,12 @@
 MAX_JOB_AGE=10
+MAX_ACCOMPLISHMENTS=4
 
-def display_schoolyear(degree, expand_school_flag) 
+def display_schoolyear(degree, expand_school_flag= false, before = "(", after=")") 
   endyear = degree.time.match(/\d+-(\d+)/)[1].to_i
   if(endyear > Time.new.year) 
-  	"(Anticipated #{endyear})"
+  	"#{before}Anticipated #{endyear}#{after}"
   elsif(expand_school_flag)
-  	"(#{endyear})"
+  	"#{before}#{endyear}#{after}"
   else
   	""
   end
@@ -30,4 +31,8 @@ def trim_jobs(jobs)
 		current_year = Time.new.year
 		end_year == "Present" or current_year - end_year.to_i < MAX_JOB_AGE
 	end
+end
+
+def trim_accomplishments(accomplishments)
+  accomplishments[0..MAX_ACCOMPLISHMENTS-1]
 end

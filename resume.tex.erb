@@ -11,7 +11,7 @@
 %>
 
 % LaTeX resume using res.cls
-\documentclass{res}
+\documentclass[margin]{res}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage{hyperref}
@@ -26,9 +26,8 @@
     filecolor=magenta,      % color of file links
     urlcolor=blue           % color of external links
 }
-\setlength{\textwidth}{6.1in} % set width of text portion
+\setlength{\textwidth}{5.1in} % set width of text portion
 \setlength{\textheight}{9.5in} % increase text height to fit resume on 1 page
-\newsectionwidth{5pt}  % So the text is not indented under section headings
 
 % Macros -----
 
@@ -44,13 +43,13 @@
 
 \begin{document}
 
-\begin{tabular*}{\resumewidth}{@{\extracolsep{\fill}} l c r }
+\moveleft\hoffset\vbox{\begin{tabular*}{\resumewidth}{@{\extracolsep{\fill}} l c r }
   <%= flags[:email] %> & 
-	\large\bf <%= name %> & 
-	<%= flags[:phone] %> \\
-\end{tabular*}
+  \large\bf <%= name %> & 
+  <%= flags[:phone] %> \\
+\end{tabular*}}\smallskip
 
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 
 \begin{resume}
   
@@ -63,55 +62,53 @@
 \end{list}
 \end{resumesection}
 
-\begin{resumesection}{Skills}
-\begin{list}{$ \cdot $}{\leftmargin=.5em}
-\itemsep 2pt
+\section{SKILLS}
 <% u_skills = unique_skills(skills) %>
-	\item {\bf Accomplished:} <%= skill_list(u_skills, 7, 10).gsub(/\#/, "\\#") %>
-  \item {\bf Advanced:} <%= skill_list(u_skills, 5, 6).gsub(/\#/, "\\#") %>
-  \item {\bf Novice:} <%= skill_list(u_skills, 0, 4).gsub(/\#/, "\\#") %>
-\end{list}
-\end{resumesection}
+{\bf Accomplished:} <%= skill_list(u_skills, 7, 10).gsub(/\#/, "\\#") %> \\
+{\bf Advanced:} <%= skill_list(u_skills, 5, 6).gsub(/\#/, "\\#") %> \\
+{\bf Novice:} <%= skill_list(u_skills, 0, 4).gsub(/\#/, "\\#") %>
 
-\begin{resumesection}{Experience}
+
+\section{EXPERIENCE}
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
+\vspace{1.2 mm}
 <% job_list.each do |job| %>
-\begin{minipage}{\linewidth} 
-{\bf <%= job.title %>} \hfill <%= job.company %> (<%= job.time %>)
-\begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
-\footnotesize
-	<% job.accomplishments.each do |accomplishment| %>
-		\item <%= latex_links(latex_desc(accomplishment)) %>
-	<% end %>
-\end{list}
-\end{minipage}
+  \begin{minipage}{\linewidth} 
+  {\bf <%= job.title %>} \hfill <%= job.time %> \\
+  {\sl <%= job.company %> }
+  \begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep .5pt
+  \footnotesize
+  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments) %>
+  	<% accomplishments.each do |accomplishment| %>
+  		\item <%= latex_links(latex_desc(accomplishment)) %>
+  	<% end %>
+  \end{list}
+  \end{minipage}
 <% end %>
 
-\end{resumesection}
 
 <% if flags[:certifications] %>
-\begin{resumesection}{Certifications}
-\begin{list}{$ \cdot $}{\leftmargin=.5em} \itemsep 2pt
-<% certifications.each do |certification| %>
-	\item <%= certification.title %> <%= "- #{certification.subject}" if certification.subject %> - <%= certification.time %>
+\section{CERTIFI-\\ CATIONS}
+
+<% certifications.each do |certification| %> <%= certification.title %> <%= "- #{certification.subject}" if certification.subject %> - <%= certification.time %> \\ 
 <% end %>
-\end{list}
-\end{resumesection}
 <% end %>
 
 
-\begin{resumesection}{Education}
+\section{EDUCATION}
 <% education.degrees.each do |degree| %>
-{\bf <%= degree.title %>} \hfill <%= degree.school %> \textit{ <%= display_schoolyear(degree, flags[:expand_school ]) %>}
+\begin{minipage}{\linewidth} 
+{\bf <%= degree.title %>} \hfill <%= display_schoolyear(degree, flags[:expand_school ],"","") %> \\
+  {\sl <%= degree.school %> }
 	 <% if flags[:expand_school ]%>
-    \begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep 1pt
+    \begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep .5pt
 		\footnotesize
 			\item <%= latex_links(degree.note) %>
 			\item Coursework: <%= degree.coursework %>
 		\end{list}
     <% end %>
+    \end{minipage}
 <% end %>
-\end{resumesection}
 
 \end{resume}
 \end{document}

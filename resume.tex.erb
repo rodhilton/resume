@@ -54,7 +54,7 @@
 \begin{resume}
   
 \begin{resumesection}{Summary}
-\begin{list}{$ \cdot $}{\leftmargin=.5em} \itemsep 2pt
+\begin{list}{$ \bullet $}{\leftmargin=1em}
 <% summary.each do |summary_item| %>
 	\item <%= summary_item %>
 
@@ -76,7 +76,7 @@
   \begin{minipage}{\linewidth} 
   {\bf <%= job.title %>} \hfill <%= job.time %> \\
   {\sl <%= job.company %> }
-  \begin{list}{$ \cdot $}{\leftmargin=1.5em} \itemsep .5pt
+  \begin{list}{$ \cdot $}{\leftmargin=1.5em}
   \footnotesize
   <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments) %>
   	<% accomplishments.each do |accomplishment| %>

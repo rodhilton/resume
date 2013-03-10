@@ -5,4 +5,3 @@
  * Publications, in two sections, author and tech reviewer
  * Reduce duplication in Rakefile
  * personal section in full? hobbies, interests? "Trivia"?
- * links to github pages and whatnot?

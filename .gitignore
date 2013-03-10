@@ -1,10 +1,4 @@
-/*.tex
-/*.pdf
-/*.out
-/*.aux
-/*.log
-/*.html
-/*.fdb_latexmk
+out
 contact.yaml
 public.yaml
 resume*.md

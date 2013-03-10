@@ -1,7 +1,11 @@
-*.tex
-*.pdf
-*.log
-*.html
+/*.tex
+/*.pdf
+/*.out
+/*.aux
+/*.log
+/*.html
+/*.fdb_latexmk
 contact.yaml
 public.yaml
 resume*.md
+qr_*.png

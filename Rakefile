@@ -6,15 +6,15 @@ CLEAN.include("*.html", "*.tex", "*.log", "*.pdf", "resume*.md")
 data_files = "resume.yaml,skills.yaml"
 
 file "resume_public.tex" do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb > resume_public.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > resume_public.tex"
 end
 
 file "resume_academic.tex" do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f expand_school > resume_academic.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url -f expand_school > resume_academic.tex"
 end
 
 file "resume_full.tex" do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f expand_school -f certifications -f complete_history > resume_full.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url -f expand_school -f certifications -f complete_history > resume_full.tex"
 end
 
 file "resume_public.md" do |t|
@@ -41,7 +41,7 @@ file "resume_private.tex" do |t|
   email = contact["email"]
   phone = contact["phone"]
   abort("Missing required values in contact.yaml") if email.nil? or phone.nil?
-  sh "templator/templator -d #{data_files} resume.tex.erb -f \"email:#{email}\" -f \"phone:#{phone}\" > resume_private.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_contact -f \"email:#{email}\" -f \"phone:#{phone}\" > resume_private.tex"
 end
 
 task :latex_private => ["resume_private.tex"] do |t|

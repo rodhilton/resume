@@ -1,4 +1,6 @@
 name: Rod Hilton
+title: Software Craftsman and Computer Science Geek
+site: about.me/rodhilton
 
 summary:
   - Passionate, hard-working problem-solver with strong Computer Science background.
@@ -11,6 +13,7 @@ experience:
     - company: Time Warner Cable
       title: Senior Web Developer
       time: 2011-Present
+      location: Denver, CO
       accomplishments:
         - Cross-Platform team member, working on multi-dependency Common Services Tier as well as various customer-facing web-based applications. [Scala, SBT]
         - Developed high-demand feature allowing cable subscribers to view previous bills online, seamlessly connecting 5 different backend systems with 100% unit test code coverage.  [Groovy, Grails, Gradle, Java, JavaScript, JQuery, Sinon.JS, node.js, PhantomJS].
@@ -18,6 +21,7 @@ experience:
     - company: Rally Software
       title: Java Web Applications Developer
       time: 2008-2011
+      location: Boulder, CO
       accomplishments:
         - Helped develop SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases. [Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS]
         - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system. [Java, Eclipse, Android SDK]
@@ -26,15 +30,17 @@ experience:
     - company: OpenLogic, Inc
       title: Software Engineer
       time: 2007-2008
+      location: Westminster, CO
       accomplishments:
         - Developed multi-tenancy open source software management application <a href="http://www.openlogic.com/olex/">OLEX</a>.  OLEX provided enterprise-friendly functionality to the process of requesting, approving, and downloading open source software. [Ruby, Rails, JavaScript, AJAX, HTML, CSS, MySQL, Java]
         - Created RESTful web services used by <a href="http://www.osscensus.org/">Open Source Census</a> initiative. Web services provided all data functionality to the site, including complex reports that aggregated immense amounts of data stored in a warehouse schema. [Ruby, Rails, MySQL]
-        - Contributed to company-sponsored open source <a href="http://ossdiscovery.opensource.collab.net/">OSS Discovery 2.0</a> application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census. [JRuby, Java]
+        - Contributed to company-sponsored open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census. [JRuby, Java]
         - Developed OLE, a J2EE enterprise software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts. [Java, JSP, Servlets, JSF, JavaScript, Spring, Groovy, Hibernate, PostgreSQL, Geronimo]
         - Received Most Valuable Player Award - January 2008
     - company: Acxiom/InsightAmerica
       title: Senior Software Developer
       time: 2004-2007
+      location: Westminster, CO
       accomplishments:
         - Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.  [Java, SQL Server, ColdFusion]
         - Refactored multi-dependency enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
@@ -44,6 +50,7 @@ experience:
     - company: Truth-N-Beauty Software
       title: Lead Software Developer
       time: 2001-2004
+      location: Rochester, NY
       accomplishments:
         - Developed over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks. Simulations allowed students to manipulate experimental parameters in virtual environment to see real-time changes.  Customers included McGraw-Hill, Brooks-Cole, and NASA. [Java, Applets, Flash, ActionScript]
         - Led team for a number of multi-component projects. Assigned work, kept people on task, and integrated final products.  Was responsible for managing deadlines and releases, and maintained a record of consistent on-time delivery.
@@ -54,6 +61,7 @@ experience:
     - company: University of Rochester
       title: Computer Science Teaching Assistant
       time: 2001-2004
+      location: Rochester, NY
       accomplishments:
         - Teaching Assistant and Workshop Leader for three different Computer Science classes over 6 semesters.
         - Led workshops on procedural programming, object-oriented programming, algorithms, run-time analysis, inductive proofs, and data structures. Workshop became so popular that it had to be split into two separate sessions.
@@ -76,7 +84,7 @@ certifications:
 
 education:
   degrees:
-    - title: Ph.D, Computer Science and Information Systems
+    - title: Ph.D., Computer Science
       school: University of Colorado at Denver
       location: Denver, CO
       time: 2011-2016

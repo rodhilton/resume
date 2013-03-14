@@ -67,7 +67,7 @@
 \begin{minipage}{\linewidth} 
 \cventry{<%= job.time %>}{<%= job.title %>}{<%= job.company %>}{<%= job.location %>}{}{ %
 \begin{itemize}%
-\renewcommand{\labelitemi}{$\color{color1}{\circ}$} %
+\renewcommand{\labelitemi}{$\color{color1}{\triangleright}$} %
 \footnotesize <% accomplishments.each do |accomplishment| %> \item <%= latex_links(latex_desc(accomplishment)) %><% end %>
 \end{itemize}}
 \end{minipage}
@@ -86,7 +86,7 @@
 \begin{minipage}{\linewidth}
 \cventry{<%= display_schoolyear(degree, flags[:expand_school ],"","") %>}{<%= degree.title %>}{<%= degree.school %>}{<%= degree.location %>}{}{% <% if flags[:expand_school ]%>
 \begin{itemize}%
-\renewcommand{\labelitemi}{$\color{color1}{\circ}$} %
+\renewcommand{\labelitemi}{$\color{color1}{\triangleright}$} %
 \footnotesize
     \item <%= latex_links(degree.note) %>
     \item Coursework: <%= degree.coursework %>

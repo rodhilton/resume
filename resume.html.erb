@@ -65,3 +65,24 @@
     </li>
 <% end %>
 </ul>
+
+<hr/>
+<h2>PUBLICATIONS</h2>
+<ul>
+<% unless publications.author.size.nil? %>
+  <li><b>Author</b></li>
+    <ul>
+  <% publications.author.each do |pubs| %>
+  <li><b><%= pubs.title %></b>, <i><%= pubs.publisher %></i>, <%= pubs.time %></li>
+  <% end %>
+   </ul>
+<% end %>
+<% unless publications.editor.size.nil? %>
+  <li><b>Technical Editor</b></li>
+    <ul>
+  <% publications.editor.each do |pubs| %>
+  <li><b><%= pubs.title %></b>, <i><%= pubs.publisher %></i>, <%= pubs.time %></li>
+  <% end %>
+   </ul>
+<% end %>
+</ul>

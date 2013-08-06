@@ -102,3 +102,9 @@ education:
       time: 2000-2004
       note: Focus on Systems
       coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms.
+
+publications:
+  editor:
+    - title: <a href="http://www.amazon.com/Gradle-Beyond-Basics-Tim-Berglund/dp/1449304672">Gradle, Beyond the Basics</a>
+      publisher: O'Reilly Media
+      time: 2013

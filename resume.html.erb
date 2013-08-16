@@ -71,18 +71,18 @@
 <ul>
 <% unless publications.author.size.nil? %>
   <li><b>Author</b></li>
-    <ul>
-  <% publications.author.each do |pubs| %>
-  <li><b><%= pubs.title %></b>, <i><%= pubs.publisher %></i>, <%= pubs.time %></li>
+  <ul>
+  <% publications.author.each do |pub| %>
+    <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.time %>)</i></li>
   <% end %>
-   </ul>
+  </ul>
 <% end %>
 <% unless publications.editor.size.nil? %>
-  <li><b>Technical Editor</b></li>
-    <ul>
-  <% publications.editor.each do |pubs| %>
-  <li><b><%= pubs.title %></b>, <i><%= pubs.publisher %></i>, <%= pubs.time %></li>
+  <li><b>Technical Editor</b></li> 
+  <ul>
+  <% publications.editor.each do |pub| %>
+  <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.time %>)</i></li>
   <% end %>
-   </ul>
+  </ul>
 <% end %>
 </ul>

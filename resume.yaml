@@ -106,5 +106,6 @@ education:
 publications:
   editor:
     - title: <a href="http://www.amazon.com/Gradle-Beyond-Basics-Tim-Berglund/dp/1449304672">Gradle, Beyond the Basics</a>
+      author: Tim Berglund
       publisher: O'Reilly Media
       time: 2013

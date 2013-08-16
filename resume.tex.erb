@@ -100,13 +100,13 @@
 
 \section{Publications}
 <% unless publications.author.size.nil? %>
-  <% publications.author.each do |pubs| %>
-  \cvitem{Author}{\textbf{<%= latex_links(latex_desc(pubs.title)) %>}, \textit{<%= pubs.publisher %>}, <%= pubs.time %> }
+  <% publications.author.each do |pub| %>
+  \cvitem{Author}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= pub.publisher %>, <%= pub.time %>)}}
   <% end %>
 <% end %>
 <% unless publications.editor.size.nil? %>
-  <% publications.editor.each do |pubs| %>
-  \cvitem{Tech. Editor}{\textbf{<%= latex_links(latex_desc(pubs.title)) %>}, \textit{<%= pubs.publisher %>}, <%= pubs.time %> }
+  <% publications.editor.each do |pub| %>
+  \cvitem{Tech. Editor}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= pub.publisher %>, <%= pub.time %>)}}
   <% end %>
 <% end %>
 

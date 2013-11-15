@@ -105,7 +105,11 @@ education:
 
 publications:
   editor:
-    - title: <a href="http://www.amazon.com/Gradle-Beyond-Basics-Tim-Berglund/dp/1449304672">Gradle, Beyond the Basics</a>
+    - title: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a>
       author: Tim Berglund
       publisher: O'Reilly Media
+      time: 2013
+    - title: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a>
+      author: Michael Bevilacqua-Linn
+      publisher: Pragmatic Bookshelf
       time: 2013

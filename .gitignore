@@ -3,3 +3,4 @@ contact.yaml
 public.yaml
 resume*.md
 qr_*.png
+.rake_tasks*

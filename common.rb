@@ -33,6 +33,10 @@ def trim_jobs(jobs)
 	end
 end
 
-def trim_accomplishments(accomplishments)
-  accomplishments[0..MAX_ACCOMPLISHMENTS-1]
+def trim_accomplishments(accomplishments, index)
+  if(index == 0)
+    accomplishments
+  else
+    accomplishments[0..MAX_ACCOMPLISHMENTS-1]
+  end
 end

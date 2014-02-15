@@ -62,8 +62,8 @@
 \section{Experience}
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
 
-<% job_list.each do |job| %>
-  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments) %>
+<% job_list.each_with_index do |job, i| %>
+  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i) %>
 \begin{minipage}{\linewidth} 
 \cventry{<%= job.time %>}{<%= job.title %>}{<%= job.company %>}{<%= job.location %>}{}{ %
 \begin{itemize}%

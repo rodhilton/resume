@@ -45,6 +45,7 @@ task :latex_public => ["#{TARGET_DIR}/resume_public.tex"] do |t|
   rm "#{TARGET_DIR}/resume_public.tex"
 end
 
+desc "Make full resume PDF"
 task :latex_full => ["#{TARGET_DIR}/resume_full.tex"] do |t|
   sh "pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_full.tex"
   rm "#{TARGET_DIR}/resume_full.tex"
@@ -55,11 +56,16 @@ task :latex_private => ["#{TARGET_DIR}/resume_private.tex"] do |t|
   rm "#{TARGET_DIR}/resume_private.tex"
 end
   
+desc "Make private resume PDF"
 task :resume_private => [:latex_private]
+
+desc "Make public resume PDF"
 task :resume_public => [:latex_public, "#{TARGET_DIR}/resume_public.html", "#{TARGET_DIR}/resume_public.md"]
 
+desc "Make all resumes"
 task :all => [:resume_public, :resume_private]
 
+desc "Upload resume to web site"
 task :upload_resume => [:resume_public] do |t|
   pub = YAML.load_file("public.yaml")
   host = pub["host"]

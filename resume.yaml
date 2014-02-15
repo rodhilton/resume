@@ -15,15 +15,18 @@ experience:
       time: 2011-Present
       location: Denver, CO
       accomplishments:
-        - Cross-Platform team member, working on multi-dependency Common Services Tier as well as various customer-facing web-based applications. [Scala, SBT]
-        - Developed high-demand feature allowing cable subscribers to view previous bills online, seamlessly connecting 5 different backend systems with 100% unit test code coverage.  [Groovy, Grails, Gradle, Java, JavaScript, JQuery, Sinon.JS, node.js, PhantomJS].
+        - Rewrote <a href="https://myservices.timewarnercable.com/">primary care portal application</a> used by thousands of customers daily; new version a CableFAX Digital Award finalist with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score. [Groovy, Grails, Scala]
+        - Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 53% to 79%. [Groovy, Grails, Spring]
+        - Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months. [Groovy, Grails, Splunk]
+        - Developed high-availability RESTful API used across multiple customer-facing applications augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard [Scala, SBT, memcached, AngularJS]
+        - Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities [Jenkins, Ruby]
         - Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases
     - company: Rally Software
       title: Java Web Applications Developer
       time: 2008-2011
       location: Boulder, CO
       accomplishments:
-        - Helped develop SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases. [Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS]
+        - Developed SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases. [Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS]
         - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system. [Java, Eclipse, Android SDK]
         - Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
         - Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.

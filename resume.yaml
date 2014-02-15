@@ -18,7 +18,7 @@ experience:
         - Rewrote <a href="https://myservices.timewarnercable.com/">primary care portal application</a> used by thousands of customers daily; new version a CableFAX Digital Award finalist with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score. [Groovy, Grails, Scala]
         - Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 53% to 79%. [Groovy, Grails, Spring]
         - Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months. [Groovy, Grails, Splunk]
-        - Developed high-availability RESTful API used across multiple customer-facing applications augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard [Scala, SBT, memcached, AngularJS]
+        - Developed high-availability RESTful API used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard [Scala, SBT, Lift, memcached, AngularJS, PostgreSQL, Oracle, SOAP]
         - Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities [Jenkins, Ruby]
         - Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases
     - company: Rally Software

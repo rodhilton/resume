@@ -41,18 +41,18 @@ file "#{TARGET_DIR}/resume_public.html"  => [:make_target] do |t|
 end
 
 task :latex_public => ["#{TARGET_DIR}/resume_public.tex"] do |t|
-  sh "pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_public.tex"
+  sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_public.tex"
   rm "#{TARGET_DIR}/resume_public.tex"
 end
 
 desc "Make full resume PDF"
 task :latex_full => ["#{TARGET_DIR}/resume_full.tex"] do |t|
-  sh "pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_full.tex"
+  sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_full.tex"
   rm "#{TARGET_DIR}/resume_full.tex"
 end
 
 task :latex_private => ["#{TARGET_DIR}/resume_private.tex"] do |t|
-  sh "pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_private.tex"
+  sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_private.tex"
   rm "#{TARGET_DIR}/resume_private.tex"
 end
   

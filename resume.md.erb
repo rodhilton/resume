@@ -5,15 +5,20 @@ def markdown_links(one)
 end
 %>
 
+#Rod Hilton
+## Software Craftsman and Computer Science Geek
+[<%= site %>](<%= site %>)
 
-# Summary
+----
+
+## Summary
 <% summary.each do |summary_item| %>
 * <%= summary_item %>
 <% end %>
 
 ----
 
-# Technical Skills
+## Technical Skills
 
 <% u_skills = unique_skills(skills) %>
 * __Accomplished__: <%= skill_list(u_skills, 7, 10) %>
@@ -22,7 +27,7 @@ end
 
 ----
 
-# Work Experience
+## Work Experience
 
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
 <% job_list.each do |job| %>
@@ -34,19 +39,19 @@ end
 
 <% if flags[:certifications] %>
 ---- 
-# Certifications 
+## Certifications 
     <% certifications.each do |certification| %>
 * __<%= certification.title %>__
-        <% unless certification.subject.nil? %>
-        - <%= certification.subject %>
-        <% end %>
+    <% unless certification.subject.nil? %>
+    * <%= certification.subject %>
+    <% end %>
     * _<%= certification.time %>_
     <% end %>
 <% end %>
 
 ----
 
-# Education
+## Education
 
 <% education.degrees.each do |degree| %>
 * __<%= degree.title %>__ - <%= degree.school %> <%= display_schoolyear(degree, flags[:expand_school ]) %>

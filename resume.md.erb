@@ -43,12 +43,8 @@ __Software Craftsman and Computer Science Geek__
 ---- 
 ## Certifications 
     <% certifications.each do |certification| %>
-* __<%= certification.title %>__
-    <% unless certification.subject.nil? %>
-    * <%= certification.subject %>
-    <% end %>
-    * _<%= certification.time %>_
-    <% end %>
+* __<%= certification.title %>__ - <%= "_#{certification.subject}_ - " unless certification.subject.nil? %> <%= certification.time %>
+<% end %>
 <% end %>
 
 ----
@@ -56,9 +52,24 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 <% education.degrees.each do |degree| %>
-* __<%= degree.title %>__ - <%= degree.school %> <%= display_schoolyear(degree, flags[:expand_school ]) %>
+* __<%= degree.title %>__ - _<%= degree.school %>_ - <%= display_schoolyear(degree, flags[:expand_school ], "", "") %>
         <% if flags[:expand_school] %>
     * <%= degree.note %>
     * Coursework: <%= degree.coursework %>
         <% end %>
+<% end %>
+
+----
+
+## Publications 
+
+<% unless publications.author.size.nil? %>
+  <% publications.author.each do |pub| %>
+* Author: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.time %>)_
+  <% end %>
+<% end %>
+<% unless publications.editor.size.nil? %>
+  <% publications.editor.each do |pub| %>
+* Tech Editor: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.time %>)_
+  <% end %>
 <% end %>

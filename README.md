@@ -116,28 +116,14 @@ __Software Craftsman and Computer Science Geek__
 ---- 
 ## Certifications 
     
-* __Certified ScrumMaster__
-    
-    * _2009_
-    
-* __Sun Certified Java Developer__
-    
-    * J2SE 5.0
-    
-    * _2008_
-    
-* __Sun Certified Web Component Developer__
-    
-    * J2EE 1.4
-    
-    * _2006_
-    
-* __Sun Certified Java Programmer__
-    
-    * J2SE 5.0
-    
-    * _2005_
-    
+* __Certified ScrumMaster__ -  2009
+
+* __Sun Certified Java Developer__ - _J2SE 5.0_ -  2008
+
+* __Sun Certified Web Component Developer__ - _J2EE 1.4_ -  2006
+
+* __Sun Certified Java Programmer__ - _J2SE 5.0_ -  2005
+
 
 
 ----
@@ -145,21 +131,33 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - University of Colorado at Denver (Anticipated 2016)
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2016
         
     * Specialization in Theory and Algorithms
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory
         
 
-* __M.S., Software Engineering__ - Regis University (2009)
+* __M.S., Software Engineering__ - _Regis University_ - 2009
         
     * Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>
     * Coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
         
 
-* __B.S., Computer Science__ - University of Rochester (2004)
+* __B.S., Computer Science__ - _University of Rochester_ - 2004
         
     * Focus on Systems
     * Coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms.
         
 
+
+----
+
+## Publications 
+
+
+
+  
+* Tech Editor: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a> by Tim Berglund _(O'Reilly Media, 2013)_
+  
+* Tech Editor: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a> by Michael Bevilacqua-Linn _(Pragmatic Bookshelf, 2013)_
+  

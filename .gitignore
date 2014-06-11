@@ -1,4 +1,6 @@
-out
+/out/*
+!/out/resume_public.md
+
 contact.yaml
 public.yaml
 resume*.md

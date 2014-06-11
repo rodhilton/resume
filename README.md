@@ -5,7 +5,7 @@
 
 __Software Craftsman and Computer Science Geek__
 
-[about.me/rodhilton](about.me/rodhilton)
+[about.me/rodhilton](http://about.me/rodhilton)
 
 ----
 

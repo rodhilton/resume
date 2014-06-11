@@ -11,12 +11,12 @@ summary:
 experience:
   jobs:
     - company: Time Warner Cable
-      title: Senior Web Developer
+      title: Senior Engineer, Development
       time: 2011-Present
       location: Denver, CO
       accomplishments:
-        - Rewrote <a href="https://myservices.timewarnercable.com/">primary care portal application</a> used by thousands of customers daily; new version a CableFAX Digital Award finalist with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score. [Groovy, Grails, Scala]
-        - Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 53% to 79%. [Groovy, Grails, Spring]
+        - Rewrote <a href="https://myservices.timewarnercable.com/">primary care portal application</a> increasing monthly logins by over 1 million; new version a CableFAX Digital Award finalist in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score. [Groovy, Grails, Scala]
+        - Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%. [Groovy, Grails, Spring]
         - Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months. [Groovy, Grails, Splunk]
         - Developed high-availability RESTful API used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard [Scala, SBT, Lift, memcached, AngularJS, PostgreSQL, Oracle, SOAP]
         - Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities [Jenkins, Ruby]

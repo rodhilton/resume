@@ -7,4 +7,6 @@ contact.yaml
 public.yaml
 resume*.md
 qr_*.png
+!qr_code_url.png
+
 .rake_tasks*

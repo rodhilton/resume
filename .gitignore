@@ -1,6 +1,8 @@
 /out/*
 !/out/resume_public.md
 
+*DS_Store
+
 contact.yaml
 public.yaml
 resume*.md

@@ -20,7 +20,7 @@ experience:
         - Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months. [Groovy, Grails, Splunk]
         - Developed high-availability RESTful API used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard [Scala, SBT, Lift, memcached, AngularJS, PostgreSQL, Oracle, SOAP]
         - Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities [Jenkins, Ruby]
-        - Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases
+        - Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases [Git]
     - company: Rally Software
       title: Java Web Applications Developer
       time: 2008-2011

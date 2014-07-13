@@ -46,7 +46,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities [Jenkins, Ruby]
             
-    * Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases
+    * Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases [Git]
             
 
 *  __Java Web Applications Developer__ - _Rally Software_ - 2008-2011

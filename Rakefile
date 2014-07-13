@@ -23,6 +23,11 @@ task :make_target do |t|
   Dir.mkdir(TARGET_DIR) unless File.exists?(TARGET_DIR)
 end
 
+task :copy_deps do |t|
+  FileUtils.cp_r Dir.glob( File.join("latex", "*" ) ), TARGET_DIR
+  FileUtils.cp_r Dir.glob( "*.png" ), TARGET_DIR
+end
+
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
   #sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
   sh "templator/templator -d #{data_files} resume.tex.erb #{public_flags} > #{TARGET_DIR}/resume_public.tex"
@@ -40,18 +45,18 @@ file "#{TARGET_DIR}/resume_public.html"  => [:make_target] do |t|
     sh "templator/templator -d #{data_files} resume.html.erb #{public_flags} > #{TARGET_DIR}/resume_public.html"
 end
 
-task :latex_public => ["#{TARGET_DIR}/resume_public.tex"] do |t|
+task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps] do |t|
   sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_public.tex"
   rm "#{TARGET_DIR}/resume_public.tex"
 end
 
 desc "Make full resume PDF"
-task :latex_full => ["#{TARGET_DIR}/resume_full.tex"] do |t|
+task :latex_full => ["#{TARGET_DIR}/resume_full.tex", :copy_deps] do |t|
   sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_full.tex"
   rm "#{TARGET_DIR}/resume_full.tex"
 end
 
-task :latex_private => ["#{TARGET_DIR}/resume_private.tex"] do |t|
+task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps] do |t|
   sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_private.tex"
   rm "#{TARGET_DIR}/resume_private.tex"
 end

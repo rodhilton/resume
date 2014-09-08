@@ -116,3 +116,11 @@ publications:
       author: Michael Bevilacqua-Linn
       publisher: Pragmatic Bookshelf
       time: 2013
+    - title: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a>
+      author: Paul Chiusano and Rúnar Bjarnason
+      publisher: Manning
+      time: 2014
+    - title: <a href="http://www.manning.com/partner/">Neo4j in Action</a>
+      author: http://www.manning.com/partner/
+      publisher: Jonas Partner, Aleksa Vukotic, and Nicki Watt
+      time: 2014

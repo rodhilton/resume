@@ -106,7 +106,7 @@
 <% end %>
 <% unless publications.editor.size.nil? %>
   <% publications.editor.each do |pub| %>
-  \cvitem{Tech. Editor}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= pub.publisher %>, <%= pub.time %>)}}
+  \cvitem{Tech. Reviewer}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= pub.publisher %>, <%= pub.time %>)}}
   <% end %>
 <% end %>
 

@@ -78,7 +78,7 @@
   </ul>
 <% end %>
 <% unless publications.editor.size.nil? %>
-  <li><b>Technical Editor</b></li> 
+  <li><b>Technical Reviewer</b></li> 
   <ul>
   <% publications.editor.each do |pub| %>
   <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.time %>)</i></li>

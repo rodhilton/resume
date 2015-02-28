@@ -158,11 +158,11 @@ __Software Craftsman and Computer Science Geek__
 
 
   
-* Tech Editor: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a> by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
+* Tech Reviewer: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a> by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
   
-* Tech Editor: <a href="http://www.manning.com/partner/">Neo4j in Action</a> by Jonas Partner, Aleksa Vukotic, and Nicki Watt _(Manning, 2014)_
+* Tech Reviewer: <a href="http://www.manning.com/partner/">Neo4j in Action</a> by Jonas Partner, Aleksa Vukotic, and Nicki Watt _(Manning, 2014)_
   
-* Tech Editor: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a> by Tim Berglund _(O'Reilly Media, 2013)_
+* Tech Reviewer: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a> by Tim Berglund _(O'Reilly Media, 2013)_
   
-* Tech Editor: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a> by Michael Bevilacqua-Linn _(Pragmatic Bookshelf, 2013)_
+* Tech Reviewer: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a> by Michael Bevilacqua-Linn _(Pragmatic Bookshelf, 2013)_
   

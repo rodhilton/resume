@@ -42,6 +42,8 @@ __Software Craftsman and Computer Science Geek__
             
     * Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months. [Groovy, Grails, Splunk]
             
+    * Implemented automated self-care tools addressing largest generators of customer support calls, saving an estimated $4m/year.
+            
     * Developed high-availability RESTful API used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard [Scala, SBT, Lift, memcached, AngularJS, PostgreSQL, Oracle, SOAP]
             
     * Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities [Jenkins, Ruby]
@@ -155,6 +157,10 @@ __Software Craftsman and Computer Science Geek__
 
 
 
+  
+* Tech Editor: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a> by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
+  
+* Tech Editor: <a href="http://www.manning.com/partner/">Neo4j in Action</a> by Jonas Partner, Aleksa Vukotic, and Nicki Watt _(Manning, 2014)_
   
 * Tech Editor: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a> by Tim Berglund _(O'Reilly Media, 2013)_
   

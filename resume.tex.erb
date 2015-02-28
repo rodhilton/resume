@@ -6,7 +6,7 @@
   end
 
   def latex_desc(bla)
-    bla.gsub(/([%$])/, "\\$1")
+    bla.gsub(/%/, "\\%").gsub(/\$/, '\\\\$')
   end
 %>
 

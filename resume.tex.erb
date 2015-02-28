@@ -68,7 +68,7 @@
 \cventry{<%= job.time %>}{<%= job.title %>}{<%= job.company %>}{<%= job.location %>}{}{ %
 \begin{itemize}%
 \renewcommand{\labelitemi}{$\color{color1}{\triangleright}$} %
-\footnotesize <% accomplishments.each do |accomplishment| %> \item <%= latex_links(latex_desc(accomplishment)) %><% end %>
+\footnotesize <% unless job.technologies.nil? %>\item Utilized <%= job.technologies %> <% end %><% accomplishments.each do |accomplishment| %> \item <%= latex_links(latex_desc(accomplishment)) %><% end %>
 \end{itemize}}
 \end{minipage}
 \vspace{1mm}

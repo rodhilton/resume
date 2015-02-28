@@ -24,6 +24,9 @@
     <li>
         <b><%= job.title %></b> - <i><%= job.company %></i> - <%= job.time %><br/>
         <ul>
+            <% unless job.technologies.nil? %>
+            <li>Utilized <%= job.technologies %></li>
+            <% end %>
             <% job.accomplishments.each do |accomplishment| %>
                 <li><%= accomplishment %></li>
             <% end %>

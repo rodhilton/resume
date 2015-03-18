@@ -174,6 +174,10 @@ __Software Craftsman and Computer Science Geek__
 
 
   
+* Tech Reviewer: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a> by Jeff Langr _(Pragmatic Bookshelf, 2015)_
+  
+* Tech Reviewer: <a href='https://pragprog.com/book/tbcoffee2/coffeescript'>CoffeeScript: Accelerated JavaScript Development, Second Edition</a> by Trevor Burnham _(Pragmatic Bookshelf, 2015)_
+  
 * Tech Reviewer: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a> by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
   
 * Tech Reviewer: <a href="http://www.manning.com/partner/">Neo4j in Action</a> by Jonas Partner, Aleksa Vukotic, and Nicki Watt _(Manning, 2014)_

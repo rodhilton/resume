@@ -114,6 +114,10 @@ education:
 
 publications:
   editor:
+    - title: <a href="https://pragprog.com/book/tbcoffee2/coffeescript">CoffeeScript: Accelerated JavaScript Development, Second Edition</a>
+      author: Trevor Burnham
+      publisher: Pragmatic Bookshelf
+      time: 2015
     - title: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a>
       author: Paul Chiusano and Runar Bjarnason
       publisher: Manning

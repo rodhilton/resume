@@ -114,6 +114,10 @@ education:
 
 publications:
   editor:
+    - title: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a>
+      author: Jeff Langr
+      publisher: Pragmatic Bookshelf
+      time: 2015
     - title: <a href="https://pragprog.com/book/tbcoffee2/coffeescript">CoffeeScript: Accelerated JavaScript Development, Second Edition</a>
       author: Trevor Burnham
       publisher: Pragmatic Bookshelf

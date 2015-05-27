@@ -98,6 +98,7 @@
 \end{minipage}
 <% end %>
 
+<% if flags[:publications] %>
 \section{Publications}
 <% unless publications.author.size.nil? %>
   <% publications.author.each do |pub| %>
@@ -108,6 +109,7 @@
   <% publications.editor.each do |pub| %>
   \cvitem{Tech. Reviewer}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= pub.publisher %>, <%= pub.time %>)}}
   <% end %>
+<% end %>
 <% end %>
 
 \end{document}

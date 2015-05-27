@@ -9,14 +9,14 @@ CLEAN.include(TARGET_DIR)
 
 data_files = "resume.yaml,skills.yaml"
 
-public_flags = "-f photo:qr_code_url -f expand_school -f certifications -f complete_history"
+public_flags = "-f photo:qr_code_url -f expand_school -f certifications -f complete_history -f publications"
 
 def private_flags 
   contact = YAML.load_file("contact.yaml")
   email = contact["email"]
   phone = contact["phone"]
   abort("Missing required values in contact.yaml") if email.nil? or phone.nil?
-  "-f photo:qr_code_contact -f \"email:#{email}\" -f \"phone:#{phone}\""
+  "-f photo:qr_code_url -f \"email:#{email}\" -f \"phone:#{phone}\""
 end
 
 task :make_target do |t|

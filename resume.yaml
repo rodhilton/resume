@@ -22,7 +22,7 @@ experience:
         - Implemented automated self-care tools addressing largest generators of customer support calls, saving an estimated $4m/year.
         - Developed high-availability RESTful API used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard
         - Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities
-        - Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases
+        - Introduced Git and trained team on usage, greatly improving productivity and enabling smoother releases
     - company: Rally Software
       title: Java Web Applications Developer
       time: 2008-2011

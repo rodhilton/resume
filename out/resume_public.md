@@ -10,13 +10,13 @@ __Software Craftsman and Computer Science Geek__
 
 ## Summary
 
-* Passionate, hard-working problem-solver with strong Computer Science background.
+* Passionate, hardworking problem-solver with strong Computer Science background.
 
 * Follower of good engineering practices such as Test-Driven Design, Pair Programming, Continuous Integration, and Refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
 
-* Over a decade of experience developing back-end server applications, web applications, web services, applets, and client applications.
+* Over a decade of experience developing back-end server applications, web applications, web services, microservices, applets, and client applications.
 
-* Polyglot programmer comfortable with variety of procedural, object-oriented, and functional programming languages.
+* Polyglot programmer comfortable with variety of object-oriented and functional programming languages.
 
 
 ----
@@ -34,7 +34,7 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Engineer, Development__ - _Time Warner Cable_ - 2011-Present
+*  __Principal Engineer, Development__ - _Time Warner Cable (acquired by Charter Communications)_ - 2011-Present
             
     * Utilized Groovy, Grails, Scala, Spring, SBT, Lift, memcached, AngularJS, PostgreSQL, Oracle, SOAP, Jenkins, Git, Ruby
             
@@ -51,10 +51,8 @@ __Software Craftsman and Computer Science Geek__
             
     * Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities
             
-    * Introduced Git and trained team on it's usage, greatly improving productivity and enabling smoother releases
-            
 
-*  __Java Web Applications Developer__ - _Rally Software_ - 2008-2011
+*  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)_ - 2008-2011
             
     * Utilized Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS, Eclipse, Android SDK
             
@@ -68,7 +66,7 @@ __Software Craftsman and Computer Science Geek__
     * Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
             
 
-*  __Software Engineer__ - _OpenLogic, Inc_ - 2007-2008
+*  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)_ - 2007-2008
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML, CSS, MySQL, Java, JRuby, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             
@@ -84,7 +82,7 @@ __Software Craftsman and Computer Science Geek__
     * Received Most Valuable Player Award - January 2008
             
 
-*  __Senior Software Developer__ - _Acxiom/InsightAmerica_ - 2004-2007
+*  __Senior Software Developer__ - _InsightAmerica (acquired by Acxiom Corporation)_ - 2004-2007
             
     * Utilized Java, SQL Server, ColdFusion
             
@@ -148,7 +146,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2016
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2017
         
     * Specialization in Theory and Algorithms
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory

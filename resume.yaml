@@ -10,8 +10,8 @@ summary:
 
 experience:
   jobs:
-    - company: Time Warner Cable
-      title: Senior Engineer, Development
+    - company: Time Warner Cable (acquired by Charter Communications)
+      title: Principal Engineer, Development
       time: 2011-Present
       location: Denver, CO
       technologies: Groovy, Grails, Scala, Spring, SBT, Lift, memcached, AngularJS, PostgreSQL, Oracle, SOAP, Jenkins, Git, Ruby
@@ -22,8 +22,7 @@ experience:
         - Implemented automated self-care tools addressing largest generators of customer support calls, saving an estimated $4m/year.
         - Developed high-availability RESTful API used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard
         - Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities
-        - Introduced Git and trained team on usage, greatly improving productivity and enabling smoother releases
-    - company: Rally Software
+    - company: Rally Software (acquired by CA Technologies)
       title: Java Web Applications Developer
       time: 2008-2011
       location: Boulder, CO
@@ -33,7 +32,7 @@ experience:
         - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system.
         - Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
         - Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
-    - company: OpenLogic, Inc
+    - company: OpenLogic, Inc (acquired by Rogue Wave Software)
       title: Software Engineer
       time: 2007-2008
       location: Westminster, CO
@@ -44,7 +43,7 @@ experience:
         - Contributed to company-sponsored open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
         - Developed OLE, a J2EE enterprise software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
         - Received Most Valuable Player Award - January 2008
-    - company: Acxiom/InsightAmerica
+    - company: InsightAmerica (acquired by Acxiom Corporation)
       title: Senior Software Developer
       time: 2004-2007
       location: Westminster, CO
@@ -96,7 +95,7 @@ education:
     - title: Ph.D., Computer Science
       school: University of Colorado at Denver
       location: Denver, CO
-      time: 2011-2016
+      time: 2011-Present
       note: Specialization in Theory and Algorithms
       coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory
     - title: M.S., Software Engineering

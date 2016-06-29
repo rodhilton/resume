@@ -16,7 +16,7 @@ def private_flags
   email = contact["email"]
   phone = contact["phone"]
   abort("Missing required values in contact.yaml") if email.nil? or phone.nil?
-  "-f photo:qr_code_url -f \"email:#{email}\" -f \"phone:#{phone}\""
+  "-f photo:qr_code_contact -f \"email:#{email}\" -f \"phone:#{phone}\""
 end
 
 task :make_target do |t|
@@ -34,8 +34,13 @@ file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
 end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb #{private_flags}> #{TARGET_DIR}/resume_private.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags}> #{TARGET_DIR}/resume_private.tex"
 end
+
+file "#{TARGET_DIR}/resume_private_bw.tex"  => [:make_target] do |t|
+  sh "templator/templator -d #{data_files} resume.tex.erb #{private_flags}> #{TARGET_DIR}/resume_private_bw.tex"
+end
+
 
 file "#{TARGET_DIR}/resume_public.md" => [:make_target] do |t|
   sh "templator/templator -d #{data_files} resume.md.erb #{public_flags} > #{TARGET_DIR}/resume_public.md"
@@ -60,9 +65,14 @@ task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps] do |t|
   sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_private.tex"
   rm "#{TARGET_DIR}/resume_private.tex"
 end
+
+task :latex_private_bw => ["#{TARGET_DIR}/resume_private_bw.tex", :copy_deps] do |t|
+  sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_private_bw.tex"
+  rm "#{TARGET_DIR}/resume_private_bw.tex"
+end
   
 desc "Make private resume PDF"
-task :resume_private => [:latex_private]
+task :resume_private => [:latex_private, :latex_private_bw]
 
 desc "Make public resume PDF"
 task :resume_public => [:latex_public, "#{TARGET_DIR}/resume_public.html", "#{TARGET_DIR}/resume_public.md"]

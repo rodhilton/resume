@@ -24,9 +24,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Grails, Regex, Ruby, Groovy, HTML, Gradle, Servlets, JSPs, IntelliJ, Scala, JavaScript, Ajax, CSS, Rails, Design Patterns
-* __Advanced__: REST, Linux, Spring, Oracle Database, Maven, MySQL, PHP, EJBs, OS X, Tomcat, Eclipse, Windows, SOAP, Python
-* __Novice__: Lift, SBT, PostgreSQL, JSF
+* __Accomplished__: Java, Git, JEE/Servlet/JSP/EJB, Groovy/Grails, Ruby/Rails, HTML/CSS, Regular Expressions, Gradle, IntelliJ, JavaScript, Scala, Design Patterns, SQL
+* __Advanced__: REST, Maven, Spring, PHP, Tomcat, SOAP, Python
+* __Novice__: Machine Learning, Lift, SBT
 
 ----
 

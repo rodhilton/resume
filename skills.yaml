@@ -2,84 +2,66 @@ skills:
   - name: Java
     rating: 9
     rusty: 0
-  - name: Servlets
-    rating: 8
-    rusty: 2
-  - name: JSPs
-    rating: 8
-    rusty: 2
-  - name: Ruby
+  - name: Ruby/Rails
     rating: 8
     rusty: 0
-  - name: Rails
-    rating: 7
-    rusty: 1
   - name: Spring
     rating: 6
     rusty: 2
-  - name: HTML
+  - name: HTML/CSS
     rating: 8
     rusty: 0
-  - name: CSS
-    rating: 7
-    rusty: 1
   - name: JavaScript
     rating: 7
     rusty: 0
-  - name: Ajax
-    rating: 7
-    rusty: 1
   - name: PHP
     rating: 6
     rusty: 4
-  - name: MySQL
-    rating: 6
+  - name: SQL
+    rating: 7
     rusty: 3
-  - name: PostgreSQL
-    rating: 3
-    rusty: 2
-  - name: SQL Server
-    rating: 4
-    rusty: 6
-  - name: Oracle Database
-    rating: 6
-    rusty: 2
+  # - name: PostgreSQL
+  #   rating: 3
+  #   rusty: 2
+  # - name: SQL Server
+  #   rating: 4
+  #   rusty: 6
+  # - name: Oracle Database
+  #   rating: 6
+  #   rusty: 2
   - name: Tomcat
     rating: 5
     rusty: 2
-  - name: Eclipse
-    rating: 5
-    rusty: 3
   - name: IntelliJ
     rating: 7
     rusty: 0
-  - name: Windows
-    rating: 5
-    rusty: 4
-  - name: Linux
-    rating: 6
-    rusty: 1
-  - name: OS X
-    rating: 5
-    rusty: 0
+  # - name: Windows
+  #   rating: 5
+  #   rusty: 4
+  # - name: Linux
+  #   rating: 6
+  #   rusty: 1
+  # - name: OS X
+  #   rating: 5
+  #   rusty: 0
   - name: Design Patterns
     rating: 7
     rusty: 1
-  - name: Regex
+  - name: Regular Expressions
     rating: 8
     rusty: 0
   - name: C/C++
     rating: 6
     rusty: 7
-  - name: Groovy
+  - name: Groovy/Grails
     rating: 8
     rusty: 0
-  - name: Grails
-    rating: 8
-    rusty: 0
+  # - name: Grails
+  #   rating: 8
+  #   rusty: 0
   - name: ColdFusion
     rating: 4
-    rusty: 6
+    rusty: 9
   - name: SOAP
     rating: 5
     rusty: 5
@@ -107,12 +89,12 @@ skills:
   - name: Python
     rating: 5
     rusty: 5
-  - name: EJBs
-    rating: 6
+  - name: JEE/Servlet/JSP/EJB
+    rating: 9
     rusty: 5
   - name: JSF
     rating: 3
-    rusty: 5
+    rusty: 7
   - name: Visual Basic
     rating: 4
     rusty: 10
@@ -134,3 +116,6 @@ skills:
   - name: C#
     rating: 4
     rusty: 6
+  - name: Machine Learning
+    rating: 4
+    rusty: 0

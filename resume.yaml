@@ -113,6 +113,14 @@ education:
 
 publications:
   editor:
+    - title: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a>
+      author: Sam Ruby
+      publisher: Pragmatic Bookshelf
+      time: 2016
+    - title: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a>
+      author: Jonathan Rasmusson
+      publisher: Pragmatic Bookshelf
+      time: 2016
     - title: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a>
       author: Jeff Langr
       publisher: Pragmatic Bookshelf

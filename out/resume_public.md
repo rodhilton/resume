@@ -146,10 +146,10 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2017
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2018
         
-    * Specialization in Theory and Algorithms
-    * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory
+    * Specialization in Machine Learning, Theory, and Algorithms
+    * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         
 
 * __M.S., Software Engineering__ - _Regis University_ - 2009
@@ -171,6 +171,10 @@ __Software Craftsman and Computer Science Geek__
 
 
 
+  
+* Tech Reviewer: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a> by Sam Ruby _(Pragmatic Bookshelf, 2016)_
+  
+* Tech Reviewer: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a> by Jonathan Rasmusson _(Pragmatic Bookshelf, 2016)_
   
 * Tech Reviewer: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a> by Jeff Langr _(Pragmatic Bookshelf, 2015)_
   

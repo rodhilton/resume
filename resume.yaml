@@ -47,7 +47,7 @@ experience:
         - Contributed to company-sponsored open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
         - Developed OLE, a J2EE enterprise software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
         - Received Most Valuable Player Award - January 2008
-    - company: Acxiom Corportation
+    - company: Acxiom Corporation
       note: previously InsightAmerica
       title: Senior Software Developer
       time: 2004-2007

@@ -82,7 +82,7 @@ __Software Craftsman and Computer Science Geek__
     * Received Most Valuable Player Award - January 2008
             
 
-*  __Senior Software Developer__ - _Acxiom Corportation (previously InsightAmerica)}_ - 2004-2007
+*  __Senior Software Developer__ - _Acxiom Corporation (previously InsightAmerica)}_ - 2004-2007
             
     * Utilized Java, SQL Server, ColdFusion
             

@@ -66,12 +66,12 @@
 \cvitem{Novice}{<%= skill_list(u_skills, 0, 4).gsub(/\#/, "\\#") %>}
 
 \section{Experience}
-<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
+<% job_list = flags[:complete_history] ? experience.jobs : trunc_jobs(experience.jobs,4) %>
 
 <% job_list.each_with_index do |job, i| %>
   <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i) %>
 \begin{minipage}{\linewidth} 
-\cventry{<%= job.time %>}{<%= job.title %>}{<%= job.company %>}{<%= job.location %>}{}{ %
+\cventry{<%= job.time %>}{<%= job.title %>}{<%= job.company %><% unless job.note.nil? %>\scriptsize\textit{ (<%= job.note %>)}<% end %>}{}{}{ %
 \begin{itemize}%
 \renewcommand{\labelitemi}{$\color{color1}{\triangleright}$} %
 \footnotesize <% unless job.technologies.nil? %>\item Utilized <%= job.technologies %> <% end %><% accomplishments.each do |accomplishment| %> \item <%= latex_links(latex_desc(accomplishment)) %><% end %>
@@ -90,7 +90,7 @@
 \section{Education}
 <% education.degrees.each do |degree| %>
 \begin{minipage}{\linewidth}
-\cventry{<%= display_schoolyear(degree, flags[:expand_school ],"","") %>}{<%= degree.title %>}{<%= degree.school %>}{<%= degree.location %>}{}{% <% if flags[:expand_school ]%>
+\cventry{<%= display_schoolyear(degree, flags[:expand_school ],"","") %>}{<%= degree.title %>}{<%= degree.school %>}{}{}{% <% if flags[:expand_school ]%>
 \begin{itemize}%
 \renewcommand{\labelitemi}{$\color{color1}{\triangleright}$} %
 \footnotesize

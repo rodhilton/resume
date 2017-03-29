@@ -32,7 +32,7 @@ __Software Craftsman and Computer Science Geek__
 
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
 <% job_list.each do |job| %>
-*  __<%= job.title %>__ - _<%= job.company %>_ - <%= job.time %>
+*  __<%= job.title %>__ - _<%= job.company %><% unless job.note.nil? %> (<%= job.note %>)<% end %>}_ - <%= job.time %>
             <% unless job.technologies.nil? %>
     * Utilized <%= job.technologies %>
             <% end %>

@@ -10,13 +10,13 @@ __Software Craftsman and Computer Science Geek__
 
 ## Summary
 
-* Passionate, hardworking problem-solver with strong Computer Science background.
+* Passionate problem-solver with strong Computer Science background.
 
 * Follower of good engineering practices such as Test-Driven Design, Pair Programming, Continuous Integration, and Refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
 
-* Over a decade of experience developing back-end server applications, web applications, web services, microservices, applets, and client applications.
+* Over a decade of user-focused experience developing back-end server applications, web applications, web services, microservices, applets, and client applications.
 
-* Polyglot programmer comfortable with variety of object-oriented and functional programming languages.
+* Polyglot programmer comfortable with variety of OO and FP languages.
 
 
 ----
@@ -34,7 +34,7 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Principal Engineer, Development__ - _Time Warner Cable (acquired by Charter Communications)_ - 2011-Present
+*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)}_ - 2011-Present
             
     * Utilized Groovy, Grails, Scala, Spring, SBT, Lift, memcached, AngularJS, PostgreSQL, Oracle, SOAP, Jenkins, Git, Ruby
             
@@ -52,7 +52,7 @@ __Software Craftsman and Computer Science Geek__
     * Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities
             
 
-*  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)_ - 2008-2011
+*  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)}_ - 2008-2011
             
     * Utilized Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS, Eclipse, Android SDK
             
@@ -66,7 +66,7 @@ __Software Craftsman and Computer Science Geek__
     * Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
             
 
-*  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)_ - 2007-2008
+*  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)}_ - 2007-2008
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML, CSS, MySQL, Java, JRuby, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             
@@ -82,7 +82,7 @@ __Software Craftsman and Computer Science Geek__
     * Received Most Valuable Player Award - January 2008
             
 
-*  __Senior Software Developer__ - _InsightAmerica (acquired by Acxiom Corporation)_ - 2004-2007
+*  __Senior Software Developer__ - _Acxiom Corportation (previously InsightAmerica)}_ - 2004-2007
             
     * Utilized Java, SQL Server, ColdFusion
             
@@ -98,7 +98,7 @@ __Software Craftsman and Computer Science Geek__
     * Received Special Recognition Award for Outstanding Performance - September, 2006
             
 
-*  __Lead Software Developer__ - _Truth-N-Beauty Software_ - 2001-2004
+*  __Lead Software Developer__ - _Truth-N-Beauty Software}_ - 2001-2004
             
     * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
             
@@ -114,7 +114,7 @@ __Software Craftsman and Computer Science Geek__
     * Developed company web site and portfolio sites used to land new customers and allow existing customers to easily browser work-in-progress simulations and make suggestions, streamlining the code/revise process.
             
 
-*  __Computer Science Teaching Assistant__ - _University of Rochester_ - 2001-2004
+*  __Computer Science Teaching Assistant__ - _University of Rochester}_ - 2001-2004
             
             
     * Teaching Assistant and Workshop Leader for three different Computer Science classes over 6 semesters.

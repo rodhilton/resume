@@ -29,8 +29,12 @@ def trim_jobs(jobs)
 	jobs.select do |job|
 		start_year, end_year = job.time.split("-")
 		current_year = Time.new.year
-		end_year == "Present" or current_year - end_year.to_i < MAX_JOB_AGE
+		end_year == "Present" or current_year - end_year.to_i <= MAX_JOB_AGE
 	end
+end
+
+def trunc_jobs(jobs, max) 
+  jobs.take(max)
 end
 
 def trim_accomplishments(accomplishments, index)

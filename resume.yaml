@@ -3,14 +3,16 @@ title: Software Craftsman and Computer Science Geek
 site: www.rodhilton.com
 
 summary:
-  - Passionate, hardworking problem-solver with strong Computer Science background.
+  - Passionate problem-solver with strong Computer Science background.
   - Follower of good engineering practices such as Test-Driven Design, Pair Programming, Continuous Integration, and Refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
-  - Over a decade of experience developing back-end server applications, web applications, web services, microservices, applets, and client applications.
-  - Polyglot programmer comfortable with variety of object-oriented and functional programming languages.
+  - Over a decade of user-focused experience developing back-end server applications, web applications, web services, microservices, applets, and client applications.
+  - Polyglot programmer comfortable with variety of OO and FP languages.
+
 
 experience:
   jobs:
-    - company: Time Warner Cable (acquired by Charter Communications)
+    - company: Spectrum
+      note: formerly Time Warner Cable
       title: Principal Engineer, Development
       time: 2011-Present
       location: Denver, CO
@@ -22,7 +24,8 @@ experience:
         - Implemented automated self-care tools addressing largest generators of customer support calls, saving an estimated $4m/year.
         - Developed high-availability RESTful API used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard
         - Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities
-    - company: Rally Software (acquired by CA Technologies)
+    - company: Rally Software 
+      note: acquired by CA Technologies
       title: Java Web Applications Developer
       time: 2008-2011
       location: Boulder, CO
@@ -32,7 +35,8 @@ experience:
         - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system.
         - Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
         - Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
-    - company: OpenLogic, Inc (acquired by Rogue Wave Software)
+    - company: OpenLogic, Inc
+      note: acquired by Rogue Wave Software
       title: Software Engineer
       time: 2007-2008
       location: Westminster, CO
@@ -43,7 +47,8 @@ experience:
         - Contributed to company-sponsored open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
         - Developed OLE, a J2EE enterprise software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
         - Received Most Valuable Player Award - January 2008
-    - company: InsightAmerica (acquired by Acxiom Corporation)
+    - company: Acxiom Corportation
+      note: previously InsightAmerica
       title: Senior Software Developer
       time: 2004-2007
       location: Westminster, CO

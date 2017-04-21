@@ -118,6 +118,14 @@ education:
 
 publications:
   editor:
+    - title: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a>
+      author: Venkat Subramaniam
+      publisher: Pragmatic Bookshelf
+      time: 2016
+    - title: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a>
+      author: Sergi Mansilla
+      publisher: Pragmatic Bookshelf
+      time: 2016
     - title: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a>
       author: Sam Ruby
       publisher: Pragmatic Bookshelf

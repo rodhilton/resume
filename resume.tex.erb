@@ -48,7 +48,7 @@
 \ifthenelse{\not\equal{<%= flags[:phone] %>}{}}{\phone{<%= flags[:phone] %>}}{}
 \ifthenelse{\not\equal{<%= flags[:email] %>}{}}{\email{<%= flags[:email] %>}}{}
 \homepage{<%= site %>}
-\ifthenelse{\equal{<%= flags[:photo] %>}{}}{}{\photo[28pt][0pt]{<%= flags[:photo] %>}}
+\ifthenelse{\equal{<%= flags[:photo] %>}{}}{}{\photo[28pt][0pt]{<%= flags[:photo] %>.eps}}
 
 \begin{document}
 

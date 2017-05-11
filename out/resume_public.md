@@ -10,13 +10,13 @@ __Software Craftsman and Computer Science Geek__
 
 ## Summary
 
-* Passionate problem-solver with solid Computer Science background.
+* Passionate problem-solver with solid computer science background.
 
 * Over a decade of experience developing back-end server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
 
-* Follower of good engineering practices such as Test-Driven Design, Pair Programming, Continuous Integration, and Refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
+* Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
 
-* Polyglot programmer comfortable with variety of Object-Oriented and Functional languages
+* Polyglot programmer comfortable with variety of object-oriented and functional languages
 
 
 ----

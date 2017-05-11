@@ -26,6 +26,7 @@ end
 task :copy_deps do |t|
   FileUtils.cp_r Dir.glob( File.join("latex", "*" ) ), TARGET_DIR
   FileUtils.cp_r Dir.glob( "*.png" ), TARGET_DIR
+  FileUtils.cp_r Dir.glob( "*.eps" ), TARGET_DIR
 end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
@@ -64,6 +65,7 @@ end
 task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps] do |t|
   sh "TEXINPUTS=latex && pdflatex --output-directory=#{TARGET_DIR} #{TARGET_DIR}/resume_private.tex"
   rm "#{TARGET_DIR}/resume_private.tex"
+  FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
 end
 
 task :latex_private_bw => ["#{TARGET_DIR}/resume_private_bw.tex", :copy_deps] do |t|

@@ -16,7 +16,7 @@ __Software Craftsman and Computer Science Geek__
 
 * Follower of good engineering practices such as Test-Driven Design, Pair Programming, Continuous Integration, and Refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
 
-* Polyglot programmer comfortable with variety of languages, Object-Oriented and Functional
+* Polyglot programmer comfortable with variety of Object-Oriented and Functional languages
 
 
 ----
@@ -39,13 +39,13 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, SOAP, Jenkins, Git, Ruby
             
             
-    * Rewrote [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing monthly logins by over 1 million; new version a CableFAX Digital Award finalist in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
+    * Rewrote [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
             
     * Developed high-availability middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with caching, circuit breakers, monitoring, and adminsitrative dashboard, handling over 1,000 requests/sec at peak load.
             
     * Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months.
             
-    * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%.
+    * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%, new users over 250k/mo;
             
     * Implemented automated self-care tools addressing largest generators of customer support calls, saving an estimated $4m/year.
             

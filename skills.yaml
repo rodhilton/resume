@@ -13,7 +13,7 @@ skills:
     rusty: 0
   - name: JavaScript
     rating: 7
-    rusty: 0
+    rusty: 2
   - name: PHP
     rating: 6
     rusty: 4
@@ -29,12 +29,12 @@ skills:
   # - name: Oracle Database
   #   rating: 6
   #   rusty: 2
-  - name: Tomcat
-    rating: 5
-    rusty: 2
-  - name: IntelliJ
-    rating: 7
-    rusty: 0
+  #- name: Tomcat
+  #  rating: 5
+  #  rusty: 2
+  # - name: IntelliJ
+  #  rating: 7
+  #  rusty: 0
   # - name: Windows
   #   rating: 5
   #   rusty: 4
@@ -44,12 +44,12 @@ skills:
   # - name: OS X
   #   rating: 5
   #   rusty: 0
-  - name: Design Patterns
-    rating: 7
-    rusty: 1
-  - name: Regular Expressions
-    rating: 8
-    rusty: 0
+  #- name: Design Patterns
+  #  rating: 7
+  #  rusty: 1
+  #- name: Regex
+  #  rating: 8
+  #  rusty: 0
   - name: C/C++
     rating: 6
     rusty: 7
@@ -81,7 +81,7 @@ skills:
     rating: 3
     rusty: 0
   - name: Scala
-    rating: 7
+    rating: 8
     rusty: 0
   - name: Maven
     rating: 2

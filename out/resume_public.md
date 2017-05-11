@@ -16,7 +16,7 @@ __Software Craftsman and Computer Science Geek__
 
 * Follower of good engineering practices such as Test-Driven Design, Pair Programming, Continuous Integration, and Refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
 
-* Polyglot programmer comfortable with variety of OO and FP languages.
+* Polyglot programmer comfortable with variety of languages, Object-Oriented and Functional
 
 
 ----
@@ -24,8 +24,8 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, JEE/Servlet/JSP/EJB, Groovy/Grails, Ruby/Rails, HTML/CSS, Regular Expressions, Gradle, IntelliJ, JavaScript, Scala, Design Patterns, SQL
-* __Advanced__: REST, Maven, Spring, PHP, Tomcat, SOAP, Python
+* __Accomplished__: Java, Git, Scala, HTML/CSS, Groovy/Grails, Ruby/Rails, Gradle, JavaScript, JEE/Servlet/JSP/EJB, SQL
+* __Advanced__: REST, Spring, Maven, PHP, Python, SOAP
 * __Novice__: Machine Learning, Lift, SBT
 
 ----
@@ -36,20 +36,20 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)}_ - 2011-Present
             
-    * Utilized Groovy, Grails, Scala, Spring, SBT, Lift, memcached, AngularJS, PostgreSQL, Oracle, SOAP, Jenkins, Git, Ruby
+    * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, SOAP, Jenkins, Git, Ruby
             
             
-    * Rewrote [primary care portal application](https://myservices.timewarnercable.com/) increasing monthly logins by over 1 million; new version a CableFAX Digital Award finalist in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
+    * Rewrote [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing monthly logins by over 1 million; new version a CableFAX Digital Award finalist in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
             
-    * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%.
+    * Developed high-availability middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with caching, circuit breakers, monitoring, and adminsitrative dashboard, handling over 1,000 requests/sec at peak load.
             
     * Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months.
             
+    * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%.
+            
     * Implemented automated self-care tools addressing largest generators of customer support calls, saving an estimated $4m/year.
             
-    * Developed high-availability RESTful API used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with aggressive caching, circuit breakers, monitoring capabilities, and adminsitrative dashboard
-            
-    * Migrated applications from error-prone manual deployment process to one-click continuous delivery approach with monitoring and rollback capabilities
+    * Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
             
 
 *  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)}_ - 2008-2011
@@ -59,11 +59,11 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed SaaS [Rally ALM](http://rally1.rallydev.com) project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases.
             
-    * Created [Rallydroid](http://code.google.com/p/rallydroid/), an Open Source Rally client for Android operating system.
-            
     * Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
             
     * Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
+            
+    * Created [Rallydroid](http://code.google.com/p/rallydroid/), an Open Source Rally client for Android operating system.
             
 
 *  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)}_ - 2007-2008
@@ -89,7 +89,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.
             
-    * Refactored multi-dependency enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
+    * Refactored multi-dependency legacy enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
             
     * Architected centralized data access layer used by company's 10+ enterprise ColdFusion applications.  Helped design a Java/ColdFusion bridge library to allow interaction with layer, improving system performance and stability and increasing level of code reuse between applications.
             
@@ -171,6 +171,12 @@ __Software Craftsman and Computer Science Geek__
 
 
 
+  
+* Tech Reviewer: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a> by Jay Wengrow _(Pragmatic Bookshelf, 2016)_
+  
+* Tech Reviewer: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a> by Venkat Subramaniam _(Pragmatic Bookshelf, 2016)_
+  
+* Tech Reviewer: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a> by Sergi Mansilla _(Pragmatic Bookshelf, 2016)_
   
 * Tech Reviewer: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a> by Sam Ruby _(Pragmatic Bookshelf, 2016)_
   

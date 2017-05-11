@@ -20,7 +20,8 @@ def skill_list(skills, low, high)
     skills.
         select { |skill| skill.rating >= low && skill.rating <= high}.
         select { |skill| skill.rusty < 6 }.
-        sort { |x,y| x.rating == y.rating ? x.rusty <=> y.rusty : y.rating <=> x.rating}.
+        #sort { |x,y| x.rating == y.rating ? x.rusty <=> y.rusty : y.rating <=> x.rating}.
+        sort { |x,y| y.rating - y.rusty <=> x.rating - x.rusty}.
         collect{|s| s.name }.join(", ")
 
 end
@@ -41,6 +42,6 @@ def trim_accomplishments(accomplishments, index)
   if(index == 0)
     accomplishments
   else
-    accomplishments[0..MAX_ACCOMPLISHMENTS-1]
+    accomplishments[0..MAX_ACCOMPLISHMENTS-index]
   end
 end

@@ -1,7 +1,7 @@
 
 
 
-#Rod Hilton
+# Rod Hilton
 __Software Craftsman and Computer Science Geek__
 
 [www.rodhilton.com](http://www.rodhilton.com)
@@ -34,7 +34,7 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)}_ - 2011-Present
+*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-Present
             
     * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
             
@@ -52,7 +52,7 @@ __Software Craftsman and Computer Science Geek__
     * Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
             
 
-*  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)}_ - 2008-2011
+*  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)_ - 2008-2011
             
     * Utilized Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS, Eclipse, Android SDK
             
@@ -66,7 +66,7 @@ __Software Craftsman and Computer Science Geek__
     * Created [Rallydroid](http://code.google.com/p/rallydroid/), an Open Source Rally client for Android operating system.
             
 
-*  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)}_ - 2007-2008
+*  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)_ - 2007-2008
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML, CSS, MySQL, Java, JRuby, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             
@@ -82,7 +82,7 @@ __Software Craftsman and Computer Science Geek__
     * Received Most Valuable Player Award - January 2008
             
 
-*  __Senior Software Developer__ - _Acxiom Corporation (previously InsightAmerica)}_ - 2004-2007
+*  __Senior Software Developer__ - _Acxiom Corporation (previously InsightAmerica)_ - 2004-2007
             
     * Utilized Java, SQL Server, ColdFusion
             
@@ -98,7 +98,7 @@ __Software Craftsman and Computer Science Geek__
     * Received Special Recognition Award for Outstanding Performance - September, 2006
             
 
-*  __Lead Software Developer__ - _Truth-N-Beauty Software}_ - 2001-2004
+*  __Lead Software Developer__ - _Truth-N-Beauty Software_ - 2001-2004
             
     * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
             
@@ -114,7 +114,7 @@ __Software Craftsman and Computer Science Geek__
     * Developed company web site and portfolio sites used to land new customers and allow existing customers to easily browser work-in-progress simulations and make suggestions, streamlining the code/revise process.
             
 
-*  __Computer Science Teaching Assistant__ - _University of Rochester}_ - 2001-2004
+*  __Computer Science Teaching Assistant__ - _University of Rochester_ - 2001-2004
             
             
     * Teaching Assistant and Workshop Leader for three different Computer Science classes over 6 semesters.

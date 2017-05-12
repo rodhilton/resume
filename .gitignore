@@ -1,5 +1,5 @@
-/out/*
-!/out/resume_public.md
+
+
 
 *DS_Store
 
@@ -12,3 +12,10 @@ qr_*.eps
 *eps-converted*
 
 .rake_tasks*
+
+
+/out/*
+!/out/resume_public.md
+
+!/out/resume_short.md
+

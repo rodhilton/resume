@@ -34,6 +34,7 @@ __Software Craftsman and Computer Science Geek__
 
 
 
+
 *  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-Present
             
     * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
@@ -52,6 +53,7 @@ __Software Craftsman and Computer Science Geek__
     * Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
             
 
+
 *  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)_ - 2008-2011
             
     * Utilized Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS, Eclipse, Android SDK
@@ -65,6 +67,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Created [Rallydroid](http://code.google.com/p/rallydroid/), an Open Source Rally client for Android operating system.
             
+
 
 *  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)_ - 2007-2008
             
@@ -82,6 +85,7 @@ __Software Craftsman and Computer Science Geek__
     * Received Most Valuable Player Award - January 2008
             
 
+
 *  __Senior Software Developer__ - _Acxiom Corporation (previously InsightAmerica)_ - 2004-2007
             
     * Utilized Java, SQL Server, ColdFusion
@@ -98,6 +102,7 @@ __Software Craftsman and Computer Science Geek__
     * Received Special Recognition Award for Outstanding Performance - September, 2006
             
 
+
 *  __Lead Software Developer__ - _Truth-N-Beauty Software_ - 2001-2004
             
     * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
@@ -113,6 +118,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed company web site and portfolio sites used to land new customers and allow existing customers to easily browser work-in-progress simulations and make suggestions, streamlining the code/revise process.
             
+
 
 *  __Computer Science Teaching Assistant__ - _University of Rochester_ - 2001-2004
             
@@ -165,14 +171,14 @@ __Software Craftsman and Computer Science Geek__
         
 
 
-----
 
+----
 ## Publications 
 
 
 
   
-* Tech Reviewer: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a> by Jay Wengrow _(Pragmatic Bookshelf, 2016)_
+* Tech Reviewer: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a> by Jay Wengrow _(Pragmatic Bookshelf, 2017)_
   
 * Tech Reviewer: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a> by Venkat Subramaniam _(Pragmatic Bookshelf, 2016)_
   
@@ -196,3 +202,4 @@ __Software Craftsman and Computer Science Geek__
   
 * Tech Reviewer: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a> by Michael Bevilacqua-Linn _(Pragmatic Bookshelf, 2013)_
   
+

@@ -31,12 +31,13 @@ __Software Craftsman and Computer Science Geek__
 ## Work Experience
 
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
-<% job_list.each do |job| %>
+<% job_list.each_with_index do |job, i| %>
+<% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i) %>
 *  __<%= job.title %>__ - _<%= job.company %><% unless job.note.nil? %> (<%= job.note %>)<% end %>_ - <%= job.time %>
             <% unless job.technologies.nil? %>
     * Utilized <%= job.technologies %>
             <% end %>
-            <% job.accomplishments.each do |accomplishment| %>
+            <% accomplishments.each do |accomplishment| %>
     * <%= markdown_links(accomplishment) %>
             <% end %>
 <% end %>
@@ -54,15 +55,15 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 <% education.degrees.each do |degree| %>
-* __<%= degree.title %>__ - _<%= degree.school %>_ - <%= display_schoolyear(degree, flags[:expand_school ], "", "") %>
+* __<%= degree.title %>__ - _<%= degree.school %>_ <%= display_schoolyear(degree, flags[:expand_school ], "- ", "") %>
         <% if flags[:expand_school] %>
     * <%= degree.note %>
     * Coursework: <%= degree.coursework %>
         <% end %>
 <% end %>
 
+<% if flags[:publications] %>
 ----
-
 ## Publications 
 
 <% unless publications.author.size.nil? %>
@@ -74,4 +75,5 @@ __Software Craftsman and Computer Science Geek__
   <% publications.editor.each do |pub| %>
 * Tech Reviewer: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.time %>)_
   <% end %>
+<% end %>
 <% end %>

@@ -47,6 +47,10 @@ file "#{TARGET_DIR}/resume_public.md" => [:make_target] do |t|
   sh "templator/templator -d #{data_files} resume.md.erb #{public_flags} > #{TARGET_DIR}/resume_public.md"
 end
 
+file "#{TARGET_DIR}/resume_short.md" => [:make_target] do |t|
+  sh "templator/templator -d #{data_files} resume.md.erb > #{TARGET_DIR}/resume_short.md"
+end
+
 file "#{TARGET_DIR}/resume_public.html"  => [:make_target] do |t|
     sh "templator/templator -d #{data_files} resume.html.erb #{public_flags} > #{TARGET_DIR}/resume_public.html"
 end
@@ -77,7 +81,7 @@ desc "Make private resume PDF"
 task :resume_private => [:latex_private, :latex_private_bw]
 
 desc "Make public resume PDF"
-task :resume_public => [:latex_public, "#{TARGET_DIR}/resume_public.html", "#{TARGET_DIR}/resume_public.md"]
+task :resume_public => [:latex_public, "#{TARGET_DIR}/resume_public.html", "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]
 
 desc "Make all resumes"
 task :all => [:resume_public, :resume_private]

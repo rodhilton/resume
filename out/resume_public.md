@@ -36,12 +36,12 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)}_ - 2011-Present
             
-    * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, SOAP, Jenkins, Git, Ruby
+    * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
             
             
     * Rewrote [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
             
-    * Developed high-availability middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with caching, circuit breakers, monitoring, and adminsitrative dashboard, handling over 1,000 requests/sec at peak load.
+    * Developed high-availability RESTful middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services, augmented with caching, circuit breakers, monitoring, and adminsitrative dashboard, handling over 1,000 requests/sec at peak load.
             
     * Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months.
             

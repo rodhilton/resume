@@ -55,8 +55,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 <% education.degrees.each do |degree| %>
-* __<%= degree.title %>__ - _<%= degree.school %>_ <%= display_schoolyear(degree, flags[:expand_school ], "- ", "") %>
-        <% if flags[:expand_school] %>
+* __<%= degree.title %>__ - _<%= degree.school %>_ <%= display_schoolyear(degree, flags[:expand_school ], "- ", "") %><% if flags[:expand_school] %>
     * <%= degree.note %>
     * Coursework: <%= degree.coursework %>
         <% end %>

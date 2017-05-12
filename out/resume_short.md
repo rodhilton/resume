@@ -101,12 +101,9 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2018
-        
 
 * __M.S., Software Engineering__ - _Regis University_ 
-        
 
 * __B.S., Computer Science__ - _University of Rochester_ 
-        
 
 

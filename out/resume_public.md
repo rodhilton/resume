@@ -153,19 +153,16 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2018
-        
     * Specialization in Machine Learning, Theory, and Algorithms
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         
 
 * __M.S., Software Engineering__ - _Regis University_ - 2009
-        
     * Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>
     * Coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
         
 
 * __B.S., Computer Science__ - _University of Rochester_ - 2004
-        
     * Focus on Systems
     * Coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms.
         

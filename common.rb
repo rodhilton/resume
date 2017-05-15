@@ -4,7 +4,8 @@ MAX_ACCOMPLISHMENTS=4
 def display_schoolyear(degree, expand_school_flag= false, before = "(", after=")") 
   endyear = degree.time.match(/\d+-(\d+)/)[1].to_i
   if(endyear > Time.new.year) 
-  	"#{before}Anticipated #{endyear}#{after}"
+  	"#{before}Expected #{endyear}#{after}"
+#    "#{before}In Progress#{after}"
   elsif(expand_school_flag)
   	"#{before}#{endyear}#{after}"
   else

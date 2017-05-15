@@ -100,7 +100,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2018
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Expected 2018
 
 * __M.S., Software Engineering__ - _Regis University_ 
 

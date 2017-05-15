@@ -152,7 +152,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Anticipated 2018
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Expected 2018
     * Specialization in Machine Learning, Theory, and Algorithms
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         
@@ -175,28 +175,28 @@ __Software Craftsman and Computer Science Geek__
 
 
   
-* Tech Reviewer: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a> by Jay Wengrow _(Pragmatic Bookshelf, 2017)_
+* Tech Reviewer: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a> by Jay Wengrow _(Pragmatic, 2017)_
   
-* Tech Reviewer: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a> by Venkat Subramaniam _(Pragmatic Bookshelf, 2016)_
+* Tech Reviewer: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a> by Venkat Subramaniam _(Pragmatic, 2016)_
   
-* Tech Reviewer: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a> by Sergi Mansilla _(Pragmatic Bookshelf, 2016)_
+* Tech Reviewer: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a> by Sergi Mansilla _(Pragmatic, 2016)_
   
-* Tech Reviewer: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a> by Sam Ruby _(Pragmatic Bookshelf, 2016)_
+* Tech Reviewer: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a> by Sam Ruby _(Pragmatic, 2016)_
   
-* Tech Reviewer: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a> by Jonathan Rasmusson _(Pragmatic Bookshelf, 2016)_
+* Tech Reviewer: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a> by Jonathan Rasmusson _(Pragmatic, 2016)_
   
-* Tech Reviewer: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a> by Jeff Langr _(Pragmatic Bookshelf, 2015)_
+* Tech Reviewer: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a> by Jeff Langr _(Pragmatic, 2015)_
   
-* Tech Reviewer: <a href="https://pragprog.com/book/atcrime/your-code-as-a-crime-scene">Your Code as a Crime Scene</a> by Adam Tornhill _(Pragmatic Bookshelf, 2015)_
+* Tech Reviewer: <a href="https://pragprog.com/book/atcrime/your-code-as-a-crime-scene">Your Code as a Crime Scene</a> by Adam Tornhill _(Pragmatic, 2015)_
   
-* Tech Reviewer: <a href='https://pragprog.com/book/tbcoffee2/coffeescript'>CoffeeScript: Accelerated JavaScript Development, Second Edition</a> by Trevor Burnham _(Pragmatic Bookshelf, 2015)_
+* Tech Reviewer: <a href='https://pragprog.com/book/tbcoffee2/coffeescript'>CoffeeScript: Accelerated JavaScript Development, Second Edition</a> by Trevor Burnham _(Pragmatic, 2015)_
   
 * Tech Reviewer: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a> by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
   
 * Tech Reviewer: <a href="http://www.manning.com/partner/">Neo4j in Action</a> by Jonas Partner, Aleksa Vukotic, and Nicki Watt _(Manning, 2014)_
   
-* Tech Reviewer: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a> by Tim Berglund _(O'Reilly Media, 2013)_
+* Tech Reviewer: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a> by Tim Berglund _(O'Reilly, 2013)_
   
-* Tech Reviewer: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a> by Michael Bevilacqua-Linn _(Pragmatic Bookshelf, 2013)_
+* Tech Reviewer: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a> by Michael Bevilacqua-Linn _(Pragmatic, 2013)_
   
 

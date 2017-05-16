@@ -29,6 +29,7 @@ __Software Craftsman and Computer Science Geek__
 * __Accomplished__: Java, Git, Groovy/Grails, Scala, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
 * __Advanced__: REST, Maven, Spring, Python, SOAP
 * __Novice__: Machine Learning, Lift, SBT
+* __Interested__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Hadoop, Spark, Kafka, Cassandra
 
 ----
 

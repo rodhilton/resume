@@ -24,6 +24,7 @@
 \usepackage{graphicx}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{xcolor}
+\usepackage[most]{tcolorbox}
 
 % Color name conventions used by the moderncv package
 <% if flags[:color] %>
@@ -39,7 +40,7 @@
 
 \newcommand\Colorhref[3][color1]{\href{#2}{\color{#1}#3}}
 \renewcommand*{\namefont}{\fontsize{50}{40}\mdseries\upshape\linespread{1.5}}
-\renewcommand*{\titlefont}{\fontsize{19}{20}\mdseries\slshape}
+\renewcommand*{\titlefont}{\fontsize{21}{20}\mdseries\slshape}
 
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
@@ -48,21 +49,29 @@
 
 % personal data
 \firstname{<%= name.split(/\s+/)[0] %>}
-\familyname{<%= name.split(/\s+/)[1] %>\vspace*{2.6mm}}
+\familyname{<%= name.split(/\s+/)[1] %>\vspace*{3.2mm}}
 \title{<%= title %>}
 \ifthenelse{\not\equal{<%= flags[:phone] %>}{}}{\phone{<%= flags[:phone] %>}}{}
 \ifthenelse{\not\equal{<%= flags[:email] %>}{}}{\email{<%= flags[:email] %>}}{}
 \homepage{<%= site %>}
 %\ifthenelse{\equal{<%= flags[:photo] %>}{}}{}{\photo[30pt][0pt]{<%= flags[:photo] %>.eps}}
 
+\newtcolorbox{myframe}[1][]{
+  enhanced,
+  arc=0pt,
+  outer arc=0pt,
+  colback=white,
+  boxrule=0pt,
+  boxsep=0pt,
+  #1
+}
+
 \begin{document}
 
-\begin{textblock}{1}(0.94,0.83)                   %% adjust position
-\fboxsep=2.1mm%padding thickness
-\fboxrule=0pt%border thickness
-\fcolorbox{white}{white}{
+\begin{textblock}{1}(1.2,0.95)                   %% adjust position
+\begin{myframe}[width=3.15cm,top=0pt,bottom=0pt,left=0pt,right=.2cm,colframe=white]
    \includegraphics[width=2.8cm]{<%= flags[:photo] %>.png}
-   }
+   \end{myframe}
 \end{textblock}
 
 \makecvtitle

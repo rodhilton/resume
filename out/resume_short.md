@@ -14,7 +14,7 @@ __Software Craftsman and Computer Science Geek__
 
 * Over a decade of experience developing back-end server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
 
-* Specialty in improving existing/legacy codebases and building scalable, performant, fault-tolerant backend systems
+* Specialty in improving existing/legacy codebases and building scalable, performant, fault-tolerant back-end systems.
 
 * Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
 

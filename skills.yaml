@@ -1,22 +1,24 @@
+interests: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Hadoop, Spark, Kafka, Cassandra
+
 skills:
   - name: Java
     rating: 9
     rusty: 0
   - name: Ruby/Rails
-    rating: 8
-    rusty: 0
+    rating: 7
+    rusty: 2
   - name: Spring
     rating: 6
     rusty: 2
   - name: HTML/CSS
-    rating: 8
-    rusty: 0
+    rating: 7
+    rusty: 1
   - name: JavaScript
     rating: 7
     rusty: 2
-  - name: PHP
-    rating: 6
-    rusty: 4
+  # - name: PHP
+  #   rating: 6
+  #   rusty: 4
   - name: SQL
     rating: 7
     rusty: 3

@@ -10,13 +10,15 @@ __Software Craftsman and Computer Science Geek__
 
 ## Summary
 
-* Passionate problem-solver with solid computer science background.
+* Passionate problem-solver with solid Computer Science background.
 
 * Over a decade of experience developing back-end server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
 
+* Specialty in improving existing/legacy codebases and building scalable, performant, fault-tolerant backend systems
+
 * Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
 
-* Polyglot programmer comfortable with variety of object-oriented and functional languages
+* Polyglot programmer comfortable with object-oriented and functional languages
 
 
 ----
@@ -24,8 +26,8 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Scala, HTML/CSS, Groovy/Grails, Ruby/Rails, Gradle, JavaScript, JEE/Servlet/JSP/EJB, SQL
-* __Advanced__: REST, Spring, Maven, PHP, Python, SOAP
+* __Accomplished__: Java, Git, Groovy/Grails, Scala, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
+* __Advanced__: REST, Maven, Spring, Python, SOAP
 * __Novice__: Machine Learning, Lift, SBT
 
 ----

@@ -102,7 +102,7 @@
 \cvitem{Accomplished}{<%= skill_list(u_skills, 7, 10).gsub(/\#/, "\\#") %>}
 \cvitem{Advanced}{<%= skill_list(u_skills, 5, 6).gsub(/\#/, "\\#") %>}
 \cvitem{Novice}{<%= skill_list(u_skills, 0, 4).gsub(/\#/, "\\#") %>}
-\cvitem{Interested}{<%= interests.gsub(/\#/, "\\#") %>}
+\cvitem{Desired}{<%= interests.gsub(/\#/, "\\#") %>}
 
 \section{Experience}
 <% job_list = flags[:complete_history] ? experience.jobs : trunc_jobs(experience.jobs,4) %>

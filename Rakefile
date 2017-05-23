@@ -23,10 +23,24 @@ task :make_target do |t|
   Dir.mkdir(TARGET_DIR) unless File.exists?(TARGET_DIR)
 end
 
-task :copy_deps do |t|
+file "qr_code_contact.png" => [:make_target] do |t|
+  sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
+  sh "cat qr_code_contact.txt | qrencode -o qr_code_contact.png -t png -m 0 --size=20 --foreground=444444"
+end
+
+# file "out/qr_code_contact_bw.png" => [:make_target] do |t|
+#   sh "cat qr_code_contact.txt | qrencode -o out/qr_code_contact_bw.png -t png --foreground=FF0000"
+# end
+
+
+file "qr_code_url.png" => [:make_target] do |t|
+  sh "cat qr_code_url.txt | qrencode -o qr_code_url.png -t png -m 0 --size=20 --foreground=000000"
+end
+
+task :copy_deps => ["qr_code_contact.png", "qr_code_url.png"] do |t|
   FileUtils.cp_r Dir.glob( File.join("latex", "*" ) ), TARGET_DIR
   FileUtils.cp_r Dir.glob( "*.png" ), TARGET_DIR
-  FileUtils.cp_r Dir.glob( "*.eps" ), TARGET_DIR
+  #FileUtils.cp_r Dir.glob( "*.eps" ), TARGET_DIR
 end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|

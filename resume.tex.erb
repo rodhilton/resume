@@ -55,7 +55,7 @@
   \ifthenelse{\not\equal{<%= flags[:phone] %>}{}}{\phone{<%= flags[:phone] %>}}{}
   \ifthenelse{\not\equal{<%= flags[:email] %>}{}}{\email{<%= flags[:email] %>}}{}
   \homepage{<%= site %>}
-  %\ifthenelse{\equal{<%= flags[:photo] %>}{}}{}{\photo[30pt][0pt]{<%= flags[:photo] %>.eps}}
+  %\ifthenelse{\equal{<%= flags[:photo] %>}{}}{}{\photo[30pt][0pt]{<%= flags[:photo] %>.png}}
 
   \newtcolorbox{myframe}[1][]{
     enhanced,
@@ -82,7 +82,7 @@
   \ifthenelse{\not\equal{<%= flags[:phone] %>}{}}{\phone{<%= flags[:phone] %>}}{}
   \ifthenelse{\not\equal{<%= flags[:email] %>}{}}{\email{<%= flags[:email] %>}}{}
   \homepage{<%= site %>}
-  \ifthenelse{\equal{<%= flags[:photo] %>}{}}{}{\photo[28pt][0pt]{<%= flags[:photo] %>.eps}}
+  \ifthenelse{\equal{<%= flags[:photo] %>}{}}{}{\photo[28pt][0pt]{<%= flags[:photo] %>.png}}
 
 \begin{document}
 

@@ -9,14 +9,14 @@ CLEAN.include(TARGET_DIR)
 
 data_files = "resume.yaml,skills.yaml"
 
-public_flags = "-f photo:qr_code_url -f expand_school -f certifications -f complete_history -f publications"
+public_flags = "-f expand_school -f certifications -f complete_history -f publications"
 
 def private_flags 
   contact = YAML.load_file("contact.yaml")
   email = contact["email"]
   phone = contact["phone"]
   abort("Missing required values in contact.yaml") if email.nil? or phone.nil?
-  "-f photo:qr_code_contact -f \"email:#{email}\" -f \"phone:#{phone}\""
+  "-f \"email:#{email}\" -f \"phone:#{phone}\""
 end
 
 task :make_target do |t|
@@ -25,16 +25,20 @@ end
 
 file "qr_code_contact.png" => [:make_target] do |t|
   sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
-  sh "cat qr_code_contact.txt | qrencode -o out/qr_code_contact.png -t png -m 0 --size=20 --foreground=444444"
+  sh "cat qr_code_contact.txt | qrencode -o out/qr_code_contact.png -t png -m 0 --size=20 --foreground=4786b2"
+  rm "qr_code_contact.txt"
 end
 
-# file "out/qr_code_contact_bw.png" => [:make_target] do |t|
-#   sh "cat qr_code_contact.txt | qrencode -o out/qr_code_contact_bw.png -t png --foreground=FF0000"
-# end
-
+file "qr_code_contact_bw.png" => [:make_target] do |t|
+  sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
+  sh "cat qr_code_contact.txt | qrencode -o out/qr_code_contact_bw.png -t png -m 0 --size=20 --foreground=000000"
+  rm "qr_code_contact.txt"
+end
 
 file "qr_code_url.png" => [:make_target] do |t|
-  sh "cat qr_code_url.txt | qrencode -o out/qr_code_url.png -t png -m 0 --size=20 --foreground=000000"
+  sh "templator/templator -d resume.yaml qr_code_url.txt.erb > qr_code_url.txt"
+  sh "cat qr_code_url.txt | qrencode -o out/qr_code_url.png -t png -m 0 --size=20 --foreground=444444"
+  rm "qr_code_url.txt"
 end
 
 task :copy_deps do |t|
@@ -45,19 +49,19 @@ end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
   #sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} > #{TARGET_DIR}/resume_public.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
 end
 
 file "#{TARGET_DIR}/resume_full.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} #{private_flags}> #{TARGET_DIR}/resume_full.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} #{private_flags} -f photo:qr_code_contact > #{TARGET_DIR}/resume_full.tex"
 end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags}> #{TARGET_DIR}/resume_private.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f photo:qr_code_contact > #{TARGET_DIR}/resume_private.tex"
 end
 
-file "#{TARGET_DIR}/resume_private_bw.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb #{private_flags}> #{TARGET_DIR}/resume_private_bw.tex"
+file "#{TARGET_DIR}/resume_private_bw.tex"  => [:make_target, "qr_code_contact_bw.png"] do |t|
+  sh "templator/templator -d #{data_files} resume.tex.erb #{private_flags} -f photo:qr_code_contact_bw > #{TARGET_DIR}/resume_private_bw.tex"
 end
 
 

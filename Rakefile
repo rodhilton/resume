@@ -96,7 +96,7 @@ end
 
 task :latex_private_bw => ["#{TARGET_DIR}/resume_private_bw.tex", :copy_deps, "qr_code_contact.png"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_private_bw.tex"
-  rm "#{TARGET_DIR}/resume_private_bw.tex"
+  #rm "#{TARGET_DIR}/resume_private_bw.tex"
 end
   
 desc "Make private resume PDF"

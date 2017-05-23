@@ -52,7 +52,7 @@
   \firstname{<%= name.split(/\s+/)[0] %>}
   \familyname{<%= name.split(/\s+/)[1] %>\vspace*{3.2mm}}
   \title{<%= title %>}
-  \ifthenelse{\not\equal{<%= flags[:phone] %>}{}}{\phone{<%= flags[:phone] %>}}{}
+  \ifthenelse{\not\equal{<%= flags[:phone] %>}{}}{\phone{\href{tel:+1<%= flags[:phone].gsub(/[^0-9]/, "") %>}{<%= flags[:phone] %>}}}{}
   \ifthenelse{\not\equal{<%= flags[:email] %>}{}}{\email{<%= flags[:email] %>}}{}
   \homepage{<%= site %>}
   %\ifthenelse{\equal{<%= flags[:photo] %>}{}}{}{\photo[30pt][0pt]{<%= flags[:photo] %>.png}}

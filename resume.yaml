@@ -11,10 +11,15 @@ summary:
 
 experience:
   jobs:
+    - company: Twitter
+      title: Senior Software Engineer
+      time: 2017-Present
+      location: Boulder, CO
+      technoogies: Scala
     - company: Spectrum
       note: formerly Time Warner Cable
       title: Principal Engineer, Development
-      time: 2011-Present
+      time: 2011-2017
       location: Denver, CO
       technologies: Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
       accomplishments:

@@ -26,7 +26,7 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Groovy/Grails, Scala, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
+* __Accomplished__: Git, Java, Scala, Groovy/Grails, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
 * __Advanced__: REST, Maven, Spring, Python, SOAP
 * __Novice__: Machine Learning, Lift, SBT
 * __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Hadoop, Spark, Kafka, Cassandra
@@ -38,7 +38,14 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-Present
+*  __Senior Software Engineer__ - _Twitter_ - 2017-Present
+            
+            
+    * Coming Soon
+            
+
+
+*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
     * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
             
@@ -50,8 +57,6 @@ __Software Craftsman and Computer Science Geek__
     * Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months, saving an estimated $4m/year.
             
     * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%, new users over 250k/mo;
-            
-    * Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
             
 
 
@@ -66,8 +71,6 @@ __Software Craftsman and Computer Science Geek__
             
     * Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
             
-    * Created [Rallydroid](http://code.google.com/p/rallydroid/), an Open Source Rally client for Android operating system.
-            
 
 
 *  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)_ - 2007-2008
@@ -79,19 +82,6 @@ __Software Craftsman and Computer Science Geek__
             
     * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative. Web services provided all data functionality to the site, including complex reports that aggregated immense amounts of data stored in a warehouse schema.
             
-    * Contributed to company-sponsored open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
-            
-
-
-*  __Senior Software Developer__ - _Acxiom Corporation (previously InsightAmerica)_ - 2004-2007
-            
-    * Utilized Java, SQL Server, ColdFusion
-            
-            
-    * Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.
-            
-    * Refactored multi-dependency legacy enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
-            
 
 
 
@@ -101,7 +91,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Expected 2018
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ 
 
 * __M.S., Software Engineering__ - _Regis University_ 
 

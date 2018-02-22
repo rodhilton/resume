@@ -12,8 +12,8 @@ qr_*.txt
 .rake_tasks*
 
 
-/out/*
-!/out/resume_public.md
-!/out/resume_public.html
-!/out/resume_short.md
+/docs/*
+!/docs/resume_public.md
+!/docs/resume_public.html
+!/docs/resume_short.md
 

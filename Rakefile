@@ -3,7 +3,7 @@ require 'yaml'
 
 task :default => [:all]
 
-TARGET_DIR="out"
+TARGET_DIR="docs"
 
 CLEAN.include(TARGET_DIR)
 
@@ -25,19 +25,19 @@ end
 
 file "qr_code_contact.png" => [:make_target] do |t|
   sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
-  sh "cat qr_code_contact.txt | qrencode -o out/qr_code_contact.png -t png -m 0 --size=20 --foreground=4786b2"
+  sh "cat qr_code_contact.txt | qrencode -o #{TARGET_DIR}/qr_code_contact.png -t png -m 0 --size=20 --foreground=4786b2"
   rm "qr_code_contact.txt"
 end
 
 file "qr_code_contact_bw.png" => [:make_target] do |t|
   sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
-  sh "cat qr_code_contact.txt | qrencode -o out/qr_code_contact_bw.png -t png -m 0 --size=20 --foreground=000000"
+  sh "cat qr_code_contact.txt | qrencode -o #{TARGET_DIR}/qr_code_contact_bw.png -t png -m 0 --size=20 --foreground=000000"
   rm "qr_code_contact.txt"
 end
 
 file "qr_code_url.png" => [:make_target] do |t|
   sh "templator/templator -d resume.yaml qr_code_url.txt.erb > qr_code_url.txt"
-  sh "cat qr_code_url.txt | qrencode -o out/qr_code_url.png -t png -m 0 --size=20 --foreground=444444"
+  sh "cat qr_code_url.txt | qrencode -o #{TARGET_DIR}/qr_code_url.png -t png -m 0 --size=20 --foreground=444444"
   rm "qr_code_url.txt"
 end
 

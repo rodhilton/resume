@@ -1,1 +1,1 @@
-out/resume_short.md
+docs/resume_public.md

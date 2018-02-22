@@ -26,7 +26,7 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Groovy/Grails, Scala, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
+* __Accomplished__: Git, Java, Scala, Groovy/Grails, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
 * __Advanced__: REST, Maven, Spring, Python, SOAP
 * __Novice__: Machine Learning, Lift, SBT
 * __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Hadoop, Spark, Kafka, Cassandra
@@ -38,7 +38,14 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-Present
+*  __Senior Software Engineer__ - _Twitter_ - 2017-Present
+            
+            
+    * Coming Soon
+            
+
+
+*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
     * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
             
@@ -153,7 +160,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Expected 2018
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - 2018
     * Specialization in Machine Learning, Theory, and Algorithms
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         

@@ -13,6 +13,7 @@ qr_*.txt
 
 
 /docs/*
+!/docs/index.html
 !/docs/resume_public.md
 !/docs/resume_public.html
 !/docs/resume_short.md

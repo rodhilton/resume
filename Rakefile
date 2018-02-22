@@ -78,7 +78,9 @@ file "#{TARGET_DIR}/resume_public.html"  => [:make_target] do |t|
 end
 
 desc "Make public resume HTML"
-task :html_public => "#{TARGET_DIR}/resume_public.html"
+task :html_public => "#{TARGET_DIR}/resume_public.html" do |t|
+  sh "cp #{TARGET_DIR}/resume_public.html #{TARGET_DIR}/index.html"
+end
 
 task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "qr_code_url.png"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_public.tex"

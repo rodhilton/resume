@@ -14,6 +14,6 @@ qr_*.txt
 
 /out/*
 !/out/resume_public.md
-
+!/out/resume_public.html
 !/out/resume_short.md
 

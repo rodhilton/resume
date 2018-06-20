@@ -181,6 +181,10 @@ __Software Craftsman and Computer Science Geek__
 ## Publications 
 
 
+  
+* Author: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Predicting Code Hotspots in Open-Source Software from Object-Oriented Metrics Using Machine Learning</a> by Rod Hilton, Ellen Gethner _(International Journal of Software Engineering and Knowledge Engineering, 2018)_
+  
+
 
   
 * Tech Reviewer: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a> by Jay Wengrow _(Pragmatic, 2017)_

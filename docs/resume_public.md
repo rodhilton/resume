@@ -160,7 +160,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - 2018
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Expected 2019
     * Specialization in Machine Learning, Theory, and Algorithms
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         

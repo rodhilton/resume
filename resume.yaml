@@ -129,6 +129,10 @@ publications:
       publisher: International Journal of Software Engineering and Knowledge Engineering
       time: 2018
   editor:
+    - title: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! Second Edition</a>
+      author: Michael Nygard
+      publisher: Pragmatic
+      time: 2018
     - title: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a>
       author: Jay Wengrow
       publisher: Pragmatic

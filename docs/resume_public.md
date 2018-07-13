@@ -187,6 +187,8 @@ __Software Craftsman and Computer Science Geek__
 
 
   
+* Tech Reviewer: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! Second Edition</a> by Michael Nygard _(Pragmatic, 2018)_
+  
 * Tech Reviewer: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a> by Jay Wengrow _(Pragmatic, 2017)_
   
 * Tech Reviewer: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a> by Venkat Subramaniam _(Pragmatic, 2016)_

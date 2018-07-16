@@ -27,11 +27,11 @@ def skill_list(skills, low, high)
 
 end
 
-def trim_jobs(jobs) 
+def trim_jobs(jobs, max_age=MAX_JOB_AGE) 
 	jobs.select do |job|
 		start_year, end_year = job.time.split("-")
 		current_year = Time.new.year
-		end_year == "Present" or current_year - end_year.to_i <= MAX_JOB_AGE
+		end_year == "Present" or current_year - end_year.to_i <= max_age
 	end
 end
 

@@ -103,6 +103,13 @@ task :latex_private_bw => ["#{TARGET_DIR}/resume_private_bw.tex", :copy_deps, "q
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_private_bw.tex"
   #rm "#{TARGET_DIR}/resume_private_bw.tex"
 end
+
+desc "Build single-page web site"
+task :rodhilton_site => [:make_target] do |t|
+  FileUtils.cp_r "rodhilton.com", TARGET_DIR
+  FileUtils.cp Dir.glob(File.join("resources", "*")), File.join(TARGET_DIR, "rodhilton.com", "img")
+  sh "templator/templator -d #{data_files} rodhilton.com/index.html.erb > #{TARGET_DIR}/rodhilton.com/index.html"
+end
   
 desc "Make private resume PDF"
 task :resume_private => [:latex_private, :latex_private_bw]

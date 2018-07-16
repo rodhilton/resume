@@ -2,6 +2,12 @@ name: Rod Hilton
 title: Software Craftsman and Computer Science Geek
 site: www.rodhilton.com
 
+about_summary:
+  - <a href="http://rodhilton.github.io/resume/">Software Engineer</a> working primarily in the JVM with Java, Groovy, and Scala with a lot of Ruby coding <a href="https://github.com/rodhilton">on the side</a>
+  - <a href="http://cse.ucdenver.edu/~rhilton/">PhD candidate</a> in Computer Science and Information Systems program at the University of Colorado Denver
+  - <a href="http://letterboxd.com/rodhilton/">Movie geek</a> and freelance columnist for cracked.com, creator of "<a href="http://www.cnn.com/2015/12/08/entertainment/star-wars-machete-order/index.html">Machete Order</a>"
+  - <a href="http://www.goodreads.com/rodhilton">Voracious reader</a> of technical books and insatiable learner
+
 summary:
   - Passionate problem-solver with solid Computer Science background.
   - Over a decade of experience developing back-end server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
@@ -10,12 +16,15 @@ summary:
   - Polyglot programmer comfortable with object-oriented and functional languages
 
 experience:
+  summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable back-end services, web applications, and client applications
   jobs:
     - company: Twitter
       title: Senior Software Engineer
       time: 2017-Present
       location: Boulder, CO
-      technoogies: Scala
+      technologies: Scala, Java, Hadoop
+      summary: Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time
+      icon: twitter.png
       accomplishments:
         - Coming Soon
     - company: Spectrum
@@ -24,6 +33,8 @@ experience:
       time: 2011-2017
       location: Denver, CO
       technologies: Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
+      summary: Cross-Platform team member, working on multi-dependency Common Services Tier as well as various customer-facing web-based applications utilizing Java, Groovy, Grails, Scala, JavaScript, and JQuery.
+      icon: twc.png
       accomplishments:
         - Rewrote <a href="https://myservices.timewarnercable.com/">residential</a> and <a href="https://myaccount.timewarnercable.com">commercial</a> primary care portal applications increasing logins to over 7m/mo, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">CableFAX Digital Award finalist</a> in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
         - Developed high-availability RESTful middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services; augmented with caching, circuit breakers, monitoring, and administrative dashboard, handling over 1,000 requests/sec at peak load.
@@ -36,6 +47,8 @@ experience:
       time: 2008-2011
       location: Boulder, CO
       technologies: Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS, Eclipse, Android SDK
+      summary: Developer on multi-tenancy J2EE web application utilizing Spring, Servlets, JSPs, and AJAX.
+      icon: rally.png
       accomplishments:
         - Developed SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases.
         - Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
@@ -47,6 +60,8 @@ experience:
       time: 2007-2008
       location: Westminster, CO
       technologies: Ruby, Rails, JavaScript, AJAX, HTML, CSS, MySQL, Java, JRuby, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
+      summary: Key developer on company's main product, a multi-tenancy SaaS web application meant to solve the problems of enterprises adopting open source. Worked on additional projects as well, including open source scanning desktop application and web services for open source census web site.
+      icon: openlogic.png
       accomplishments:
         - Developed multi-tenancy open source software management application <a href="http://www.openlogic.com/olex/">OLEX</a>.  OLEX provided enterprise-friendly functionality to the process of requesting, approving, and downloading open source software.
         - Created RESTful web services used by <a href="http://www.osscensus.org/">Open Source Census</a> initiative. Web services provided all data functionality to the site, including complex reports that aggregated immense amounts of data stored in a warehouse schema.
@@ -59,6 +74,8 @@ experience:
       time: 2004-2007
       location: Westminster, CO
       technologies: Java, SQL Server, ColdFusion
+      summary: Worked on numerous big data applications, collecting and linking data from differing sources (mostly public records) in order to provide customers such as background screeners and debt collectors with insightful slices of information about people.
+      icon: acxiom.png
       accomplishments:
         - Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.
         - Refactored multi-dependency legacy enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
@@ -70,6 +87,7 @@ experience:
       time: 2001-2004
       location: Rochester, NY
       technologies: Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
+      summary: None
       accomplishments:
         - Developed over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks. Simulations allowed students to manipulate experimental parameters in virtual environment to see real-time changes.  Customers included McGraw-Hill, Brooks-Cole, and NASA.
         - Led team for a number of multi-component projects. Assigned work, kept people on task, and integrated final products.  Was responsible for managing deadlines and releases, and maintained a record of consistent on-time delivery.
@@ -102,6 +120,7 @@ certifications:
     time: 2005
 
 education:
+  summary: "\"Perpetual student\" working toward PhD, taking supplementary MOOC classes online, attending professional conferences annually, and reading constantly"
   degrees:
     - title: Ph.D., Computer Science
       school: University of Colorado at Denver
@@ -109,18 +128,21 @@ education:
       time: 2011-2019
       note: Specialization in Machine Learning, Theory, and Algorithms
       coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
+      icon: ucd.png
     - title: M.S., Software Engineering
       school: Regis University
       location: Denver, CO
       time: 2005-2009
       note: "Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>"
       coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
+      icon: regis.png
     - title: B.S., Computer Science
       school: University of Rochester
       location: Rochester, NY
       time: 2000-2004
       note: Focus on Systems
       coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms.
+      icon: rochester.png
 
 publications:
   author:

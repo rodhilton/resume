@@ -1,7 +1,7 @@
 # This file is a template, and might need editing before it works on your project.
 # Official language image. Look for the different tagged releases at:
 # https://hub.docker.com/r/library/ruby/tags/
-image: "ruby:2.4"
+image: ruby:2.4
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -9,6 +9,9 @@ variables:
 # This is a basic example for a gem or script which doesn't use
 # services such as redis or postgres
 before_script:
+  - apt-get update -y
+  - apt-get install qrencode -y
+  - apt-get install texlive texlive-latex-extra -y
   - ruby -v                                   # Print out ruby version for debugging
   # Uncomment next line if your rails app needs a JS runtime:
   # - apt-get update -q && apt-get install nodejs -yqq
@@ -18,8 +21,11 @@ pages:
   stage: deploy
   script:
   - rake rodhilton_site
+  - rake latex_public
   - mkdir public
+  - mkdir public/files
   - mv docs/rodhilton.com/* public
+  - mv docs/resume_public.pdf public/files/resume.pdf
   artifacts:
     paths:
     - public

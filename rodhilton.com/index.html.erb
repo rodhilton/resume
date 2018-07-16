@@ -6,8 +6,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="<%= name %>'s - <%= title %>">
+    <meta name="author" content="<%= name %>">
 
     <title><%= name %></title>
 
@@ -25,6 +25,8 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
 
+    <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+
   </head>
 
   <body id="page-top">
@@ -33,7 +35,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none"><%= name %></span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/icon.png" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.png" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +61,9 @@
 
     <div class="container-fluid p-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <section class="resume-header p-3 p-lg-5 d-flex flex-column" style="background-image: url('img/rod.jpg'); min-height: 35vh"></section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" style="min-height: 65vh !important" id="about">
         <div class="my-auto">
           <h1 class="mb-0"><%= name.split(/\s+/)[0] %>
             <span class="text-primary"><%= name.split(/\s+/)[1] %></span>
@@ -134,36 +138,42 @@
           <h2 class="mb-5">Contact</h2>
           
 
+          <div class="row">
+            <div class="col-sm">
+          <form class="jotform-form" action="https://submit.jotform.us/submit/81960236303149/" method="post" name="form_81960236303149" id="81960236303149" accept-charset="utf-8">
+            <input type="hidden" name="formID" value="81960236303149" />
 
-<form class="jotform-form" action="https://submit.jotform.us/submit/81960236303149/" method="post" name="form_81960236303149" id="81960236303149" accept-charset="utf-8">
-  <input type="hidden" name="formID" value="81960236303149" />
+            <div class="form-group">
+              <label for="input_6">Your Name:</label>
+              <input type="text" class="form-control" id="input_6" name="q6_name">
+            </div>
 
-  <div class="form-group">
-    <label for="input_6">Your Name:</label>
-    <input type="text" class="form-control" id="input_6" name="q6_name">
-  </div>
+            <div class="form-group">
+              <label for="input_4">Your E-Mail:</label>
+              <input type="email" class="form-control" id="input_4" name="q4_email">
+            </div>
 
-  <div class="form-group">
-    <label for="input_4">Your E-Mail:</label>
-    <input type="email" class="form-control" id="input_4" name="q4_email">
-  </div>
+            <div class="form-group">
+              <label for="input_5">Message:</label>
+              <textarea class="form-control" rows="6" id="input_5" name="q5_typeA" ></textarea>
+            </div>
 
-  <div class="form-group">
-    <label for="input_5">Message:</label>
-    <textarea class="form-control" rows="6" id="input_5" name="q5_typeA" ></textarea>
-  </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+            <script>
+            JotForm.showJotFormPowered = "0";
+            </script>
+            <input type="hidden" id="simple_spc" name="simple_spc" value="81960236303149" />
+            <script type="text/javascript">
+            document.getElementById("si" + "mple" + "_spc").value = "81960236303149-81960236303149";
+            </script>
+          </form>
 
-  <script>
-  JotForm.showJotFormPowered = "0";
-  </script>
-  <input type="hidden" id="simple_spc" name="simple_spc" value="81960236303149" />
-  <script type="text/javascript">
-  document.getElementById("si" + "mple" + "_spc").value = "81960236303149-81960236303149";
-  </script>
-</form>
-
+            </div>
+            <div class="col-sm" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195870.55020808586!2d-105.21155058164126!3d39.90833261031448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU0JzIwLjUiTiAxMDXCsDA1JzI0LjEiVw!5e0!3m2!1sen!2sus!4v1531755866376" width="100%" height="425" frameborder="0" style="border:1px solid #ddd" allowfullscreen></iframe>
+            </div>
+          </div>
 
         </div>
       </section>

@@ -3,11 +3,6 @@
 # https://hub.docker.com/r/library/ruby/tags/
 image: "ruby:2.4"
 
-# Cache gems in between builds
-cache:
-  paths:
-    - vendor/ruby
-
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 

@@ -153,6 +153,10 @@ section.resume-section .resume-item .resume-date {
   section.resume-separator {
     min-height: 50vh;
   }
+
+  img.icon {
+    display: none;
+  }
 }
 
 .bg-primary {

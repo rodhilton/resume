@@ -57,6 +57,7 @@ h2 {
  -o-background-size: cover;
  -moz-background-size: cover;
  -webkit-background-size: cover;
+ background-position: center center;
 }
 
 .resume-header {

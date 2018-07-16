@@ -8,6 +8,9 @@ cache:
   paths:
     - vendor/ruby
 
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
 # This is a basic example for a gem or script which doesn't use
 # services such as redis or postgres
 before_script:

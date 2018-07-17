@@ -23,10 +23,10 @@ experience:
       time: 2017-Present
       location: Boulder, CO
       technologies: Scala, Java, Hadoop
-      summary: Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in realtime
+      summary: Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time.
       icon: twitter.png
       accomplishments:
-        - Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in realtime
+        - Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time
     - company: Spectrum
       note: formerly Time Warner Cable
       title: Principal Engineer, Development
@@ -47,7 +47,7 @@ experience:
       time: 2008-2011
       location: Boulder, CO
       technologies: Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS, Eclipse, Android SDK
-      summary: Developer on multi-tenancy J2EE web application utilizing Spring, Servlets, JSPs, and AJAX.
+      summary: Developer on agile lifecycle management tool for companies adopting agile processes, built as a multi-tenancy J2EE web application utilizing Spring, Servlets, JSPs, and AJAX.
       icon: rally.png
       accomplishments:
         - Developed SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases.
@@ -75,7 +75,7 @@ experience:
       location: Westminster, CO
       technologies: Java, SQL Server, ColdFusion
       summary: Worked on numerous big data applications, collecting and linking data from differing sources (mostly public records) in order to provide customers such as background screeners and debt collectors with insightful slices of information about people.
-      icon: acxiom.png
+      icon: acxiom2.png
       accomplishments:
         - Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.
         - Refactored multi-dependency legacy enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
@@ -87,7 +87,8 @@ experience:
       time: 2001-2004
       location: Rochester, NY
       technologies: Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
-      summary: None
+      icon: tnb.png
+      summary: Developer of over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks which allowed students to manipulate experimental parameters in virtual environment to see real-time changes.
       accomplishments:
         - Developed over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks. Simulations allowed students to manipulate experimental parameters in virtual environment to see real-time changes.  Customers included McGraw-Hill, Brooks-Cole, and NASA.
         - Led team for a number of multi-component projects. Assigned work, kept people on task, and integrated final products.  Was responsible for managing deadlines and releases, and maintained a record of consistent on-time delivery.

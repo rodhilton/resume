@@ -1,4 +1,6 @@
 <% load 'common.rb' %>
+
+<% unless flags[:inline] %>
 <html>
 <head>
 <title>Rod Hilton's Resume</title>
@@ -14,7 +16,9 @@
 <h1>Rod Hilton</h1>
 
 <u>Software Craftsman and Computer Science Geek</u><br/>
-<a href="http://<%= site %>"><%= site %></a>
+<a href="http://<%= site %>">"><%= site %></a>
+
+<% end %>
 
 <h2>SUMMARY</h2>
 <ul>
@@ -107,5 +111,8 @@
 <% end %>
 </ul>
 
+
+<% unless flags[:inline] %>
 </body>
 </html>
+<% end %>

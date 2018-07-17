@@ -82,6 +82,11 @@ task :html_public => "#{TARGET_DIR}/resume_public.html" do |t|
   sh "cp #{TARGET_DIR}/resume_public.html #{TARGET_DIR}/index.html"
 end
 
+desc "Make public resume HTML (inlineable)"
+task :html_public_inline => [:make_target] do |t|
+  sh "templator/templator -d #{data_files} resume.html.erb #{public_flags} -f inline > #{TARGET_DIR}/resume_public_inline.html"
+end
+
 task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "qr_code_url.png"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_public.tex"
   rm "#{TARGET_DIR}/resume_public.tex"
@@ -111,7 +116,7 @@ task :rodhilton_site => [:make_target] do |t|
   FileUtils.cp Dir.glob(File.join("resources", "*")), File.join(TARGET_DIR, "rodhilton.com", "img")
   sh "templator/templator -d #{data_files} rodhilton.com/index.html.erb > #{TARGET_DIR}/rodhilton.com/index.html"
 end
-  
+
 desc "Make private resume PDF"
 task :resume_private => [:latex_private, :latex_private_bw]
 

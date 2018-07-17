@@ -26,8 +26,8 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Groovy/Grails, Scala, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
-* __Advanced__: REST, Maven, Spring, Python, SOAP
+* __Accomplished__: Git, Java, Scala, Groovy/Grails, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
+* __Advanced__: REST, Spring, Maven, SOAP, Python
 * __Novice__: Machine Learning, Lift, SBT
 * __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Hadoop, Spark, Kafka, Cassandra
 
@@ -43,7 +43,7 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Scala, Java, Hadoop
             
             
-    * Coming Soon
+    * Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in realtime
             
 
 

@@ -155,26 +155,26 @@ publications:
       author: Michael Nygard
       publisher: Pragmatic
       time: 2018
-    - title: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a>
-      author: Jay Wengrow
-      publisher: Pragmatic
-      time: 2017
+    # - title: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a>
+    #   author: Jay Wengrow
+    #   publisher: Pragmatic
+    #   time: 2017
     - title: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a>
       author: Venkat Subramaniam
       publisher: Pragmatic
       time: 2016
-    - title: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a>
-      author: Sergi Mansilla
-      publisher: Pragmatic
-      time: 2016
+    # - title: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a>
+    #   author: Sergi Mansilla
+    #   publisher: Pragmatic
+    #   time: 2016
     - title: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a>
       author: Sam Ruby
       publisher: Pragmatic
       time: 2016
-    - title: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a>
-      author: Jonathan Rasmusson
-      publisher: Pragmatic
-      time: 2016
+    # - title: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a>
+    #   author: Jonathan Rasmusson
+    #   publisher: Pragmatic
+    #   time: 2016
     - title: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a>
       author: Jeff Langr
       publisher: Pragmatic
@@ -183,18 +183,18 @@ publications:
       author: Adam Tornhill
       publisher: Pragmatic
       time: 2015
-    - title: "<a href='https://pragprog.com/book/tbcoffee2/coffeescript'>CoffeeScript: Accelerated JavaScript Development, Second Edition</a>"
-      author: Trevor Burnham
-      publisher: Pragmatic
-      time: 2015
+    # - title: "<a href='https://pragprog.com/book/tbcoffee2/coffeescript'>CoffeeScript: Accelerated JavaScript Development, Second Edition</a>"
+    #   author: Trevor Burnham
+    #   publisher: Pragmatic
+    #   time: 2015
     - title: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a>
       author: Paul Chiusano and Runar Bjarnason
       publisher: Manning
       time: 2014
-    - title: <a href="http://www.manning.com/partner/">Neo4j in Action</a>
-      author: Jonas Partner, Aleksa Vukotic, and Nicki Watt
-      publisher: Manning
-      time: 2014
+    # - title: <a href="http://www.manning.com/partner/">Neo4j in Action</a>
+    #   author: Jonas Partner, Aleksa Vukotic, and Nicki Watt
+    #   publisher: Manning
+    #   time: 2014
     - title: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a>
       author: Tim Berglund
       publisher: O'Reilly

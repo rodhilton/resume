@@ -23,10 +23,10 @@ experience:
       time: 2017-Present
       location: Boulder, CO
       technologies: Scala, Java, Hadoop
-      summary: Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time
+      summary: Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in realtime
       icon: twitter.png
       accomplishments:
-        - Coming Soon
+        - Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in realtime
     - company: Spectrum
       note: formerly Time Warner Cable
       title: Principal Engineer, Development

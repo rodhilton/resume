@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Scala, HTML/CSS, Spring, Ruby, Groovy, JavaScript, Grails
-* __Advanced__: Oracle, SBT, PostgreSQL, AngularJS, MySQL, REST, SOAP, Jenkins
-* __Novice__: Hadoop, Lift, Kafka, memcached, hazelcast
+* __Accomplished__: Java, Git, Scala, HTML/CSS, Ruby, Spring
+* __Advanced__: JavaScript, Groovy, Grails, Oracle, REST, PostgreSQL, Angular
+* __Novice__: MySQL, SOAP, SBT, Jenkins, Lift, Hadoop, memcached, Kafka, hazelcast, Thrift
 * __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Spark, Cassandra
 
 ----
@@ -40,7 +40,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Senior Software Engineer__ - _Twitter_ - 2017-Present
             
-    * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL
+    * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift
             
             
     * Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time
@@ -49,7 +49,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
-    * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Git, Ruby, AngularJS, JavaScript, PostgreSQL, Oracle, REST, SOAP, Jenkins, HTML/CSS, Lift, memcached, hazelcast
+    * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, Angular, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
             
             
     * Rewrote [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
@@ -66,7 +66,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)_ - 2008-2011
             
-    * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android SDK
+    * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
             
             
     * Developed SaaS [Rally ALM](http://rally1.rallydev.com) project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases.

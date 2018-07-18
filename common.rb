@@ -2,7 +2,7 @@ MAX_JOB_AGE=10
 MAX_ACCOMPLISHMENTS=4
 
 SKILL_ORDER_DECAY = 0.08 #How much value a skill decays by (starting at 1) as its placement in the list moves down
-SKILL_YEARLY_DECAY = 0.4
+SKILL_YEARLY_DECAY = 0.1
 YEAR_CUTOFF = 7
 
 def calculate_skills(jobs)
@@ -51,8 +51,8 @@ def calculate_skills(jobs)
   #decay based on how long ago used
   skills_counts.each do |skill, score|
     years_ago_used = Time.new.year - skill_last_used[skill]
-    decay_amt = 1-((1-SKILL_YEARLY_DECAY)**years_ago_used)
-    skills_counts[skill] = skills_counts[skill]-decay_amt
+    decay_amt = (1-SKILL_YEARLY_DECAY)**years_ago_used
+    skills_counts[skill] = skills_counts[skill]*decay_amt
   end
 
   sum = 0.0
@@ -71,6 +71,11 @@ def calculate_skills(jobs)
       sum = sum + value
   end
 
+  skills_counts.delete_if do |skill, score|
+    years_ago_used = Time.new.year - skill_last_used[skill]
+    years_ago_used >= YEAR_CUTOFF
+  end
+
   mean = sum / skills_counts.size.to_i
 
   var_sum = skills_counts.collect { |k, v| v }.inject(0) do |accum, i| 
@@ -80,14 +85,9 @@ def calculate_skills(jobs)
 
   std_dev = Math.sqrt(variance)
 
-  skills_counts.delete_if do |skill, score|
-    years_ago_used = Time.new.year - skill_last_used[skill]
-    years_ago_used >= YEAR_CUTOFF
-  end
-
   accomplished = skills_counts.select{|skill, value| value >= mean + std_dev/2}
-  advanced = skills_counts.select{|skill, value| value < mean + std_dev/2 and value > mean - std_dev/2}
-  novice = skills_counts.select{|skill, value| value < mean - std_dev/2}
+  advanced = skills_counts.select{|skill, value| value < mean + std_dev/2 and value >= mean - std_dev / 2}
+  novice = skills_counts.select{|skill, value| value < mean - std_dev / 2}
 
   def listify(skill_list) 
     skill_list.map{|s, v| [s, v]}.sort_by{|sv| sv[1]}.reverse.map{|sv| sv[0]}.join(", ")

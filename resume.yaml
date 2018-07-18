@@ -22,7 +22,7 @@ experience:
       title: Senior Software Engineer
       time: 2017-Present
       location: Boulder, CO
-      technologies: Scala, Java, Git, Hadoop, Kafka, MySQL
+      technologies: Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift
       summary: Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time.
       icon: twitter.png
       accomplishments:
@@ -32,7 +32,7 @@ experience:
       title: Principal Engineer, Development
       time: 2011-2017
       location: Denver, CO
-      technologies: Scala, Groovy, Grails, Java, Spring, SBT, Git, Ruby, Angular, JavaScript, PostgreSQL, Oracle, REST, SOAP, Jenkins, HTML/CSS, Lift, memcached, hazelcast
+      technologies: Scala, Groovy, Grails, Java, Spring, Git, Ruby, Angular, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
       summary: Cross-Platform team member, working on multi-dependency Common Services Tier as well as various customer-facing web-based applications utilizing Java, Groovy, Grails, Scala, JavaScript, and JQuery.
       icon: twc.png
       accomplishments:

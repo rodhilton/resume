@@ -53,6 +53,9 @@
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
@@ -131,6 +134,23 @@
               </div>
             </div>
           <% end %>
+        </div>
+      </section>
+
+      <section class="resume-separator p-3 p-lg-5 d-flex flex-column" id="skills_separator"></section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+          <div class="skill-icons">
+            <% 
+               skills = calculate_skills(experience.jobs)
+               ordered_skills = skills[:accomplished].split(", ") + skills[:advanced].split(", ") + skills[:novice].split(", ")
+            %>
+            <% ordered_skills.each do |skillname| %>
+            <span title="<%= skillname %>" class="devicons devicons-<%= skillname.downcase %>">
+            <% end %>
+          </div>
         </div>
       </section>
     

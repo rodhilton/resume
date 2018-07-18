@@ -98,10 +98,10 @@
 <% end %>
 
 \section{Skills}
-<% u_skills = unique_skills(skills) %>
-\cvitem{Accomplished}{<%= skill_list(u_skills, 7, 10).gsub(/\#/, "\\#") %>}
-\cvitem{Advanced}{<%= skill_list(u_skills, 5, 6).gsub(/\#/, "\\#") %>}
-\cvitem{Novice}{<%= skill_list(u_skills, 0, 4).gsub(/\#/, "\\#") %>}
+<% skills = calculate_skills(experience.jobs) %>
+\cvitem{Accomplished}{<%= skills[:accomplished].gsub(/\#/, "\\#") %>}
+\cvitem{Advanced}{<%= skills[:advanced].gsub(/\#/, "\\#") %>}
+\cvitem{Novice}{<%= skills[:novice].gsub(/\#/, "\\#") %>}
 \cvitem{Desired}{<%= interests.gsub(/\#/, "\\#") %>}
 
 \section{Experience}

@@ -21,10 +21,10 @@ __Software Craftsman and Computer Science Geek__
 
 ## Technical Skills
 
-<% u_skills = unique_skills(skills) %>
-* __Accomplished__: <%= skill_list(u_skills, 7, 10) %>
-* __Advanced__: <%= skill_list(u_skills, 5, 6) %>
-* __Novice__: <%= skill_list(u_skills, 0, 4) %>
+<% skills = calculate_skills(experience.jobs) %>
+* __Accomplished__: <%= skills[:accomplished] %>
+* __Advanced__: <%= skills[:advanced] %>
+* __Novice__: <%= skills[:novice] %>
 * __Desired__: <%= interests %>
 
 ----

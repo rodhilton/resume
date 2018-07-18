@@ -22,7 +22,7 @@ experience:
       title: Senior Software Engineer
       time: 2017-Present
       location: Boulder, CO
-      technologies: Scala, Java, Hadoop
+      technologies: Scala, Java, Git, Hadoop, Kafka, MySQL
       summary: Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time.
       icon: twitter.png
       accomplishments:
@@ -32,7 +32,7 @@ experience:
       title: Principal Engineer, Development
       time: 2011-2017
       location: Denver, CO
-      technologies: Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
+      technologies: Scala, Groovy, Grails, Java, Spring, SBT, Git, Ruby, Angular, JavaScript, PostgreSQL, Oracle, REST, SOAP, Jenkins, HTML/CSS, Lift, memcached, hazelcast
       summary: Cross-Platform team member, working on multi-dependency Common Services Tier as well as various customer-facing web-based applications utilizing Java, Groovy, Grails, Scala, JavaScript, and JQuery.
       icon: twc.png
       accomplishments:
@@ -46,7 +46,7 @@ experience:
       title: Java Web Applications Developer
       time: 2008-2011
       location: Boulder, CO
-      technologies: Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS, Eclipse, Android SDK
+      technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
       summary: Developer on agile lifecycle management tool for companies adopting agile processes, built as a multi-tenancy J2EE web application utilizing Spring, Servlets, JSPs, and AJAX.
       icon: rally.png
       accomplishments:
@@ -59,7 +59,7 @@ experience:
       title: Software Engineer
       time: 2007-2008
       location: Westminster, CO
-      technologies: Ruby, Rails, JavaScript, AJAX, HTML, CSS, MySQL, Java, JRuby, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
+      technologies: Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
       summary: Key developer on company's main product, a multi-tenancy SaaS web application meant to solve the problems of enterprises adopting open source. Worked on additional projects as well, including open source scanning desktop application and web services for open source census web site.
       icon: openlogic.png
       accomplishments:
@@ -73,7 +73,7 @@ experience:
       title: Senior Software Developer
       time: 2004-2007
       location: Westminster, CO
-      technologies: Java, SQL Server, ColdFusion
+      technologies: Java, SQL Server, ColdFusion, HTML/CSS
       summary: Worked on numerous big data applications, collecting and linking data from differing sources (mostly public records) in order to provide customers such as background screeners and debt collectors with insightful slices of information about people.
       icon: acxiom2.png
       accomplishments:
@@ -107,6 +107,8 @@ experience:
         - Led groups of students in semester projects; responsible for guiding students through UML design work, assigning tasks, and integrating final projects.
 <% end %>
 
+interests: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Spark, Cassandra
+
 certifications:
   - title: Certified ScrumMaster
     time: 2009
@@ -123,7 +125,7 @@ certifications:
 education:
   summary: "\"Perpetual student\" working toward PhD, taking supplementary MOOC classes online, attending professional conferences annually, and reading constantly"
   degrees:
-    - title: Ph.D., Computer Science and Information Systems
+    - title: Ph.D., Computer Science
       school: University of Colorado at Denver
       location: Denver, CO
       time: 2011-2019

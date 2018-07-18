@@ -41,6 +41,10 @@ h2 {
   font-size: 1.35rem;
 }
 
+.skill-icons {
+  font-size: 4em;
+}
+
 .social-icons a {
   margin: 0 0.5em 0 0;
 }
@@ -79,6 +83,10 @@ h2 {
 
 #education_separator {
  background-image: url(../img/ucdenver2.jpg);
+}
+
+#skills_separator {
+ background-image: url(../img/programming.jpg);
 }
 
 #contact_separator {

@@ -26,10 +26,10 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Git, Java, Scala, Groovy/Grails, Gradle, HTML/CSS, JavaScript, Ruby/Rails, JEE/Servlet/JSP/EJB, SQL
-* __Advanced__: REST, Spring, Maven, SOAP, Python
-* __Novice__: Machine Learning, Lift, SBT
-* __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Hadoop, Spark, Kafka, Cassandra
+* __Accomplished__: Java, Git, Scala, HTML/CSS, Spring, Ruby, Groovy, JavaScript, Grails
+* __Advanced__: Oracle, SBT, PostgreSQL, AngularJS, MySQL, REST, SOAP, Jenkins
+* __Novice__: Hadoop, Lift, Kafka, memcached, hazelcast
+* __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Spark, Cassandra
 
 ----
 
@@ -40,16 +40,16 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Senior Software Engineer__ - _Twitter_ - 2017-Present
             
-    * Utilized Scala, Java, Hadoop
+    * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL
             
             
-    * Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in realtime
+    * Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time
             
 
 
 *  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
-    * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Lift, memcached, hazelcast, AngularJS, PostgreSQL, Oracle, REST, SOAP, Jenkins, Git, Ruby
+    * Utilized Scala, Groovy, Grails, Java, Spring, SBT, Git, Ruby, AngularJS, JavaScript, PostgreSQL, Oracle, REST, SOAP, Jenkins, HTML/CSS, Lift, memcached, hazelcast
             
             
     * Rewrote [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
@@ -64,7 +64,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)_ - 2008-2011
             
-    * Utilized Java, Servlets, Spring, EclipseLink, Oracle, JavaScript, ExtJS, Eclipse, Android SDK
+    * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android SDK
             
             
     * Developed SaaS [Rally ALM](http://rally1.rallydev.com) project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases.
@@ -77,7 +77,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)_ - 2007-2008
             
-    * Utilized Ruby, Rails, JavaScript, AJAX, HTML, CSS, MySQL, Java, JRuby, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
+    * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             
             
     * Developed multi-tenancy open source software management application [OLEX](http://www.openlogic.com/olex/).  OLEX provided enterprise-friendly functionality to the process of requesting, approving, and downloading open source software.
@@ -93,7 +93,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science and Information Systems__ - _University of Colorado at Denver_ - Expected 2019
+* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Expected 2019
 
 * __M.S., Software Engineering__ - _Regis University_ 
 

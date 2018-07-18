@@ -20,6 +20,8 @@
 
 <% end %>
 
+<%= calculate_skills(experience.jobs) %>
+
 <h2>SUMMARY</h2>
 <ul>
     <% summary.each do |summary_item| %>
@@ -30,10 +32,10 @@
 <hr/>
 <h2>TECHNICAL SKILLS</h2>
 <ul>
-    <% u_skills = unique_skills(skills) %>
-    <li><b>Accomplished</b>: <%= skill_list(u_skills, 7, 10) %></li>
-    <li><b>Advanced</b>: <%= skill_list(u_skills, 5, 6) %></li>
-    <li><b>Novice</b>: <%= skill_list(u_skills, 0, 4) %></li>
+    <% skills = calculate_skills(experience.jobs) %>
+    <li><b>Accomplished</b>: <%= skills[:accomplished] %></li>
+    <li><b>Advanced</b>: <%= skills[:advanced] %></li>
+    <li><b>Novice</b>: <%= skills[:novice] %></li>
     <li><b>Desired</b>: <%= interests %></li>
 </ul>
 

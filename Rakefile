@@ -114,7 +114,7 @@ task :rodhilton_site => [:make_target] do |t|
   FileUtils.cp_r "rodhilton.com", TARGET_DIR
   FileUtils.mkdir_p File.join(TARGET_DIR, "rodhilton.com", "img")
   FileUtils.cp Dir.glob(File.join("resources", "*")), File.join(TARGET_DIR, "rodhilton.com", "img")
-  sh "templator/templator -d #{data_files} rodhilton.com/index.html.erb > #{TARGET_DIR}/rodhilton.com/index.html"
+  sh "templator/templator -d #{data_files} rodhilton.index.html.erb > #{TARGET_DIR}/rodhilton.com/index.html"
 end
 
 desc "Make private resume PDF"

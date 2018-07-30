@@ -159,7 +159,7 @@ section.resume-section .resume-item .resume-date {
     min-height: 100vh;
   }
   section.resume-separator {
-    min-height: 50vh;
+    min-height: 35vh;
   }
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
@@ -175,7 +175,7 @@ section.resume-section .resume-item .resume-date {
 
 @media (max-width: 768px) {
   section.resume-separator {
-    min-height: 50vh;
+    min-height: 35vh;
   }
 
   img.icon {

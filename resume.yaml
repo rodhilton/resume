@@ -4,7 +4,6 @@ site: www.rodhilton.com
 
 about_summary:
   - <a href="http://rodhilton.github.io/resume/">Software Engineer</a> working primarily in the JVM with Java, Groovy, and Scala with a lot of Ruby coding <a href="https://github.com/rodhilton">on the side</a>
-  - <a href="http://cse.ucdenver.edu/~rhilton/">PhD candidate</a> in Computer Science and Information Systems program at the University of Colorado Denver
   - <a href="http://letterboxd.com/rodhilton/">Movie geek</a> and freelance columnist for cracked.com, creator of "<a href="http://www.cnn.com/2015/12/08/entertainment/star-wars-machete-order/index.html">Machete Order</a>"
   - <a href="http://www.goodreads.com/rodhilton">Voracious reader</a> of technical books and insatiable learner
 
@@ -123,15 +122,8 @@ certifications:
     time: 2005
 
 education:
-  summary: "\"Perpetual student\" working toward PhD, taking supplementary MOOC classes online, attending professional conferences annually, and reading constantly"
+  summary: "\"Perpetual student\" taking supplementary MOOC classes online, attending professional conferences annually, and reading constantly"
   degrees:
-    - title: Ph.D., Computer Science
-      school: University of Colorado at Denver
-      location: Denver, CO
-      time: 2011-2019
-      note: Specialization in Machine Learning, Theory, and Algorithms
-      coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
-      icon: ucd.png
     - title: M.S., Software Engineering
       school: Regis University
       location: Denver, CO

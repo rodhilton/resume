@@ -146,6 +146,18 @@ publications:
       publisher: International Journal of Software Engineering and Knowledge Engineering
       time: 2018
   editor:
+    - title: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Java Performance, 2nd Edition</a>
+      author: Scott Oaks
+      publisher: O'Reilly
+      time: 2020
+    - title: <a href="https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native">Modern Systems Programming with Scala Native</a>
+      author: Richard Whaling
+      publisher: Pragmatic
+      time: 2020
+    - title: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Programing Kotlin</a>
+      author: Venkat Subramaniam
+      publisher: Pragmatic
+      time: 2019
     - title: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! Second Edition</a>
       author: Michael Nygard
       publisher: Pragmatic

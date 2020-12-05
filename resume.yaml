@@ -22,7 +22,7 @@ experience:
       time: 2017-Present
       location: Boulder, CO
       technologies: Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift
-      summary: Core Tweet Service team member, storing and serving all Tweets within Twitter at massive scale.
+      summary: Core Tweet Service team member, storing and serving all Tweets within Twitter at massive scale utilizing Scala, Java, Kafka, Hadoop, and Thrift.
       icon: twitter.png
       accomplishments:
         - Developed Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. Built features such as Twitter Communities, <a href="https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/">Conversation Controls</a>, and <a href="https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8">Public Interest Interstitial</a>.

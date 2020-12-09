@@ -1,7 +1,7 @@
 skills:
   - name: Java
     rating: 9
-    rusty: 0
+    rusty: 2
   - name: Ruby/Rails
     rating: 7
     rusty: 2

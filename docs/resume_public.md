@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Scala, HTML/CSS, Ruby, Spring
-* __Advanced__: JavaScript, Groovy, Grails, Oracle, REST, PostgreSQL, Angular
-* __Novice__: MySQL, SOAP, SBT, Jenkins, Lift, Hadoop, memcached, Kafka, hazelcast, Thrift
+* __Accomplished__: Java, Git, Scala
+* __Advanced__: HTML/CSS, Ruby, Spring, JavaScript, Groovy, REST, Grails, MySQL, Oracle
+* __Novice__: Hadoop, PostgreSQL, Kafka, Angular, Thrift, SOAP, SBT, Jenkins, Lift, memcached, hazelcast
 * __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Spark, Cassandra
 
 ----
@@ -43,16 +43,26 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift
             
             
-    * Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time
+    * Developed Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. Built features such as Twitter Communities, [Conversation Controls](https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/), and [Public Interest Interstitial](https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8).
+            
+    * Led Privacy and Data Protection initiatives within Core Tweet Service team, responsible for annotating all data, migrating from in-house message platform to Kafka, supporting mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html), and onboarding to wipeout and data retention tooling to ensure GDPR compliance.
+            
+    * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter) products, allowing customers to apply complex real-time filters to Twitter's data firehose using custom filter query language.
+            
+    * Created new filter operators to match tweets based on Machine-Learning-based Semantic Core annotations and Natural Language processed Named Entity Recognition annotations.
+            
+    * Created long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
+            
+    * Joined "Project Luna" initiative, overhauling company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
             
 
 
-*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
+*  __Principal Engineer__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, Angular, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
             
             
-    * Rewrote [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
+    * Created [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
             
     * Developed high-availability RESTful middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services; augmented with caching, circuit breakers, monitoring, and administrative dashboard, handling over 1,000 requests/sec at peak load.
             
@@ -79,7 +89,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)_ - 2007-2008
+*  __Software Engineer__ - _OpenLogic (acquired by Rogue Wave Software)_ - 2007-2008
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             
@@ -90,13 +100,13 @@ __Software Craftsman and Computer Science Geek__
             
     * Contributed to company-sponsored open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
             
-    * Developed OLE, a J2EE enterprise software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
+    * Developed OpenLogic Enterprise, a J2EE software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
             
     * Received Most Valuable Player Award - January 2008
             
 
 
-*  __Senior Software Developer__ - _Acxiom Corporation (previously InsightAmerica)_ - 2004-2007
+*  __Senior Software Developer__ - _Acxiom (previously InsightAmerica)_ - 2004-2007
             
     * Utilized Java, SQL Server, ColdFusion, HTML/CSS
             
@@ -162,11 +172,6 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Expected 2019
-    * Specialization in Machine Learning, Theory, and Algorithms
-    * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
-        
-
 * __M.S., Software Engineering__ - _Regis University_ - 2009
     * Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>
     * Coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
@@ -188,6 +193,12 @@ __Software Craftsman and Computer Science Geek__
   
 
 
+  
+* Tech Reviewer: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Java Performance, 2nd Edition</a> by Scott Oaks _(O'Reilly, 2020)_
+  
+* Tech Reviewer: <a href="https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native">Modern Systems Programming with Scala Native</a> by Richard Whaling _(Pragmatic, 2020)_
+  
+* Tech Reviewer: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Programing Kotlin</a> by Venkat Subramaniam _(Pragmatic, 2019)_
   
 * Tech Reviewer: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! Second Edition</a> by Michael Nygard _(Pragmatic, 2018)_
   

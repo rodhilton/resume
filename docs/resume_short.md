@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Scala, HTML/CSS, Ruby, Spring
-* __Advanced__: JavaScript, Groovy, Grails, Oracle, REST, PostgreSQL, Angular
-* __Novice__: MySQL, SOAP, SBT, Jenkins, Lift, Hadoop, memcached, Kafka, hazelcast, Thrift
+* __Accomplished__: Java, Git, Scala
+* __Advanced__: HTML/CSS, Ruby, Spring, JavaScript, Groovy, REST, Grails, MySQL, Oracle
+* __Novice__: Hadoop, PostgreSQL, Kafka, Angular, Thrift, SOAP, SBT, Jenkins, Lift, memcached, hazelcast
 * __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Spark, Cassandra
 
 ----
@@ -43,16 +43,26 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift
             
             
-    * Enterprise data streaming team member, allowing businesses and brands to apply complex filters to Twitter's data firehose in real time
+    * Developed Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. Built features such as Twitter Communities, [Conversation Controls](https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/), and [Public Interest Interstitial](https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8).
+            
+    * Led Privacy and Data Protection initiatives within Core Tweet Service team, responsible for annotating all data, migrating from in-house message platform to Kafka, supporting mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html), and onboarding to wipeout and data retention tooling to ensure GDPR compliance.
+            
+    * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter) products, allowing customers to apply complex real-time filters to Twitter's data firehose using custom filter query language.
+            
+    * Created new filter operators to match tweets based on Machine-Learning-based Semantic Core annotations and Natural Language processed Named Entity Recognition annotations.
+            
+    * Created long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
+            
+    * Joined "Project Luna" initiative, overhauling company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
             
 
 
-*  __Principal Engineer, Development__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
+*  __Principal Engineer__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, Angular, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
             
             
-    * Rewrote [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
+    * Created [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
             
     * Developed high-availability RESTful middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services; augmented with caching, circuit breakers, monitoring, and administrative dashboard, handling over 1,000 requests/sec at peak load.
             
@@ -75,25 +85,12 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Software Engineer__ - _OpenLogic, Inc (acquired by Rogue Wave Software)_ - 2007-2008
-            
-    * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
-            
-            
-    * Developed multi-tenancy open source software management application [OLEX](http://www.openlogic.com/olex/).  OLEX provided enterprise-friendly functionality to the process of requesting, approving, and downloading open source software.
-            
-    * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative. Web services provided all data functionality to the site, including complex reports that aggregated immense amounts of data stored in a warehouse schema.
-            
-
-
 
 
 ----
 
 ## Education
 
-
-* __Ph.D., Computer Science__ - _University of Colorado at Denver_ - Expected 2019
 
 * __M.S., Software Engineering__ - _Regis University_ 
 

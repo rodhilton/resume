@@ -60,6 +60,10 @@ file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
   sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f photo:qr_code_contact > #{TARGET_DIR}/resume_private.tex"
 end
 
+file "#{TARGET_DIR}/resume_op.tex"  => [:make_target] do |t|
+  sh "templator/templator -d #{data_files} resume_op.tex.erb -f color #{private_flags} -f photo:qr_code_contact_bw > #{TARGET_DIR}/resume_op.tex"
+end
+
 file "#{TARGET_DIR}/resume_private_bw.tex"  => [:make_target, "qr_code_contact_bw.png"] do |t|
   sh "templator/templator -d #{data_files} resume.tex.erb #{private_flags} -f photo:qr_code_contact_bw > #{TARGET_DIR}/resume_private_bw.tex"
 end
@@ -104,6 +108,11 @@ task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "qr_code
   FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
 end
 
+task :latex_private_op => ["#{TARGET_DIR}/resume_op.tex", :copy_deps, "qr_code_contact.png"] do |t|
+  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_op.tex"
+  rm "#{TARGET_DIR}/resume_op.tex"
+end
+
 task :latex_private_bw => ["#{TARGET_DIR}/resume_private_bw.tex", :copy_deps, "qr_code_contact.png"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_private_bw.tex"
   #rm "#{TARGET_DIR}/resume_private_bw.tex"
@@ -118,7 +127,7 @@ task :rodhilton_site => [:make_target] do |t|
 end
 
 desc "Make private resume PDF"
-task :resume_private => [:latex_private, :latex_private_bw]
+task :resume_private => [:latex_private, :latex_private_bw, :latex_private_op]
 
 desc "Make public resume PDF"
 task :resume_public => [:latex_public, :html_public, "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]

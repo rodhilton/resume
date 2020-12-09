@@ -22,22 +22,22 @@ experience:
       time: 2017-Present
       location: Boulder, CO
       technologies: Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift
-      summary: Core Tweet Service team member, storing and serving all Tweets within Twitter at massive scale utilizing Scala, Java, Kafka, Hadoop, and Thrift.
+      summary: Core Tweet Service backend Team, storing and serving all Tweets within Twitter at massive scale utilizing Scala, Java, Kafka, Hadoop, and Thrift.
       icon: twitter.png
       accomplishments:
         - Developed Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. Built features such as Twitter Communities, <a href="https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/">Conversation Controls</a>, and <a href="https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8">Public Interest Interstitial</a>.
-        - Led Privacy and Data Protection initiatives within Core Tweet Service team responsible for annotating all data, migrating from in-house message platform to Kafka, supporting mass <a href="https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html">under-13 user erasure</a>, and onboarding to wipeout and data retention tooling to ensure GDPR compliance.
+        - Led Privacy and Data Protection initiatives within Core Tweet Service team, responsible for annotating all data, migrating from in-house message platform to Kafka, supporting mass <a href="https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html">under-13 user erasure</a>, and onboarding to wipeout and data retention tooling to ensure GDPR compliance.
         - Developed <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api">PowerTrack</a> and <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter">Statuses/Filter</a> products, allowing customers to apply complex real-time filters to Twitter's data firehose using custom filter query language.
         - Created new filter operators to match tweets based on Machine-Learning-based Semantic Core annotations and Natural Language processed Named Entity Recognition annotations.
-        - Created of long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
-        - Shepherded "Project Luna" initiative, overhauling company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
+        - Created long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
+        - Joined "Project Luna" initiative, overhauling company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
     - company: Spectrum
       note: formerly Time Warner Cable
-      title: Principal Engineer, Development
+      title: Principal Engineer
       time: 2011-2017
       location: Denver, CO
       technologies: Scala, Groovy, Grails, Java, Spring, Git, Ruby, Angular, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
-      summary: Cross-Platform team member, working on multi-dependency Common Services Tier as well as various customer-facing web-based applications utilizing Java, Groovy, Grails, Scala, JavaScript, and JQuery.
+      summary: Cross-Platform team, built Common Services Tier middleware service as well as various customer-facing web portals utilizing Java, Groovy, Grails, Scala, JavaScript, and JQuery.
       icon: twc.png
       accomplishments:
         - Created <a href="https://myservices.timewarnercable.com/">residential</a> and <a href="https://myaccount.timewarnercable.com">commercial</a> primary care portal applications increasing logins to over 7m/mo, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">CableFAX Digital Award finalist</a> in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
@@ -51,20 +51,20 @@ experience:
       time: 2008-2011
       location: Boulder, CO
       technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
-      summary: Developer on agile lifecycle management tool for companies adopting agile processes, built as a multi-tenancy J2EE web application utilizing Spring, Servlets, JSPs, and AJAX.
+      summary: Agile Lifecycle Management team, developed J2EE SaaS web application for enterprise scala adoption utilizing Spring, Servlets, JSPs, and AJAX.
       icon: rally.png
       accomplishments:
         - Developed SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases.
         - Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
         - Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
         - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system.
-    - company: OpenLogic, Inc
+    - company: OpenLogic
       note: acquired by Rogue Wave Software
       title: Software Engineer
       time: 2007-2008
       location: Westminster, CO
       technologies: Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
-      summary: Key developer on company's main product, a multi-tenancy SaaS web application meant to solve the problems of enterprises adopting open source. Worked on additional projects as well, including open source scanning desktop application and web services for open source census web site.
+      summary: OpenLogic Enterprise team, developed SaaS web applications to manage open source across corporations as well as open source scanning desktop application utilizing Java, Ruby, Rails, and JavaScript.
       icon: openlogic.png
       accomplishments:
         - Developed multi-tenancy open source software management application <a href="http://www.openlogic.com/olex/">OLEX</a>.  OLEX provided enterprise-friendly functionality to the process of requesting, approving, and downloading open source software.
@@ -72,13 +72,13 @@ experience:
         - Contributed to company-sponsored open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
         - Developed OpenLogic Enterprise, a J2EE software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
         - Received Most Valuable Player Award - January 2008
-    - company: Acxiom Corporation
+    - company: Acxiom
       note: previously InsightAmerica
       title: Senior Software Developer
       time: 2004-2007
       location: Westminster, CO
       technologies: Java, SQL Server, ColdFusion, HTML/CSS
-      summary: Worked on numerous big data applications, collecting and linking data from differing sources (mostly public records) in order to provide customers such as background screeners and debt collectors with insightful slices of information about people.
+      summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
       icon: acxiom2.png
       accomplishments:
         - Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.
@@ -92,7 +92,7 @@ experience:
       location: Rochester, NY
       technologies: Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
       icon: tnb.png
-      summary: Developer of over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks which allowed students to manipulate experimental parameters in virtual environment to see real-time changes.
+      summary: Interactives team, developed over 40 educational physics and astronomy simulations for inclusion with science textbooks utilizing Java Applets and Flash.
       accomplishments:
         - Developed over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks. Simulations allowed students to manipulate experimental parameters in virtual environment to see real-time changes.  Customers included McGraw-Hill, Brooks-Cole, and NASA.
         - Led team for a number of multi-component projects. Assigned work, kept people on task, and integrated final products.  Was responsible for managing deadlines and releases, and maintained a record of consistent on-time delivery.

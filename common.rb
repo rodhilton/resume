@@ -117,6 +117,16 @@ def display_schoolyear(degree, expand_school_flag= false, before = "(", after=")
   end
 end
 
+def skill_to_icons(skillname)
+  if(skillname.downcase == "html/css") 
+    ["html5", "css3"]
+  elsif(skillname.downcase == "aws") 
+    ["amazonwebservices"]
+  else
+    [skillname]
+  end
+end
+
 def unique_skills(skills)
 	skills.sort_by{|s| s["rating"] }.reverse.inject([]) { |memo,x| memo << x unless memo.detect { |item| item["name"] == x["name"] }; memo }
 end

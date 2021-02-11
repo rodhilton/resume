@@ -20,7 +20,7 @@
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
@@ -148,7 +148,10 @@
                ordered_skills = skills[:accomplished].split(", ") + skills[:advanced].split(", ") + skills[:novice].split(", ")
             %>
             <% ordered_skills.each do |skillname| %>
-            <span title="<%= skillname %>" class="devicons devicons-<%= skillname.downcase %>">
+            <% skill_to_icons = skill_to_icons(skillname) %>
+              <% skill_to_icons.each do |skillicon| %>
+                <span title="<%= skillicon %>" class="devicon-<%= skillicon.downcase %>-plain">
+              <% end %>
             <% end %>
           </div>
           <p>

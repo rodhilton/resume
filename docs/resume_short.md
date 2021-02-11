@@ -27,9 +27,9 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Scala
-* __Advanced__: HTML/CSS, Ruby, Spring, JavaScript, Groovy, REST, Grails, MySQL, Oracle
-* __Novice__: Hadoop, PostgreSQL, Kafka, Angular, Thrift, SOAP, SBT, Jenkins, Lift, memcached, hazelcast
-* __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Spark, Cassandra
+* __Advanced__: HTML/CSS, REST, Ruby, Spring, JavaScript, Groovy, MySQL, Kafka, Hadoop, Grails, Oracle, Thrift, PostgreSQL, Angular
+* __Novice__: SOAP, SBT, Jenkins, Lift, memcached, hazelcast, Redis, AWS, Kubernetes, Docker
+* __Desired__: ElasticSearch, Spark, Cassandra
 
 ----
 
@@ -38,7 +38,16 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Software Engineer__ - _Twitter_ - 2017-Present
+*  __Senior Backend Engineer__ - _Epic Games_ - 2021-Present
+            
+    * Utilized Java, Git, Kafka, Redis, AWS, Kubernetes, Docker
+            
+            
+    * Social team member, building Epic Online Services for friends, messaging, partying
+            
+
+
+*  __Senior Software Engineer__ - _Twitter_ - 2017-2021
             
     * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift
             
@@ -50,10 +59,6 @@ __Software Craftsman and Computer Science Geek__
     * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter) products, allowing customers to apply complex real-time filters to Twitter's data firehose using custom filter query language.
             
     * Created new filter operators to match tweets based on Machine-Learning-based Semantic Core annotations and Natural Language processed Named Entity Recognition annotations.
-            
-    * Created long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
-            
-    * Joined "Project Luna" initiative, overhauling company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
             
 
 
@@ -68,8 +73,6 @@ __Software Craftsman and Computer Science Geek__
             
     * Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months, saving an estimated $4m/year.
             
-    * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%, new users over 250k/mo;
-            
 
 
 *  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)_ - 2008-2011
@@ -80,8 +83,6 @@ __Software Craftsman and Computer Science Geek__
     * Developed SaaS [Rally ALM](http://rally1.rallydev.com) project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases.
             
     * Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
-            
-    * Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
             
 
 

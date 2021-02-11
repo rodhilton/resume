@@ -27,9 +27,9 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Scala
-* __Advanced__: HTML/CSS, Ruby, Spring, JavaScript, Groovy, REST, Grails, MySQL, Oracle
-* __Novice__: Hadoop, PostgreSQL, Kafka, Angular, Thrift, SOAP, SBT, Jenkins, Lift, memcached, hazelcast
-* __Desired__: AWS, Docker, Mesos, Kubernetes, ElasticSearch, Spark, Cassandra
+* __Advanced__: HTML/CSS, REST, Ruby, Spring, JavaScript, Groovy, MySQL, Kafka, Hadoop, Grails, Oracle, Thrift, PostgreSQL, Angular
+* __Novice__: SOAP, SBT, Jenkins, Lift, memcached, hazelcast, Redis, AWS, Kubernetes, Docker
+* __Desired__: ElasticSearch, Spark, Cassandra
 
 ----
 
@@ -38,7 +38,16 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Software Engineer__ - _Twitter_ - 2017-Present
+*  __Senior Backend Engineer__ - _Epic Games_ - 2021-Present
+            
+    * Utilized Java, Git, Kafka, Redis, AWS, Kubernetes, Docker
+            
+            
+    * Social team member, building Epic Online Services for friends, messaging, partying
+            
+
+
+*  __Senior Software Engineer__ - _Twitter_ - 2017-2021
             
     * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift
             
@@ -53,7 +62,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Created long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
             
-    * Joined "Project Luna" initiative, overhauling company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
+    * Joined "Project Luna" initiative, improving company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
             
 
 

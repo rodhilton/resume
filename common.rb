@@ -153,10 +153,11 @@ def trunc_jobs(jobs, max)
   jobs.take(max)
 end
 
-def trim_accomplishments(accomplishments, index)
+def trim_accomplishments(accomplishments, index, maximum=MAX_ACCOMPLISHMENTS)
   if(index == 0)
     accomplishments
   else
-    accomplishments[0..MAX_ACCOMPLISHMENTS-index]
+    min = [maximum-index, 2].max
+    accomplishments[0..min-1]
   end
 end

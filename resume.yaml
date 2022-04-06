@@ -9,23 +9,25 @@ about_summary:
 
 summary:
   - Passionate problem-solver with solid Computer Science background.
-  - Over a decade of experience developing back-end server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
-  - Specialty in improving existing/legacy codebases and building scalable, performant, fault-tolerant back-end systems.
+  - Over a decade of experience developing backend server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
+  - Specialty in improving existing/legacy codebases and building scalable, performant, fault-tolerant backend systems.
   - Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
   - Polyglot programmer comfortable with object-oriented and functional languages
 
 experience:
-  summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable back-end services, web applications, and client applications
+  summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
   jobs:
     - company: Epic Games
       title: Senior Backend Engineer
       time: 2021-Present
       location: Remote
-      technologies: Java, Git, Kafka, Redis, AWS, Kubernetes, Docker
+      technologies: Java, Spring, Git, REST, Kafka, Redis, AWS, Terraform, Kubernetes, Docker
       summary: Social team member, building Epic Online Services for friends, messaging, partying
       icon: epicgames.png
       accomplishments:
-        - Social team member, building Epic Online Services for friends, messaging, partying
+        - Architected backend service solution and designed public-facing API for <a href="https://charlieintel.com/how-to-make-fortnite-clips/165011/">new product</a> capturing and sharing game video highlights between players.
+        - Created highly-available scalable services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
+        - Developed system for tracking and querying player interactions in Fortnite, utilized in marketing events increasing player engagement.
     - company: Twitter
       title: Senior Software Engineer
       time: 2017-2021

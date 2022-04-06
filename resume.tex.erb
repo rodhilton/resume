@@ -93,22 +93,26 @@
 \vspace*{-5mm}
 
 \section{Summary}
+\renewcommand{\labelitemi}{$\color{color1}{\circ}$} %
+\begin{itemize}
+\setlength\itemsep{.5em}
 <% summary.each do |summary_item| %>
-  \cvitem{$\color{color1}{\circ}$}{<%= summary_item %>}
+  \item <%= summary_item %>
 <% end %>
+\end{itemize}
 
 \section{Skills}
 <% skills = calculate_skills(experience.jobs) %>
 \cvitem{Accomplished}{<%= skills[:accomplished].gsub(/\#/, "\\#") %>}
 \cvitem{Advanced}{<%= skills[:advanced].gsub(/\#/, "\\#") %>}
 \cvitem{Novice}{<%= skills[:novice].gsub(/\#/, "\\#") %>}
-\cvitem{Desired}{<%= interests.gsub(/\#/, "\\#") %>}
+\cvitem{Interested}{<%= interests.gsub(/\#/, "\\#") %>}
 
 \section{Experience}
-<% job_list = flags[:complete_history] ? experience.jobs : trunc_jobs(experience.jobs,4) %>
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,15) %>
 
 <% job_list.each_with_index do |job, i| %>
-  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i) %>
+  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 5) %>
 \begin{minipage}{\linewidth} 
 \cventry{<%= job.time %>}{<%= job.title %>}{<%= job.company %><% unless job.note.nil? %>\scriptsize\textit{ (<%= job.note %>)}<% end %>}{}{}{ %
 \begin{itemize}%

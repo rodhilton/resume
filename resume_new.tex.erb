@@ -1,0 +1,248 @@
+<% load 'common.rb' %>
+
+<% 
+  def latex_links(one)
+    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "\\3")
+  end
+
+  def latex_desc(bla)
+    bla.gsub(/%/, "\\%").gsub(/\$/, '\\\\$').gsub(/_/, '\\_')
+  end
+%>
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+% Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\photo[circle,noedge,left]{<%= flags[:photo] %>}
+\name{Rod}{Hilton}
+\position{Software Craftsman{\enskip\cdotp\enskip}Computer Science Geek}
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{<%= flags[:phone] %>}
+\email{<%= flags[:email] %>}
+%\dateofbirth{January 1st, 1970}
+\homepage{www.rodhilton.com}
+\github{rodhilton}
+\linkedin{rodhilton}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+\twitter{@rodhilton}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{``<%= quote %>"}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Rod Hilton~~~·~~~Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+% SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Summary}
+
+\begin{cvparagraph}
+<% summary.each do |summary_item| %>
+<%= summary_item %> 
+<% end %>
+\end{cvparagraph}
+
+\cvsection{Skills}
+
+\begin{cvskills}
+<% skills = calculate_skills(experience.jobs) %>
+\cvskill{Accomplished}{<%= skills[:accomplished].gsub(/\#/, "\\#") %>}
+\cvskill{Advanced}{<%= skills[:advanced].gsub(/\#/, "\\#") %>}
+\cvskill{Novice}{<%= skills[:novice].gsub(/\#/, "\\#") %>}
+\cvskill{Interested}{<%= interests.gsub(/\#/, "\\#") %>}
+\end{cvskills}
+
+
+\cvsection{Experience}
+
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,12) %>
+
+
+\begin{cventries}
+<% job_list.each_with_index do |job, i| %>
+  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 5) %>
+  \cventry
+    {<%= job.title %>} % Job title
+    {<%= job.company %>} % Organization
+    {<%= job.location %>} % Location
+    {<%= job.time %>} % Date(s)
+    {
+      \begin{cvitems}
+      <% unless job.technologies.nil? %>\item {Utilized <%= job.technologies %>} <% end %>
+%      <% accomplishments.each do |accomplishment| %>    
+        \item {<%= latex_links(latex_desc(accomplishment)) %>}
+%        <% end %>
+      \end{cvitems}
+    }
+
+<% end %>
+
+\end{cventries}
+
+
+\cvsection{Education}
+
+
+%-------------------------------------------------------------------------------
+% CONTENT
+%-------------------------------------------------------------------------------
+
+\begin{cventries}
+% <% education.degrees.each do |degree| %>
+  \cventry
+    {<%= degree.title %>} % Job title
+    {<%= degree.school %>} % Organization
+    {<%= degree.location %>} % Location
+    { } % Date(s)
+    {<% if flags[:expand_school ]%>
+    \begin{cvitems}
+        \item {<%= latex_links(degree.note) %>}
+      \end{cvitems} 
+      <% end %>}
+
+% <% end %>
+
+\end{cventries}
+
+
+\cvsection{Publications}
+
+%-------------------------------------------------------------------------------
+% CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+% <% unless publications.author.size.nil? %>
+%  <% publications.author.each do |pub| %>
+
+  \cventry
+    {Author} % Role
+    {<%= latex_links(latex_desc(pub.title)) %>} % Title
+    {<%= pub.publisher %>} % Location
+    {<%= pub.time %>} % Date(s)
+    { }
+
+%  <% end %>
+% <% end %>
+
+% <% unless publications.editor.size.nil? %>
+
+%  <% publications.editor.each do |pub| %>
+
+  \cventry
+    {Technical Reviewer} % Role
+    {<%= latex_links(latex_desc(pub.title)) %> {\normalfont by <%= pub.author %>}} % Title
+    {<%= pub.publisher %>} % Location
+    {<%= pub.time %>} % Date(s)
+    { }
+
+%  <% end %>
+% <% end %>
+
+
+\end{cventries}
+
+
+\cvsection{Projects}
+
+%-------------------------------------------------------------------------------
+% CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%  <% projects.each do |project| %>
+
+  \cventry
+    {<%= project.role %>} % Role
+    {<%= latex_desc(project.title) %>} % Title
+    {<%= project.location %>} % Location
+    { } % Date(s)
+    {   \begin{cvitems}
+        \item {<%= project.description %>}
+      \end{cvitems}
+        }
+% <% end %>
+
+
+\end{cventries}
+
+
+
+%-------------------------------------------------------------------------------
+\end{document}

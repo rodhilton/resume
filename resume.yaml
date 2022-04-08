@@ -1,6 +1,7 @@
 name: Rod Hilton
 title: Software Craftsman and Computer Science Geek
 site: www.rodhilton.com
+quote: It works on my machine
 
 about_summary:
   - <a href="http://rodhilton.github.io/resume/">Software Engineer</a> working primarily in the JVM with Java, Groovy, and Scala with a lot of Ruby coding <a href="https://github.com/rodhilton">on the side</a>
@@ -27,7 +28,7 @@ experience:
       accomplishments:
         - Architected backend service solution and designed public-facing API for <a href="https://charlieintel.com/how-to-make-fortnite-clips/165011/">new product</a> capturing and sharing game video highlights between players.
         - Created highly-available scalable services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
-        - Developed system for tracking and querying player interactions in Fortnite, utilized in marketing events increasing player engagement.
+        - Developed system for tracking and querying player interactions in Fortnite, utilized in marketing campaigns for increasing player engagement and lapsed player reactivation.
     - company: Twitter
       title: Senior Software Engineer
       time: 2017-2021
@@ -36,7 +37,7 @@ experience:
       summary: Core Tweet Service backend Team, storing and serving all Tweets within Twitter at massive scale utilizing Scala, Java, Kafka, Hadoop, and Thrift.
       icon: twitter.png
       accomplishments:
-        - Developed Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. Built features such as Twitter Communities, <a href="https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/">Conversation Controls</a>, and <a href="https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8">Public Interest Interstitial</a>.
+        - Developed Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. Built features such as <a href="https://blog.twitter.com/en_us/topics/product/2021/testing-communities">Twitter Communities</a>, <a href="https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/">Conversation Controls</a>, and <a href="https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8">Public Interest Interstitial</a>.
         - Led Privacy and Data Protection initiatives within Core Tweet Service team, responsible for annotating all data, migrating from in-house message platform to Kafka, supporting mass <a href="https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html">under-13 user erasure</a>, and onboarding to wipeout and data retention tooling to ensure GDPR compliance.
         - Developed <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api">PowerTrack</a> and <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter">Statuses/Filter</a> products, allowing customers to apply complex real-time filters to Twitter's data firehose using custom filter query language.
         - Created new filter operators to match tweets based on Machine-Learning-based Semantic Core annotations and Natural Language processed Named Entity Recognition annotations.
@@ -56,8 +57,8 @@ experience:
         - Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months, saving an estimated $4m/year.
         - Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%, new users over 250k/mo;
         - Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
-    - company: Rally Software 
-      note: acquired by CA Technologies
+    - company: CA Technologies 
+      note: formerly Rally Software
       title: Java Web Applications Developer
       time: 2008-2011
       location: Boulder, CO
@@ -69,8 +70,8 @@ experience:
         - Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
         - Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
         - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system.
-    - company: OpenLogic
-      note: acquired by Rogue Wave Software
+    - company: Rogue Wave Software
+      note: formerly OpenLogic
       title: Software Engineer
       time: 2007-2008
       location: Westminster, CO
@@ -84,7 +85,7 @@ experience:
         - Developed OpenLogic Enterprise, a J2EE software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
         - Received Most Valuable Player Award - January 2008
     - company: Acxiom
-      note: previously InsightAmerica
+      note: formerly InsightAmerica
       title: Senior Software Developer
       time: 2004-2007
       location: Westminster, CO
@@ -164,55 +165,64 @@ education:
 
 publications:
   author:
-    - title: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Predicting Code Hotspots in Open-Source Software from Object-Oriented Metrics Using Machine Learning</a>
+    - title: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning</a>
       author: Rod Hilton, Ellen Gethner
-      publisher: International Journal of Software Engineering and Knowledge Engineering
+      publisher: IJSEKE
       time: 2018
+      type: Article
   editor:
     - title: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Java Performance, 2nd Edition</a>
       author: Scott Oaks
       publisher: O'Reilly
       time: 2020
-    - title: <a href="https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native">Modern Systems Programming with Scala Native</a>
-      author: Richard Whaling
-      publisher: Pragmatic
-      time: 2020
-    - title: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Programing Kotlin</a>
-      author: Venkat Subramaniam
-      publisher: Pragmatic
-      time: 2019
-    - title: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! Second Edition</a>
+      type: Book
+    # - title: <a href="https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native">Modern Systems Programming with Scala Native</a>
+    #   author: Richard Whaling
+    #   publisher: Pragmatic
+    #   time: 2020
+    #   type: Book
+    # - title: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Programing Kotlin</a>
+    #   author: Venkat Subramaniam
+    #   publisher: Pragmatic
+    #   time: 2019
+    #   type: Book
+    - title: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! 2nd Edition</a>
       author: Michael Nygard
       publisher: Pragmatic
       time: 2018
+      type: Book
     # - title: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a>
     #   author: Jay Wengrow
     #   publisher: Pragmatic
     #   time: 2017
-    - title: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a>
-      author: Venkat Subramaniam
-      publisher: Pragmatic
-      time: 2016
+    # - title: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a>
+    #   author: Venkat Subramaniam
+    #   publisher: Pragmatic
+    #   time: 2016
+    #   type: Book
     # - title: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a>
     #   author: Sergi Mansilla
     #   publisher: Pragmatic
     #   time: 2016
-    - title: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a>
-      author: Sam Ruby
-      publisher: Pragmatic
-      time: 2016
+    # - title: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a>
+    #   author: Sam Ruby
+    #   publisher: Pragmatic
+    #   time: 2016
+    #   type: Book
     # - title: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a>
     #   author: Jonathan Rasmusson
     #   publisher: Pragmatic
     #   time: 2016
-    - title: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a>
-      author: Jeff Langr
-      publisher: Pragmatic
-      time: 2015
-    - title: <a href="https://pragprog.com/book/atcrime/your-code-as-a-crime-scene">Your Code as a Crime Scene</a>
-      author: Adam Tornhill
-      publisher: Pragmatic
-      time: 2015
+    # - title: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a>
+    #   author: Jeff Langr
+    #   publisher: Pragmatic
+    #   time: 2015
+    #   type: Book
+    # - title: <a href="https://pragprog.com/book/atcrime/your-code-as-a-crime-scene">Your Code as a Crime Scene</a>
+    #   author: Adam Tornhill
+    #   publisher: Pragmatic
+    #   time: 2015
+    #   type: Book
     # - title: "<a href='https://pragprog.com/book/tbcoffee2/coffeescript'>CoffeeScript: Accelerated JavaScript Development, Second Edition</a>"
     #   author: Trevor Burnham
     #   publisher: Pragmatic
@@ -221,15 +231,28 @@ publications:
       author: Paul Chiusano and Runar Bjarnason
       publisher: Manning
       time: 2014
+      type: Book
     # - title: <a href="http://www.manning.com/partner/">Neo4j in Action</a>
     #   author: Jonas Partner, Aleksa Vukotic, and Nicki Watt
     #   publisher: Manning
     #   time: 2014
-    - title: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a>
-      author: Tim Berglund
-      publisher: O'Reilly
-      time: 2013
-    - title: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a>
-      author: Michael Bevilacqua-Linn
-      publisher: Pragmatic
-      time: 2013
+    # - title: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a>
+    #   author: Tim Berglund
+    #   publisher: O'Reilly
+    #   time: 2013
+    #   type: Book
+    # - title: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a>
+    #   author: Michael Bevilacqua-Linn
+    #   publisher: Pragmatic
+    #   time: 2013
+    #   type: Book
+
+projects:
+  - title: JaSoMe
+    role: Maintainer
+    location: GitHub
+    description: Zero-compilation Object Oriented Metrics analyzer for Java code, 13 forks on GitHub
+  - title: console_table
+    role: Maintainer
+    location: rubygems.org
+    description: Ruby gem for formatting and printing tabluar data in commandline scripts, over 100,000 downloads

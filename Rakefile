@@ -41,6 +41,10 @@ file "qr_code_url.png" => [:make_target] do |t|
   rm "qr_code_url.txt"
 end
 
+file "profile.png" => [:make_target] do |t|
+  sh "cp resources/profile.jpg #{TARGET_DIR}/profile.jpg"
+end
+
 task :copy_deps do |t|
   FileUtils.cp_r Dir.glob( File.join("latex", "*" ) ), TARGET_DIR
   #FileUtils.cp_r Dir.glob( "*.png" ), TARGET_DIR
@@ -58,6 +62,10 @@ end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
   sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f photo:qr_code_contact > #{TARGET_DIR}/resume_private.tex"
+end
+
+file "#{TARGET_DIR}/resume_new_private.tex"  => [:make_target] do |t|
+  sh "templator/templator -d #{data_files} resume_new.tex.erb -f color #{private_flags} -f photo:profile > #{TARGET_DIR}/resume_new_private.tex"
 end
 
 file "#{TARGET_DIR}/resume_op.tex"  => [:make_target] do |t|
@@ -106,6 +114,12 @@ task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "qr_code
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_private.tex"
   rm "#{TARGET_DIR}/resume_private.tex"
   FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
+end
+
+task :latex_new_private => ["#{TARGET_DIR}/resume_new_private.tex", :copy_deps, "profile.png"] do |t|
+  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_new_private.tex"
+  rm "#{TARGET_DIR}/resume_new_private.tex"
+  FileUtils.cp_r File.join(TARGET_DIR, "resume_new_private.pdf"), File.join(TARGET_DIR, "RodHilton_new_resume.pdf")
 end
 
 task :latex_private_op => ["#{TARGET_DIR}/resume_op.tex", :copy_deps, "qr_code_contact.png"] do |t|

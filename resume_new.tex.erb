@@ -6,7 +6,7 @@
   end
 
   def latex_desc(bla)
-    bla.gsub(/%/, "\\%").gsub(/\$/, '\\\\$').gsub(/_/, '\\_')
+    bla.gsub(/%/, "\\%").gsub(/\&/, '\\\\&').gsub(/\$/, '\\\\$').gsub(/_/, '\\_')
   end
 %>
 
@@ -131,15 +131,15 @@
 
 \cvsection{Experience}
 
-<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,12) %>
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,16) %>
 
 
 \begin{cventries}
 <% job_list.each_with_index do |job, i| %>
   <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 5) %>
   \cventry
-    {<%= job.title %>} % Job title
-    {<%= job.company %>} % Organization
+    {<%= job.title %><% unless job.team.nil? %>{ - \normalfont{\bodyfontlight{<%= latex_desc(job.team) %>}}}<% end %>} % Job title
+    {<%= job.company %><% unless job.note.nil? %>{\normalfont{ (<%= latex_desc(job.note) %>)}}<% end %>} % Organization
     {<%= job.location %>} % Location
     {<%= job.time %>} % Date(s)
     {

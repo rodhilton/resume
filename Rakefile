@@ -118,7 +118,7 @@ end
 
 task :latex_new_private => ["#{TARGET_DIR}/resume_new_private.tex", :copy_deps, "profile.png"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_new_private.tex"
-  rm "#{TARGET_DIR}/resume_new_private.tex"
+  #rm "#{TARGET_DIR}/resume_new_private.tex"
   FileUtils.cp_r File.join(TARGET_DIR, "resume_new_private.pdf"), File.join(TARGET_DIR, "RodHilton_new_resume.pdf")
 end
 

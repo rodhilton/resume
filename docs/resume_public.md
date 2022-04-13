@@ -38,7 +38,7 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Backend Engineer__ - _Epic Games_ - 2021-Present
+*  __Senior Backend Engineer, Online Social__ - _Epic Games_ - 2021-Present
             
     * Utilized Java, Spring, Git, REST, Kafka, Redis, AWS, Terraform, Kubernetes, Docker
             
@@ -51,7 +51,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Senior Software Engineer__ - _Twitter_ - 2017-2021
+*  __Senior Software Engineer, Core Tweet Service and Developer Platform__ - _Twitter_ - 2017-2021
             
     * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift, Python
             
@@ -70,7 +70,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Principal Engineer__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
+*  __Principal Engineer, Common Services Tier and Customer Portals__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
             
@@ -87,7 +87,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Java Web Applications Developer__ - _Rally Software (acquired by CA Technologies)_ - 2008-2011
+*  __Java Web Applications Developer, ALM Tool__ - _CA Technologies (formerly Rally Software)_ - 2008-2011
             
     * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
             
@@ -102,7 +102,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Software Engineer__ - _OpenLogic (acquired by Rogue Wave Software)_ - 2007-2008
+*  __Software Engineer, Software Management Application__ - _Rogue Wave Software (formerly OpenLogic)_ - 2007-2008
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             
@@ -119,7 +119,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Senior Software Developer__ - _Acxiom (previously InsightAmerica)_ - 2004-2007
+*  __Senior Software Developer, Driving Records Aggregation__ - _Acxiom (formerly InsightAmerica)_ - 2004-2007
             
     * Utilized Java, SQL Server, ColdFusion, HTML/CSS
             
@@ -136,7 +136,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Lead Software Developer__ - _Truth-N-Beauty Software_ - 2001-2004
+*  __Lead Software Developer, Educational Interactives__ - _Truth-N-Beauty Software_ - 2001-2004
             
     * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
             
@@ -202,31 +202,15 @@ __Software Craftsman and Computer Science Geek__
 
 
   
-* Author: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Predicting Code Hotspots in Open-Source Software from Object-Oriented Metrics Using Machine Learning</a> by Rod Hilton, Ellen Gethner _(International Journal of Software Engineering and Knowledge Engineering, 2018)_
+* Author: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning</a> by Rod Hilton, Ellen Gethner _(IJSEKE, 2018)_
   
 
 
   
 * Tech Reviewer: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Java Performance, 2nd Edition</a> by Scott Oaks _(O'Reilly, 2020)_
   
-* Tech Reviewer: <a href="https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native">Modern Systems Programming with Scala Native</a> by Richard Whaling _(Pragmatic, 2020)_
-  
-* Tech Reviewer: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Programing Kotlin</a> by Venkat Subramaniam _(Pragmatic, 2019)_
-  
-* Tech Reviewer: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! Second Edition</a> by Michael Nygard _(Pragmatic, 2018)_
-  
-* Tech Reviewer: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a> by Venkat Subramaniam _(Pragmatic, 2016)_
-  
-* Tech Reviewer: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a> by Sam Ruby _(Pragmatic, 2016)_
-  
-* Tech Reviewer: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a> by Jeff Langr _(Pragmatic, 2015)_
-  
-* Tech Reviewer: <a href="https://pragprog.com/book/atcrime/your-code-as-a-crime-scene">Your Code as a Crime Scene</a> by Adam Tornhill _(Pragmatic, 2015)_
+* Tech Reviewer: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! 2nd Edition</a> by Michael Nygard _(Pragmatic, 2018)_
   
 * Tech Reviewer: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a> by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
-  
-* Tech Reviewer: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a> by Tim Berglund _(O'Reilly, 2013)_
-  
-* Tech Reviewer: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a> by Michael Bevilacqua-Linn _(Pragmatic, 2013)_
   
 

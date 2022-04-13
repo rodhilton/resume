@@ -38,7 +38,7 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Backend Engineer__ - _Epic Games_ - 2021-Present
+*  __Senior Backend Engineer, Online Social__ - _Epic Games_ - 2021-Present
             
     * Utilized Java, Spring, Git, REST, Kafka, Redis, AWS, Terraform, Kubernetes, Docker
             
@@ -51,7 +51,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Senior Software Engineer__ - _Twitter_ - 2017-2021
+*  __Senior Software Engineer, Core Tweet Service and Developer Platform__ - _Twitter_ - 2017-2021
             
     * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift, Python
             
@@ -64,7 +64,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Principal Engineer__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
+*  __Principal Engineer, Common Services Tier and Customer Portals__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
             

@@ -20,6 +20,7 @@ experience:
   jobs:
     - company: Epic Games
       title: Senior Backend Engineer
+      team: Online Social
       time: 2021-Present
       location: Remote
       technologies: Java, Spring, Git, REST, Kafka, Redis, AWS, Terraform, Kubernetes, Docker
@@ -31,6 +32,7 @@ experience:
         - Developed system for tracking and querying player interactions in Fortnite, utilized in marketing campaigns for increasing player engagement and lapsed player reactivation.
     - company: Twitter
       title: Senior Software Engineer
+      team: Core Tweet Service & Developer Platform
       time: 2017-2021
       location: Boulder, CO
       technologies: Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift, Python
@@ -46,6 +48,7 @@ experience:
     - company: Spectrum
       note: formerly Time Warner Cable
       title: Principal Engineer
+      team: Common Services Tier and Customer Portals
       time: 2011-2017
       location: Denver, CO
       technologies: Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
@@ -60,6 +63,7 @@ experience:
     - company: CA Technologies 
       note: formerly Rally Software
       title: Java Web Applications Developer
+      team: ALM Tool
       time: 2008-2011
       location: Boulder, CO
       technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
@@ -87,6 +91,7 @@ experience:
     - company: Acxiom
       note: formerly InsightAmerica
       title: Senior Software Developer
+      team: Driving Records Aggregation
       time: 2004-2007
       location: Westminster, CO
       technologies: Java, SQL Server, ColdFusion, HTML/CSS
@@ -100,6 +105,7 @@ experience:
         - Received Special Recognition Award for Outstanding Performance - September, 2006
     - company: Truth-N-Beauty Software
       title: Lead Software Developer
+      team: Educational Interactives
       time: 2001-2004
       location: Rochester, NY
       technologies: Java, Applets, AWT, ASP, VBScript, Flash, ActionScript

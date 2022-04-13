@@ -3,13 +3,15 @@ title: Software Craftsman and Computer Science Geek
 site: www.rodhilton.com
 quote: It works on my machine
 
+oneline_summary: Polyglot problem-solver with solid computer science background and over a decade of industry experience developing backend services, microservices, and web applications with strong focus on client experience. Specialized in building JVM-based scalable systems and improving legacy codebases.
+
 about_summary:
   - <a href="http://rodhilton.github.io/resume/">Software Engineer</a> working primarily in the JVM with Java, Groovy, and Scala with a lot of Ruby coding <a href="https://github.com/rodhilton">on the side</a>
   - <a href="http://letterboxd.com/rodhilton/">Movie geek</a> and freelance columnist for cracked.com, creator of "<a href="http://www.cnn.com/2015/12/08/entertainment/star-wars-machete-order/index.html">Machete Order</a>"
   - <a href="http://www.goodreads.com/rodhilton">Voracious reader</a> of technical books and insatiable learner
 
 summary:
-  - Passionate problem-solver with solid Computer Science background.
+  - Polyglot problem-solver with solid Computer Science background.
   - Over a decade of experience developing backend server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
   - Specialty in improving existing/legacy codebases and building scalable, performant, fault-tolerant backend systems.
   - Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
@@ -23,19 +25,21 @@ experience:
       team: Online Social
       time: 2021-Present
       location: Remote
-      technologies: Java, Spring, Git, REST, Kafka, Redis, AWS, Terraform, Kubernetes, Docker
+      technologies: Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
       summary: Social team member, building Epic Online Services for friends, messaging, partying
       icon: epicgames.png
       accomplishments:
+        - Operated social game services for friends, messaging, matchmaking, partying, banning, searching, and grouping, serving 3m requests/min
         - Architected backend service solution and designed public-facing API for <a href="https://charlieintel.com/how-to-make-fortnite-clips/165011/">new product</a> capturing and sharing game video highlights between players.
-        - Created highly-available scalable services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
+        - Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
         - Developed system for tracking and querying player interactions in Fortnite, utilized in marketing campaigns for increasing player engagement and lapsed player reactivation.
     - company: Twitter
       title: Senior Software Engineer
       team: Core Tweet Service & Developer Platform
       time: 2017-2021
-      location: Boulder, CO
-      technologies: Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift, Python
+      location: Remote
+      # location: Boulder, CO
+      technologies: Scala, Java, Git, Kafka, MySQL, REST, Thrift, Hadoop, Python
       summary: Core Tweet Service backend Team, storing and serving all Tweets within Twitter at massive scale utilizing Scala, Java, Kafka, Hadoop, and Thrift.
       icon: twitter.png
       accomplishments:
@@ -48,10 +52,11 @@ experience:
     - company: Spectrum
       note: formerly Time Warner Cable
       title: Principal Engineer
-      team: Common Services Tier and Customer Portals
+      team: Core Services & Customer Portals
       time: 2011-2017
-      location: Denver, CO
-      technologies: Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
+      location: Remote
+      # location: Denver, CO
+      technologies: Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
       summary: Cross-Platform team, built Common Services Tier middleware service as well as various customer-facing web portals utilizing Java, Groovy, Grails, Scala, JavaScript, and JQuery.
       icon: twc.png
       accomplishments:
@@ -63,7 +68,7 @@ experience:
     - company: CA Technologies 
       note: formerly Rally Software
       title: Java Web Applications Developer
-      team: ALM Tool
+      team: Lifecycle Management Application
       time: 2008-2011
       location: Boulder, CO
       technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
@@ -78,7 +83,7 @@ experience:
       note: formerly OpenLogic
       title: Software Engineer
       time: 2007-2008
-      location: Westminster, CO
+      location: Denver, CO
       technologies: Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
       summary: OpenLogic Enterprise team, developed SaaS web applications to manage open source across corporations as well as open source scanning desktop application utilizing Java, Ruby, Rails, and JavaScript.
       icon: openlogic.png
@@ -93,7 +98,7 @@ experience:
       title: Senior Software Developer
       team: Driving Records Aggregation
       time: 2004-2007
-      location: Westminster, CO
+      location: Denver, CO
       technologies: Java, SQL Server, ColdFusion, HTML/CSS
       summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
       icon: acxiom2.png
@@ -147,13 +152,13 @@ certifications:
 education:
   summary: "\"Perpetual student\" taking supplementary MOOC classes online, attending professional conferences annually, and reading constantly"
   degrees:
-    #- title: Ph.D., Computer Science
-    #  school: University of Colorado at Denver
-    #  location: Denver, CO
-    #  time: 2011-2019
-    #  note: Specialization in Machine Learning, Theory, and Algorithms
-    #  coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
-    #  icon: ucd.png
+    - title: M.S., Computer Science
+      school: University of Colorado at Denver
+      location: Denver, CO
+      time: 2011-2020
+      note: Specialization in Machine Learning, Theory, and Algorithms
+      coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
+      icon: ucd.png
     - title: M.S., Software Engineering
       school: Regis University
       location: Denver, CO
@@ -173,84 +178,90 @@ publications:
   author:
     - title: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning</a>
       author: Rod Hilton, Ellen Gethner
-      publisher: IJSEKE
-      time: 2018
+      publisher: Int'l Journal of S.E. & K.E
+      year: 2018
       type: Article
   editor:
     - title: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Java Performance, 2nd Edition</a>
       author: Scott Oaks
       publisher: O'Reilly
-      time: 2020
+      year: 2020
       type: Book
+      clout: 8
     # - title: <a href="https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native">Modern Systems Programming with Scala Native</a>
     #   author: Richard Whaling
     #   publisher: Pragmatic
-    #   time: 2020
+    #   year: 2020
     #   type: Book
-    # - title: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Programing Kotlin</a>
-    #   author: Venkat Subramaniam
-    #   publisher: Pragmatic
-    #   time: 2019
-    #   type: Book
+    - title: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Programing Kotlin</a>
+      author: Venkat Subramaniam
+      publisher: Pragmatic Bookshelf
+      year: 2019
+      type: Book
+      clout: 7
     - title: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! 2nd Edition</a>
       author: Michael Nygard
-      publisher: Pragmatic
-      time: 2018
+      publisher: Pragmatic Bookshelf
+      year: 2018
       type: Book
+      clout: 9
     # - title: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a>
     #   author: Jay Wengrow
     #   publisher: Pragmatic
-    #   time: 2017
+    #   year: 2017
     # - title: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a>
     #   author: Venkat Subramaniam
     #   publisher: Pragmatic
-    #   time: 2016
+    #   year: 2016
     #   type: Book
     # - title: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a>
     #   author: Sergi Mansilla
     #   publisher: Pragmatic
-    #   time: 2016
-    # - title: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a>
-    #   author: Sam Ruby
-    #   publisher: Pragmatic
-    #   time: 2016
-    #   type: Book
+    #   year: 2016
+    - title: <a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">Agile Web Development with Rails 5</a>
+      author: Sam Ruby
+      publisher: Pragmatic Bookshelf
+      year: 2016
+      type: Book
+      clout: 8
     # - title: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a>
     #   author: Jonathan Rasmusson
     #   publisher: Pragmatic
-    #   time: 2016
-    # - title: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a>
-    #   author: Jeff Langr
-    #   publisher: Pragmatic
-    #   time: 2015
-    #   type: Book
+    #   year: 2016
+    - title: <a href="https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit">Pragmatic Unit Testing in Java 8 with JUnit</a>
+      author: Jeff Langr
+      publisher: Pragmatic Bookshelf
+      year: 2015
+      type: Book
+      clout: 6
     # - title: <a href="https://pragprog.com/book/atcrime/your-code-as-a-crime-scene">Your Code as a Crime Scene</a>
     #   author: Adam Tornhill
     #   publisher: Pragmatic
-    #   time: 2015
+    #   year: 2015
     #   type: Book
     # - title: "<a href='https://pragprog.com/book/tbcoffee2/coffeescript'>CoffeeScript: Accelerated JavaScript Development, Second Edition</a>"
     #   author: Trevor Burnham
     #   publisher: Pragmatic
-    #   time: 2015
+    #   year: 2015
     - title: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a>
       author: Paul Chiusano and Runar Bjarnason
       publisher: Manning
-      time: 2014
+      year: 2014
       type: Book
+      clout: 10
     # - title: <a href="http://www.manning.com/partner/">Neo4j in Action</a>
     #   author: Jonas Partner, Aleksa Vukotic, and Nicki Watt
     #   publisher: Manning
-    #   time: 2014
+    #   year: 2014
     # - title: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a>
     #   author: Tim Berglund
     #   publisher: O'Reilly
-    #   time: 2013
+    #   year: 2013
     #   type: Book
     # - title: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a>
     #   author: Michael Bevilacqua-Linn
     #   publisher: Pragmatic
-    #   time: 2013
+    #   year: 2013
     #   type: Book
 
 projects:

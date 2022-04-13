@@ -149,6 +149,41 @@ def trim_jobs(jobs, max_age=MAX_JOB_AGE)
 	end
 end
 
+def organize_publications(authored, edited)
+  STDERR.puts "*"*100
+  STDERR.puts authored
+  STDERR.puts edited
+
+  STDERR.puts authored.class
+
+  a2 = authored.map do |author|
+   author["role"] = "Author"
+   author["clout"] = 10
+   author["author"] = nil
+   author
+  end
+
+  e2 = edited.map do |editor|
+   editor["role"] = "Technical Reviewer"
+   editor
+  end
+
+  array = a2 + e2
+
+  array.sort_by{|a| a["year"]}.reverse
+
+
+end
+
+def trim_publications(pubs, min_clout=5)
+  pubs.select{|p| p.clout >=min_clout}
+end
+
+def trim_skills(skills, max_items=10)
+  skills.split(/,\s*/).take(max_items).join(", ")
+end
+
+
 def trunc_jobs(jobs, max) 
   jobs.take(max)
 end

@@ -65,7 +65,7 @@ file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
 end
 
 file "#{TARGET_DIR}/resume_new_private.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume_new.tex.erb -f color #{private_flags} -f photo:profile > #{TARGET_DIR}/resume_new_private.tex"
+  sh "templator/templator -d #{data_files} resume_new.tex.erb -f color #{private_flags} -f expand_school -f photo:profile > #{TARGET_DIR}/resume_new_private.tex"
 end
 
 file "#{TARGET_DIR}/resume_op.tex"  => [:make_target] do |t|

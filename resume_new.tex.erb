@@ -2,7 +2,7 @@
 
 <% 
   def latex_links(one)
-    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "\\3")
+    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "{\\href{\\2}{\\3}}")
   end
 
   def latex_desc(bla)
@@ -68,7 +68,7 @@
 % \photo[rectangle,edge,right]{./examples/profile}
 \photo[circle,noedge,left]{<%= flags[:photo] %>}
 \name{Rod}{Hilton}
-\position{Software Craftsman{\enskip\cdotp\enskip}Computer Science Geek}
+\position{Software Craftsman{\enskip\cdotp\enskip}Computer Science Geek{\enskip\cdotp\enskip}Compassionate Coder}
 % \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
 \mobile{<%= flags[:phone] %>}
@@ -89,7 +89,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``<%= quote %>"}
+\quote{<%= oneline_summary %>}
 
 
 %-------------------------------------------------------------------------------
@@ -107,17 +107,6 @@
   {\thepage}
 
 
-%-------------------------------------------------------------------------------
-% SECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsection{Summary}
-
-\begin{cvparagraph}
-<% summary.each do |summary_item| %>
-<%= summary_item %> 
-<% end %>
-\end{cvparagraph}
-
 \cvsection{Skills}
 
 \begin{cvskills}
@@ -131,7 +120,7 @@
 
 \cvsection{Experience}
 
-<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,16) %>
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,13) %>
 
 
 \begin{cventries}
@@ -144,7 +133,7 @@
     {<%= job.time %>} % Date(s)
     {
       \begin{cvitems}
-      <% unless job.technologies.nil? %>\item {Utilized <%= job.technologies %>} <% end %>
+      <% unless job.technologies.nil? %>\item {Utilized <%= trim_skills(job.technologies, 16) %>} <% end %>
 %      <% accomplishments.each do |accomplishment| %>    
         \item {<%= latex_links(latex_desc(accomplishment)) %>}
 %        <% end %>
@@ -154,7 +143,6 @@
 <% end %>
 
 \end{cventries}
-
 
 \cvsection{Education}
 
@@ -173,6 +161,7 @@
     {<% if flags[:expand_school ]%>
     \begin{cvitems}
         \item {<%= latex_links(degree.note) %>}
+        \item Coursework: {<%= latex_links(degree.coursework) %>}
       \end{cvitems} 
       <% end %>}
 
@@ -188,32 +177,18 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-% <% unless publications.author.size.nil? %>
-%  <% publications.author.each do |pub| %>
+% <% organized_publications = organize_publications(publications.author, publications.editor) %>
+
+%  <% trim_publications(organized_publications, 6).each do |pub| %>
 
   \cventry
-    {Author} % Role
-    {<%= latex_links(latex_desc(pub.title)) %>} % Title
-    {<%= pub.publisher %>} % Location
-    {<%= pub.time %>} % Date(s)
+    {<%= pub.role %>} % Role
+    {<%= latex_links(latex_desc(pub.title)) %><% unless pub.author.nil? %> {\normalfont by <%= pub.author %>}<% end %>}
+    {<%= latex_desc(pub.publisher) %>} % Location
+    {<%= pub.year %>} % Date(s)
     { }
 
 %  <% end %>
-% <% end %>
-
-% <% unless publications.editor.size.nil? %>
-
-%  <% publications.editor.each do |pub| %>
-
-  \cventry
-    {Technical Reviewer} % Role
-    {<%= latex_links(latex_desc(pub.title)) %> {\normalfont by <%= pub.author %>}} % Title
-    {<%= pub.publisher %>} % Location
-    {<%= pub.time %>} % Date(s)
-    { }
-
-%  <% end %>
-% <% end %>
 
 
 \end{cventries}

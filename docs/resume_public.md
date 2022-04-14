@@ -10,7 +10,7 @@ __Software Craftsman and Computer Science Geek__
 
 ## Summary
 
-* Passionate problem-solver with solid Computer Science background.
+* Polyglot problem-solver with solid Computer Science background.
 
 * Over a decade of experience developing backend server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
 
@@ -27,8 +27,8 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Scala, Spring, REST
-* __Advanced__: HTML/CSS, Ruby, Kafka, JavaScript, Groovy, MySQL, Hadoop, Grails, Oracle, Thrift, PostgreSQL, Python, AngularJS
-* __Novice__: SOAP, SBT, Redis, Jenkins, AWS, Terraform, Lift, Kubernetes, memcached, Docker, hazelcast
+* __Advanced__: HTML/CSS, Ruby, MySQL, JavaScript, Groovy, Kafka, Grails, Thrift, Hadoop, PostgreSQL, Oracle, Python, AngularJS
+* __Novice__: SOAP, SBT, AWS, memcached, Redis, Jenkins, Terraform, Kubernetes, hazelcast, Docker
 * __Desired__: ElasticSearch, Spark, Cassandra
 
 ----
@@ -38,29 +38,31 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Backend Engineer, Online Social__ - _Epic Games_ - 2021-Present
+*  __Senior Backend Engineer__ - _Epic Games_ - 2021-Present
             
-    * Utilized Java, Spring, Git, REST, Kafka, Redis, AWS, Terraform, Kubernetes, Docker
+    * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
+            
+    * Operated social game services for friends, messaging, matchmaking, partying, banning, searching, and grouping, serving 3m requests/min
             
     * Architected backend service solution and designed public-facing API for [new product](https://charlieintel.com/how-to-make-fortnite-clips/165011/) capturing and sharing game video highlights between players.
             
-    * Created highly-available scalable services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
+    * Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
             
-    * Developed system for tracking and querying player interactions in Fortnite, utilized in marketing campaigns for increasing player engagement and lapsed player reactivation.
+    * Developed Interactions Tracking Service, a system for tracking and querying player interactions in Fortnite, utilized in marketing campaigns for increasing player engagement and lapsed player reactivation.
             
 
 
-*  __Senior Software Engineer, Core Tweet Service and Developer Platform__ - _Twitter_ - 2017-2021
+*  __Senior Software Engineer__ - _Twitter_ - 2017-2021
             
-    * Utilized Scala, Java, Git, Hadoop, Kafka, MySQL, REST, Thrift, Python
+    * Utilized Scala, Java, Git, Kafka, MySQL, REST, Thrift, Hadoop, Python
             
             
     * Developed Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. Built features such as [Twitter Communities](https://blog.twitter.com/en_us/topics/product/2021/testing-communities), [Conversation Controls](https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/), and [Public Interest Interstitial](https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8).
             
     * Led Privacy and Data Protection initiatives within Core Tweet Service team, responsible for annotating all data, migrating from in-house message platform to Kafka, supporting mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html), and onboarding to wipeout and data retention tooling to ensure GDPR compliance.
             
-    * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter) products, allowing customers to apply complex real-time filters to Twitter's data firehose using custom filter query language.
+    * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter), allowing application of complex real-time filters to Twitter's firehose using custom filter query language.
             
     * Created new filter operators to match tweets based on Machine-Learning-based Semantic Core annotations and Natural Language processed Named Entity Recognition annotations.
             
@@ -70,9 +72,9 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Principal Engineer, Common Services Tier and Customer Portals__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
+*  __Principal Engineer__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
-    * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, Oracle, REST, SOAP, SBT, Jenkins, HTML/CSS, Lift, memcached, hazelcast
+    * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
             
             
     * Created [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
@@ -87,7 +89,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Java Web Applications Developer, ALM Tool__ - _CA Technologies (formerly Rally Software)_ - 2008-2011
+*  __Java Web Applications Developer__ - _CA Technologies (formerly Rally Software)_ - 2008-2011
             
     * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
             
@@ -102,7 +104,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Software Engineer, Software Management Application__ - _Rogue Wave Software (formerly OpenLogic)_ - 2007-2008
+*  __Software Engineer__ - _Rogue Wave Software (formerly OpenLogic)_ - 2007-2008
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             
@@ -119,7 +121,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Senior Software Developer, Driving Records Aggregation__ - _Acxiom (formerly InsightAmerica)_ - 2004-2007
+*  __Senior Software Developer__ - _Acxiom (formerly InsightAmerica)_ - 2004-2007
             
     * Utilized Java, SQL Server, ColdFusion, HTML/CSS
             
@@ -136,7 +138,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Lead Software Developer, Educational Interactives__ - _Truth-N-Beauty Software_ - 2001-2004
+*  __Lead Software Developer__ - _Truth-N-Beauty Software_ - 2001-2004
             
     * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
             
@@ -185,6 +187,11 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
+* __M.S., Computer Science__ - _University of Colorado at Denver_ - 2020
+    * Specialization in Machine Learning, Theory, and Algorithms
+    * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
+        
+
 * __M.S., Software Engineering__ - _Regis University_ - 2009
     * Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>
     * Coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
@@ -202,15 +209,21 @@ __Software Craftsman and Computer Science Geek__
 
 
   
-* Author: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning</a> by Rod Hilton, Ellen Gethner _(IJSEKE, 2018)_
+* Author: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning by Rod Hilton, Ellen Gethner _(Int'l Journal of S.E. & K.E, 2018)_
   
 
 
   
-* Tech Reviewer: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Java Performance, 2nd Edition</a> by Scott Oaks _(O'Reilly, 2020)_
+* Tech Reviewer: Java Performance, 2nd Edition by Scott Oaks _(O'Reilly, 2020)_
   
-* Tech Reviewer: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Release It! 2nd Edition</a> by Michael Nygard _(Pragmatic, 2018)_
+* Tech Reviewer: Programing Kotlin by Venkat Subramaniam _(Pragmatic Bookshelf, 2019)_
   
-* Tech Reviewer: <a href="http://manning.com/bjarnason/">Functional Programming in Scala</a> by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
+* Tech Reviewer: Release It! 2nd Edition by Michael Nygard _(Pragmatic Bookshelf, 2018)_
+  
+* Tech Reviewer: Agile Web Development with Rails 5 by Sam Ruby _(Pragmatic Bookshelf, 2016)_
+  
+* Tech Reviewer: Pragmatic Unit Testing in Java 8 with JUnit by Jeff Langr _(Pragmatic Bookshelf, 2015)_
+  
+* Tech Reviewer: Functional Programming in Scala by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
   
 

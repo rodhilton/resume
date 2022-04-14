@@ -2,12 +2,13 @@
 
 <% 
   def latex_links(one)
-    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "{\\href{\\2}{\\3}}")
+    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "{\\Colorhref{\\2}{\\3}}")
   end
 
-  def latex_desc(bla)
-    bla.gsub(/%/, "\\%").gsub(/\&/, '\\\\&').gsub(/\$/, '\\\\$').gsub(/_/, '\\_')
+  def strip_links(one)
+    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "\\3")
   end
+
 %>
 
 %!TEX TS-program = xelatex
@@ -32,8 +33,10 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, letterpaper]{awesome-cv}
 
+\usepackage[normalem]{ulem} % [normalem] prevents the package from changing the default behavior of `\emph` to underline.
+
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.3cm, top=1.3cm, right=1.3cm, bottom=1.7cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -43,7 +46,7 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-skyblue}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+%\definecolor{awesome}{HTML}{CA63A8}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -58,6 +61,10 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+
+\newcommand\Colorhref[3][awesome]{\href{#2}{\dotuline{#3}}}
 
 
 %-------------------------------------------------------------------------------
@@ -183,8 +190,8 @@
 
   \cventry
     {<%= pub.role %>} % Role
-    {<%= latex_links(latex_desc(pub.title)) %><% unless pub.author.nil? %> {\normalfont by <%= pub.author %>}<% end %>}
-    {<%= latex_desc(pub.publisher) %>} % Location
+    {<%= strip_links(latex_desc(pub.title)) %><% unless pub.author.nil? %> {\normalfont by <%= pub.author %>}<% end %>}
+    {\Colorhref{<%= pub.url %>}{<%= latex_desc(pub.publisher) %>}} % Location
     {<%= pub.year %>} % Date(s)
     { }
 
@@ -205,9 +212,9 @@
 
   \cventry
     {<%= project.role %>} % Role
-    {<%= latex_desc(project.title) %>} % Title
-    {<%= project.location %>} % Location
-    { } % Date(s)
+    {<%= strip_links(latex_desc(project.title)) %>} % Title
+    {\Colorhref{<%= project.url %>}{<%= latex_desc(project.location) %>}} % Location
+    {<%= project.time %>} % Date(s)
     {   \begin{cvitems}
         \item {<%= project.description %>}
       \end{cvitems}

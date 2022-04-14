@@ -141,6 +141,10 @@ def skill_list(skills, low, high)
 
 end
 
+def latex_desc(bla)
+  bla.gsub(/%/, "\\%").gsub(/\&/, '\\\\&').gsub(/\$/, '\\\\$').gsub(/_/, '\\_')
+end
+
 def trim_jobs(jobs, max_age=MAX_JOB_AGE) 
 	jobs.select do |job|
 		start_year, end_year = job.time.split("-")
@@ -150,12 +154,6 @@ def trim_jobs(jobs, max_age=MAX_JOB_AGE)
 end
 
 def organize_publications(authored, edited)
-  STDERR.puts "*"*100
-  STDERR.puts authored
-  STDERR.puts edited
-
-  STDERR.puts authored.class
-
   a2 = authored.map do |author|
    author["role"] = "Author"
    author["clout"] = 10

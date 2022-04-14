@@ -97,7 +97,7 @@
   <li><b>Author</b></li>
   <ul>
   <% publications.author.each do |pub| %>
-    <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.time %>)</i></li>
+    <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.year %>)</i></li>
   <% end %>
   </ul>
 <% end %>
@@ -105,7 +105,7 @@
   <li><b>Technical Reviewer</b></li> 
   <ul>
   <% publications.editor.each do |pub| %>
-  <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.time %>)</i></li>
+  <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.year %>)</i></li>
   <% end %>
   </ul>
 <% end %>

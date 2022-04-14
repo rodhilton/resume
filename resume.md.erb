@@ -68,12 +68,12 @@ __Software Craftsman and Computer Science Geek__
 
 <% unless publications.author.size.nil? %>
   <% publications.author.each do |pub| %>
-* Author: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.time %>)_
+* Author: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.year %>)_
   <% end %>
 <% end %>
 <% unless publications.editor.size.nil? %>
   <% publications.editor.each do |pub| %>
-* Tech Reviewer: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.time %>)_
+* Tech Reviewer: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.year %>)_
   <% end %>
 <% end %>
 <% end %>

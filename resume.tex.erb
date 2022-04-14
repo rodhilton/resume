@@ -4,10 +4,6 @@
   def latex_links(one)
     one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "\\Colorhref{\\2}{\\3}")
   end
-
-  def latex_desc(bla)
-    bla.gsub(/%/, "\\%").gsub(/\$/, '\\\\$')
-  end
 %>
 
 \documentclass[12pt,letter,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
@@ -151,12 +147,12 @@
 \section{Publications}
 <% unless publications.author.size.nil? %>
   <% publications.author.each do |pub| %>
-  \cvitem{Author}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= pub.publisher %>, <%= pub.time %>)}}
+  \cvitem{Author}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= latex_desc(pub.publisher) %>, <%= pub.year %>)}}
   <% end %>
 <% end %>
 <% unless publications.editor.size.nil? %>
   <% publications.editor.each do |pub| %>
-  \cvitem{Tech. Reviewer}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= pub.publisher %>, <%= pub.time %>)}}
+  \cvitem{Tech. Reviewer}{``<%= latex_links(latex_desc(pub.title)) %>'' by <%= pub.author %> \textit{(<%= latex_desc(pub.publisher) %>, <%= pub.year %>)}}
   <% end %>
 <% end %>
 <% end %>

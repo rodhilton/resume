@@ -141,7 +141,7 @@ task :rodhilton_site => [:make_target] do |t|
 end
 
 desc "Make private resume PDF"
-task :resume_private => [:latex_private, :latex_private_bw, :latex_private_op]
+task :resume_private => [:latex_private, :latex_private_bw, :latex_private_op, :latex_new_private]
 
 desc "Make public resume PDF"
 task :resume_public => [:latex_public, :html_public, "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]

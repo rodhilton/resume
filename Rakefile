@@ -77,12 +77,12 @@ task :html_public_inline => [:make_target] do |t|
 end
 
 task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "qr_code_url.png"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_public.tex 1>/dev/null"
+  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_public.tex"
   rm "#{TARGET_DIR}/resume_public.tex"
 end
 
 task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "profile.png"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_private.tex 1>/dev/null"
+  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_private.tex"
   #rm "#{TARGET_DIR}/resume_private.tex"
   FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
 end

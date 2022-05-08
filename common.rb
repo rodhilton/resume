@@ -173,8 +173,8 @@ def organize_publications(authored, edited)
 
 end
 
-def trim_publications(pubs, min_clout=5)
-  pubs.select{|p| p.fetch("clout", 0) >= min_clout}.sort_by {|a| a.year }.reverse
+def trim_by_clout(things, min_clout=5)
+  things.select{|p| p.fetch("clout", 0) >= min_clout}
 end
 
 def trim_skills(skills, max_items=10)

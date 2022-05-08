@@ -321,6 +321,7 @@ projects:
     time: 2018
     url: https://github.com/rodhilton/jasome
     license: Apache 2.0
+    clout: 10
   - title: console_table
     role: Maintainer
     location: rubygems.org
@@ -328,3 +329,36 @@ projects:
     time: 2015
     url: https://rubygems.org/gems/console_table/
     license: MIT
+    clout: 9
+  - title: Geneticrypt
+    role: Maintainer
+    location: GitHub
+    description: Extensible framework with CLI and GUI for using genetic algorithms to decrypt messages encrypted with a substitution cipher
+    time: 2012
+    url: https://github.com/rodhilton/Geneticrypt
+    license: GPL v3
+    clout: 6
+  - title: Gobbles
+    role: Maintainer
+    location: GitHub
+    description: Snake game clone written in Java
+    time: 2014
+    url: https://github.com/rodhilton/gobbles
+    license: GPL v2
+    clout: 7
+  - title: Rectangle Visibility
+    role: Maintainer
+    location: GitHub
+    description: Uses Genetic Algorithms to search for solutions to Rectangle Visibility problem
+    time: 2013
+    url: https://github.com/rodhilton/rectangle_visibility
+    license: Apache 2.0
+    clout: 7
+  - title: Trajectories
+    role: Maintainer
+    location: GitHub
+    description: A program that uses Linguistic Geometry concepts to quickly compute all trajectories from a chess board position to another
+    time: 2012
+    url: https://github.com/rodhilton/trajectories
+    license: GPL v2
+    clout: 5

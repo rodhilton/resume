@@ -94,7 +94,7 @@
 <h2>PUBLICATIONS</h2>
 
 
-<% pubs = flags[:complete_history] ? publications : trim_publications(publications, 7) %>
+<% pubs = flags[:complete_history] ? publications : trim_by_clout(publications, 7).sort_by {|a| a.year }.reverse %>
 <ul>
 <% pubs.each do |pub| %>
     <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.role %>, <%= pub.publisher %>, <%= pub.year %>)</i></li>

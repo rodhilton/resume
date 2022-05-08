@@ -207,7 +207,7 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-<% pubs = flags[:complete_history] ? publications : trim_publications(publications, 7) %>
+<% pubs = flags[:complete_history] ? publications : trim_by_clout(publications, 7).sort_by {|a| a.year }.reverse %>
 %  <% pubs.each do |pub| %>
 
   \cventry
@@ -231,7 +231,8 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-% <% projects.each do |project| %>
+<% projs = flags[:complete_history] ? projects : trim_by_clout(projects, 9).sort_by {|a| a.time }.reverse %>
+% <% projs.each do |project| %>
 
   \cventry
     {<%= project.role %>} % Role

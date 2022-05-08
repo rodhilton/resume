@@ -66,7 +66,7 @@ __Software Craftsman and Computer Science Geek__
 ----
 ## Publications 
 
-<% pubs = flags[:complete_history] ? publications : trim_publications(publications, 7) %>
+<% pubs = flags[:complete_history] ? publications : trim_by_clout(publications, 7).sort_by {|a| a.year }.reverse %>
 <% pubs.each do |pub| %>
 * <%= pub.role %>: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.year %>)_
 <% end %>

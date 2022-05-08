@@ -92,25 +92,14 @@
 
 <hr/>
 <h2>PUBLICATIONS</h2>
+
+
+<% pubs = flags[:complete_history] ? publications : trim_publications(publications, 7) %>
 <ul>
-<% unless publications.author.size.nil? %>
-  <li><b>Author</b></li>
-  <ul>
-  <% publications.author.each do |pub| %>
-    <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.year %>)</i></li>
-  <% end %>
-  </ul>
-<% end %>
-<% unless publications.editor.size.nil? %>
-  <li><b>Technical Reviewer</b></li> 
-  <ul>
-  <% publications.editor.each do |pub| %>
-  <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.publisher %>, <%= pub.year %>)</i></li>
-  <% end %>
-  </ul>
+<% pubs.each do |pub| %>
+    <li>"<%= pub.title %>" by <%= pub.author %> <i>(<%= pub.role %>, <%= pub.publisher %>, <%= pub.year %>)</i></li>
 <% end %>
 </ul>
-
 
 <% unless flags[:inline] %>
 </body>

@@ -3,7 +3,7 @@ title: Software Craftsman and Computer Science Geek
 site: www.rodhilton.com
 quote: It works on my machine
 
-oneline_summary: Pragmatic, polyglot problem-solver with solid computer science background and over a decade of industry experience developing backend services, microservices, and web applications with strong focus on client experience. Specialized in building JVM-based scalable systems and improving legacy codebases.
+oneline_summary: Pragmatic problem-solver with solid computer science background and over a decade of industry experience developing backend services, microservices, and web applications with strong focus on client experience. Specialized in building JVM-based scalable systems and improving legacy codebases.
 
 about_summary:
   - <a href="http://rodhilton.github.io/resume/">Software Engineer</a> working primarily in the JVM with Java, Groovy, and Scala with a lot of Ruby coding <a href="https://github.com/rodhilton">on the side</a>
@@ -29,7 +29,7 @@ experience:
       summary: Social team member, building Epic Online Services for friends, messaging, partying
       icon: epicgames.png
       accomplishments:
-        - Operated social game services for friends, messaging, matchmaking, partying, banning, searching, and grouping, serving 3m requests/min
+        - Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
         - Architected backend service solution and designed public-facing API for <a href="https://charlieintel.com/how-to-make-fortnite-clips/165011/">new product</a> capturing and sharing game video highlights between players.
         - Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
         - Developed Interactions Tracking Service, a system for tracking and querying player interactions in Fortnite, utilized in marketing campaigns for increasing player engagement and lapsed player reactivation.
@@ -122,32 +122,25 @@ experience:
         - Created a powerful framework for all products that performed essential common tasks. Functionality included customized Java classloader for applets that detected the user's system capabilities and adjusted the features of the simulation accordingly as well as a universal loading screen.
         - Created an AWT-based graphical toolkit for use in all applications to provide for company-wide consistency in separately developed applications as well as speedy GUI development.
         - Developed company web site and portfolio sites used to land new customers and allow existing customers to easily browser work-in-progress simulations and make suggestions, streamlining the code/revise process.
-<% if flags[:expand_school] %>
-    - company: University of Rochester
-      title: Computer Science Teaching Assistant
-      time: 2001-2004
-      location: Rochester, NY
-      accomplishments:
-        - Teaching Assistant and Workshop Leader for three different Computer Science classes over 6 semesters.
-        - Led workshops on procedural programming, object-oriented programming, algorithms, run-time analysis, inductive proofs, and data structures. Workshop became so popular that it had to be split into two separate sessions.
-        - Helped professors refine their lessons based on student feedback to help focus on problem-areas for students. Was partially responsible for one of the highest pass-through rates for the introductory C.S. classes in school history.
-        - Led groups of students in semester projects; responsible for guiding students through UML design work, assigning tasks, and integrating final projects.
-<% end %>
 
 interests: ElasticSearch, Spark, Cassandra
 
 certifications:
   - title: Certified ScrumMaster
     time: 2009
+    provider: Rally Software
   - title: Sun Certified Java Developer
     subject: J2SE 5.0
     time: 2008
+    provider: Sun Microsystems
   - title: Sun Certified Web Component Developer
     subject: J2EE 1.4
     time: 2006
+    provider: Sun Microsystems
   - title: Sun Certified Java Programmer
     subject: J2SE 5.0
     time: 2005
+    provider: Sun Microsystems
 
 education:
   summary: "\"Perpetual student\" taking supplementary MOOC classes online, attending professional conferences annually, and reading constantly"
@@ -175,101 +168,150 @@ education:
       icon: rochester.png
 
 publications:
-  author:
-    - title: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning
-      author: Rod Hilton, Ellen Gethner
-      publisher: Int'l Journal of S.E. & K.E
-      year: 2018
-      type: Article
-      url: https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110
-  editor:
-    - title: Java Performance, 2nd Edition
-      author: Scott Oaks
-      publisher: O'Reilly
-      year: 2020
-      type: Book
-      clout: 8
-      url: https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/
-    # - title: <a href="https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native">Modern Systems Programming with Scala Native</a>
-    #   author: Richard Whaling
-    #   publisher: Pragmatic
-    #   year: 2020
-    #   type: Book
-    - title: Programing Kotlin
-      author: Venkat Subramaniam
-      publisher: Pragmatic Bookshelf
-      year: 2019
-      type: Book
-      clout: 7
-      url: https://pragprog.com/book/vskotlin/programming-kotlin
-    - title: Release It! 2nd Edition
-      author: Michael Nygard
-      publisher: Pragmatic Bookshelf
-      year: 2018
-      type: Book
-      clout: 9
-      url: https://pragprog.com/book/mnee2/release-it-second-edition
-    # - title: <a href="https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms">A Common-Sense Guide to Data Structures and Algorithms</a>
-    #   author: Jay Wengrow
-    #   publisher: Pragmatic
-    #   year: 2017
-    # - title: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Test-Driving JavaScript Applications</a>
-    #   author: Venkat Subramaniam
-    #   publisher: Pragmatic
-    #   year: 2016
-    #   type: Book
-    # - title: <a href="https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs">Reactive Programming with RxJS</a>
-    #   author: Sergi Mansilla
-    #   publisher: Pragmatic
-    #   year: 2016
-    - title: Agile Web Development with Rails 5
-      author: Sam Ruby
-      publisher: Pragmatic Bookshelf
-      year: 2016
-      type: Book
-      clout: 8
-      url: https://pragprog.com/book/rails5/agile-web-development-with-rails-5
-    # - title: <a href="https://pragprog.com/book/jrtest/the-way-of-the-web-tester">The Way of the Web Tester</a>
-    #   author: Jonathan Rasmusson
-    #   publisher: Pragmatic
-    #   year: 2016
-    - title: Pragmatic Unit Testing in Java 8 with JUnit
-      author: Jeff Langr
-      publisher: Pragmatic Bookshelf
-      year: 2015
-      type: Book
-      clout: 6
-      url: https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit
-    # - title: <a href="https://pragprog.com/book/atcrime/your-code-as-a-crime-scene">Your Code as a Crime Scene</a>
-    #   author: Adam Tornhill
-    #   publisher: Pragmatic
-    #   year: 2015
-    #   type: Book
-    # - title: "<a href='https://pragprog.com/book/tbcoffee2/coffeescript'>CoffeeScript: Accelerated JavaScript Development, Second Edition</a>"
-    #   author: Trevor Burnham
-    #   publisher: Pragmatic
-    #   year: 2015
-    - title: Functional Programming in Scala
-      author: Paul Chiusano and Runar Bjarnason
-      publisher: Manning
-      year: 2014
-      type: Book
-      clout: 10
-      url: http://manning.com/bjarnason/
-    # - title: <a href="http://www.manning.com/partner/">Neo4j in Action</a>
-    #   author: Jonas Partner, Aleksa Vukotic, and Nicki Watt
-    #   publisher: Manning
-    #   year: 2014
-    # - title: <a href="http://shop.oreilly.com/product/0636920019923.do">Gradle, Beyond the Basics</a>
-    #   author: Tim Berglund
-    #   publisher: O'Reilly
-    #   year: 2013
-    #   type: Book
-    # - title: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Functional Programming Patterns in Scala and Clojure</a>
-    #   author: Michael Bevilacqua-Linn
-    #   publisher: Pragmatic
-    #   year: 2013
-    #   type: Book
+  - title: 97 Things Every Java Programmer Should Know
+    author: Various Authors
+    publisher: O'Reilly
+    year: 2020
+    type: Book
+    clout: 8
+    role: Co-author
+    url: https://www.oreilly.com/library/view/97-things-every/9781491952689/
+  - title: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning
+    author: Rod Hilton
+    publisher: Int'l Journal of S.E. & K.E
+    year: 2018
+    type: Journal Article
+    url: https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110
+    role: Author
+    clout: 10
+  - title: Java Performance, 2nd Edition
+    author: Scott Oaks
+    publisher: O'Reilly
+    year: 2020
+    type: Book
+    clout: 8
+    role: Technical Reviewer
+    url: https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/
+  - title: Modern Systems Programming with Scala Native
+    author: Richard Whaling
+    publisher: Pragmatic
+    year: 2020
+    type: Book
+    clout: 4
+    role: Technical Reviewer
+    url: https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native
+  - title: Programing Kotlin
+    author: Venkat Subramaniam
+    publisher: Pragmatic Bookshelf
+    year: 2019
+    type: Book
+    clout: 7
+    role: Technical Reviewer
+    url: https://pragprog.com/book/vskotlin/programming-kotlin
+  - title: Release It! 2nd Edition
+    author: Michael Nygard
+    publisher: Pragmatic Bookshelf
+    year: 2018
+    type: Book
+    clout: 9
+    role: Technical Reviewer
+    url: https://pragprog.com/book/mnee2/release-it-second-edition
+  - title: A Common-Sense Guide to Data Structures and Algorithms
+    author: Jay Wengrow
+    publisher: Pragmatic
+    year: 2017
+    type: Book
+    clout: 4
+    role: Technical Reviewer
+    url: https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms
+  - title: Test-Driving JavaScript Applications
+    author: Venkat Subramaniam
+    publisher: Pragmatic
+    year: 2016
+    type: Book
+    clout: 3
+    role: Technical Reviewer
+    url: https://pragprog.com/book/vsjavas/test-driving-javascript-applications
+  - title: Reactive Programming with RxJS
+    author: Sergi Mansilla
+    publisher: Pragmatic
+    year: 2016
+    type: Book
+    clout: 3
+    role: Technical Reviewer
+    url: https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs
+  - title: Agile Web Development with Rails 5
+    author: Sam Ruby
+    publisher: Pragmatic Bookshelf
+    year: 2016
+    type: Book
+    clout: 8
+    role: Technical Reviewer
+    url: https://pragprog.com/book/rails5/agile-web-development-with-rails-5
+  - title: The Way of the Web Tester
+    author: Jonathan Rasmusson
+    publisher: Pragmatic
+    year: 2016
+    type: Book
+    clout: 2
+    role: Technical Reviewer
+    url: https://pragprog.com/book/jrtest/the-way-of-the-web-tester
+  - title: Pragmatic Unit Testing in Java 8 with JUnit
+    author: Jeff Langr
+    publisher: Pragmatic Bookshelf
+    year: 2015
+    type: Book
+    clout: 6
+    role: Technical Reviewer
+    url: https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit
+  - title: Your Code as a Crime Scene
+    author: Adam Tornhill
+    publisher: Pragmatic
+    year: 2015
+    type: Book
+    clout: 5
+    role: Technical Reviewer
+    url: https://pragprog.com/book/atcrime/your-code-as-a-crime-scene
+  - title: "CoffeeScript: Accelerated JavaScript Development, Second Edition"
+    author: Trevor Burnham
+    publisher: Pragmatic
+    year: 2015
+    type: Book
+    clout: 3
+    role: Technical Reviewer
+    url: https://pragprog.com/book/tbcoffee2/coffeescript
+  - title: Functional Programming in Scala
+    author: Paul Chiusano and Runar Bjarnason
+    publisher: Manning
+    year: 2014
+    type: Book
+    clout: 10
+    role: Technical Reviewer
+    url: http://manning.com/bjarnason/
+  - title: Neo4j in Action
+    author: Jonas Partner, Aleksa Vukotic, and Nicki Watt
+    publisher: Manning
+    year: 2014
+    type: Book
+    clout: 5
+    role: Technical Reviewer
+    url: https://www.manning.com/books/neo4j-in-action
+  - title: Gradle, Beyond the Basics
+    author: Tim Berglund
+    publisher: O'Reilly
+    year: 2013
+    type: Book
+    clout: 5
+    role: Technical Reviewer
+    url: http://shop.oreilly.com/product/0636920019923.do
+  - title: Functional Programming Patterns in Scala and Clojure
+    author: Michael Bevilacqua-Linn
+    publisher: Pragmatic
+    year: 2013
+    type: Book
+    clout: 5
+    role: Technical Reviewer
+    url: http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure
 
 projects:
   - title: JaSoMe (Java Source Metrics)
@@ -278,9 +320,11 @@ projects:
     description: Zero-compilation Object Oriented Metrics analyzer for Java code, 13 forks on GitHub
     time: 2018
     url: https://github.com/rodhilton/jasome
+    license: Apache 2.0
   - title: console_table
     role: Maintainer
     location: rubygems.org
     description: Ruby gem for formatting and printing tabluar data in commandline scripts, over 100,000 downloads
     time: 2015
     url: https://rubygems.org/gems/console_table/
+    license: MIT

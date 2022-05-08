@@ -43,7 +43,7 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
             
-    * Operated social game services for friends, messaging, matchmaking, partying, banning, searching, and grouping, serving 3m requests/min
+    * Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
             
     * Architected backend service solution and designed public-facing API for [new product](https://charlieintel.com/how-to-make-fortnite-clips/165011/) capturing and sharing game video highlights between players.
             

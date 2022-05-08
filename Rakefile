@@ -29,12 +29,6 @@ file "qr_code_contact.png" => [:make_target] do |t|
   rm "qr_code_contact.txt"
 end
 
-file "qr_code_contact_bw.png" => [:make_target] do |t|
-  sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
-  sh "cat qr_code_contact.txt | qrencode -o #{TARGET_DIR}/qr_code_contact_bw.png -t png -m 0 --size=20 --foreground=000000"
-  rm "qr_code_contact.txt"
-end
-
 file "qr_code_url.png" => [:make_target] do |t|
   sh "templator/templator -d resume.yaml qr_code_url.txt.erb > qr_code_url.txt"
   sh "cat qr_code_url.txt | qrencode -o #{TARGET_DIR}/qr_code_url.png -t png -m 0 --size=20 --foreground=444444"
@@ -53,29 +47,12 @@ end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
   #sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
-end
-
-file "#{TARGET_DIR}/resume_full.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} #{private_flags} -f photo:qr_code_contact > #{TARGET_DIR}/resume_full.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f expand_school -f photo:profile > #{TARGET_DIR}/resume_public.tex"
 end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f photo:qr_code_contact > #{TARGET_DIR}/resume_private.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f expand_school -f photo:profile > #{TARGET_DIR}/resume_private.tex"
 end
-
-file "#{TARGET_DIR}/resume_new_private.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume_new.tex.erb -f color #{private_flags} -f expand_school -f photo:profile > #{TARGET_DIR}/resume_new_private.tex"
-end
-
-file "#{TARGET_DIR}/resume_op.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume_op.tex.erb -f color #{private_flags} -f photo:qr_code_contact_bw > #{TARGET_DIR}/resume_op.tex"
-end
-
-file "#{TARGET_DIR}/resume_private_bw.tex"  => [:make_target, "qr_code_contact_bw.png"] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb #{private_flags} -f photo:qr_code_contact_bw > #{TARGET_DIR}/resume_private_bw.tex"
-end
-
 
 file "#{TARGET_DIR}/resume_public.md" => [:make_target] do |t|
   sh "templator/templator -d #{data_files} resume.md.erb #{public_flags} > #{TARGET_DIR}/resume_public.md"
@@ -100,36 +77,14 @@ task :html_public_inline => [:make_target] do |t|
 end
 
 task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "qr_code_url.png"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_public.tex"
+  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_public.tex 1>/dev/null"
   rm "#{TARGET_DIR}/resume_public.tex"
 end
 
-desc "Make full resume PDF"
-task :latex_full => ["#{TARGET_DIR}/resume_full.tex", :copy_deps, "qr_code_contact.png"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_full.tex"
-  rm "#{TARGET_DIR}/resume_full.tex"
-end
-
-task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "qr_code_contact.png"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_private.tex"
-  rm "#{TARGET_DIR}/resume_private.tex"
+task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "profile.png"] do |t|
+  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_private.tex 1>/dev/null"
+  #rm "#{TARGET_DIR}/resume_private.tex"
   FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
-end
-
-task :latex_new_private => ["#{TARGET_DIR}/resume_new_private.tex", :copy_deps, "profile.png"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_new_private.tex"
-  #rm "#{TARGET_DIR}/resume_new_private.tex"
-  FileUtils.cp_r File.join(TARGET_DIR, "resume_new_private.pdf"), File.join(TARGET_DIR, "RodHilton_new_resume.pdf")
-end
-
-task :latex_private_op => ["#{TARGET_DIR}/resume_op.tex", :copy_deps, "qr_code_contact.png"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_op.tex"
-  rm "#{TARGET_DIR}/resume_op.tex"
-end
-
-task :latex_private_bw => ["#{TARGET_DIR}/resume_private_bw.tex", :copy_deps, "qr_code_contact.png"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && pdflatex resume_private_bw.tex"
-  #rm "#{TARGET_DIR}/resume_private_bw.tex"
 end
 
 desc "Build single-page web site"
@@ -141,19 +96,10 @@ task :rodhilton_site => [:make_target] do |t|
 end
 
 desc "Make private resume PDF"
-task :resume_private => [:latex_private, :latex_private_bw, :latex_private_op, :latex_new_private]
+task :resume_private => [:latex_private]
 
 desc "Make public resume PDF"
 task :resume_public => [:latex_public, :html_public, "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]
 
 desc "Make all resumes"
 task :all => [:resume_public, :resume_private]
-
-desc "Upload resume to web site"
-task :upload_resume => [:resume_public] do |t|
-  pub = YAML.load_file("public.yaml")
-  host = pub["host"]
-  path = pub["path"]
-  abort("Missing required values in public.yaml") if host.nil? or path.nil?
-  sh "scp -P 7822 #{TARGET_DIR}/resume_public.html #{TARGET_DIR}/resume_public.pdf #{host}:#{path}"
-end

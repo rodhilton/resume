@@ -43,7 +43,7 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
             
-    * Operated social game services for friends, messaging, matchmaking, partying, banning, searching, and grouping, serving 3m requests/min
+    * Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
             
     * Architected backend service solution and designed public-facing API for [new product](https://charlieintel.com/how-to-make-fortnite-clips/165011/) capturing and sharing game video highlights between players.
             
@@ -155,31 +155,18 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Computer Science Teaching Assistant__ - _University of Rochester_ - 2001-2004
-            
-            
-    * Teaching Assistant and Workshop Leader for three different Computer Science classes over 6 semesters.
-            
-    * Led workshops on procedural programming, object-oriented programming, algorithms, run-time analysis, inductive proofs, and data structures. Workshop became so popular that it had to be split into two separate sessions.
-            
-    * Helped professors refine their lessons based on student feedback to help focus on problem-areas for students. Was partially responsible for one of the highest pass-through rates for the introductory C.S. classes in school history.
-            
-    * Led groups of students in semester projects; responsible for guiding students through UML design work, assigning tasks, and integrating final projects.
-            
-
-
 
 ---- 
 ## Certifications 
     
 * __Certified ScrumMaster__ -  2009
-
+    
 * __Sun Certified Java Developer__ - _J2SE 5.0_ -  2008
-
+    
 * __Sun Certified Web Component Developer__ - _J2EE 1.4_ -  2006
-
+    
 * __Sun Certified Java Programmer__ - _J2SE 5.0_ -  2005
-
+    
 
 
 ----
@@ -208,22 +195,41 @@ __Software Craftsman and Computer Science Geek__
 ## Publications 
 
 
-  
-* Author: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning by Rod Hilton, Ellen Gethner _(Int'l Journal of S.E. & K.E, 2018)_
-  
 
+* Co-author: 97 Things Every Java Programmer Should Know by Various Authors _(O'Reilly, 2020)_
 
-  
-* Tech Reviewer: Java Performance, 2nd Edition by Scott Oaks _(O'Reilly, 2020)_
-  
-* Tech Reviewer: Programing Kotlin by Venkat Subramaniam _(Pragmatic Bookshelf, 2019)_
-  
-* Tech Reviewer: Release It! 2nd Edition by Michael Nygard _(Pragmatic Bookshelf, 2018)_
-  
-* Tech Reviewer: Agile Web Development with Rails 5 by Sam Ruby _(Pragmatic Bookshelf, 2016)_
-  
-* Tech Reviewer: Pragmatic Unit Testing in Java 8 with JUnit by Jeff Langr _(Pragmatic Bookshelf, 2015)_
-  
-* Tech Reviewer: Functional Programming in Scala by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
-  
+* Author: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning by Rod Hilton _(Int'l Journal of S.E. & K.E, 2018)_
+
+* Technical Reviewer: Java Performance, 2nd Edition by Scott Oaks _(O'Reilly, 2020)_
+
+* Technical Reviewer: Modern Systems Programming with Scala Native by Richard Whaling _(Pragmatic, 2020)_
+
+* Technical Reviewer: Programing Kotlin by Venkat Subramaniam _(Pragmatic Bookshelf, 2019)_
+
+* Technical Reviewer: Release It! 2nd Edition by Michael Nygard _(Pragmatic Bookshelf, 2018)_
+
+* Technical Reviewer: A Common-Sense Guide to Data Structures and Algorithms by Jay Wengrow _(Pragmatic, 2017)_
+
+* Technical Reviewer: Test-Driving JavaScript Applications by Venkat Subramaniam _(Pragmatic, 2016)_
+
+* Technical Reviewer: Reactive Programming with RxJS by Sergi Mansilla _(Pragmatic, 2016)_
+
+* Technical Reviewer: Agile Web Development with Rails 5 by Sam Ruby _(Pragmatic Bookshelf, 2016)_
+
+* Technical Reviewer: The Way of the Web Tester by Jonathan Rasmusson _(Pragmatic, 2016)_
+
+* Technical Reviewer: Pragmatic Unit Testing in Java 8 with JUnit by Jeff Langr _(Pragmatic Bookshelf, 2015)_
+
+* Technical Reviewer: Your Code as a Crime Scene by Adam Tornhill _(Pragmatic, 2015)_
+
+* Technical Reviewer: CoffeeScript: Accelerated JavaScript Development, Second Edition by Trevor Burnham _(Pragmatic, 2015)_
+
+* Technical Reviewer: Functional Programming in Scala by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
+
+* Technical Reviewer: Neo4j in Action by Jonas Partner, Aleksa Vukotic, and Nicki Watt _(Manning, 2014)_
+
+* Technical Reviewer: Gradle, Beyond the Basics by Tim Berglund _(O'Reilly, 2013)_
+
+* Technical Reviewer: Functional Programming Patterns in Scala and Clojure by Michael Bevilacqua-Linn _(Pragmatic, 2013)_
+
 

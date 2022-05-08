@@ -48,7 +48,7 @@ __Software Craftsman and Computer Science Geek__
 ## Certifications 
     <% certifications.each do |certification| %>
 * __<%= certification.title %>__ - <%= "_#{certification.subject}_ - " unless certification.subject.nil? %> <%= certification.time %>
-<% end %>
+    <% end %>
 <% end %>
 
 ----
@@ -66,14 +66,9 @@ __Software Craftsman and Computer Science Geek__
 ----
 ## Publications 
 
-<% unless publications.author.size.nil? %>
-  <% publications.author.each do |pub| %>
-* Author: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.year %>)_
-  <% end %>
+<% pubs = flags[:complete_history] ? publications : trim_publications(publications, 7) %>
+<% pubs.each do |pub| %>
+* <%= pub.role %>: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.year %>)_
 <% end %>
-<% unless publications.editor.size.nil? %>
-  <% publications.editor.each do |pub| %>
-* Tech Reviewer: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.year %>)_
-  <% end %>
-<% end %>
+
 <% end %>

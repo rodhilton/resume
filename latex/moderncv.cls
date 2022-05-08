@@ -1,1 +1,0 @@
-moderncv/moderncv.cls

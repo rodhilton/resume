@@ -41,6 +41,7 @@ end
 
 task :copy_deps do |t|
   FileUtils.cp_r Dir.glob( File.join("latex", "*" ) ), TARGET_DIR
+  FileUtils.cp_r Dir.glob( File.join("resources", "*" ) ), TARGET_DIR
   #FileUtils.cp_r Dir.glob( "*.png" ), TARGET_DIR
   #FileUtils.cp_r Dir.glob( "*.eps" ), TARGET_DIR
 end

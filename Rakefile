@@ -63,6 +63,10 @@ file "#{TARGET_DIR}/resume_short.md" => [:make_target] do |t|
   sh "templator/templator -d #{data_files} resume.md.erb > #{TARGET_DIR}/resume_short.md"
 end
 
+file "#{TARGET_DIR}/resume.txt" => [:make_target] do |t|
+  sh "templator/templator -d #{data_files} resume.txt.erb > #{TARGET_DIR}/resume.txt"
+end
+
 file "#{TARGET_DIR}/resume_public.html"  => [:make_target] do |t|
     sh "templator/templator -d #{data_files} resume.html.erb #{public_flags} > #{TARGET_DIR}/resume_public.html"
 end
@@ -88,6 +92,11 @@ task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "profile
   FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
 end
 
+task :parseable_txt => ["#{TARGET_DIR}/resume.txt", :copy_deps] do |t|
+  #rm "#{TARGET_DIR}/resume_private.tex"
+  FileUtils.cp_r File.join(TARGET_DIR, "resume.txt"), File.join(TARGET_DIR, "resume.txt")
+end
+
 desc "Build single-page web site"
 task :rodhilton_site => [:make_target] do |t|
   FileUtils.cp_r "rodhilton.com", TARGET_DIR
@@ -97,7 +106,7 @@ task :rodhilton_site => [:make_target] do |t|
 end
 
 desc "Make private resume PDF"
-task :resume_private => [:latex_private]
+task :resume_private => [:latex_private, :parseable_txt]
 
 desc "Make public resume PDF"
 task :resume_public => [:latex_public, :html_public, "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]

@@ -26,10 +26,10 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Scala, Spring, REST
-* __Advanced__: HTML/CSS, Ruby, MySQL, JavaScript, Groovy, Kafka, Grails, Thrift, Hadoop, PostgreSQL, Oracle, Python, AngularJS
-* __Novice__: SOAP, SBT, AWS, memcached, Redis, Jenkins, Terraform, Kubernetes, hazelcast, Docker
-* __Desired__: ElasticSearch, Spark, Cassandra
+* __Accomplished__: Java, Scala, Git
+* __Advanced__: REST, HTML/CSS, Ruby, Spring, MySQL, JavaScript, Groovy, Kafka, Grails
+* __Novice__: Thrift, Hadoop, PostgreSQL, Oracle, Python, AngularJS, SOAP, SBT, memcached, Jenkins, hazelcast
+* __Desired__: ElasticSearch, Spark, Cassandra, Go, Typescript, Kotlin
 
 ----
 
@@ -49,7 +49,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
             
-    * Developed Interactions Tracking Service, a system for tracking and querying player interactions in Fortnite, utilized in marketing campaigns for increasing player engagement and lapsed player reactivation.
+    * Developed Interactions Tracking Service for tracking and querying player interactions for games supporting 11m concurrent players, utilized in marketing campaigns for increasing engagement and lapsed player reactivation.
             
 
 
@@ -138,7 +138,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Lead Software Developer__ - _Truth-N-Beauty Software_ - 2001-2004
+*  __Lead Software Developer__ - _Truth-N-Beauty Software_ - 2002-2004
             
     * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
             
@@ -174,7 +174,7 @@ __Software Craftsman and Computer Science Geek__
 ## Education
 
 
-* __M.S., Computer Science__ - _University of Colorado at Denver_ - 2020
+* __M.S., Computer Science__ - _University of Colorado_ - 2022
     * Specialization in Machine Learning, Theory, and Algorithms
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         

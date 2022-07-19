@@ -52,7 +52,7 @@ file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
 end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f expand_school -f photo:profile > #{TARGET_DIR}/resume_private.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f expand_coursework -f photo:profile > #{TARGET_DIR}/resume_private.tex"
 end
 
 file "#{TARGET_DIR}/resume_public.md" => [:make_target] do |t|
@@ -64,7 +64,7 @@ file "#{TARGET_DIR}/resume_short.md" => [:make_target] do |t|
 end
 
 file "#{TARGET_DIR}/resume.txt" => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.txt.erb > #{TARGET_DIR}/resume.txt"
+  sh "templator/templator -d #{data_files} resume.txt.erb #{public_flags} > #{TARGET_DIR}/resume.txt"
 end
 
 file "#{TARGET_DIR}/resume_public.html"  => [:make_target] do |t|
@@ -93,8 +93,6 @@ task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "profile
 end
 
 task :parseable_txt => ["#{TARGET_DIR}/resume.txt", :copy_deps] do |t|
-  #rm "#{TARGET_DIR}/resume_private.tex"
-  FileUtils.cp_r File.join(TARGET_DIR, "resume.txt"), File.join(TARGET_DIR, "resume.txt")
 end
 
 desc "Build single-page web site"

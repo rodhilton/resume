@@ -1,5 +1,5 @@
-<% load 'common.rb' %>
-<%
+<%- load 'common.rb' -%>
+<%-
 def markdown_links(one)
     one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "[\\3](\\2)")
 end
@@ -7,48 +7,54 @@ end
 def strip_links(one)
     one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "\\3")
 end
-%>
-
+-%>
 Rod Hilton
 Software Craftsman and Computer Science Geek
 
+----
 
 Summary:
 <% summary.each do |summary_item| %>
-<%= summary_item %>
+    <%= summary_item %>
 <% end %>
 
-
+----
 
 Technical Skills:
 
-<% skills = calculate_skills(experience.jobs) %>
+<% skills = calculate_skills(experience.jobs) -%>
 Accomplished: <%= skills[:accomplished] %>
 Advanced: <%= skills[:advanced] %>
 Novice: <%= skills[:novice] %>
 Desired: <%= interests %>
 
-
+----
 
 Experience:
 
 <% 
     job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs)
     job_list.each_with_index do |job, i| %><% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i) %>
-<%= job.title %> - <%= job.company %> - <%= job.time %>
+<%= job.company %> - <%= job.title %> (<%= job.start_time %> - <%= job.end_time %>)
 <% unless job.technologies.nil? %>
-Utilized <%= job.technologies %>
-<% end %><% accomplishments.each do |accomplishment| %>
-<%= strip_links(accomplishment) %>
+    Utilized <%= job.technologies %>
 <% end %>
-<% end %>
+<%- accomplishments.each do |accomplishment| -%>
+    <%= strip_links(accomplishment) %>
 
+<%- end -%>
+<%- end -%>
+
+----
 
 Education:
 
 <% education.degrees.each do |degree| %>
 <%= degree.title %> - <%= degree.school %> <%= display_schoolyear(degree, flags[:expand_school ], "- ", "") %><% if flags[:expand_school] %>
-<%= degree.note %>
-Coursework: <%= degree.coursework %>
-<% end %>
-<% end %>
+
+    <%= degree.note %>
+
+    Coursework: <%= degree.coursework %>
+
+<%- end -%>
+<%- end -%>

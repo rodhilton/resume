@@ -5,14 +5,34 @@ SKILL_ORDER_DECAY = 0.08 #How much value a skill decays by (starting at 1) as it
 SKILL_YEARLY_DECAY = 0.1
 YEAR_CUTOFF = 7
 
+def extract_year(date)
+
+  if date.nil? or date == "Present"
+    "Present"
+  else
+    date[-4..-1]
+  end
+end
+
+def timespan(start_date, end_date)
+  end_year = extract_year(end_date)
+
+  start_year=extract_year(start_date)
+
+  return "#{start_year}-#{end_year}"
+
+end
+
+
 def calculate_skills(jobs)
 
   years_and_skills = {}
   skill_last_used = {}
 
   jobs.each do |job|
-    time = job.time.gsub("Present", Time.new.year.to_s)
-    start_year, end_year = time.split(/\s*-\s*/)
+    start_year = extract_year(job.start_time)
+    end_year = extract_year(job.end_time).gsub("Present", Time.new.year.to_s)
+
     if !job.technologies.nil? 
       skill_list = job.technologies.split(/,/).collect{|s| s.strip} unless job.technologies.nil?
       start_year.to_i.upto(end_year.to_i) do |year|
@@ -147,7 +167,9 @@ end
 
 def trim_jobs(jobs, max_age=MAX_JOB_AGE) 
 	jobs.select do |job|
-		start_year, end_year = job.time.split("-")
+		start_year = extract_year(job.start_time)
+    end_year = extract_year(job.end_time)
+
 		current_year = Time.new.year
 		end_year == "Present" or current_year - end_year.to_i <= max_age
 	end

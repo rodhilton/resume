@@ -43,7 +43,7 @@
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
 <% job_list.each do |job| %>
     <li>
-        <b><%= job.title %></b> - <i><%= job.company %><% unless job.note.nil? %> (<%= job.note %>)<% end %></i> - <%= job.time %><br/>
+        <b><%= job.title %></b> - <i><%= job.company %><% unless job.note.nil? %> (<%= job.note %>)<% end %></i> - <%= timespan(job.start_time, job.end_time) %><br/>
         <ul>
             <% unless job.technologies.nil? %>
             <li>Utilized <%= job.technologies %></li>

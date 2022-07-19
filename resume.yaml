@@ -17,13 +17,16 @@ summary:
   - Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
   - Polyglot programmer comfortable with object-oriented and functional languages
 
+interests: ElasticSearch, Spark, Cassandra, Go, TypeScript, Kotlin
+
 experience:
   summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
   jobs:
     - company: Epic Games
       title: Senior Backend Engineer
       team: Online Social
-      time: 2021-Present
+      start_time: 02/2021
+      end_time: Present
       location: Remote
       technologies: Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
       summary: Social team member, building Epic Online Services for friends, messaging, partying
@@ -31,13 +34,13 @@ experience:
       accomplishments:
         - Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
         - Architected backend service solution and designed public-facing API for <a href="https://charlieintel.com/how-to-make-fortnite-clips/165011/">new product</a> capturing and sharing game video highlights between players.
-        - Supported backend services utilized by Fortnite, a game handling over 11 million concurrent players at peak
         - Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
-        - Developed Interactions Tracking Service, a system for tracking and querying player interactions in Fortnite, utilized in marketing campaigns for increasing player engagement and lapsed player reactivation.
+        - Developed Interactions Tracking Service for tracking and querying player interactions for games supporting 11m concurrent players, utilized in marketing campaigns for increasing engagement and lapsed player reactivation.
     - company: Twitter
       title: Senior Software Engineer
       team: Core Tweet Service & Developer Platform
-      time: 2017-2021
+      start_time: 09/2017
+      end_time: 02/2021
       location: Remote
       # location: Boulder, CO
       technologies: Scala, Java, Git, Kafka, MySQL, REST, Thrift, Hadoop, Python
@@ -54,7 +57,8 @@ experience:
       note: formerly Time Warner Cable
       title: Principal Engineer
       team: Core Services & Customer Portals
-      time: 2011-2017
+      start_time: 06/2011
+      end_time: 08/2017
       location: Remote
       # location: Denver, CO
       technologies: Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
@@ -70,7 +74,8 @@ experience:
       note: formerly Rally Software
       title: Java Web Applications Developer
       team: Lifecycle Management Application
-      time: 2008-2011
+      start_time: 07/2008
+      end_time: 06/2011
       location: Boulder, CO
       technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
       summary: Agile Lifecycle Management team, developed J2EE SaaS web application for enterprise scala adoption utilizing Spring, Servlets, JSPs, and AJAX.
@@ -83,7 +88,8 @@ experience:
     - company: Rogue Wave Software
       note: formerly OpenLogic
       title: Software Engineer
-      time: 2007-2008
+      start_time: 01/2007
+      end_time: 07/2008
       location: Denver, CO
       technologies: Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
       summary: OpenLogic Enterprise team, developed SaaS web applications to manage open source across corporations as well as open source scanning desktop application utilizing Java, Ruby, Rails, and JavaScript.
@@ -98,7 +104,8 @@ experience:
       note: formerly InsightAmerica
       title: Senior Software Developer
       team: Driving Records Aggregation
-      time: 2004-2007
+      start_time: 10/2004
+      end_time: 01/2007
       location: Denver, CO
       technologies: Java, SQL Server, ColdFusion, HTML/CSS
       summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
@@ -112,7 +119,8 @@ experience:
     - company: Truth-N-Beauty Software
       title: Lead Software Developer
       team: Educational Interactives
-      time: 2001-2004
+      start_time: 05/2002
+      end_time: 10/2004
       location: Rochester, NY
       technologies: Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
       icon: tnb.png
@@ -123,8 +131,6 @@ experience:
         - Created a powerful framework for all products that performed essential common tasks. Functionality included customized Java classloader for applets that detected the user's system capabilities and adjusted the features of the simulation accordingly as well as a universal loading screen.
         - Created an AWT-based graphical toolkit for use in all applications to provide for company-wide consistency in separately developed applications as well as speedy GUI development.
         - Developed company web site and portfolio sites used to land new customers and allow existing customers to easily browser work-in-progress simulations and make suggestions, streamlining the code/revise process.
-
-interests: ElasticSearch, Spark, Cassandra
 
 certifications:
   - title: Certified ScrumMaster
@@ -147,12 +153,13 @@ education:
   summary: "\"Perpetual student\" taking supplementary MOOC classes online, attending professional conferences annually, and reading constantly"
   degrees:
     - title: M.S., Computer Science
-      school: University of Colorado at Denver
+      school: University of Colorado
       location: Denver, CO
-      time: 2011-2020
+      time: 2011-2022
       note: Specialization in Machine Learning, Theory, and Algorithms
       coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
       icon: ucd.png
+<% if flags[:expand_school] %>
     - title: M.S., Software Engineering
       school: Regis University
       location: Denver, CO
@@ -160,6 +167,7 @@ education:
       note: "Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>"
       coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
       icon: regis.png
+<% end %>
     - title: B.S., Computer Science
       school: University of Rochester
       location: Rochester, NY

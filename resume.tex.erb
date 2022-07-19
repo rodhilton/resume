@@ -169,7 +169,7 @@
     {<%= degree.school %>} % Organization
     {<%= degree.location %>} % Location
     { } % Date(s)
-    {<% if flags[:expand_school] or flags[:expand_coursework]%>
+    {<% if flags[:expand_school] or flags[:expand_coursework] %>
     \begin{cvitems}
         \item {<%= latex_links(degree.note) %>}
         \item Coursework: {<%= latex_links(degree.coursework) %>}

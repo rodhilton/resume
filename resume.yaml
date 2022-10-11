@@ -23,8 +23,8 @@ experience:
   summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
   jobs:
     - company: Epic Games
-      title: Senior Backend Engineer
-      team: Online Social
+      title: Principal Engineer
+      team: Online Social, Backend
       start_time: 02/2021
       end_time: Present
       location: Remote
@@ -37,7 +37,7 @@ experience:
         - Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
         - Developed Interactions Tracking Service for tracking and querying player interactions for games supporting 11m concurrent players, utilized in marketing campaigns for increasing engagement and lapsed player reactivation.
     - company: Twitter
-      title: Senior Software Engineer
+      title: Staff Software Engineer
       team: Core Tweet Service & Developer Platform
       start_time: 09/2017
       end_time: 02/2021
@@ -72,7 +72,7 @@ experience:
         - Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
     - company: CA Technologies 
       note: formerly Rally Software
-      title: Java Web Applications Developer
+      title: Staff Engineer
       team: Lifecycle Management Application
       start_time: 07/2008
       end_time: 06/2011
@@ -87,7 +87,8 @@ experience:
         - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system.
     - company: Rogue Wave Software
       note: formerly OpenLogic
-      title: Software Engineer
+      title: Senior Software Engineer
+      team: Open Source Management
       start_time: 01/2007
       end_time: 07/2008
       location: Denver, CO

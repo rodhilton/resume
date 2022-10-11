@@ -48,7 +48,7 @@ end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
   #sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f expand_school -f photo:profile > #{TARGET_DIR}/resume_public.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f expand_school -f show_projects -f photo:profile > #{TARGET_DIR}/resume_public.tex"
 end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
@@ -99,8 +99,14 @@ desc "Build single-page web site"
 task :rodhilton_site => [:make_target] do |t|
   FileUtils.cp_r "rodhilton.com", TARGET_DIR
   FileUtils.mkdir_p File.join(TARGET_DIR, "rodhilton.com", "img")
+  FileUtils.mkdir_p File.join(TARGET_DIR, "rodhilton.com", "_includes")
   FileUtils.cp Dir.glob(File.join("resources", "*")), File.join(TARGET_DIR, "rodhilton.com", "img")
   sh "templator/templator -d #{data_files} rodhilton.index.html.erb > #{TARGET_DIR}/rodhilton.com/index.html"
+  sh "templator/templator -d #{data_files} rodhilton.com.about.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/about.html"
+  sh "templator/templator -d #{data_files} rodhilton.com.experience.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/experience.html"
+  sh "templator/templator -d #{data_files} rodhilton.com.education.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/education.html"
+  sh "templator/templator -d #{data_files} rodhilton.com.skills.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/skills.html"
+  sh "templator/templator -d #{data_files} rodhilton.com.projects.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/projects.html"
 end
 
 desc "Make private resume PDF"

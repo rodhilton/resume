@@ -1,0 +1,22 @@
+<% load 'common.rb' %>
+<h2 class="mb-5">Skills</h2>
+<div class="skill-icons">
+  <% 
+     skills = calculate_skills(experience.jobs)
+     ordered_skills = skills[:accomplished].split(", ") + skills[:advanced].split(", ") + skills[:novice].split(", ")# + interests.split(", ")
+  %>
+  <% ordered_skills.each do |skillname| %>
+  <% skill_to_icons = skill_to_icons(skillname) %>
+    <% skill_to_icons.each do |skillicon| %>
+      <span title="<%= skillicon %>" class="devicon-<%= skillicon.downcase %>-plain colored">
+    <% end %>
+  <% end %>
+</div>
+<p>
+  <ul>
+      <li><b>Accomplished</b>: <%= skills[:accomplished] %></li>
+      <li><b>Advanced</b>: <%= skills[:advanced] %></li>
+      <li><b>Novice</b>: <%= skills[:novice] %></li>
+      <li><b>Desired</b>: <%= interests %></li>
+  </ul>
+</p>

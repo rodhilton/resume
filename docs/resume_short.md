@@ -26,10 +26,10 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Scala, Git
-* __Advanced__: REST, HTML/CSS, Ruby, Spring, MySQL, JavaScript, Groovy, Kafka, Grails
-* __Novice__: Thrift, Hadoop, PostgreSQL, Oracle, Python, AngularJS, SOAP, SBT, memcached, Jenkins, hazelcast
-* __Desired__: ElasticSearch, Spark, Cassandra, Go, Typescript, Kotlin
+* __Accomplished__: Java, Git, Scala, Spring, REST
+* __Advanced__: HTML/CSS, Ruby, MySQL, JavaScript, Groovy, Kafka, Grails, Thrift, Hadoop, PostgreSQL, Oracle, Python, AngularJS
+* __Novice__: SOAP, SBT, AWS, memcached, Redis, Jenkins, Terraform, Kubernetes, hazelcast, Docker
+* __Desired__: ElasticSearch, Spark, Cassandra, Go, TypeScript, Kotlin
 
 ----
 
@@ -38,7 +38,22 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Software Engineer__ - _Twitter_ - 2017-2021
+*  __Principal Engineer__ - _Epic Games_ - 2021-Present
+            
+    * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
+            
+            
+    * Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
+            
+    * Architected backend service solution and designed public-facing API for [new product](https://charlieintel.com/how-to-make-fortnite-clips/165011/) capturing and sharing game video highlights between players.
+            
+    * Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
+            
+    * Developed Interactions Tracking Service for tracking and querying player interactions for games supporting 11m concurrent players, utilized in marketing campaigns for increasing engagement and lapsed player reactivation.
+            
+
+
+*  __Staff Software Engineer__ - _Twitter_ - 2017-2021
             
     * Utilized Scala, Java, Git, Kafka, MySQL, REST, Thrift, Hadoop, Python
             
@@ -48,12 +63,6 @@ __Software Craftsman and Computer Science Geek__
     * Led Privacy and Data Protection initiatives within Core Tweet Service team, responsible for annotating all data, migrating from in-house message platform to Kafka, supporting mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html), and onboarding to wipeout and data retention tooling to ensure GDPR compliance.
             
     * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter), allowing application of complex real-time filters to Twitter's firehose using custom filter query language.
-            
-    * Created new filter operators to match tweets based on Machine-Learning-based Semantic Core annotations and Natural Language processed Named Entity Recognition annotations.
-            
-    * Created long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
-            
-    * Joined "Project Luna" initiative, improving company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
             
 
 
@@ -65,8 +74,6 @@ __Software Craftsman and Computer Science Geek__
     * Created [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
             
     * Developed high-availability RESTful middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services; augmented with caching, circuit breakers, monitoring, and administrative dashboard, handling over 1,000 requests/sec at peak load.
-            
-    * Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months, saving an estimated $4m/year.
             
 
 

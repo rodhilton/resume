@@ -1,0 +1,11 @@
+<h1 class="mb-0"><%= name.split(/\s+/)[0] %>
+    <span class="text-primary"><%= name.split(/\s+/)[1] %></span>
+</h1>
+<div class="subheading mb-5">
+    <%= title %>
+</div>
+<ul class="mb-5">
+    <% about_summary.each do |summary_item| %>
+    <li><%= summary_item %></li>
+    <% end %>
+</ul>

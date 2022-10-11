@@ -26,10 +26,10 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Scala, Git
-* __Advanced__: REST, HTML/CSS, Ruby, Spring, MySQL, JavaScript, Groovy, Kafka, Grails
-* __Novice__: Thrift, Hadoop, PostgreSQL, Oracle, Python, AngularJS, SOAP, SBT, memcached, Jenkins, hazelcast
-* __Desired__: ElasticSearch, Spark, Cassandra, Go, Typescript, Kotlin
+* __Accomplished__: Java, Git, Scala, Spring, REST
+* __Advanced__: HTML/CSS, Ruby, MySQL, JavaScript, Groovy, Kafka, Grails, Thrift, Hadoop, PostgreSQL, Oracle, Python, AngularJS
+* __Novice__: SOAP, SBT, AWS, memcached, Redis, Jenkins, Terraform, Kubernetes, hazelcast, Docker
+* __Desired__: ElasticSearch, Spark, Cassandra, Go, TypeScript, Kotlin
 
 ----
 
@@ -38,7 +38,7 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Backend Engineer__ - _Epic Games_ - 2021-Present
+*  __Principal Engineer__ - _Epic Games_ - 2021-Present
             
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
@@ -53,7 +53,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Senior Software Engineer__ - _Twitter_ - 2017-2021
+*  __Staff Software Engineer__ - _Twitter_ - 2017-2021
             
     * Utilized Scala, Java, Git, Kafka, MySQL, REST, Thrift, Hadoop, Python
             
@@ -89,7 +89,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Java Web Applications Developer__ - _CA Technologies (formerly Rally Software)_ - 2008-2011
+*  __Staff Engineer__ - _CA Technologies (formerly Rally Software)_ - 2008-2011
             
     * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
             
@@ -104,7 +104,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Software Engineer__ - _Rogue Wave Software (formerly OpenLogic)_ - 2007-2008
+*  __Senior Software Engineer__ - _Rogue Wave Software (formerly OpenLogic)_ - 2007-2008
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             

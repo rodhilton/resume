@@ -131,7 +131,7 @@
 
 \cvsection{Experience}
 
-<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,13) %>
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,15) %>
 
 
 \begin{cventries}
@@ -223,6 +223,7 @@
 \end{cventries}
 
 
+<% if flags[:show_projects] %>
 
 \cvsection{Projects}
 
@@ -247,6 +248,8 @@
 
 
 \end{cventries}
+
+<% end %>
 
 
 

@@ -1,0 +1,17 @@
+<% load 'common.rb' %>
+<h2 class="mb-5">Experience</h2>
+<p><%= experience.summary %></p>
+<br/>
+<% job_list = trim_jobs(experience.jobs, 15) %>
+<% job_list.each do |job| %>
+<div class="resume-item d-flex flex-column flex-md-row mb-5">
+    <div class="resume-content mr-auto">
+        <h3 class="mb-0"><%= job.title %> (<%= timespan(job.start_time, job.end_time) %>)</h3>
+        <div class="subheading mb-3"><%= job.company %><% unless job.note.nil? %> (<%= job.note %>)<% end %></div>
+        <p><%= job.summary %></p>
+    </div>
+    <div class="resume-date text-md-right">
+        <p><img class="icon" src="img/<%= job.icon %>"/></p>
+    </div>
+</div>
+<% end %>

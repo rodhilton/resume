@@ -1,1 +1,14 @@
-projects go here
+<% load 'common.rb' %>
+<h2 class="mb-5">Projects</h2>
+<p>Various public projects I work on from time to time.</p>
+<br/>
+<% projs = projects.sort_by {|a| a.time }.reverse %>
+<% projs.each do |proj| %>
+<div class="resume-item d-flex flex-column flex-md-row mb-5">
+    <div class="resume-content mr-auto">
+        <h3 class="mb-0"><a href="<%= proj.url %>"><%= proj.title %></a></h3>
+        <div class="subheading mb-3"><%= proj.role %></div>
+        <p><%= proj.description %></p>
+    </div>
+</div>
+<% end %>

@@ -23,7 +23,7 @@ experience:
   summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
   jobs:
     - company: Epic Games
-      title: Principal Engineer
+      title: Senior Backend Engineer
       team: Online Social, Backend
       start_time: 02/2021
       end_time: Present
@@ -72,7 +72,7 @@ experience:
         - Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
     - company: CA Technologies 
       note: formerly Rally Software
-      title: Staff Engineer
+      title: Technical Lead
       team: Lifecycle Management Application
       start_time: 07/2008
       end_time: 06/2011

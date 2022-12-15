@@ -32,6 +32,7 @@ experience:
       summary: Social team member, building Epic Online Services for friends, messaging, partying
       icon: epicgames.png
       accomplishments:
+        - Coordinated and led massive cross-team initiative to anonymize over 900,000,000 accounts to ensure data retention compliance among hundreds of independent services
         - Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
         - Architected backend service solution and designed public-facing API for <a href="https://charlieintel.com/how-to-make-fortnite-clips/165011/">new product</a> capturing and sharing game video highlights between players.
         - Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.

@@ -3,7 +3,7 @@ title: Software Craftsman and Computer Science Geek
 site: www.rodhilton.com
 quote: It works on my machine
 
-oneline_summary: Pragmatic problem-solver with solid computer science background and over a decade of industry experience developing backend services, microservices, and web applications with strong focus on client experience. Specialized in building JVM-based scalable systems and improving legacy codebases.
+oneline_summary: Pragmatic problem-solver with solid computer science background and nearly two decades of industry experience developing scalable backend services, improving legacy codebases, and building web applications with strong focus on user experience.
 
 about_summary:
   - <a href="http://rodhilton.github.io/resume/">Software Engineer</a> working primarily in the JVM with Java, Groovy, and Scala with a lot of Ruby coding <a href="https://github.com/rodhilton">on the side</a>
@@ -24,7 +24,7 @@ experience:
   jobs:
     - company: Epic Games
       title: Senior Backend Engineer
-      team: Online Social, Backend
+      team: Online Social Team
       start_time: 02/2021
       end_time: Present
       location: Remote
@@ -33,8 +33,8 @@ experience:
       icon: epicgames.png
       accomplishments:
         - Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
-        - Architected backend service solution and designed public-facing API for <a href="https://charlieintel.com/how-to-make-fortnite-clips/165011/">new product</a> capturing and sharing game video highlights between players.
-        - Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
+        - Architected backend service solution and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a>, a product for capturing and sharing game video highlights between players.
+        - Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer utilized by <a href="https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html">UEFN</a>.
         - Developed Interactions Tracking Service for tracking and querying player interactions for games supporting 11m concurrent players, utilized in marketing campaigns for increasing engagement and lapsed player reactivation.
     - company: Twitter
       title: Staff Software Engineer
@@ -73,7 +73,7 @@ experience:
     - company: CA Technologies 
       note: formerly Rally Software
       title: Technical Lead
-      team: Lifecycle Management Application
+      team: Agile Lifecycle Management Product
       start_time: 07/2008
       end_time: 06/2011
       location: Boulder, CO
@@ -88,7 +88,7 @@ experience:
     - company: Rogue Wave Software
       note: formerly OpenLogic
       title: Senior Software Engineer
-      team: Open Source Management
+      team: Open Source Management Software
       start_time: 01/2007
       end_time: 07/2008
       location: Denver, CO

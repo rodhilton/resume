@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Scala, Spring, REST
-* __Advanced__: HTML/CSS, Ruby, MySQL, JavaScript, Groovy, Kafka, Grails, Thrift, Hadoop, PostgreSQL, Oracle, Python, AngularJS
-* __Novice__: SOAP, SBT, AWS, memcached, Redis, Jenkins, Terraform, Kubernetes, hazelcast, Docker
+* __Accomplished__: Java, Git, Spring, Scala, REST
+* __Advanced__: HTML/CSS, Ruby, MySQL, JavaScript, Groovy, Kafka, Grails, Thrift, Hadoop, AWS
+* __Novice__: PostgreSQL, Oracle, Python, AngularJS, Redis, Terraform, Kubernetes, Docker, SOAP, SBT, memcached, Jenkins, hazelcast
 * __Desired__: ElasticSearch, Spark, Cassandra, Go, TypeScript, Kotlin
 
 ----
@@ -38,16 +38,16 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Principal Engineer__ - _Epic Games_ - 2021-Present
+*  __Senior Backend Engineer__ - _Epic Games_ - 2021-Present
             
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
             
     * Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
             
-    * Architected backend service solution and designed public-facing API for [new product](https://charlieintel.com/how-to-make-fortnite-clips/165011/) capturing and sharing game video highlights between players.
+    * Architected backend service solution and designed public-facing API for [Postparty](https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc), a product for capturing and sharing game video highlights between players.
             
-    * Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer.
+    * Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html).
             
     * Developed Interactions Tracking Service for tracking and querying player interactions for games supporting 11m concurrent players, utilized in marketing campaigns for increasing engagement and lapsed player reactivation.
             

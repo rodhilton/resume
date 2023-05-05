@@ -97,6 +97,7 @@
 % Configure an optional directory location for fonts(default: 'fonts/')
 % Not required anymore but left in place for backward compatability.
 \newcommand*{\fontdir}[1][fonts/]{\def\@fontdir{#1}}
+\fontdir
 
 %-------------------------------------------------------------------------------
 %                Configuration for layout
@@ -161,8 +162,22 @@
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
-\newcommand*{\headerfont}{\roboto}
-\newcommand*{\headerfontlight}{\robotolight}
+\newfontfamily\headerfont[
+  Path=\@fontdir,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-Bold,
+  BoldItalicFont=*-BoldItalic,
+]{Roboto}
+
+\newfontfamily\headerfontlight[
+  Path=\@fontdir,
+  UprightFont=*-Thin,
+  ItalicFont=*-ThinItalic,
+  BoldFont=*-Medium,
+  BoldItalicFont=*-MediumItalic,
+]{Roboto}
+
 \newcommand*{\footerfont}{\sourcesanspro}
 \newcommand*{\bodyfont}{\sourcesanspro}
 \newcommand*{\bodyfontlight}{\sourcesansprolight}

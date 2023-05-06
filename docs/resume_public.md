@@ -38,18 +38,20 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Senior Backend Engineer__ - _Epic Games_ - 2021-Present
+*  __Backend Engineer, IC4__ - _Epic Games_ - 2021-Present
             
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
             
-    * Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min
+    * Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
             
-    * Architected backend service solution and designed public-facing API for [Postparty](https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc), a product for capturing and sharing game video highlights between players.
+    * Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
             
-    * Created highly-available autoscaling services for asynchronous event-based storing and processing of user-created uploaded media with synchronous access control layer utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html).
+    * Architected backend service solution and designed public-facing API for [Postparty](https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc) video clip sharing product, storing over 1m uploads/day.
             
-    * Developed Interactions Tracking Service for tracking and querying player interactions for games supporting 11m concurrent players, utilized in marketing campaigns for increasing engagement and lapsed player reactivation.
+    * Developed Interactions Tracking Service for tracking and querying all player interactions for games supporting 11m CCUs.
+            
+    * Created highly-available services for asynchronous processing of user-created media with access control layer utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html).
             
 
 
@@ -58,13 +60,15 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Scala, Java, Git, Kafka, MySQL, REST, Thrift, Hadoop, Python
             
             
-    * Developed Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. Built features such as [Twitter Communities](https://blog.twitter.com/en_us/topics/product/2021/testing-communities), [Conversation Controls](https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/), and [Public Interest Interstitial](https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8).
+    * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.
             
-    * Led Privacy and Data Protection initiatives within Core Tweet Service team, responsible for annotating all data, migrating from in-house message platform to Kafka, supporting mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html), and onboarding to wipeout and data retention tooling to ensure GDPR compliance.
+    * Developed and launched features such as [Twitter Communities](https://blog.twitter.com/en_us/topics/product/2021/testing-communities), [Conversation Controls](https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/), and [Public Interest Interstitial](https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8).
             
-    * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter), allowing application of complex real-time filters to Twitter's firehose using custom filter query language.
+    * Led Privacy and Data Protection initiatives to annotate cross-service PII, ensure GDPR compliance via mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html) of over 17m accounts.
             
-    * Created new filter operators to match tweets based on Machine-Learning-based Semantic Core annotations and Natural Language processed Named Entity Recognition annotations.
+    * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter), complex real-time filter engine processing Twitter's 350k tweets/minute data stream.
+            
+    * Created new filter operators for Machine-Learning and Natural Language annotations used to [predict COVID-19 outbreaks](https://www.nature.com/articles/s41598-021-98396-9) with 81.6% precision
             
     * Created long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
             
@@ -77,13 +81,15 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
             
             
-    * Created [residential](https://myservices.timewarnercable.com/) and [commercial](https://myaccount.timewarnercable.com) primary care portal applications increasing logins to over 7m/mo, new version a 2014 [CableFAX Digital Award finalist](http://www.cablefax.com/the-lists/digital-awards-2014) in 4 categories (winner of Best Website Navigation against HBO.com, Hulu.com, and Netflix.com) with highest-ever ForeSee Customer Satisfaction score, 10 points higher than previous incarnation's best score.
+    * Led rewrite of [residential](https://myservices.timewarnercable.com/) customer portal, new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
             
-    * Developed high-availability RESTful middleware service layer used across multiple customer-facing applications to simplify connectivity and business logic across dozens of heterogenous backend services; augmented with caching, circuit breakers, monitoring, and administrative dashboard, handling over 1,000 requests/sec at peak load.
+    * Created [commercial](https://myaccount.timewarnercable.com) primary care portal application handling 7m logins/month and 45% improvement in registration conversion rate.
             
-    * Created generalized error-handling and reporting tools to aid in servicedesk ticket diagnosis and resolution, reducing customer calls by 50% over 6 months, saving an estimated $4m/year.
+    * Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
             
-    * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%, new users over 250k/mo;
+    * Created distributed tracing system to facilitate error diagnosis and resolution, reduced customer calls by 50% saving an estimated $4m/year.
+            
+    * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%, new users over 250k/month;
             
     * Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
             
@@ -94,11 +100,11 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
             
             
-    * Developed SaaS [Rally ALM](http://rally1.rallydev.com) project management software used by hundreds of enterprises to implement agile development in distributed environments.  Product provided thousands of concurrent users with intuitive interface for managing agile projects, generating reports, tracking iterations, and planning releases.
+    * Developed SaaS [Rally ALM](http://rally1.rallydev.com) project management software used by 300+ enterprises to adopt agile development in distributed environments.
             
-    * Developed test-driven data migration to move customers out of a legacy mode in the product, resulting in the deletion of over 20,000 lines of code, reducing development and testing effort by 50%.
+    * Led test-driven data migration effort to migrate customers out of legacy product, deleting over 20k LoC and reducing development effort by 50%.
             
-    * Refactored large legacy application to remove running container dependency on tests, simplify deployment infrastructure, and use standard JPA-style annotations for domain objects.
+    * Refactored application to remove container test dependency, simplify deployment infrastructure, and use standard annotations for domain objects.
             
     * Created [Rallydroid](http://code.google.com/p/rallydroid/), an Open Source Rally client for Android operating system.
             
@@ -109,9 +115,9 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
             
             
-    * Developed multi-tenancy open source software management application [OLEX](http://www.openlogic.com/olex/).  OLEX provided enterprise-friendly functionality to the process of requesting, approving, and downloading open source software.
+    * Developed [OLEX](http://www.openlogic.com/olex/) application capable of managing open source software requisitions and installations across clusters of thousands of machines.
             
-    * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative. Web services provided all data functionality to the site, including complex reports that aggregated immense amounts of data stored in a warehouse schema.
+    * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative aggregating thousands of data scans into warehouse data schema for queriability.
             
     * Contributed to company-sponsored open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
             

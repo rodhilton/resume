@@ -34,6 +34,7 @@
 \documentclass[11pt, letterpaper]{awesome-cv}
 
 \usepackage[normalem]{ulem} % [normalem] prevents the package from changing the default behavior of `\emph` to underline.
+\usepackage[shrink=100]{microtype}
 
 % Configure page margins with geometry
 \geometry{left=1.3cm, top=1.3cm, right=1.3cm, bottom=1.7cm, footskip=.5cm}
@@ -140,7 +141,7 @@
 
 \begin{cventries}
 <% job_list.each_with_index do |job, i| %>
-  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 5) %>
+  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 6) %>
   \cventry
     {<%= job.title %><% unless job.team.nil? %>{ - \normalfont{\bodyfontlight{<%= latex_desc(job.team) %>}}}<% end %>} % Job title
     {<%= job.company %><% unless job.note.nil? %>{\normalfont{ (<%= latex_desc(job.note) %>)}}<% end %>} % Organization
@@ -148,7 +149,7 @@
     {<%= timespan(job.start_time, job.end_time) %>} % Date(s)
     {
       \begin{cvitems}
-      <% unless job.technologies.nil? %>\item {Utilized <%= trim_skills(job.technologies, 16) %>} <% end %>
+      <% unless job.technologies.nil? %>\item {Utilized <%= trim_skills(job.technologies, 16) %>.} <% end %>
 %      <% accomplishments.each do |accomplishment| %>    
         \item {<%= latex_links(latex_desc(accomplishment)) %>}
 %        <% end %>
@@ -158,6 +159,8 @@
 <% end %>
 
 \end{cventries}
+
+\pagebreak
 
 \cvsection{Education}
 
@@ -226,9 +229,6 @@
 
 \end{cventries}
 
-
-<% if flags[:show_projects] %>
-
 \cvsection{Projects}
 
 %-------------------------------------------------------------------------------
@@ -253,7 +253,6 @@
 
 \end{cventries}
 
-<% end %>
 
 
 

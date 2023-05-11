@@ -36,7 +36,7 @@ experience:
         - Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
         - Architected backend service solution and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a> video clip sharing product, storing over 1m uploads/day.
         - Developed Interactions Tracking Service for tracking and querying all player interactions for games supporting 11m CCUs.
-        - Created highly-available services for asynchronous processing of user-created media with access control layer utilized by <a href="https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html">UEFN</a>.
+        - Created highly-available asynchronous processor of user-created media with access control utilized by <a href="https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html">UEFN</a> to build over 1.1m projects
     - company: Twitter
       title: Staff Software Engineer
       team: Core Tweet Service & Developer Platform

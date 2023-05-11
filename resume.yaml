@@ -45,7 +45,7 @@ experience:
       location: Remote
       # location: Boulder, CO
       technologies: Scala, Java, Git, Kafka, MySQL, REST, Thrift, Hadoop, Python
-      summary: Core Tweet Service backend team member, storing and serving all Tweets within Twitter at massive scale
+      summary: Core Tweet Service backend team, storing and serving all Tweets within Twitter at massive scale
       icon: twitter.png
       accomplishments:
         - Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. 
@@ -64,7 +64,7 @@ experience:
       location: Remote
       # location: Denver, CO
       technologies: Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
-      summary: Cross-Platform team member, built Common Services Tier middleware service layer and customer-facing web portals.
+      summary: Cross-Platform team, built Common Services Tier middleware service layer and customer-facing web portals.
       icon: twc.png
       accomplishments:
         - Led rewrite of <a href="https://myservices.timewarnercable.com/">residential</a> customer portal, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4-categories</a> with +10 point improvement in customer satisfaction.
@@ -80,7 +80,7 @@ experience:
       end_time: 06/2011
       location: Boulder, CO
       technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
-      summary: Agile Lifecycle Management team member, developed work and ticket tracking system for scaled enterprise agile adoption.
+      summary: Agile Lifecycle Management team, developed work and ticket tracking system for scaled enterprise agile adoption.
       icon: rally.png
       accomplishments:
         - Developed SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by 300+ enterprises to adopt agile development in distributed environments.

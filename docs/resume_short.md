@@ -27,8 +27,8 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Spring, Scala, REST
-* __Advanced__: HTML/CSS, Ruby, MySQL, JavaScript, Groovy, Kafka, Grails, Thrift, Hadoop, AWS
-* __Novice__: PostgreSQL, Oracle, Python, AngularJS, Redis, Terraform, Kubernetes, Docker, SOAP, SBT, memcached, Jenkins, hazelcast
+* __Advanced__: HTML/CSS, Ruby, Kafka, MySQL, JavaScript, Groovy, Grails, AWS, Terraform, Thrift, Hadoop, Docker
+* __Novice__: PostgreSQL, Oracle, Python, AngularJS, Redis, Kubernetes, SOAP, SBT, memcached, Jenkins, Go, hazelcast
 * __Desired__: ElasticSearch, Spark, Cassandra, Go, TypeScript, Kotlin
 
 ----
@@ -38,22 +38,25 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-Present
+*  __Staff Software Engineer__ - _Twilio_ - 2023-Present
+            
+    * Utilized Go, AWS, Git, Terraform, Docker, Kafka
+            
+            
+    * Developed segment compute API.
+            
+
+
+*  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-2023
             
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
             
-    * Developed Data Orchestrator Service responsible for coordinating all user record sanitization events and auditing among 56 backend services as well as manage GDPR exporting.
+    * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend services.
             
     * Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
             
     * Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
-            
-    * Architected backend service solution and designed public-facing API for [Postparty](https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc) video clip sharing product, storing over 1m uploads/day.
-            
-    * Developed Interactions Tracking Service for tracking and querying all player interactions for games supporting 11m CCUs.
-            
-    * Created highly-available asynchronous processor of user-created media with access control utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html) to build over 1.1m projects
             
 
 
@@ -65,8 +68,6 @@ __Software Craftsman and Computer Science Geek__
     * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.
             
     * Developed and launched features such as [Twitter Communities](https://blog.twitter.com/en_us/topics/product/2021/testing-communities), [Conversation Controls](https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/), and [Public Interest Interstitial](https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8).
-            
-    * Led Privacy and Data Protection initiatives to annotate cross-service PII, ensure GDPR compliance via mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html) of over 17m accounts.
             
 
 

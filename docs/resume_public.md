@@ -27,8 +27,8 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Spring, Scala, REST
-* __Advanced__: HTML/CSS, Ruby, MySQL, JavaScript, Groovy, Kafka, Grails, Thrift, Hadoop, AWS
-* __Novice__: PostgreSQL, Oracle, Python, AngularJS, Redis, Terraform, Kubernetes, Docker, SOAP, SBT, memcached, Jenkins, hazelcast
+* __Advanced__: HTML/CSS, Ruby, Kafka, MySQL, JavaScript, Groovy, Grails, AWS, Terraform, Thrift, Hadoop, Docker
+* __Novice__: PostgreSQL, Oracle, Python, AngularJS, Redis, Kubernetes, SOAP, SBT, memcached, Jenkins, Go, hazelcast
 * __Desired__: ElasticSearch, Spark, Cassandra, Go, TypeScript, Kotlin
 
 ----
@@ -38,12 +38,21 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-Present
+*  __Staff Software Engineer__ - _Twilio_ - 2023-Present
+            
+    * Utilized Go, AWS, Git, Terraform, Docker, Kafka
+            
+            
+    * Developed segment compute API.
+            
+
+
+*  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-2023
             
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
             
-    * Developed Data Orchestrator Service responsible for coordinating all user record sanitization events and auditing among 56 backend services as well as manage GDPR exporting.
+    * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend services.
             
     * Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
             

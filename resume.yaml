@@ -22,17 +22,28 @@ interests: ElasticSearch, Spark, Cassandra, Go, TypeScript, Kotlin
 experience:
   summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
   jobs:
+    - company: Twilio
+      title: Staff Software Engineer
+      team: Compute
+      start_time: 06/2023
+      end_time: Present
+      location: Remote
+      technologies: Go, AWS, Git, Terraform, Docker, Kafka
+      summary: Compute team member, building audience and segmentation tools for customer marketing
+      icon: twilio.png
+      accomplishments:
+        - Developed segment compute API.
     - company: Epic Games
       title: Tech Lead, Backend Engineering
       team: Online Social Team
       start_time: 02/2021
-      end_time: Present
+      end_time: 06/2023
       location: Remote
       technologies: Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
       summary: Social team lead, building Epic Online Services for friends, messaging, partying, group-forming, clip-sharing within games
       icon: epicgames.png
       accomplishments:
-        - Developed Data Orchestrator Service responsible for coordinating all user record sanitization events and auditing among 56 backend services as well as manage GDPR exporting.
+        - Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend services.
         - Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
         - Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
         - Architected backend service solution and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a> video clip sharing product, storing over 1m uploads/day.

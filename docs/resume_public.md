@@ -38,10 +38,12 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Backend Engineer, IC4__ - _Epic Games_ - 2021-Present
+*  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-Present
             
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
+            
+    * Developed Data Orchestrator Service responsible for coordinating all user record sanitization events and auditing among 56 backend services as well as manage GDPR exporting.
             
     * Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
             
@@ -51,7 +53,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed Interactions Tracking Service for tracking and querying all player interactions for games supporting 11m CCUs.
             
-    * Created highly-available services for asynchronous processing of user-created media with access control layer utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html).
+    * Created highly-available asynchronous processor of user-created media with access control utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html) to build over 1.1m projects
             
 
 
@@ -68,11 +70,11 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter), complex real-time filter engine processing Twitter's 350k tweets/minute data stream.
             
-    * Created new filter operators for Machine-Learning and Natural Language annotations used to [predict COVID-19 outbreaks](https://www.nature.com/articles/s41598-021-98396-9) with 81.6% precision
+    * Created new filter operators for Machine-Learning and Natural Language annotations used to [predict COVID-19 outbreaks](https://www.nature.com/articles/s41598-021-98396-9) with 81.6% precision.
             
-    * Created long-requested rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language for Hack Week.
+    * Created rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language.
             
-    * Joined "Project Luna" initiative, improving company interview process, ensuring consistency among interviewing teams, revising policies around interview standards, authoring onboarding documentation, and building new assignment-based coding challenges.
+    * Improved company interview process by ensuring consistency among interviewing teams and building new assignment-based coding challenges.
             
 
 
@@ -89,9 +91,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Created distributed tracing system to facilitate error diagnosis and resolution, reduced customer calls by 50% saving an estimated $4m/year.
             
-    * Developed new streamlined registration application for creating unified customer identities, increased conversion rate from 40% to 85%, new users over 250k/month;
-            
-    * Designed and implemented successful team branching strategy and release process.  Created numerous process support tools including detailed release notes generation script used by Product Owners and Scrummasters, saving hours of manual work per week.
+    * Designed and implemented successful team branching strategy and release process & release notes generator saving hours of manual work per week.
             
 
 
@@ -119,7 +119,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative aggregating thousands of data scans into warehouse data schema for queriability.
             
-    * Contributed to company-sponsored open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) application. Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
+    * Contributed to company-sponsored open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) scanner . Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
             
     * Developed OpenLogic Enterprise, a J2EE software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
             

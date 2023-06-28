@@ -38,10 +38,12 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Backend Engineer, IC4__ - _Epic Games_ - 2021-Present
+*  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-Present
             
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
+            
+    * Developed Data Orchestrator Service responsible for coordinating all user record sanitization events and auditing among 56 backend services as well as manage GDPR exporting.
             
     * Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
             
@@ -51,7 +53,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed Interactions Tracking Service for tracking and querying all player interactions for games supporting 11m CCUs.
             
-    * Created highly-available services for asynchronous processing of user-created media with access control layer utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html).
+    * Created highly-available asynchronous processor of user-created media with access control utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html) to build over 1.1m projects
             
 
 

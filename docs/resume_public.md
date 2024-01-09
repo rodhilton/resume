@@ -26,10 +26,10 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Spring, Scala, REST
-* __Advanced__: HTML/CSS, Ruby, Kafka, MySQL, JavaScript, Groovy, Grails, AWS, Terraform, Thrift, Hadoop, Docker
-* __Novice__: PostgreSQL, Oracle, Python, AngularJS, Redis, Kubernetes, SOAP, SBT, memcached, Jenkins, Go, hazelcast
-* __Desired__: ElasticSearch, Spark, Cassandra, Go, TypeScript, Kotlin
+* __Accomplished__: Java, Git, Spring
+* __Advanced__: HTML/CSS, Scala, REST, Apache Kafka
+* __Novice__: AWS, MySQL, Terraform, Docker, Thrift, Go, Hadoop, TypeScript, Redis, Python, ANTLR, Kubernetes
+* __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP
 
 ----
 
@@ -40,10 +40,16 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twilio_ - 2023-Present
             
-    * Utilized Go, AWS, Git, Terraform, Docker, Kafka
+    * Utilized Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Apache Kafka
             
             
-    * Developed segment compute API.
+    * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
+            
+    * Designed Compute Query Language specification to enable retrieval of segmentation and augmentation definitions through API
+            
+    * Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking
+            
+    * Mentored junior engineers and led technical direction for aritectural decisions and operational standards
             
 
 
@@ -68,7 +74,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twitter_ - 2017-2021
             
-    * Utilized Scala, Java, Git, Kafka, MySQL, REST, Thrift, Hadoop, Python
+    * Utilized Scala, Java, Git, Apache Kafka, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
             
             
     * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.

@@ -142,6 +142,8 @@ def skill_to_icons(skillname)
     ["html5", "css3"]
   elsif(skillname.downcase == "aws") 
     ["amazonwebservices"]
+  elsif(skillname.downcase == "kafka")
+    ["apachekafka"]
   else
     [skillname]
   end

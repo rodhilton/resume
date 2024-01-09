@@ -28,11 +28,14 @@ experience:
       start_time: 06/2023
       end_time: Present
       location: Remote
-      technologies: Go, AWS, Git, Terraform, Docker, Kafka
-      summary: Compute team member, building audience and segmentation tools for customer marketing
+      technologies: Go, Typescript, Antlr, AWS, Git, Terraform, Docker, Kafka
+      summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:
-        - Developed segment compute API.
+        - Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
+        - Designed Compute Query Language specification to enable retrieval of segmentation and augmentation definitions through API
+        - Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking
+        - Mentored junior engineers and led technical direction for aritectural decisions and operational standards
     - company: Epic Games
       title: Tech Lead, Backend Engineering
       team: Online Social Team

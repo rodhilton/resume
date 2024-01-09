@@ -28,7 +28,7 @@ experience:
       start_time: 06/2023
       end_time: Present
       location: Remote
-      technologies: Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Apache Kafka
+      technologies: Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Kafka
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:
@@ -59,7 +59,7 @@ experience:
       end_time: 02/2021
       location: Remote
       # location: Boulder, CO
-      technologies: Scala, Java, Git, Apache Kafka, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
+      technologies: Scala, Java, Git, Kafka, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
       summary: Core Tweet Service backend team, storing and serving all Tweets within Twitter at massive scale
       icon: twitter.png
       accomplishments:

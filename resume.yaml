@@ -17,7 +17,7 @@ summary:
   - Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
   - Polyglot programmer comfortable with object-oriented and functional languages
 
-interests: ElasticSearch, Spark, Cassandra, TypeScript, Kotlin
+interests: Kotlin, ElasticSearch, Spark, Cassandra, GCP
 
 experience:
   summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
@@ -28,7 +28,7 @@ experience:
       start_time: 06/2023
       end_time: Present
       location: Remote
-      technologies: Go, Typescript, ANTLR, AWS, Git, Terraform, Docker, Kafka
+      technologies: Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Kafka
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:

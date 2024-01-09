@@ -28,7 +28,7 @@ experience:
       start_time: 06/2023
       end_time: Present
       location: Remote
-      technologies: Go, Typescript, Antlr, AWS, Git, Terraform, Docker, Kafka
+      technologies: Go, Typescript, ANTLR, AWS, Git, Terraform, Docker, Kafka
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:

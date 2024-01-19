@@ -44,7 +44,7 @@ experience:
         - Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
         - Designed Compute Query Language specification to enable retrieval of segmentation and augmentation definitions through API
         - Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking
-        - Mentored junior engineers and led technical direction for arcitectural decisions and operational standards
+        - Mentored junior engineers and led technical direction for architectural decisions and operational standards
     - company: Epic Games
       title: Tech Lead, Backend Engineering
       team: Online Social Team

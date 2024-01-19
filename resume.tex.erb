@@ -78,7 +78,7 @@
 % \photo[rectangle,edge,right]{./examples/profile}
 %\photo[circle,noedge,left]{<%= flags[:photo] %>}
 \name{Rod}{Hilton}
-\position{<%= title %>}
+\position{<%= latex_desc(title) %>}
 % \address{Denver, CO}
 
 <% if flags[:phone] %>
@@ -89,24 +89,28 @@
 <% end %>
 %\dateofbirth{January 1st, 1970}
 \homepage{rodhilton.com}
-\github{rodhilton}
 \linkedin{rodhilton}
-\mastodon{mastodon.social}{rodhilton}
+\github{rodhilton}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 
+<% if flags[:socials] %>
+\mastodon{mastodon.social}{rodhilton}
 \twitter{rodhilton}
+<% end %>
 % \skype{skype-id}
 % \reddit{reddit-id}
 % \medium{madium-id}
 % \kaggle{kaggle-id}
+<% if flags[:expand_school] %>
 \googlescholar{wPzM-isAAAAJ}{rodhilton}
+<% end %>
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
 %\quote{<%= oneline_summary %>}
-\quote{<%= traits.join("{\enskip\cdotp\enskip}") %>}
+\quote{<%= traits.join("{\\enskip\\cdotp\\enskip}") %>}
 
 
 %-------------------------------------------------------------------------------

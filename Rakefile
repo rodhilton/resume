@@ -48,7 +48,7 @@ end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
   #sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f expand_school -f show_projects -f photo:profile > #{TARGET_DIR}/resume_public.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f socials -f expand_school -f show_projects -f photo:profile > #{TARGET_DIR}/resume_public.tex"
 end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|

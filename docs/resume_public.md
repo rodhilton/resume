@@ -27,7 +27,7 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Spring
-* __Advanced__: HTML/CSS, Scala, REST, Apache Kafka
+* __Advanced__: HTML/CSS, Scala, REST, Kafka
 * __Novice__: AWS, MySQL, Terraform, Docker, Thrift, Go, Hadoop, TypeScript, Redis, Python, ANTLR, Kubernetes
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP
 
@@ -40,7 +40,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twilio_ - 2023-Present
             
-    * Utilized Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Apache Kafka
+    * Utilized Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Kafka
             
             
     * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
@@ -74,7 +74,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twitter_ - 2017-2021
             
-    * Utilized Scala, Java, Git, Apache Kafka, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
+    * Utilized Scala, Java, Git, Kafka, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
             
             
     * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.

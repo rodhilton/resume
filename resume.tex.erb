@@ -78,7 +78,7 @@
 % \photo[rectangle,edge,right]{./examples/profile}
 %\photo[circle,noedge,left]{<%= flags[:photo] %>}
 \name{Rod}{Hilton}
-\position{Software Craftsman{\enskip\cdotp\enskip}Computer Science Geek{\enskip\cdotp\enskip}Compassionate Coder}
+\position{<%= title %>}
 % \address{Denver, CO}
 
 <% if flags[:phone] %>
@@ -105,7 +105,8 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{<%= oneline_summary %>}
+%\quote{<%= oneline_summary %>}
+\quote{<%= traits.join("{\enskip\cdotp\enskip}") %>}
 
 
 %-------------------------------------------------------------------------------

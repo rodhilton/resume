@@ -1,7 +1,15 @@
 name: Rod Hilton
-title: Software Craftsman and Computer Science Geek
+title: Staff Software Engineer, Backend & Distributed Systems
 site: www.rodhilton.com
 quote: It works on my machine
+traits:
+  - Pragmatism
+  - Compassion
+  - Accountability
+  - Craftsmanship
+  - Leadership
+  - Diligence
+  - Versatility
 
 oneline_summary: Pragmatic problem-solver with solid computer science background and nearly two decades of industry experience developing scalable backend services, improving legacy codebases, and building web applications with strong focus on user experience.
 

@@ -45,7 +45,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
             
-    * Enabled Generative AI query generation tool by migrating from complex tree-based query specification to customized grammar definition
+    * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) query generation tool by migrating from complex tree-based query specification to customized grammar definition
             
     * Designed Compute Query Language specification to enable retrieval of segmentation and augmentation definitions through API
             

@@ -52,11 +52,11 @@
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
-% \definecolor{sectiondivider}{HTML}{5D5D5D}
+\definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{333333}
+\definecolor{graytext}{HTML}{5D5D5D}
+\definecolor{lighttext}{HTML}{999999}
+\definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{<%= flags[:highlight] %>}
@@ -79,7 +79,7 @@
 % \photo[rectangle,edge,right]{./examples/profile}
 \photo[<%= flags[:photo_shape] %>,noedge,left]{<%= flags[:photo] %>}
 
-\name{Rod}{Hilton}
+\name{\vspace{5mm}Rod}{Hilton}
 \position{<%= latex_desc(title) %>}
 % \address{Denver, CO}
 
@@ -92,11 +92,11 @@
 %\dateofbirth{January 1st, 1970}
 \homepage{rodhilton.com}
 \linkedin{rodhilton}
-\github{rodhilton}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 
 <% if flags[:socials] %>
+\github{rodhilton}
 \mastodon{mastodon.social}{rodhilton}
 \twitter{rodhilton}
 <% end %>

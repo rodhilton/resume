@@ -45,11 +45,13 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
             
+    * Enabled Generative AI query generation tool by migrating from complex tree-based query specification to customized grammar definition
+            
     * Designed Compute Query Language specification to enable retrieval of segmentation and augmentation definitions through API
             
     * Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking
             
-    * Mentored junior engineers and led technical direction for aritectural decisions and operational standards
+    * Mentored junior engineers and led technical direction for architectural decisions and operational standards
             
 
 

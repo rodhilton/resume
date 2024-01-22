@@ -202,7 +202,8 @@ def trim_by_clout(things, min_clout=5)
 end
 
 def trim_skills(skills, max_items=10)
-  skills.split(/,\s*/).take(max_items).join(", ")
+  array = skills.split(/,\s*/).take(max_items)
+  array[0..-2].join(", ") + ", and " + array[-1]
 end
 
 

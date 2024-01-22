@@ -25,18 +25,26 @@ end
 
 file "qr_code_contact.png" => [:make_target] do |t|
   sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
-  sh "cat qr_code_contact.txt | qrencode -o #{TARGET_DIR}/qr_code_contact.png -t png -m 0 --size=20 --foreground=4786b2"
+  sh "cat qr_code_contact.txt | qrencode -o #{TARGET_DIR}/qr_code_contact.png -t png -m 0 --size=20"
   rm "qr_code_contact.txt"
+end
+
+file "qr_code_contact.pdf" => [:make_target, "qr_code_contact.png"] do |t|
+  sh "convert #{TARGET_DIR}/qr_code_contact.png #{TARGET_DIR}/qr_code_contact.pdf"
 end
 
 file "qr_code_url.png" => [:make_target] do |t|
   sh "templator/templator -d resume.yaml qr_code_url.txt.erb > qr_code_url.txt"
-  sh "cat qr_code_url.txt | qrencode -o #{TARGET_DIR}/qr_code_url.png -t png -m 0 --size=20 --foreground=444444"
+  sh "cat qr_code_url.txt | qrencode -o #{TARGET_DIR}/qr_code_url.png -t png -m 0 --size=20 --foreground=414141"
   rm "qr_code_url.txt"
 end
 
-file "profile.png" => [:make_target] do |t|
+file "profile.jpg" => [:make_target] do |t|
   sh "cp resources/profile.jpg #{TARGET_DIR}/profile.jpg"
+end
+
+file "profile.pdf" => [:make_target, "profile.jpg"] do |t|
+  sh "convert #{TARGET_DIR}/profile.jpg #{TARGET_DIR}/profile.pdf"
 end
 
 task :copy_deps do |t|
@@ -48,11 +56,11 @@ end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
   #sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f socials -f expand_school -f show_projects -f photo:profile > #{TARGET_DIR}/resume_public.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f highlight:true -f color:4786b2 -f photo_shape:circle -f socials -f expand_school -f show_projects -f photo:profile > #{TARGET_DIR}/resume_public.tex"
 end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f expand_coursework -f photo:profile > #{TARGET_DIR}/resume_private.tex"
+  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f highlight:false -f color:414141 -f photo_shape:rectangle -f expand_coursework -f photo:qr_code_contact > #{TARGET_DIR}/resume_private.tex"
 end
 
 file "#{TARGET_DIR}/resume_public.md" => [:make_target] do |t|
@@ -81,12 +89,12 @@ task :html_public_inline => [:make_target] do |t|
   sh "templator/templator -d #{data_files} resume.html.erb #{public_flags} -f inline > #{TARGET_DIR}/resume_public_inline.html"
 end
 
-task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "qr_code_url.png"] do |t|
+task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "profile.pdf"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_public.tex"
   rm "#{TARGET_DIR}/resume_public.tex"
 end
 
-task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "profile.png"] do |t|
+task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "qr_code_contact.pdf"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_private.tex"
   #rm "#{TARGET_DIR}/resume_private.tex"
   FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")

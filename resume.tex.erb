@@ -47,7 +47,8 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 %\colorlet{awesome}{awesome-black}
 % Uncomment if you would like to specify your own color
-\definecolor{awesome}{HTML}{414141}
+
+\definecolor{awesome}{HTML}{<%= flags[:color]%>}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -58,7 +59,7 @@
 % \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}
+\setbool{acvSectionColorHighlight}{<%= flags[:highlight] %>}
 
 
 
@@ -76,7 +77,8 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo[rectangle,edge,right]{./examples/profile}
-%\photo[circle,noedge,left]{<%= flags[:photo] %>}
+\photo[<%= flags[:photo_shape] %>,noedge,left]{<%= flags[:photo] %>}
+
 \name{Rod}{Hilton}
 \position{<%= latex_desc(title) %>}
 % \address{Denver, CO}
@@ -110,7 +112,7 @@
 % \extrainfo{extra information}
 
 %\quote{<%= oneline_summary %>}
-\quote{<%= traits.join("{\\enskip\\cdotp\\enskip}") %>}
+\quote{\vspace{5mm} <%= traits.join("{\\enskip\\cdotp\\enskip}") %>}
 
 
 %-------------------------------------------------------------------------------
@@ -118,7 +120,7 @@
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader[R]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
@@ -154,10 +156,10 @@
     {<%= timespan(job.start_time, job.end_time) %>} % Date(s)
     {
       \begin{cvitems}
-      <% unless job.technologies.nil? %>\item {Utilized <%= trim_skills(job.technologies, 16) %>.} <% end %>
 %      <% accomplishments.each do |accomplishment| %>    
         \item {<%= latex_links(latex_desc(accomplishment)) %>}
 %        <% end %>
+      <% unless job.technologies.nil? %>\item {Utilized <%= trim_skills(job.technologies, 16) %>.} <% end %>
       \end{cvitems}
     }
 

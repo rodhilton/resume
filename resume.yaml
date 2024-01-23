@@ -136,7 +136,7 @@ experience:
       summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
       icon: acxiom2.png
       accomplishments:
-        - Developed e-DriverData system for processing multi-state driver records that interacted with 44 states, each using different protocols and technologies.
+        - Developed e-DriverData system for processing driver records across 44 states, each using different protocols and technologies.
         - Refactored multi-dependency legacy enterprise application to improve performance by 600% and greatly improve system stability.
         - Architected data access service used by 10+ applications using a Java/ColdFusion bridge library, improving system performance and code reuse.
         - Led developer workshops on topics including thread safety, computational arithmetic, and regular expressions.

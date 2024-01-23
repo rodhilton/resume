@@ -27,8 +27,8 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Spring
-* __Advanced__: HTML/CSS, Scala, REST, Kafka
-* __Novice__: AWS, MySQL, Terraform, Docker, Thrift, Go, Hadoop, TypeScript, Redis, Python, ANTLR, Kubernetes, OpenAI
+* __Advanced__: HTML/CSS, Scala, REST, ANTLR, Kafka
+* __Novice__: AWS, MySQL, Terraform, Docker, Go, Thrift, Redis, Hadoop, Python, OpenAI, Kubernetes, TypeScript
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP
 
 ----
@@ -40,18 +40,20 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twilio_ - 2023-Present
             
-    * Utilized Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Kafka, OpenAI
+    * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
             
             
-    * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
+    * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits.
             
-    * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) query generation tool by migrating from complex tree-based query specification to customized grammar definition
+    * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from untargetable free-form JSON object specification to precise grammar-based definition.
             
-    * Designed Compute Query Language specification to enable retrieval of segmentation and augmentation definitions through API
+    * Designed Compute Query Language specification to enable retrieval of customer computation definitions through API.
             
-    * Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking
+    * Refined design specifications through multiple rounds of requests for comments with stakeholders across business unit.
             
-    * Mentored junior engineers and led technical direction for architectural decisions and operational standards
+    * Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking.
+            
+    * Mentored junior engineers and led technical direction for architectural decisions and operational standards.
             
 
 
@@ -60,7 +62,7 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
             
-    * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend services.
+    * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
             
     * Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
             
@@ -70,7 +72,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twitter_ - 2017-2021
             
-    * Utilized Scala, Java, Git, Kafka, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
+    * Utilized Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
             
             
     * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.

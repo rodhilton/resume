@@ -22,7 +22,7 @@ Summary:
 
 Technical Skills:
 
-<% skills = calculate_skills(experience.jobs) -%>
+<% skills = calculate_skills(experience.jobs, 0.1, 0.05, 10, 15) -%>
 Accomplished: <%= skills[:accomplished] %>
 Advanced: <%= skills[:advanced] %>
 Novice: <%= skills[:novice] %>

@@ -7,7 +7,6 @@ traits:
   - Compassion
   - Accountability
   - Craftsmanship
-  - Diligence
 
 oneline_summary: Pragmatic problem-solver with solid computer science background and nearly two decades of industry experience developing scalable backend services, improving legacy codebases, and building web applications with strong focus on user experience.
 
@@ -34,18 +33,19 @@ experience:
       start_time: 06/2023
       end_time: Present
       location: Remote
-      technologies: Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Kafka, OpenAI
+      technologies: Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:
-        - Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
-        - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> query generation tool by migrating from complex tree-based query specification to customized grammar definition
-        - Designed Compute Query Language specification to enable retrieval of segmentation and augmentation definitions through API
-        - Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking
-        - Mentored junior engineers and led technical direction for architectural decisions and operational standards
+        - Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits.
+        - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from untargetable free-form JSON object specification to precise grammar-based definition.
+        - Designed Compute Query Language specification to enable retrieval of customer computation definitions through API.
+        - Refined design specifications through multiple rounds of requests for comments with stakeholders across business unit.
+        - Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking.
+        - Mentored junior engineers and led technical direction for architectural decisions and operational standards.
     - company: Epic Games
       title: Tech Lead, Backend Engineering
-      team: Online Social Team
+      team: Online Social
       start_time: 02/2021
       end_time: 06/2023
       location: Remote
@@ -53,7 +53,7 @@ experience:
       summary: Social team lead, building Epic Online Services for friends, messaging, partying, group-forming, clip-sharing within games
       icon: epicgames.png
       accomplishments:
-        - Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend services.
+        - Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
         - Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
         - Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
         - Architected backend service solution and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a> video clip sharing product, storing over 1m uploads/day.
@@ -66,7 +66,7 @@ experience:
       end_time: 02/2021
       location: Remote
       # location: Boulder, CO
-      technologies: Scala, Java, Git, Kafka, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
+      technologies: Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
       summary: Core Tweet Service backend team, storing and serving all Tweets within Twitter at massive scale
       icon: twitter.png
       accomplishments:
@@ -122,8 +122,8 @@ experience:
       accomplishments:
         - Developed <a href="http://www.openlogic.com/olex/">OLEX</a> application capable of managing open source software requisitions and installations across clusters of thousands of machines.
         - Created RESTful web services used by <a href="http://www.osscensus.org/">Open Source Census</a> initiative aggregating thousands of data scans into warehouse data schema for queriability.
-        - Contributed to company-sponsored open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> scanner . Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
-        - Developed OpenLogic Enterprise, a J2EE software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
+        - Built open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> scanner utilizing fingerprints and heuristics to scan for OSS and report to Open Source Census.
+        - Developed J2EE software system that allowed remotely administered open source software installation and configuration.
         - Received Most Valuable Player Award - January 2008
     - company: Acxiom
       note: formerly InsightAmerica
@@ -136,9 +136,9 @@ experience:
       summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
       icon: acxiom2.png
       accomplishments:
-        - Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.
-        - Refactored multi-dependency legacy enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
-        - Architected centralized data access layer used by company's 10+ enterprise ColdFusion applications.  Helped design a Java/ColdFusion bridge library to allow interaction with layer, improving system performance and stability and increasing level of code reuse between applications.
+        - Developed e-DriverData system for processing multi-state driver records that interacted with 44 states, each using different protocols and technologies.
+        - Refactored multi-dependency legacy enterprise application to improve performance by 600% and greatly improve system stability.
+        - Architected data access service used by 10+ applications using a Java/ColdFusion bridge library, improving system performance and code reuse.
         - Led developer workshops on topics including thread safety, computational arithmetic, and regular expressions.
         - Received Special Recognition Award for Outstanding Performance - September, 2006
     - company: Truth-N-Beauty Software
@@ -151,11 +151,11 @@ experience:
       icon: tnb.png
       summary: Interactives team, developed over 40 educational physics and astronomy simulations for inclusion with science textbooks utilizing Java Applets and Flash.
       accomplishments:
-        - Developed over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks. Simulations allowed students to manipulate experimental parameters in virtual environment to see real-time changes.  Customers included McGraw-Hill, Brooks-Cole, and NASA.
-        - Led team for a number of multi-component projects. Assigned work, kept people on task, and integrated final products.  Was responsible for managing deadlines and releases, and maintained a record of consistent on-time delivery.
-        - Created a powerful framework for all products that performed essential common tasks. Functionality included customized Java classloader for applets that detected the user's system capabilities and adjusted the features of the simulation accordingly as well as a universal loading screen.
-        - Created an AWT-based graphical toolkit for use in all applications to provide for company-wide consistency in separately developed applications as well as speedy GUI development.
-        - Developed company web site and portfolio sites used to land new customers and allow existing customers to easily browser work-in-progress simulations and make suggestions, streamlining the code/revise process.
+        - Developed 40+ educational physics simulations allowing students to manipulate experimental parameters in virtual environment.
+        - Led multi-component projects, organizing and assigning work as well as managing deadlines and releases.
+        - Created common product framework with customized Java classloader that detected system capabilities and adjusted simulation features.
+        - Built AWT-based graphical toolkit to provide for company-wide UI consistency and improved development time.
+        - Developed company web site and portfolio sites enabling customers to review work-in-progress and provide feedback to streamline revision process.
 
 certifications:
   - title: Certified ScrumMaster

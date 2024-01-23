@@ -27,8 +27,8 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Spring
-* __Advanced__: HTML/CSS, Scala, REST, Kafka
-* __Novice__: AWS, MySQL, Terraform, Docker, Thrift, Go, Hadoop, TypeScript, Redis, Python, ANTLR, Kubernetes, OpenAI
+* __Advanced__: HTML/CSS, Scala, REST, ANTLR, Kafka
+* __Novice__: AWS, MySQL, Terraform, Docker, Go, Thrift, Redis, Hadoop, Python, OpenAI, Kubernetes, TypeScript
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP
 
 ----
@@ -40,18 +40,20 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twilio_ - 2023-Present
             
-    * Utilized Go, TypeScript, ANTLR, AWS, Git, Terraform, Docker, Kafka, OpenAI
+    * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
             
             
-    * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits
+    * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits.
             
-    * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) query generation tool by migrating from complex tree-based query specification to customized grammar definition
+    * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from untargetable free-form JSON object specification to precise grammar-based definition.
             
-    * Designed Compute Query Language specification to enable retrieval of segmentation and augmentation definitions through API
+    * Designed Compute Query Language specification to enable retrieval of customer computation definitions through API.
             
-    * Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking
+    * Refined design specifications through multiple rounds of requests for comments with stakeholders across business unit.
             
-    * Mentored junior engineers and led technical direction for architectural decisions and operational standards
+    * Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking.
+            
+    * Mentored junior engineers and led technical direction for architectural decisions and operational standards.
             
 
 
@@ -60,7 +62,7 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
             
             
-    * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend services.
+    * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
             
     * Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
             
@@ -76,7 +78,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twitter_ - 2017-2021
             
-    * Utilized Scala, Java, Git, Kafka, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
+    * Utilized Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
             
             
     * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.
@@ -136,9 +138,9 @@ __Software Craftsman and Computer Science Geek__
             
     * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative aggregating thousands of data scans into warehouse data schema for queriability.
             
-    * Contributed to company-sponsored open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) scanner . Discovery used a set of rules, fingerprints, and heuristics to scan machines for open source software and report to the Open Source Census.
+    * Built open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) scanner utilizing fingerprints and heuristics to scan for OSS and report to Open Source Census.
             
-    * Developed OpenLogic Enterprise, a J2EE software system used by companies such as GM, Bank of America, and Fujitsu.  Product was installed behind company firewalls and allowed administrators to remotely push and install open source components using automatic integration and configuration scripts.
+    * Developed J2EE software system that allowed remotely administered open source software installation and configuration.
             
     * Received Most Valuable Player Award - January 2008
             
@@ -149,11 +151,11 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Java, SQL Server, ColdFusion, HTML/CSS
             
             
-    * Developed e-DriverData, a system for processing multi-state driver history records.  e-DriverData seamlessly interacted with 44 different states for driver history, each using different protocols and technologies.
+    * Developed e-DriverData system for processing multi-state driver records that interacted with 44 states, each using different protocols and technologies.
             
-    * Refactored multi-dependency legacy enterprise application to reduce system coupling. Improved performance by 600% through multithreading, reduced errors/instability almost entirely, and halved development time for system changes. Identified and fixed numerous security vulnerabilities in system.
+    * Refactored multi-dependency legacy enterprise application to improve performance by 600% and greatly improve system stability.
             
-    * Architected centralized data access layer used by company's 10+ enterprise ColdFusion applications.  Helped design a Java/ColdFusion bridge library to allow interaction with layer, improving system performance and stability and increasing level of code reuse between applications.
+    * Architected data access service used by 10+ applications using a Java/ColdFusion bridge library, improving system performance and code reuse.
             
     * Led developer workshops on topics including thread safety, computational arithmetic, and regular expressions.
             
@@ -166,15 +168,15 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
             
             
-    * Developed over 40 educational physics and astronomy simulations written as Java applets and Flash interactives for inclusion with science textbooks. Simulations allowed students to manipulate experimental parameters in virtual environment to see real-time changes.  Customers included McGraw-Hill, Brooks-Cole, and NASA.
+    * Developed 40+ educational physics simulations allowing students to manipulate experimental parameters in virtual environment.
             
-    * Led team for a number of multi-component projects. Assigned work, kept people on task, and integrated final products.  Was responsible for managing deadlines and releases, and maintained a record of consistent on-time delivery.
+    * Led multi-component projects, organizing and assigning work as well as managing deadlines and releases.
             
-    * Created a powerful framework for all products that performed essential common tasks. Functionality included customized Java classloader for applets that detected the user's system capabilities and adjusted the features of the simulation accordingly as well as a universal loading screen.
+    * Created common product framework with customized Java classloader that detected system capabilities and adjusted simulation features.
             
-    * Created an AWT-based graphical toolkit for use in all applications to provide for company-wide consistency in separately developed applications as well as speedy GUI development.
+    * Built AWT-based graphical toolkit to provide for company-wide UI consistency and improved development time.
             
-    * Developed company web site and portfolio sites used to land new customers and allow existing customers to easily browser work-in-progress simulations and make suggestions, streamlining the code/revise process.
+    * Developed company web site and portfolio sites enabling customers to review work-in-progress and provide feedback to streamline revision process.
             
 
 

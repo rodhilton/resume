@@ -31,10 +31,11 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, letterpaper]{awesome-cv}
+\documentclass[12pt, letterpaper]{awesome-cv}
 
 \usepackage[normalem]{ulem} % [normalem] prevents the package from changing the default behavior of `\emph` to underline.
 \usepackage[shrink=100]{microtype}
+\usepackage{soul}
 
 % Configure page margins with geometry
 \geometry{left=1.3cm, top=1.3cm, right=1.3cm, bottom=1.7cm, footskip=.5cm}
@@ -52,23 +53,27 @@
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-\definecolor{darktext}{HTML}{414141}
-\definecolor{text}{HTML}{333333}
-\definecolor{graytext}{HTML}{5D5D5D}
-\definecolor{lighttext}{HTML}{999999}
+\definecolor{darktext}{HTML}{333333}
+\definecolor{text}{HTML}{000000}
+\definecolor{graytext}{HTML}{414141}
+\definecolor{lighttext}{HTML}{5d5d5d}
 \definecolor{sectiondivider}{HTML}{5D5D5D}
 
 % Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{<%= flags[:highlight] %>}
+\setbool{acvSectionColorHighlight}{false}
 
 
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvHeaderAfterQuoteSkip}{0mm}
+\renewcommand{\acvHeaderAfterSocialSkip}{2mm}
 
+\renewcommand{\acvSectionTopSkip}{2mm}
 
+% \newcommand\Colorhref[3][awesome]{\href{#2}{\dotuline{#3}}}
 
-\newcommand\Colorhref[3][awesome]{\href{#2}{\dotuline{#3}}}
+\newcommand\Colorhref[3][awesome]{\href{#2}{\bodyfont\mdseries\color{awesome} #3}}
 
 
 %-------------------------------------------------------------------------------
@@ -79,8 +84,8 @@
 % \photo[rectangle,edge,right]{./examples/profile}
 \photo[<%= flags[:photo_shape] %>,noedge,left]{<%= flags[:photo] %>}
 
-\name{\vspace{5mm}Rod}{Hilton}
-\position{<%= latex_desc(title) %>}
+\name{\vspace{-5mm}Rod}{Hilton}
+\position{\Colorhref{<%= canonical %>}{<%= latex_desc(title) %>}}
 % \address{Denver, CO}
 
 <% if flags[:phone] %>
@@ -112,7 +117,7 @@
 % \extrainfo{extra information}
 
 %\quote{<%= oneline_summary %>}
-\quote{\vspace{5mm} <%= traits.join("{\\enskip\\cdotp\\enskip}") %>}
+\quote{<%= traits.join("{\\enskip\\cdotp\\enskip}") %>}
 
 
 %-------------------------------------------------------------------------------
@@ -144,15 +149,13 @@
 \cvsection{Experience}
 
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,15) %>
-
-
 \begin{cventries}
 <% job_list.each_with_index do |job, i| %>
   <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 6) %>
   \cventry
     {<%= job.title %><% unless job.team.nil? %>{ - \normalfont{\bodyfontlight{<%= latex_desc(job.team) %>}}}<% end %>} % Job title
     {<%= job.company %><% unless job.note.nil? %>{\normalfont{ (<%= latex_desc(job.note) %>)}}<% end %>} % Organization
-    {<%= job.location %>} % Location
+    {<%= job.environment == "Remote" || job.environment == "Hybrid" ? "Remote" : job.location %>} % Location
     {<%= timespan(job.start_time, job.end_time) %>} % Date(s)
     {
       \begin{cvitems}
@@ -227,9 +230,15 @@
   \cventry
     {<%= pub.role %>{ - \normalfont{\bodyfontlight{<%= latex_desc(pub.type) %>}}}} % Role
     {<%= strip_links(latex_desc(pub.title)) %><% unless pub.author.nil? %> {\normalfont by <%= pub.author %>}<% end %>}
-    {\Colorhref{<%= pub.url %>}{<%= latex_desc(pub.publisher) %>}} % Location
+    {<%= latex_desc(pub.publisher) %>} % Location
     {<%= pub.year %>} % Date(s)
-    { }
+        { 
+        <%- unless pub.summary.nil? -%>
+          \begin{cvitems}
+        \item <%= latex_links(latex_desc(pub.summary)) %>
+      \end{cvitems}
+         <%- end -%>
+        }
 
 %  <% end %>
 
@@ -249,10 +258,10 @@
   \cventry
     {<%= project.role %>} % Role
     {<%= strip_links(latex_desc(project.title)) %>} % Title
-    {\Colorhref{<%= project.url %>}{<%= latex_desc(project.location) %>}} % Location
+    { <%= latex_desc(project.location) %>} % Location
     {<%= project.time %>} % Date(s)
     {   \begin{cvitems}
-        \item {<%= project.description %>}
+        \item {<%= latex_links(latex_desc(project.description)) %>}
       \end{cvitems}
         }
 % <% end %>

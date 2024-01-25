@@ -43,17 +43,15 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
             
             
-    * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits.
+    * Developed Segment Compute API to enable interactions through REST interface for realtime system handling 400k requests/sec.
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from untargetable free-form JSON object specification to precise grammar-based definition.
             
     * Designed Compute Query Language specification to enable retrieval of customer computation definitions through API.
             
-    * Refined design specifications through multiple rounds of requests for comments with stakeholders across business unit.
+    * Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
             
-    * Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking.
-            
-    * Mentored junior engineers and led technical direction for architectural decisions and operational standards.
+    * Implemented ANTLR-based parser & transpiler to convert between customer-facing validity-checked query language and internal representation.
             
 
 
@@ -85,7 +83,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed and launched features such as [Twitter Communities](https://blog.twitter.com/en_us/topics/product/2021/testing-communities), [Conversation Controls](https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/), and [Public Interest Interstitial](https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8).
             
-    * Led Privacy and Data Protection initiatives to annotate cross-service PII, ensure GDPR compliance via mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html) of over 17m accounts.
+    * Led Privacy and Data Protection initiatives to annotate cross-service PII, ensure GDPR compliance via mass [under-13 user erasure](https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html) of 17m accounts.
             
     * Developed [PowerTrack](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api) and [Statuses/Filter](https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter), complex real-time filter engine processing Twitter's 350k tweets/minute data stream.
             
@@ -102,9 +100,9 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
             
             
-    * Led rewrite of [residential](https://myservices.timewarnercable.com/) customer portal, new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
+    * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
             
-    * Created [commercial](https://myaccount.timewarnercable.com) primary care portal application handling 7m logins/month and 45% improvement in registration conversion rate.
+    * Created [commercial primary care portal](https://myaccount.timewarnercable.com) application handling 7m logins/month and 45% improvement in registration conversion rate.
             
     * Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
             
@@ -151,7 +149,7 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Java, SQL Server, ColdFusion, HTML/CSS
             
             
-    * Developed e-DriverData system for processing multi-state driver records that interacted with 44 states, each using different protocols and technologies.
+    * Developed e-DriverData system for processing driver records across 44 states, each using different protocols and technologies.
             
     * Refactored multi-dependency legacy enterprise application to improve performance by 600% and greatly improve system stability.
             

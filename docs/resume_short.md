@@ -43,17 +43,15 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
             
             
-    * Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits.
+    * Developed Segment Compute API to enable interactions through REST interface for realtime system handling 400k requests/sec.
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from untargetable free-form JSON object specification to precise grammar-based definition.
             
     * Designed Compute Query Language specification to enable retrieval of customer computation definitions through API.
             
-    * Refined design specifications through multiple rounds of requests for comments with stakeholders across business unit.
+    * Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
             
-    * Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking.
-            
-    * Mentored junior engineers and led technical direction for architectural decisions and operational standards.
+    * Implemented ANTLR-based parser & transpiler to convert between customer-facing validity-checked query language and internal representation.
             
 
 
@@ -86,9 +84,9 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
             
             
-    * Led rewrite of [residential](https://myservices.timewarnercable.com/) customer portal, new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
+    * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
             
-    * Created [commercial](https://myaccount.timewarnercable.com) primary care portal application handling 7m logins/month and 45% improvement in registration conversion rate.
+    * Created [commercial primary care portal](https://myaccount.timewarnercable.com) application handling 7m logins/month and 45% improvement in registration conversion rate.
             
 
 

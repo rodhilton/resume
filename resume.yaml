@@ -2,6 +2,7 @@ name: Rod Hilton
 title: Staff Software Engineer, Backend & Distributed Systems
 site: www.rodhilton.com
 quote: It works on my machine
+canonical: https://www.rodhilton.com/files/resume.pdf
 traits:
   - Pragmatism
   - Compassion
@@ -32,23 +33,24 @@ experience:
       team: Compute Interfaces
       start_time: 06/2023
       end_time: Present
-      location: Remote
+      location: San Francisco, CA
+      environment: Remote
       technologies: Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:
-        - Developed Segment Compute API to enable customer interactions outside of web UI through RESTful interface for customer audiences and traits.
+        - Developed Segment Compute API to enable interactions through REST interface for realtime system handling 400k requests/sec.
         - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from untargetable free-form JSON object specification to precise grammar-based definition.
         - Designed Compute Query Language specification to enable retrieval of customer computation definitions through API.
-        - Refined design specifications through multiple rounds of requests for comments with stakeholders across business unit.
-        - Implemented parser and transpiler using ANTLR for converting between custom query language and internal representation with semantic checking.
-        - Mentored junior engineers and led technical direction for architectural decisions and operational standards.
+        - Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
+        - Implemented ANTLR-based parser & transpiler to convert between customer-facing validity-checked query language and internal representation.
     - company: Epic Games
       title: Tech Lead, Backend Engineering
       team: Online Social
       start_time: 02/2021
       end_time: 06/2023
-      location: Remote
+      location: Cary, NC
+      environment: Remote
       technologies: Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
       summary: Social team lead, building Epic Online Services for friends, messaging, partying, group-forming, clip-sharing within games
       icon: epicgames.png
@@ -64,15 +66,15 @@ experience:
       team: Core Tweet Service & Developer Platform
       start_time: 09/2017
       end_time: 02/2021
-      location: Remote
-      # location: Boulder, CO
+      location: Boulder, CO
+      environment: Hybrid
       technologies: Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
       summary: Core Tweet Service backend team, storing and serving all Tweets within Twitter at massive scale
       icon: twitter.png
       accomplishments:
         - Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. 
         - Developed and launched features such as <a href="https://blog.twitter.com/en_us/topics/product/2021/testing-communities">Twitter Communities</a>, <a href="https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/">Conversation Controls</a>, and <a href="https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8">Public Interest Interstitial</a>.
-        - Led Privacy and Data Protection initiatives to annotate cross-service PII, ensure GDPR compliance via mass <a href="https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html">under-13 user erasure</a> of over 17m accounts.
+        - Led Privacy and Data Protection initiatives to annotate cross-service PII, ensure GDPR compliance via mass <a href="https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html">under-13 user erasure</a> of 17m accounts.
         - Developed <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api">PowerTrack</a> and <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter">Statuses/Filter</a>, complex real-time filter engine processing Twitter's 350k tweets/minute data stream.
         - Created new filter operators for Machine-Learning and Natural Language annotations used to <a href="https://www.nature.com/articles/s41598-021-98396-9">predict COVID-19 outbreaks</a> with 81.6% precision.
         - Created rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language.
@@ -83,14 +85,14 @@ experience:
       team: Core Services & Customer Portals
       start_time: 06/2011
       end_time: 08/2017
-      location: Remote
-      # location: Denver, CO
+      location: Denver, CO
+      environment: Hybrid
       technologies: Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
       summary: Cross-Platform team, built Common Services Tier middleware service layer and customer-facing web portals.
       icon: twc.png
       accomplishments:
-        - Led rewrite of <a href="https://myservices.timewarnercable.com/">residential</a> customer portal, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4-categories</a> with +10 point improvement in customer satisfaction.
-        - Created <a href="https://myaccount.timewarnercable.com">commercial</a> primary care portal application handling 7m logins/month and 45% improvement in registration conversion rate.
+        - Led rewrite of <a href="https://myservices.timewarnercable.com/">residential customer portal</a>, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4-categories</a> with +10 point improvement in customer satisfaction.
+        - Created <a href="https://myaccount.timewarnercable.com">commercial primary care portal</a> application handling 7m logins/month and 45% improvement in registration conversion rate.
         - Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
         - Created distributed tracing system to facilitate error diagnosis and resolution, reduced customer calls by 50% saving an estimated $4m/year.
         - Designed and implemented successful team branching strategy and release process & release notes generator saving hours of manual work per week.
@@ -101,6 +103,7 @@ experience:
       start_time: 07/2008
       end_time: 06/2011
       location: Boulder, CO
+      environment: Onsite
       technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
       summary: Agile Lifecycle Management team, developed work and ticket tracking system for scaled enterprise agile adoption.
       icon: rally.png
@@ -210,6 +213,7 @@ publications:
     clout: 8
     role: Co-author
     url: https://www.oreilly.com/library/view/97-things-every/9781491952689/
+    summary: Collection of <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/">short essays</a> full of expert advice and best practices from Java leaders and practitioners in the field.
   - title: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning
     author: Rod Hilton
     publisher: Int'l Journal of S.E. & K.E
@@ -218,6 +222,7 @@ publications:
     url: https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110
     role: Author
     clout: 10
+    summary: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Paper demonstrating the use of ML</a> to accurately predict areas of Open Source projects needing the most revision based on Object-Oriented metrics
   - title: Java Performance, 2nd Edition
     author: Scott Oaks
     publisher: O'Reilly
@@ -226,6 +231,7 @@ publications:
     clout: 8
     role: Technical Reviewer
     url: https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/
+    summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Guide to understanding JVM internals</a>, JIT optimizaton, garbage collection algorithms, target platform differences, and how to tune applications
   - title: Modern Systems Programming with Scala Native
     author: Richard Whaling
     publisher: Pragmatic
@@ -242,6 +248,7 @@ publications:
     clout: 7
     role: Technical Reviewer
     url: https://pragprog.com/book/vskotlin/programming-kotlin
+    summary: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Introduction to the Kotlin programming language</a>, how to use it for OOP as well as FP programming, and major differences from Java
   - title: Release It! 2nd Edition
     author: Michael Nygard
     publisher: Pragmatic Bookshelf
@@ -250,6 +257,7 @@ publications:
     clout: 9
     role: Technical Reviewer
     url: https://pragprog.com/book/mnee2/release-it-second-edition
+    summary: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Design patterns</a> for developing scalable, production-ready distributed systems in a robust, failure-resistant manner.
   - title: A Common-Sense Guide to Data Structures and Algorithms
     author: Jay Wengrow
     publisher: Pragmatic
@@ -282,6 +290,7 @@ publications:
     clout: 8
     role: Technical Reviewer
     url: https://pragprog.com/book/rails5/agile-web-development-with-rails-5
+    summary: Updated edition of "<a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">the skateboard book</a>" focusing on rapid development of web applications using Ruby on Rails
   - title: The Way of the Web Tester
     author: Jonathan Rasmusson
     publisher: Pragmatic
@@ -322,6 +331,7 @@ publications:
     clout: 10
     role: Technical Reviewer
     url: http://manning.com/bjarnason/
+    summary: Original edition of "<a href="http://manning.com/bjarnason/">the red book</a>" - Scala text with focus on purely functional programming style
   - title: Neo4j in Action
     author: Jonas Partner, Aleksa Vukotic, and Nicki Watt
     publisher: Manning
@@ -351,7 +361,7 @@ projects:
   - title: JaSoMe (Java Source Metrics)
     role: Maintainer
     location: GitHub
-    description: Zero-compilation Object Oriented Metrics analyzer for Java code, 13 forks on GitHub
+    description: Zero-compilation Object Oriented Metrics analyzer for Java code, <a href="https://github.com/rodhilton/jasome">13 forks on GitHub</a>
     time: 2018
     url: https://github.com/rodhilton/jasome
     license: Apache 2.0
@@ -359,7 +369,7 @@ projects:
   - title: console_table
     role: Maintainer
     location: rubygems.org
-    description: Ruby gem for formatting and printing tabluar data in commandline scripts, over 100,000 downloads
+    description: <a href="https://rubygems.org/gems/console_table/">Ruby gem</a> for formatting and printing tabluar data in commandline scripts, over 100,000 downloads
     time: 2015
     url: https://rubygems.org/gems/console_table/
     license: MIT

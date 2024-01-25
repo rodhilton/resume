@@ -39,11 +39,12 @@ experience:
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:
-        - Developed Segment Compute API to enable interactions through REST interface for realtime system handling 400k requests/sec.
-        - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from untargetable free-form JSON object specification to precise grammar-based definition.
-        - Designed Compute Query Language specification to enable retrieval of customer computation definitions through API.
+        - Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k rps.
+        - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
+        - Designed Compute Query Language to reach fidelity with GUI wizard toolset and allow API-friendly reading and writing of compute definitions.
         - Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
-        - Implemented ANTLR-based parser & transpiler to convert between customer-facing validity-checked query language and internal representation.
+        - Implemented ANTLR-based parser & transpiler to convert between validity-checked query language and proprietary internal data representation.
+        - Mentored 2 junior engineers and led technical direction for architectural decisions and operational standards.
     - company: Epic Games
       title: Tech Lead, Backend Engineering
       team: Online Social
@@ -201,7 +202,7 @@ education:
       location: Rochester, NY
       time: 2000-2004
       note: Focus on Systems
-      coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms.
+      coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms
       icon: rochester.png
 
 publications:
@@ -213,7 +214,7 @@ publications:
     clout: 8
     role: Co-author
     url: https://www.oreilly.com/library/view/97-things-every/9781491952689/
-    summary: Collection of <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/">short essays</a> full of expert advice and best practices from Java leaders and practitioners in the field.
+    summary: Collection of <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/">short essays</a> full of expert advice and best practices from Java leaders and practitioners in the field
   - title: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning
     author: Rod Hilton
     publisher: Int'l Journal of S.E. & K.E
@@ -240,6 +241,7 @@ publications:
     clout: 4
     role: Technical Reviewer
     url: https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native
+    summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Introduction to utilizing Scala Native</a> for low-level systems and firmware development using functional programming techniques
   - title: Programing Kotlin
     author: Venkat Subramaniam
     publisher: Pragmatic Bookshelf
@@ -257,7 +259,7 @@ publications:
     clout: 9
     role: Technical Reviewer
     url: https://pragprog.com/book/mnee2/release-it-second-edition
-    summary: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Design patterns</a> for developing scalable, production-ready distributed systems in a robust, failure-resistant manner.
+    summary: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Design patterns</a> for developing scalable, production-ready distributed systems in a robust, failure-resistant manner
   - title: A Common-Sense Guide to Data Structures and Algorithms
     author: Jay Wengrow
     publisher: Pragmatic
@@ -266,6 +268,7 @@ publications:
     clout: 4
     role: Technical Reviewer
     url: https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms
+    summary: <a href="https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/">Entry-level text</a> introducing undergraduate-level data structures, algorithms, and complexity analysis using Python
   - title: Test-Driving JavaScript Applications
     author: Venkat Subramaniam
     publisher: Pragmatic
@@ -274,6 +277,7 @@ publications:
     clout: 3
     role: Technical Reviewer
     url: https://pragprog.com/book/vsjavas/test-driving-javascript-applications
+    summary: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Guide for developing JavaScript</a> using a Test-Driven Development approach, covering libraries and techniques to improve testability of JS code
   - title: Reactive Programming with RxJS
     author: Sergi Mansilla
     publisher: Pragmatic
@@ -282,6 +286,7 @@ publications:
     clout: 3
     role: Technical Reviewer
     url: https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs
+    summary: <a href="https://pragprog.com/titles/smreactjs5/reactive-programming-with-rxjs-5/">Tutorial on using Reactive Programming techniques</a> within front-end JavaScript programming using the RxJS library
   - title: Agile Web Development with Rails 5
     author: Sam Ruby
     publisher: Pragmatic Bookshelf
@@ -299,6 +304,7 @@ publications:
     clout: 2
     role: Technical Reviewer
     url: https://pragprog.com/book/jrtest/the-way-of-the-web-tester
+    summary: <a href="https://pragprog.com/titles/jrtest/the-way-of-the-web-tester/">Beginner's guide to automated testing</a> for frontends, stressing UI and API testing techniques and tools
   - title: Pragmatic Unit Testing in Java 8 with JUnit
     author: Jeff Langr
     publisher: Pragmatic Bookshelf
@@ -306,7 +312,8 @@ publications:
     type: Book
     clout: 6
     role: Technical Reviewer
-    url: https://pragprog.com/book/utj2/pragmatic-unit-testing-in-java-8-with-junit
+    url: https://pragprog.com/titles/utj2/pragmatic-unit-testing-in-java-8-with-junit/
+    summary: <a href="https://pragprog.com/titles/utj2/pragmatic-unit-testing-in-java-8-with-junit/">Introduction to unit testing techniques</a>in Java 8 with step-by-step guides for Eclipse, IntelliJ IDEA, and NetBeans to utilize modern JUnit
   - title: Your Code as a Crime Scene
     author: Adam Tornhill
     publisher: Pragmatic

@@ -43,15 +43,17 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
             
             
-    * Developed Segment Compute API to enable interactions through REST interface for realtime system handling 400k requests/sec.
+    * Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k rps.
             
-    * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from untargetable free-form JSON object specification to precise grammar-based definition.
+    * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             
-    * Designed Compute Query Language specification to enable retrieval of customer computation definitions through API.
+    * Designed Compute Query Language to reach fidelity with GUI wizard toolset and allow API-friendly reading and writing of compute definitions.
             
     * Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
             
-    * Implemented ANTLR-based parser & transpiler to convert between customer-facing validity-checked query language and internal representation.
+    * Implemented ANTLR-based parser & transpiler to convert between validity-checked query language and proprietary internal data representation.
+            
+    * Mentored 2 junior engineers and led technical direction for architectural decisions and operational standards.
             
 
 
@@ -209,7 +211,7 @@ __Software Craftsman and Computer Science Geek__
 
 * __B.S., Computer Science__ - _University of Rochester_ - 2004
     * Focus on Systems
-    * Coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms.
+    * Coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms
         
 
 

@@ -1,5 +1,6 @@
 MAX_JOB_AGE=10
 MAX_ACCOMPLISHMENTS=4
+MIN_ACCOMPLISHMENTS=2
 
 SKILL_ORDER_DECAY = 0.08 #How much value a skill decays by (starting at 1) as its placement in the list moves down
 SKILL_YEARLY_DECAY = 0.1
@@ -126,7 +127,8 @@ def calculate_skills(jobs, order_decay=SKILL_ORDER_DECAY, yearly_decay=SKILL_YEA
 end
 
 def display_schoolyear(degree, expand_school_flag= false, before = "(", after=")") 
-  endyear = degree.time.match(/\d+-(\d+)/)[1].to_i
+
+  endyear = extract_year(degree.end_time).gsub("Present", Time.new.year.to_s).to_i
   if(endyear > Time.new.year) 
   	"#{before}Expected #{endyear}#{after}"
 #    "#{before}In Progress#{after}"
@@ -164,7 +166,7 @@ def skill_list(skills, low, high)
 end
 
 def latex_desc(bla)
-  bla.gsub(/%/, "\\%").gsub(/\&/, '\\\\&').gsub(/\$/, '\\\\$').gsub(/_/, '\\_')
+  bla.gsub(/%/, "\\%").gsub(/\&/, '\\\\&').gsub(/\$/, '\\\\$').gsub(/_/, '\\_').gsub(/#/,'\\#')
 end
 
 def trim_jobs(jobs, max_age=MAX_JOB_AGE) 
@@ -211,11 +213,11 @@ def trunc_jobs(jobs, max)
   jobs.take(max)
 end
 
-def trim_accomplishments(accomplishments, index, maximum=MAX_ACCOMPLISHMENTS)
+def trim_accomplishments(accomplishments, index, maximum=MAX_ACCOMPLISHMENTS, minimum=MIN_ACCOMPLISHMENTS)
   if(index == 0)
     accomplishments
   else
-    min = [maximum-index, 2].max
+    min = [maximum-index, minimum].max
     accomplishments[0..min-1]
   end
 end

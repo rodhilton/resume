@@ -31,7 +31,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[12pt, letterpaper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
 
 \usepackage[normalem]{ulem} % [normalem] prevents the package from changing the default behavior of `\emph` to underline.
 \usepackage[shrink=100]{microtype}
@@ -73,7 +73,7 @@
 
 % \newcommand\Colorhref[3][awesome]{\href{#2}{\dotuline{#3}}}
 
-\newcommand\Colorhref[3][awesome]{\href{#2}{\bodyfont\mdseries\color{awesome} #3}}
+\newcommand\Colorhref[3][awesome]{\href{#2}{\color{awesome} \underline{#3}}}
 
 
 %-------------------------------------------------------------------------------
@@ -85,7 +85,8 @@
 \photo[<%= flags[:photo_shape] %>,noedge,left]{<%= flags[:photo] %>}
 
 \name{\vspace{-5mm}Rod}{Hilton}
-\position{\Colorhref{<%= canonical %>}{<%= latex_desc(title) %>}}
+%\position{\Colorhref{<%= canonical %>}{<%= latex_desc(title) %>}}
+\position{<%= latex_desc(title) %>}
 % \address{Denver, CO}
 
 <% if flags[:phone] %>
@@ -135,23 +136,26 @@
   {\thepage}
 
 
+<% if flags[:skills_summary] %>
 \cvsection{Skills}
 
 \begin{cvskills}
-<% skills = calculate_skills(experience.jobs, 0.1, 0.05, 10, 15) %>
+<% skills = calculate_skills(experience.jobs + education.degrees, 0.2, 0.1, 10, 15) %>
 \cvskill{Accomplished}{<%= skills[:accomplished].gsub(/\#/, "\\#") %>}
 \cvskill{Advanced}{<%= skills[:advanced].gsub(/\#/, "\\#") %>}
 \cvskill{Novice}{<%= skills[:novice].gsub(/\#/, "\\#") %>}
 \cvskill{Interested}{<%= interests.gsub(/\#/, "\\#") %>}
 \end{cvskills}
 
+<% end %>
+
 
 \cvsection{Experience}
 
-<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,15) %>
+<% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,17) %>
 \begin{cventries}
 <% job_list.each_with_index do |job, i| %>
-  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 6) %>
+  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 6, 2) %>
   \cventry
     {<%= job.title %><% unless job.team.nil? %>{ - \normalfont{\bodyfontlight{<%= latex_desc(job.team) %>}}}<% end %>} % Job title
     {<%= job.company %><% unless job.note.nil? %>{\normalfont{ (<%= latex_desc(job.note) %>)}}<% end %>} % Organization
@@ -159,10 +163,10 @@
     {<%= timespan(job.start_time, job.end_time) %>} % Date(s)
     {
       \begin{cvitems}
+      <% unless job.technologies.nil? %>\item {\bodyfont Utilized <%= trim_skills(job.technologies, 16) %>.} <% end %>
 %      <% accomplishments.each do |accomplishment| %>    
         \item {<%= latex_links(latex_desc(accomplishment)) %>}
 %        <% end %>
-      <% unless job.technologies.nil? %>\item {Utilized <%= trim_skills(job.technologies, 16) %>.} <% end %>
       \end{cvitems}
     }
 
@@ -188,6 +192,7 @@
     { } % Date(s)
     {<% if flags[:expand_school] or flags[:expand_coursework] %>
     \begin{cvitems}
+    <% unless degree.technologies.nil? %>\item {\bodyfont Utilized <%= latex_desc(trim_skills(degree.technologies, 16)) %>.} <% end %>
         \item {<%= latex_links(degree.note) %>}
         \item Coursework: {<%= latex_links(degree.coursework) %>}
       \end{cvitems} 

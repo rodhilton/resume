@@ -27,9 +27,9 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Spring
-* __Advanced__: HTML/CSS, Scala, REST, ANTLR, Kafka
+* __Advanced__: Scala, HTML/CSS, REST, ANTLR, Kafka
 * __Novice__: AWS, MySQL, Terraform, Docker, Go, Thrift, Redis, Hadoop, Python, OpenAI, Kubernetes, TypeScript
-* __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP
+* __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----
 
@@ -43,7 +43,7 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
             
             
-    * Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k rps.
+    * Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             

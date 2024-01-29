@@ -27,9 +27,9 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Git, Spring
-* __Advanced__: HTML/CSS, Scala, REST, ANTLR, Kafka
+* __Advanced__: Scala, HTML/CSS, REST, ANTLR, Kafka
 * __Novice__: AWS, MySQL, Terraform, Docker, Go, Thrift, Redis, Hadoop, Python, OpenAI, Kubernetes, TypeScript
-* __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP
+* __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----
 
@@ -43,7 +43,7 @@ __Software Craftsman and Computer Science Geek__
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
             
             
-    * Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k rps.
+    * Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             
@@ -148,7 +148,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Senior Software Developer__ - _Acxiom (formerly InsightAmerica)_ - 2004-2007
             
-    * Utilized Java, SQL Server, ColdFusion, HTML/CSS
+    * Utilized Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, Tomcat, HTML/CSS
             
             
     * Developed e-DriverData system for processing driver records across 44 states, each using different protocols and technologies.
@@ -204,12 +204,12 @@ __Software Craftsman and Computer Science Geek__
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         
 
-* __M.S., Software Engineering__ - _Regis University_ - 2009
+* __M.S., Software Engineering__ - _Regis University_ - 2005
     * Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>
     * Coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
         
 
-* __B.S., Computer Science__ - _University of Rochester_ - 2004
+* __B.S., Computer Science__ - _University of Rochester_ - 2000
     * Focus on Systems
     * Coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms
         

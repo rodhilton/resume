@@ -23,7 +23,7 @@ summary:
   - Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
   - Polyglot programmer comfortable with object-oriented and functional languages
 
-interests: Kotlin, ElasticSearch, Spark, Cassandra, GCP
+interests: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 experience:
   summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
@@ -39,7 +39,7 @@ experience:
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:
-        - Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k rps.
+        - Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
         - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
         - Designed Compute Query Language to reach fidelity with GUI wizard toolset and allow API-friendly reading and writing of compute definitions.
         - Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
@@ -136,7 +136,7 @@ experience:
       start_time: 10/2004
       end_time: 01/2007
       location: Denver, CO
-      technologies: Java, SQL Server, ColdFusion, HTML/CSS
+      technologies: Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, Tomcat, HTML/CSS
       summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
       icon: acxiom2.png
       accomplishments:
@@ -184,26 +184,32 @@ education:
     - title: M.S., Computer Science
       school: University of Colorado
       location: Denver, CO
-      time: 2011-2022
+      start_time: 01/2011
+      end_time: 01/2022
       note: Specialization in Machine Learning, Theory, and Algorithms
       coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
+      technologies: Java, Scala, Python, Groovy, Ruby, LaTeX, Mathematica
       icon: ucd.png
 <% if flags[:expand_school] %>
     - title: M.S., Software Engineering
       school: Regis University
       location: Denver, CO
-      time: 2005-2009
+      start_time: 01/2009
+      end_time: 01/2005
       note: "Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>"
       coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
       icon: regis.png
+      technologies: Java, C#, LaTeX, UML
 <% end %>
     - title: B.S., Computer Science
       school: University of Rochester
       location: Rochester, NY
-      time: 2000-2004
+      start_time: 01/2004
+      end_time: 01/2000      
       note: Focus on Systems
       coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms
       icon: rochester.png
+      technologies: Java, C, C++, Assembly, Scheme, Python, JavaScript, LaTeX, Flash, Maya
 
 publications:
   - title: 97 Things Every Java Programmer Should Know
@@ -313,7 +319,7 @@ publications:
     clout: 6
     role: Technical Reviewer
     url: https://pragprog.com/titles/utj2/pragmatic-unit-testing-in-java-8-with-junit/
-    summary: <a href="https://pragprog.com/titles/utj2/pragmatic-unit-testing-in-java-8-with-junit/">Introduction to unit testing techniques</a>in Java 8 with step-by-step guides for Eclipse, IntelliJ IDEA, and NetBeans to utilize modern JUnit
+    summary: <a href="https://pragprog.com/titles/utj2/pragmatic-unit-testing-in-java-8-with-junit/">Introduction to unit testing techniques</a> in Java 8 with step-by-step guides for Eclipse, IntelliJ IDEA, and NetBeans to utilize modern JUnit
   - title: Your Code as a Crime Scene
     author: Adam Tornhill
     publisher: Pragmatic

@@ -125,7 +125,7 @@ experience:
       icon: openlogic.png
       accomplishments:
         - Developed <a href="http://www.openlogic.com/olex/">OLEX</a> application capable of managing open source software requisitions and installations across clusters of thousands of machines.
-        - Created RESTful web services used by <a href="http://www.osscensus.org/">Open Source Census</a> initiative aggregating thousands of data scans into warehouse data schema for queriability.
+        - Created RESTful web services used by <a href="http://www.osscensus.org/">Open Source Census</a> initiative aggregating thousands of data scans into warehouse data schema.
         - Built open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> scanner utilizing fingerprints and heuristics to scan for OSS and report to Open Source Census.
         - Developed J2EE software system that allowed remotely administered open source software installation and configuration.
         - Received Most Valuable Player Award - January 2008
@@ -241,7 +241,7 @@ publications:
     summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Guide to understanding JVM internals</a>, JIT optimizaton, garbage collection algorithms, target platform differences, and how to tune applications
   - title: Modern Systems Programming with Scala Native
     author: Richard Whaling
-    publisher: Pragmatic
+    publisher: Pragmatic Bookshelf
     year: 2020
     type: Book
     clout: 4
@@ -268,7 +268,7 @@ publications:
     summary: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Design patterns</a> for developing scalable, production-ready distributed systems in a robust, failure-resistant manner
   - title: A Common-Sense Guide to Data Structures and Algorithms
     author: Jay Wengrow
-    publisher: Pragmatic
+    publisher: Pragmatic Bookshelf
     year: 2017
     type: Book
     clout: 4
@@ -277,7 +277,7 @@ publications:
     summary: <a href="https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/">Entry-level text</a> introducing undergraduate-level data structures, algorithms, and complexity analysis using Python
   - title: Test-Driving JavaScript Applications
     author: Venkat Subramaniam
-    publisher: Pragmatic
+    publisher: Pragmatic Bookshelf
     year: 2016
     type: Book
     clout: 3
@@ -286,7 +286,7 @@ publications:
     summary: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Guide for developing JavaScript</a> using a Test-Driven Development approach, covering libraries and techniques to improve testability of JS code
   - title: Reactive Programming with RxJS
     author: Sergi Mansilla
-    publisher: Pragmatic
+    publisher: Pragmatic Bookshelf
     year: 2016
     type: Book
     clout: 3
@@ -304,7 +304,7 @@ publications:
     summary: Updated edition of "<a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">the skateboard book</a>" focusing on rapid development of web applications using Ruby on Rails
   - title: The Way of the Web Tester
     author: Jonathan Rasmusson
-    publisher: Pragmatic
+    publisher: Pragmatic Bookshelf
     year: 2016
     type: Book
     clout: 2
@@ -322,7 +322,7 @@ publications:
     summary: <a href="https://pragprog.com/titles/utj2/pragmatic-unit-testing-in-java-8-with-junit/">Introduction to unit testing techniques</a> in Java 8 with step-by-step guides for Eclipse, IntelliJ IDEA, and NetBeans to utilize modern JUnit
   - title: Your Code as a Crime Scene
     author: Adam Tornhill
-    publisher: Pragmatic
+    publisher: Pragmatic Bookshelf
     year: 2015
     type: Book
     clout: 5
@@ -330,7 +330,7 @@ publications:
     url: https://pragprog.com/book/atcrime/your-code-as-a-crime-scene
   - title: "CoffeeScript: Accelerated JavaScript Development, Second Edition"
     author: Trevor Burnham
-    publisher: Pragmatic
+    publisher: Pragmatic Bookshelf
     year: 2015
     type: Book
     clout: 3
@@ -363,7 +363,7 @@ publications:
     url: http://shop.oreilly.com/product/0636920019923.do
   - title: Functional Programming Patterns in Scala and Clojure
     author: Michael Bevilacqua-Linn
-    publisher: Pragmatic
+    publisher: Pragmatic Bookshelf
     year: 2013
     type: Book
     clout: 5

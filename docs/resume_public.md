@@ -136,7 +136,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed [OLEX](http://www.openlogic.com/olex/) application capable of managing open source software requisitions and installations across clusters of thousands of machines.
             
-    * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative aggregating thousands of data scans into warehouse data schema for queriability.
+    * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative aggregating thousands of data scans into warehouse data schema.
             
     * Built open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) scanner utilizing fingerprints and heuristics to scan for OSS and report to Open Source Census.
             
@@ -227,27 +227,27 @@ __Software Craftsman and Computer Science Geek__
 
 * Technical Reviewer: Java Performance, 2nd Edition by Scott Oaks _(O'Reilly, 2020)_
 
-* Technical Reviewer: Modern Systems Programming with Scala Native by Richard Whaling _(Pragmatic, 2020)_
+* Technical Reviewer: Modern Systems Programming with Scala Native by Richard Whaling _(Pragmatic Bookshelf, 2020)_
 
 * Technical Reviewer: Programing Kotlin by Venkat Subramaniam _(Pragmatic Bookshelf, 2019)_
 
 * Technical Reviewer: Release It! 2nd Edition by Michael Nygard _(Pragmatic Bookshelf, 2018)_
 
-* Technical Reviewer: A Common-Sense Guide to Data Structures and Algorithms by Jay Wengrow _(Pragmatic, 2017)_
+* Technical Reviewer: A Common-Sense Guide to Data Structures and Algorithms by Jay Wengrow _(Pragmatic Bookshelf, 2017)_
 
-* Technical Reviewer: Test-Driving JavaScript Applications by Venkat Subramaniam _(Pragmatic, 2016)_
+* Technical Reviewer: Test-Driving JavaScript Applications by Venkat Subramaniam _(Pragmatic Bookshelf, 2016)_
 
-* Technical Reviewer: Reactive Programming with RxJS by Sergi Mansilla _(Pragmatic, 2016)_
+* Technical Reviewer: Reactive Programming with RxJS by Sergi Mansilla _(Pragmatic Bookshelf, 2016)_
 
 * Technical Reviewer: Agile Web Development with Rails 5 by Sam Ruby _(Pragmatic Bookshelf, 2016)_
 
-* Technical Reviewer: The Way of the Web Tester by Jonathan Rasmusson _(Pragmatic, 2016)_
+* Technical Reviewer: The Way of the Web Tester by Jonathan Rasmusson _(Pragmatic Bookshelf, 2016)_
 
 * Technical Reviewer: Pragmatic Unit Testing in Java 8 with JUnit by Jeff Langr _(Pragmatic Bookshelf, 2015)_
 
-* Technical Reviewer: Your Code as a Crime Scene by Adam Tornhill _(Pragmatic, 2015)_
+* Technical Reviewer: Your Code as a Crime Scene by Adam Tornhill _(Pragmatic Bookshelf, 2015)_
 
-* Technical Reviewer: CoffeeScript: Accelerated JavaScript Development, Second Edition by Trevor Burnham _(Pragmatic, 2015)_
+* Technical Reviewer: CoffeeScript: Accelerated JavaScript Development, Second Edition by Trevor Burnham _(Pragmatic Bookshelf, 2015)_
 
 * Technical Reviewer: Functional Programming in Scala by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
 
@@ -255,6 +255,6 @@ __Software Craftsman and Computer Science Geek__
 
 * Technical Reviewer: Gradle, Beyond the Basics by Tim Berglund _(O'Reilly, 2013)_
 
-* Technical Reviewer: Functional Programming Patterns in Scala and Clojure by Michael Bevilacqua-Linn _(Pragmatic, 2013)_
+* Technical Reviewer: Functional Programming Patterns in Scala and Clojure by Michael Bevilacqua-Linn _(Pragmatic Bookshelf, 2013)_
 
 

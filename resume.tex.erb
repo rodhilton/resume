@@ -176,6 +176,8 @@
 
 % \pagebreak
 
+\begin{samepage}
+
 \cvsection{Education}
 
 
@@ -202,9 +204,11 @@
 
 \end{cventries}
 
+\end{samepage}
+
 
 <% if flags[:certifications] %>
-
+\begin{samepage}
 \cvsection{Certifications}
 
 \begin{cvhonors}
@@ -219,6 +223,7 @@
 
 
 \end{cvhonors}
+\end{samepage}
 
 <% end %>
 
@@ -235,12 +240,12 @@
   \cventry
     {<%= pub.role %>{ - \normalfont{\bodyfontlight{<%= latex_desc(pub.type) %>}}}} % Role
     {<%= strip_links(latex_desc(pub.title)) %><% unless pub.author.nil? %> {\normalfont by <%= pub.author %>}<% end %>}
-    {<%= latex_desc(pub.publisher) %>} % Location
+    {\Colorhref{<%= pub.url %>}{<%= latex_desc(pub.publisher) %>}} % Location
     {<%= pub.year %>} % Date(s)
         { 
         <%- unless pub.summary.nil? -%>
           \begin{cvitems}
-        \item <%= latex_links(latex_desc(pub.summary)) %>
+        \item <%= strip_links(latex_desc(pub.summary)) %>
       \end{cvitems}
          <%- end -%>
         }
@@ -263,10 +268,10 @@
   \cventry
     {<%= project.role %>} % Role
     {<%= strip_links(latex_desc(project.title)) %>} % Title
-    { <%= latex_desc(project.location) %>} % Location
+    {\Colorhref{<%= project.url %>}{<%= latex_desc(project.location) %>}} % Location
     {<%= project.time %>} % Date(s)
     {   \begin{cvitems}
-        \item {<%= latex_links(latex_desc(project.description)) %>}
+        \item {<%= strip_links(latex_desc(project.description)) %>}
       \end{cvitems}
         }
 % <% end %>

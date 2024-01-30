@@ -25,7 +25,7 @@ end
 
 file "qr_code_contact.png" => [:make_target] do |t|
   sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
-  sh "cat qr_code_contact.txt | qrencode -o #{TARGET_DIR}/qr_code_contact.png -t png -m 0 --size=10 --foreground=333333"
+  sh "cat qr_code_contact.txt | qrencode -o #{TARGET_DIR}/qr_code_contact.png -t png -m 0 --size=10 --foreground=414141"
   rm "qr_code_contact.txt"
 end
 

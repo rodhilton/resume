@@ -42,11 +42,11 @@ __Software Craftsman and Computer Science Geek__
             
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform 
             
-    * Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
+    * Developed [Compute API](https://docs.segmentapis.com/tag/Audiences) to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             
-    * Designed Compute Query Language to reach fidelity with GUI wizard toolset and allow API-friendly reading and writing of compute definitions.
+    * Designed Query Language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
             
     * Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
             
@@ -62,13 +62,13 @@ __Software Craftsman and Computer Science Geek__
             
     * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
             
-    * Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
+    * Coordinated cross-team initiative to anonymize over 900m accounts to [ensure data retention compliance](https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations) among hundreds of independent services.
             
-    * Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
+    * Operated [social game services](https://dev.epicgames.com/en-US/services-games) for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
             
     * Architected backend service solution and designed public-facing API for [Postparty](https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc) video clip sharing product, storing over 1m uploads/day.
             
-    * Developed Interactions Tracking Service for tracking and querying all player interactions for games supporting 11m CCUs.
+    * Developed Interactions Tracking Service for querying interactions [awards-based campaigns](https://www.fortnite.com/news/fortnite-refer-a-friend-3-0-play-together-and-earn-rewards) in games supporting 11m CCUs.
             
     * Created highly-available asynchronous processor of user-created media with access control utilized by [UEFN](https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html) to build over 1.1m projects
             
@@ -102,7 +102,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Created [commercial primary care portal](https://myaccount.timewarnercable.com) application handling 7m logins/month and 45% improvement in registration conversion rate.
             
-    * Built bills reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
+    * Built bill reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
             
     * Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
             
@@ -114,7 +114,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Technical Lead__ - _CA Technologies (formerly Rally Software)_ - 2008-2011
             
-    * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android 
+    * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, Tomcat, JavaScript, ExtJS, EclipseLink, Android 
             
     * Developed SaaS [Rally ALM](http://rally1.rallydev.com) project management software used by 300+ enterprises to adopt agile development in distributed environments.
             
@@ -144,7 +144,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Senior Software Developer__ - _Acxiom (formerly InsightAmerica)_ - 2004-2007
             
-    * Utilized Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, Tomcat, HTML/CSS 
+    * Utilized Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, JBoss, HTML/CSS 
             
     * Developed e-DriverData system for processing and reporting driver records across 44 states, each using different protocols and technologies.
             

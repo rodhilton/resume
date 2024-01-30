@@ -125,8 +125,8 @@ experience:
       summary: OpenLogic Enterprise team, developed SaaS web applications to manage open source across corporations as well as open source scanning desktop application utilizing Java, Ruby, Rails, and JavaScript.
       icon: openlogic.png
       accomplishments:
-        - Developed <a href="http://www.openlogic.com/olex/">OLEX</a> application capable of managing open source software requisitions and installations across clusters of thousands of machines.
-        - Created RESTful web services used by <a href="http://www.osscensus.org/">Open Source Census</a> initiative aggregating thousands of data scans into warehouse data schema.
+        - Developed <a href="https://sdtimes.com/openlogic-olex-enterprise-edition-supports-spdx-streamlining-open-source-compliance-activities/">OLEX</a> application capable of managing open source software requisitions and installations across clusters of thousands of machines.
+        - Created RESTful web services used by <a href="https://www.linuxinsider.com/story/open-source-census-broadens-its-mission-63439.html">Open Source Census</a> initiative aggregating thousands of data scans into warehouse data schema.
         - Built open source <a href="http://ossdiscovery.sourceforge.net/">OSS Discovery 2.0</a> scanner utilizing fingerprints and heuristics to scan for OSS and report to Open Source Census.
         - Developed J2EE software system that allowed remotely administered open source software installation and configuration.
         - Received Most Valuable Player Award - January 2008

@@ -329,6 +329,7 @@ publications:
     clout: 5
     role: Technical Reviewer
     url: https://pragprog.com/book/atcrime/your-code-as-a-crime-scene
+    summary: <a href="https://pragprog.com/titles/atcrime/your-code-as-a-crime-scene/">Guide to using forensic analysis</a> techniques to discover codebase hotspots for issues and defects to optimize refactoring direction
   - title: "CoffeeScript: Accelerated JavaScript Development, Second Edition"
     author: Trevor Burnham
     publisher: Pragmatic Bookshelf
@@ -337,6 +338,7 @@ publications:
     clout: 3
     role: Technical Reviewer
     url: https://pragprog.com/book/tbcoffee2/coffeescript
+    summary: <a href="https://pragprog.com/book/tbcoffee2/coffeescript">A comprehensive guide to CoffeeScript</a>, the elegant JavaScript simplifier, with updated features and tools for modern web development.
   - title: Functional Programming in Scala
     author: Paul Chiusano and Runar Bjarnason
     publisher: Manning
@@ -354,6 +356,7 @@ publications:
     clout: 5
     role: Technical Reviewer
     url: https://www.manning.com/books/neo4j-in-action
+    summary: <a href="https://www.manning.com/books/neo4j-in-action">A guide for developers and architects on using Neo4j</a>, a high-performance graph database, with a focus on modeling and querying.
   - title: Gradle, Beyond the Basics
     author: Tim Berglund
     publisher: O'Reilly
@@ -362,6 +365,7 @@ publications:
     clout: 5
     role: Technical Reviewer
     url: http://shop.oreilly.com/product/0636920019923.do
+    summary: <a href="http://shop.oreilly.com/product/0636920019923.do">An advanced guide to mastering Gradle</a>, covering file operations, custom plugins, build hooks, and dependency management with code examples.
   - title: Functional Programming Patterns in Scala and Clojure
     author: Michael Bevilacqua-Linn
     publisher: Pragmatic Bookshelf
@@ -370,6 +374,7 @@ publications:
     clout: 5
     role: Technical Reviewer
     url: http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure
+    summary: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Exploring advanced functional patterns</a> in Scala and Clojure, emphasizing Memoization and Tail Recursion for efficient problem-solving.
 
 projects:
   - title: JaSoMe (Java Source Metrics)

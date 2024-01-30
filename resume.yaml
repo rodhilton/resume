@@ -94,7 +94,7 @@ experience:
       accomplishments:
         - Led rewrite of <a href="https://myservices.timewarnercable.com/">residential customer portal</a>, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4-categories</a> with +10 point improvement in customer satisfaction.
         - Created <a href="https://myaccount.timewarnercable.com">commercial primary care portal</a> application handling 7m logins/month and 45% improvement in registration conversion rate.
-        - Built bills reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
+        - Built bill reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
         - Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
         - Created distributed tracing system to facilitate error diagnosis and resolution, reduced customer calls by 50% saving an estimated $4m/year.
         - Designed and implemented successful team branching strategy and release process & release notes generator saving hours of manual work per week.

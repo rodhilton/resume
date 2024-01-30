@@ -130,9 +130,9 @@ __Software Craftsman and Computer Science Geek__
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo 
             
-    * Developed [OLEX](http://www.openlogic.com/olex/) application capable of managing open source software requisitions and installations across clusters of thousands of machines.
+    * Developed [OLEX](https://sdtimes.com/openlogic-olex-enterprise-edition-supports-spdx-streamlining-open-source-compliance-activities/) application capable of managing open source software requisitions and installations across clusters of thousands of machines.
             
-    * Created RESTful web services used by [Open Source Census](http://www.osscensus.org/) initiative aggregating thousands of data scans into warehouse data schema.
+    * Created RESTful web services used by [Open Source Census](https://www.linuxinsider.com/story/open-source-census-broadens-its-mission-63439.html) initiative aggregating thousands of data scans into warehouse data schema.
             
     * Built open source [OSS Discovery 2.0](http://ossdiscovery.sourceforge.net/) scanner utilizing fingerprints and heuristics to scan for OSS and report to Open Source Census.
             

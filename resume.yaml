@@ -106,7 +106,7 @@ experience:
       end_time: 06/2011
       location: Boulder, CO
       environment: Onsite
-      technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JBoss, JavaScript, ExtJS, EclipseLink, Android
+      technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, Tomcat, JavaScript, ExtJS, EclipseLink, Android
       summary: Agile Lifecycle Management team, developed work and ticket tracking system for scaled enterprise agile adoption.
       icon: rally.png
       accomplishments:
@@ -137,7 +137,7 @@ experience:
       start_time: 10/2004
       end_time: 01/2007
       location: Denver, CO
-      technologies: Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, Tomcat, HTML/CSS
+      technologies: Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, JBoss, HTML/CSS
       summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
       icon: acxiom2.png
       accomplishments:

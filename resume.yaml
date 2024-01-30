@@ -57,7 +57,7 @@ experience:
       icon: epicgames.png
       accomplishments:
         - Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
-        - Coordinated cross-team initiative to anonymize over 900m accounts to ensure data retention compliance among hundreds of independent services.
+        - Coordinated cross-team initiative to anonymize over 900m accounts to <a href="https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations">ensure data retention compliance</a> among hundreds of independent services.
         - Operated social game services for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
         - Architected backend service solution and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a> video clip sharing product, storing over 1m uploads/day.
         - Developed Interactions Tracking Service for tracking and querying all player interactions for games supporting 11m CCUs.

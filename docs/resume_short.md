@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Spring
-* __Advanced__: Scala, HTML/CSS, REST, ANTLR, Kafka
-* __Novice__: AWS, MySQL, Terraform, Docker, Go, Thrift, Redis, Hadoop, Python, OpenAI, Kubernetes, TypeScript
+* __Accomplished__: Java, Scala, Git, Groovy, Ruby
+* __Advanced__: Python, Spring, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, JavaScript, Grails, AWS, Go, MySQL, SOAP, Terraform
+* __Novice__: Redis, AngularJS, TypeScript, Thrift, Kubernetes, PostgreSQL, Hadoop, Oracle, SBT, memcached, Jenkins, hazelcast
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----
@@ -40,8 +40,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twilio_ - 2023-Present
             
-    * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
-            
+    * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform 
             
     * Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
             
@@ -59,8 +58,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-2023
             
-    * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
-            
+    * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker 
             
     * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
             
@@ -72,8 +70,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twitter_ - 2017-2021
             
-    * Utilized Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
-            
+    * Utilized Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python 
             
     * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.
             
@@ -83,8 +80,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Principal Engineer__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
-    * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
-            
+    * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle 
             
     * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
             

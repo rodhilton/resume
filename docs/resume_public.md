@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Git, Spring
-* __Advanced__: Scala, HTML/CSS, REST, ANTLR, Kafka
-* __Novice__: AWS, MySQL, Terraform, Docker, Go, Thrift, Redis, Hadoop, Python, OpenAI, Kubernetes, TypeScript
+* __Accomplished__: Java, Scala, Git, Groovy, Ruby
+* __Advanced__: Python, Spring, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, JavaScript, Grails, AWS, Go, MySQL, SOAP, Terraform
+* __Novice__: Redis, AngularJS, TypeScript, Thrift, Kubernetes, PostgreSQL, Hadoop, Oracle, SBT, memcached, Jenkins, hazelcast
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----
@@ -40,8 +40,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twilio_ - 2023-Present
             
-    * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform
-            
+    * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform 
             
     * Developed Compute API to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
             
@@ -59,8 +58,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-2023
             
-    * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
-            
+    * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker 
             
     * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
             
@@ -78,8 +76,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twitter_ - 2017-2021
             
-    * Utilized Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
-            
+    * Utilized Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python 
             
     * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.
             
@@ -99,12 +96,13 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Principal Engineer__ - _Spectrum (formerly Time Warner Cable)_ - 2011-2017
             
-    * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle
-            
+    * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle 
             
     * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
             
     * Created [commercial primary care portal](https://myaccount.timewarnercable.com) application handling 7m logins/month and 45% improvement in registration conversion rate.
+            
+    * Built bills reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
             
     * Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
             
@@ -116,8 +114,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Technical Lead__ - _CA Technologies (formerly Rally Software)_ - 2008-2011
             
-    * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android
-            
+    * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, JavaScript, ExtJS, EclipseLink, Android 
             
     * Developed SaaS [Rally ALM](http://rally1.rallydev.com) project management software used by 300+ enterprises to adopt agile development in distributed environments.
             
@@ -131,8 +128,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Senior Software Engineer__ - _Rogue Wave Software (formerly OpenLogic)_ - 2007-2008
             
-    * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
-            
+    * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo 
             
     * Developed [OLEX](http://www.openlogic.com/olex/) application capable of managing open source software requisitions and installations across clusters of thousands of machines.
             
@@ -148,10 +144,9 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Senior Software Developer__ - _Acxiom (formerly InsightAmerica)_ - 2004-2007
             
-    * Utilized Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, Tomcat, HTML/CSS
+    * Utilized Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, Tomcat, HTML/CSS 
             
-            
-    * Developed e-DriverData system for processing driver records across 44 states, each using different protocols and technologies.
+    * Developed e-DriverData system for processing and reporting driver records across 44 states, each using different protocols and technologies.
             
     * Refactored multi-dependency legacy enterprise application to improve performance by 600% and greatly improve system stability.
             
@@ -165,8 +160,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Lead Software Developer__ - _Truth-N-Beauty Software_ - 2002-2004
             
-    * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript
-            
+    * Utilized Java, Applets, AWT, ASP, VBScript, Flash, ActionScript 
             
     * Developed 40+ educational physics simulations allowing students to manipulate experimental parameters in virtual environment.
             
@@ -200,16 +194,22 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __M.S., Computer Science__ - _University of Colorado_ - 2022
+    
+    * Utilized Java, Scala, Python, Groovy, Ruby, LaTeX, Mathematica. 
     * Specialization in Machine Learning, Theory, and Algorithms
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         
 
 * __M.S., Software Engineering__ - _Regis University_ - 2005
+    
+    * Utilized Java, C#, LaTeX, UML. 
     * Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>
     * Coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
         
 
 * __B.S., Computer Science__ - _University of Rochester_ - 2000
+    
+    * Utilized Java, C, C++, Assembly, Scheme, Python, JavaScript, LaTeX, Flash, Maya. 
     * Focus on Systems
     * Coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms
         

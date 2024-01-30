@@ -94,6 +94,7 @@ experience:
       accomplishments:
         - Led rewrite of <a href="https://myservices.timewarnercable.com/">residential customer portal</a>, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4-categories</a> with +10 point improvement in customer satisfaction.
         - Created <a href="https://myaccount.timewarnercable.com">commercial primary care portal</a> application handling 7m logins/month and 45% improvement in registration conversion rate.
+        - Built bills reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
         - Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
         - Created distributed tracing system to facilitate error diagnosis and resolution, reduced customer calls by 50% saving an estimated $4m/year.
         - Designed and implemented successful team branching strategy and release process & release notes generator saving hours of manual work per week.
@@ -140,7 +141,7 @@ experience:
       summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
       icon: acxiom2.png
       accomplishments:
-        - Developed e-DriverData system for processing driver records across 44 states, each using different protocols and technologies.
+        - Developed e-DriverData system for processing and reporting driver records across 44 states, each using different protocols and technologies.
         - Refactored multi-dependency legacy enterprise application to improve performance by 600% and greatly improve system stability.
         - Architected data access service used by 10+ applications using a Java/ColdFusion bridge library, improving system performance and code reuse.
         - Led developer workshops on topics including thread safety, computational arithmetic, and regular expressions.

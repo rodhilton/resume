@@ -21,7 +21,7 @@ __Software Craftsman and Computer Science Geek__
 
 ## Technical Skills
 
-<% skills = calculate_skills(experience.jobs) %>
+<% skills = calculate_skills(experience.jobs + education.degrees, 0.2, 0.1, 10, 15) %>
 * __Accomplished__: <%= skills[:accomplished] %>
 * __Advanced__: <%= skills[:advanced] %>
 * __Novice__: <%= skills[:novice] %>
@@ -36,8 +36,7 @@ __Software Craftsman and Computer Science Geek__
 <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i) %>
 *  __<%= job.title %>__ - _<%= job.company %><% unless job.note.nil? %> (<%= job.note %>)<% end %>_ - <%= timespan(job.start_time, job.end_time) %>
             <% unless job.technologies.nil? %>
-    * Utilized <%= job.technologies %>
-            <% end %>
+    * Utilized <%= job.technologies %> <% end %>
             <% accomplishments.each do |accomplishment| %>
     * <%= markdown_links(accomplishment) %>
             <% end %>
@@ -57,6 +56,8 @@ __Software Craftsman and Computer Science Geek__
 
 <% education.degrees.each do |degree| %>
 * __<%= degree.title %>__ - _<%= degree.school %>_ <%= display_schoolyear(degree, flags[:expand_school ], "- ", "") %><% if flags[:expand_school] %>
+    <% unless degree.technologies.nil? %>
+    * Utilized <%= degree.technologies %>. <% end %>
     * <%= degree.note %>
     * Coursework: <%= degree.coursework %>
         <% end %>

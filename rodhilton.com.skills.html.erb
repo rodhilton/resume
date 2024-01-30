@@ -2,7 +2,7 @@
 <h2 class="mb-5">Skills</h2>
 <div class="skill-icons">
   <% 
-     skills = calculate_skills(experience.jobs)
+     skills = calculate_skills(experience.jobs + education.degrees, 0.2, 0.1, 10, 15)
      ordered_skills = skills[:accomplished].split(", ") + skills[:advanced].split(", ") + skills[:novice].split(", ")# + interests.split(", ")
   %>
   <% ordered_skills.each do |skillname| %>

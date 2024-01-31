@@ -7,7 +7,7 @@ TARGET_DIR="docs"
 
 CLEAN.include(TARGET_DIR)
 
-data_files = "resume.yaml,skills.yaml"
+data_files = "resume.yaml"
 
 public_flags = "-f expand_school -f certifications -f complete_history -f publications"
 

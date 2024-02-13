@@ -109,7 +109,7 @@ experience:
       environment: Onsite
       technologies: Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, Tomcat, JavaScript, ExtJS, EclipseLink, Android
       summary: Agile Lifecycle Management team, developed work and ticket tracking system for scaled enterprise agile adoption.
-      icon: rally.png
+      icon: broadcom.png
       accomplishments:
         - Developed SaaS <a href="http://rally1.rallydev.com">Rally ALM</a> project management software used by 300+ enterprises to adopt agile development in distributed environments.
         - Led test-driven data migration effort to migrate customers out of legacy product, deleting over 20k LoC and reducing development effort by 50%.
@@ -124,7 +124,7 @@ experience:
       location: Denver, CO
       technologies: Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo
       summary: OpenLogic Enterprise team, developed SaaS web applications to manage open source across corporations as well as open source scanning desktop application utilizing Java, Ruby, Rails, and JavaScript.
-      icon: openlogic.png
+      icon: perforce.png
       accomplishments:
         - Developed <a href="https://sdtimes.com/openlogic-olex-enterprise-edition-supports-spdx-streamlining-open-source-compliance-activities/">OLEX</a> application capable of managing open source software requisitions and installations across clusters of thousands of machines.
         - Created RESTful web services used by <a href="https://www.linuxinsider.com/story/open-source-census-broadens-its-mission-63439.html">Open Source Census</a> initiative aggregating thousands of data scans into warehouse data schema.
@@ -140,7 +140,7 @@ experience:
       location: Denver, CO
       technologies: Java, CPIC, SQL Server, SOAP, JavaScript, ColdFusion, JBoss, HTML/CSS
       summary: eDriverData team, built console application for collecting and linking data from public records databases for background screening and debt collection utilizing Java, ColdFusion, SQL Server.
-      icon: acxiom2.png
+      icon: acxiom_brandmark.png
       accomplishments:
         - Developed e-DriverData system for processing and reporting driver records across 44 states, each using different protocols and technologies.
         - Refactored multi-dependency legacy enterprise application to improve performance by 600% and greatly improve system stability.

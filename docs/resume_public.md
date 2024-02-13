@@ -42,13 +42,13 @@ __Software Craftsman and Computer Science Geek__
             
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform 
             
-    * Developed [Compute API](https://docs.segmentapis.com/tag/Audiences) to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
+    * Developed [Compute API](https://docs.segmentapis.com/tag/Audiences) to provide REST interface to largest users of realtime customer segmentation platform handling 400k requests/sec.
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             
-    * Designed Query Language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
+    * Designed query language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
             
-    * Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
+    * Refined design specifications through multiple rounds of stakeholder collaboration and drove consensus between groups across business unit.
             
     * Implemented ANTLR-based parser & transpiler to convert between validity-checked query language and proprietary internal data representation.
             
@@ -67,6 +67,8 @@ __Software Craftsman and Computer Science Geek__
     * Operated [social game services](https://dev.epicgames.com/en-US/services-games) for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
             
     * Architected backend service solution and designed public-facing API for [Postparty](https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc) video clip sharing product, storing over 1m uploads/day.
+            
+    * Managed work intake and priority for 10 contract-based engineering staff and supported their development within organization.
             
     * Developed Interactions Tracking Service for querying interactions [awards-based campaigns](https://www.fortnite.com/news/fortnite-refer-a-friend-3-0-play-together-and-earn-rewards) in games supporting 11m CCUs.
             
@@ -98,13 +100,13 @@ __Software Craftsman and Computer Science Geek__
             
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle 
             
+    * Developed high-availability middleware platform to reduce internal access friction to heterogenous backend services handling over 1k requests/sec.
+            
     * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
             
     * Created [commercial primary care portal](https://myaccount.timewarnercable.com) application handling 7m logins/month and 45% improvement in registration conversion rate.
             
     * Built bill reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
-            
-    * Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
             
     * Created distributed tracing system to facilitate error diagnosis and resolution, reduced customer calls by 50% saving an estimated $4m/year.
             
@@ -112,7 +114,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Technical Lead__ - _CA Technologies (formerly Rally Software)_ - 2008-2011
+*  __Technical Lead__ - _Broadcom (formerly Rally Software)_ - 2008-2011
             
     * Utilized Java, Servlets, JSP, Git, Spring, Ruby, HTML/CSS, Oracle, Tomcat, JavaScript, ExtJS, EclipseLink, Android 
             
@@ -126,7 +128,7 @@ __Software Craftsman and Computer Science Geek__
             
 
 
-*  __Senior Software Engineer__ - _Rogue Wave Software (formerly OpenLogic)_ - 2007-2008
+*  __Senior Software Engineer__ - _Perforce (formerly OpenLogic)_ - 2007-2008
             
     * Utilized Ruby, Rails, JavaScript, AJAX, HTML/CSS, MySQL, Java, JSP, Servlets, JSF, Spring, Groovy, Hibernate, PostgreSQL, Geronimo 
             
@@ -223,31 +225,31 @@ __Software Craftsman and Computer Science Geek__
 
 * Co-author: 97 Things Every Java Programmer Should Know by Various Authors _(O'Reilly, 2020)_
 
-* Author: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning by Rod Hilton _(Int'l Journal of S.E. & K.E, 2018)_
+* Author: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning by Rod Hilton _(IJSEKE, 2018)_
 
 * Technical Reviewer: Java Performance, 2nd Edition by Scott Oaks _(O'Reilly, 2020)_
 
-* Technical Reviewer: Modern Systems Programming with Scala Native by Richard Whaling _(Pragmatic Bookshelf, 2020)_
+* Technical Reviewer: Modern Systems Programming with Scala Native by Richard Whaling _(Pragmatic, 2020)_
 
-* Technical Reviewer: Programing Kotlin by Venkat Subramaniam _(Pragmatic Bookshelf, 2019)_
+* Technical Reviewer: Programing Kotlin by Venkat Subramaniam _(Pragmatic, 2019)_
 
-* Technical Reviewer: Release It! 2nd Edition by Michael Nygard _(Pragmatic Bookshelf, 2018)_
+* Technical Reviewer: Release It! 2nd Edition by Michael Nygard _(Pragmatic, 2018)_
 
-* Technical Reviewer: A Common-Sense Guide to Data Structures and Algorithms by Jay Wengrow _(Pragmatic Bookshelf, 2017)_
+* Technical Reviewer: A Common-Sense Guide to Data Structures and Algorithms by Jay Wengrow _(Pragmatic, 2017)_
 
-* Technical Reviewer: Test-Driving JavaScript Applications by Venkat Subramaniam _(Pragmatic Bookshelf, 2016)_
+* Technical Reviewer: Test-Driving JavaScript Applications by Venkat Subramaniam _(Pragmatic, 2016)_
 
-* Technical Reviewer: Reactive Programming with RxJS by Sergi Mansilla _(Pragmatic Bookshelf, 2016)_
+* Technical Reviewer: Reactive Programming with RxJS by Sergi Mansilla _(Pragmatic, 2016)_
 
-* Technical Reviewer: Agile Web Development with Rails 5 by Sam Ruby _(Pragmatic Bookshelf, 2016)_
+* Technical Reviewer: Agile Web Development with Rails 5 by Sam Ruby _(Pragmatic, 2016)_
 
-* Technical Reviewer: The Way of the Web Tester by Jonathan Rasmusson _(Pragmatic Bookshelf, 2016)_
+* Technical Reviewer: The Way of the Web Tester by Jonathan Rasmusson _(Pragmatic, 2016)_
 
-* Technical Reviewer: Pragmatic Unit Testing in Java 8 with JUnit by Jeff Langr _(Pragmatic Bookshelf, 2015)_
+* Technical Reviewer: Pragmatic Unit Testing in Java 8 with JUnit by Jeff Langr _(Pragmatic, 2015)_
 
-* Technical Reviewer: Your Code as a Crime Scene by Adam Tornhill _(Pragmatic Bookshelf, 2015)_
+* Technical Reviewer: Your Code as a Crime Scene by Adam Tornhill _(Pragmatic, 2015)_
 
-* Technical Reviewer: CoffeeScript: Accelerated JavaScript Development, Second Edition by Trevor Burnham _(Pragmatic Bookshelf, 2015)_
+* Technical Reviewer: CoffeeScript: Accelerated JavaScript Development, Second Edition by Trevor Burnham _(Pragmatic, 2015)_
 
 * Technical Reviewer: Functional Programming in Scala by Paul Chiusano and Runar Bjarnason _(Manning, 2014)_
 
@@ -255,6 +257,6 @@ __Software Craftsman and Computer Science Geek__
 
 * Technical Reviewer: Gradle, Beyond the Basics by Tim Berglund _(O'Reilly, 2013)_
 
-* Technical Reviewer: Functional Programming Patterns in Scala and Clojure by Michael Bevilacqua-Linn _(Pragmatic Bookshelf, 2013)_
+* Technical Reviewer: Functional Programming Patterns in Scala and Clojure by Michael Bevilacqua-Linn _(Pragmatic, 2013)_
 
 

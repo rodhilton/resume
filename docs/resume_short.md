@@ -42,13 +42,13 @@ __Software Craftsman and Computer Science Geek__
             
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform 
             
-    * Developed [Compute API](https://docs.segmentapis.com/tag/Audiences) to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
+    * Developed [Compute API](https://docs.segmentapis.com/tag/Audiences) to provide REST interface to largest users of realtime customer segmentation platform handling 400k requests/sec.
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             
-    * Designed Query Language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
+    * Designed query language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
             
-    * Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
+    * Refined design specifications through multiple rounds of stakeholder collaboration and drove consensus between groups across business unit.
             
     * Implemented ANTLR-based parser & transpiler to convert between validity-checked query language and proprietary internal data representation.
             
@@ -82,9 +82,9 @@ __Software Craftsman and Computer Science Geek__
             
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle 
             
-    * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
+    * Developed high-availability middleware platform to reduce internal access friction to heterogenous backend services handling over 1k requests/sec.
             
-    * Created [commercial primary care portal](https://myaccount.timewarnercable.com) application handling 7m logins/month and 45% improvement in registration conversion rate.
+    * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
             
 
 

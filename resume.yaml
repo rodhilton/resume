@@ -39,10 +39,10 @@ experience:
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:
-        - Developed <a href="https://docs.segmentapis.com/tag/Audiences">Compute API</a> to provide REST interface to largest users of realtime customer segmentation system handling 400k requests/sec.
+        - Developed <a href="https://docs.segmentapis.com/tag/Audiences">Compute API</a> to provide REST interface to largest users of realtime customer segmentation platform handling 400k requests/sec.
         - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
-        - Designed Query Language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
-        - Refined design specifications through multiple RFC rounds and drove consensus between 20+ stakeholders across business unit.
+        - Designed query language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
+        - Refined design specifications through multiple rounds of stakeholder collaboration and drove consensus between groups across business unit.
         - Implemented ANTLR-based parser & transpiler to convert between validity-checked query language and proprietary internal data representation.
         - Mentored 2 junior engineers and led technical direction for architectural decisions and operational standards.
     - company: Epic Games
@@ -60,6 +60,7 @@ experience:
         - Coordinated cross-team initiative to anonymize over 900m accounts to <a href="https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations">ensure data retention compliance</a> among hundreds of independent services.
         - Operated <a href="https://dev.epicgames.com/en-US/services-games">social game services</a> for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
         - Architected backend service solution and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a> video clip sharing product, storing over 1m uploads/day.
+        - Managed work intake and priority for 10 contract-based engineering staff and supported their development within organization.
         - Developed Interactions Tracking Service for querying interactions <a href="https://www.fortnite.com/news/fortnite-refer-a-friend-3-0-play-together-and-earn-rewards">awards-based campaigns</a> in games supporting 11m CCUs.
         - Created highly-available asynchronous processor of user-created media with access control utilized by <a href="https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html">UEFN</a> to build over 1.1m projects
     - company: Twitter
@@ -92,13 +93,13 @@ experience:
       summary: Cross-Platform team, built Common Services Tier middleware service layer and customer-facing web portals.
       icon: twc.png
       accomplishments:
+        - Developed high-availability middleware platform to reduce internal access friction to heterogenous backend services handling over 1k requests/sec.
         - Led rewrite of <a href="https://myservices.timewarnercable.com/">residential customer portal</a>, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4-categories</a> with +10 point improvement in customer satisfaction.
         - Created <a href="https://myaccount.timewarnercable.com">commercial primary care portal</a> application handling 7m logins/month and 45% improvement in registration conversion rate.
         - Built bill reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
-        - Developed highly-available RESTful middleware service to simplify access to heterogenous backend services handling over 1k requests/sec.
         - Created distributed tracing system to facilitate error diagnosis and resolution, reduced customer calls by 50% saving an estimated $4m/year.
         - Designed and implemented successful team branching strategy and release process & release notes generator saving hours of manual work per week.
-    - company: CA Technologies 
+    - company: Broadcom
       note: formerly Rally Software
       title: Technical Lead
       team: Agile Lifecycle Management Product
@@ -114,7 +115,7 @@ experience:
         - Led test-driven data migration effort to migrate customers out of legacy product, deleting over 20k LoC and reducing development effort by 50%.
         - Refactored application to remove container test dependency, simplify deployment infrastructure, and use standard annotations for domain objects.
         - Created <a href="http://code.google.com/p/rallydroid/">Rallydroid</a>, an Open Source Rally client for Android operating system.
-    - company: Rogue Wave Software
+    - company: Perforce
       note: formerly OpenLogic
       title: Senior Software Engineer
       team: Open Source Management Software
@@ -224,7 +225,7 @@ publications:
     summary: Collection of <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/">short essays</a> full of expert advice and best practices from Java leaders and practitioners in the field
   - title: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning
     author: Rod Hilton
-    publisher: Int'l Journal of S.E. & K.E
+    publisher: IJSEKE
     year: 2018
     type: Journal Article
     url: https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110
@@ -242,25 +243,25 @@ publications:
     summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Guide to understanding JVM internals</a>, JIT optimizaton, garbage collection algorithms, target platform differences, and how to tune applications
   - title: Modern Systems Programming with Scala Native
     author: Richard Whaling
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2020
     type: Book
-    clout: 4
+    clout: 9
     role: Technical Reviewer
     url: https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native
     summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Introduction to utilizing Scala Native</a> for low-level systems and firmware development using functional programming techniques
   - title: Programing Kotlin
     author: Venkat Subramaniam
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2019
     type: Book
-    clout: 7
+    clout: 4
     role: Technical Reviewer
     url: https://pragprog.com/book/vskotlin/programming-kotlin
     summary: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Introduction to the Kotlin programming language</a>, how to use it for OOP as well as FP programming, and major differences from Java
   - title: Release It! 2nd Edition
     author: Michael Nygard
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2018
     type: Book
     clout: 9
@@ -269,7 +270,7 @@ publications:
     summary: <a href="https://pragprog.com/book/mnee2/release-it-second-edition">Design patterns</a> for developing scalable, production-ready distributed systems in a robust, failure-resistant manner
   - title: A Common-Sense Guide to Data Structures and Algorithms
     author: Jay Wengrow
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2017
     type: Book
     clout: 4
@@ -278,7 +279,7 @@ publications:
     summary: <a href="https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/">Entry-level text</a> introducing undergraduate-level data structures, algorithms, and complexity analysis using Python
   - title: Test-Driving JavaScript Applications
     author: Venkat Subramaniam
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2016
     type: Book
     clout: 3
@@ -287,7 +288,7 @@ publications:
     summary: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Guide for developing JavaScript</a> using a Test-Driven Development approach, covering libraries and techniques to improve testability of JS code
   - title: Reactive Programming with RxJS
     author: Sergi Mansilla
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2016
     type: Book
     clout: 3
@@ -296,7 +297,7 @@ publications:
     summary: <a href="https://pragprog.com/titles/smreactjs5/reactive-programming-with-rxjs-5/">Tutorial on using Reactive Programming techniques</a> within front-end JavaScript programming using the RxJS library
   - title: Agile Web Development with Rails 5
     author: Sam Ruby
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2016
     type: Book
     clout: 8
@@ -305,7 +306,7 @@ publications:
     summary: Updated edition of "<a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">the skateboard book</a>" focusing on rapid development of web applications using Ruby on Rails
   - title: The Way of the Web Tester
     author: Jonathan Rasmusson
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2016
     type: Book
     clout: 2
@@ -314,7 +315,7 @@ publications:
     summary: <a href="https://pragprog.com/titles/jrtest/the-way-of-the-web-tester/">Beginner's guide to automated testing</a> for frontends, stressing UI and API testing techniques and tools
   - title: Pragmatic Unit Testing in Java 8 with JUnit
     author: Jeff Langr
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2015
     type: Book
     clout: 6
@@ -323,7 +324,7 @@ publications:
     summary: <a href="https://pragprog.com/titles/utj2/pragmatic-unit-testing-in-java-8-with-junit/">Introduction to unit testing techniques</a> in Java 8 with step-by-step guides for Eclipse, IntelliJ IDEA, and NetBeans to utilize modern JUnit
   - title: Your Code as a Crime Scene
     author: Adam Tornhill
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2015
     type: Book
     clout: 5
@@ -332,7 +333,7 @@ publications:
     summary: <a href="https://pragprog.com/titles/atcrime/your-code-as-a-crime-scene/">Guide to using forensic analysis</a> techniques to discover codebase hotspots for issues and defects to optimize refactoring direction
   - title: "CoffeeScript: Accelerated JavaScript Development, Second Edition"
     author: Trevor Burnham
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2015
     type: Book
     clout: 3
@@ -368,10 +369,10 @@ publications:
     summary: <a href="http://shop.oreilly.com/product/0636920019923.do">An advanced guide to mastering Gradle</a>, covering file operations, custom plugins, build hooks, and dependency management with code examples.
   - title: Functional Programming Patterns in Scala and Clojure
     author: Michael Bevilacqua-Linn
-    publisher: Pragmatic Bookshelf
+    publisher: Pragmatic
     year: 2013
     type: Book
-    clout: 5
+    clout: 8
     role: Technical Reviewer
     url: http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure
     summary: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Exploring advanced functional patterns</a> in Scala and Clojure, emphasizing Memoization and Tail Recursion for efficient problem-solving.
@@ -420,8 +421,8 @@ projects:
   - title: Trajectories
     role: Maintainer
     location: GitHub
-    description: A program that uses Linguistic Geometry concepts to quickly compute all trajectories from a chess board position to another
+    description: A Scala application that uses Linguistic Geometry concepts to quickly compute trajectory positions for chess boards
     time: 2012
     url: https://github.com/rodhilton/trajectories
     license: GPL v2
-    clout: 5
+    clout: 9

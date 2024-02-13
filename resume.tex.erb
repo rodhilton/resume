@@ -31,7 +31,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, letterpaper]{awesome-cv}
+\documentclass[10pt,letterpaper]{awesome-cv}
 
 \usepackage[normalem]{ulem} % [normalem] prevents the package from changing the default behavior of `\emph` to underline.
 \usepackage[shrink=100]{microtype}
@@ -58,6 +58,7 @@
 \definecolor{graytext}{HTML}{414141}
 \definecolor{lighttext}{HTML}{5d5d5d}
 \definecolor{sectiondivider}{HTML}{5D5D5D}
+\definecolor{blah}{HTML}{0000ff}
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{false}
@@ -136,7 +137,6 @@
   {\thepage}
 
 
-<% if flags[:skills_summary] %>
 \cvsection{Skills}
 
 \begin{cvskills}
@@ -147,8 +147,6 @@
 \cvskill{Interested}{<%= interests.gsub(/\#/, "\\#") %>}
 \end{cvskills}
 
-<% end %>
-
 
 \cvsection{Experience}
 
@@ -158,12 +156,12 @@
   <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 6, 2) %>
   \cventry
     {<%= job.title %><% unless job.team.nil? %>{ - \normalfont{\bodyfontlight{<%= latex_desc(job.team) %>}}}<% end %>} % Job title
-    {<%= job.company %><% unless job.note.nil? %>{\normalfont{ (<%= latex_desc(job.note) %>)}}<% end %>} % Organization
+    {<%= job.company %><% unless job.note.nil? %>{\normalfont{ \color{lighttext} (<%= latex_desc(job.note) %>)}}<% end %>} % Organization
     {<%= job.environment == "Remote" || job.environment == "Hybrid" ? "Remote" : job.location %>} % Location
     {<%= timespan(job.start_time, job.end_time) %>} % Date(s)
     {
       \begin{cvitems}
-      <% unless job.technologies.nil? %>\item {\bodyfont Utilized <%= trim_skills(job.technologies, 16) %>.} <% end %>
+      <% unless job.technologies.nil? %>\item {Utilized <%= trim_skills(job.technologies, 16) %>.} <% end %>
 %      <% accomplishments.each do |accomplishment| %>    
         \item {<%= latex_links(latex_desc(accomplishment)) %>}
 %        <% end %>
@@ -174,9 +172,7 @@
 
 \end{cventries}
 
-% \pagebreak
-
-\begin{samepage}
+\pagebreak
 
 \cvsection{Education}
 
@@ -194,7 +190,7 @@
     { } % Date(s)
     {<% if flags[:expand_school] or flags[:expand_coursework] %>
     \begin{cvitems}
-    <% unless degree.technologies.nil? %>\item {\bodyfont Utilized <%= latex_desc(trim_skills(degree.technologies, 16)) %>.} <% end %>
+    <% unless degree.technologies.nil? %>\item {Utilized <%= latex_desc(trim_skills(degree.technologies, 16)) %>.} <% end %>
         \item {<%= latex_links(degree.note) %>}
         \item Coursework: {<%= latex_links(degree.coursework) %>}
       \end{cvitems} 
@@ -203,8 +199,6 @@
 % <% end %>
 
 \end{cventries}
-
-\end{samepage}
 
 
 <% if flags[:certifications] %>
@@ -262,7 +256,7 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-<% projs = flags[:complete_history] ? projects : trim_by_clout(projects, 9).sort_by {|a| a.time }.reverse %>
+<% projs = flags[:complete_history] ? projects : trim_by_clout(projects, 8).sort_by {|a| a.time }.reverse %>
 % <% projs.each do |project| %>
 
   \cventry

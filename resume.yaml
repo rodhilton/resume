@@ -52,7 +52,7 @@ experience:
       accomplishments:
         - Developed <a href="https://docs.segmentapis.com/tag/Audiences">Compute API</a> to provide REST interface to largest users of realtime customer segmentation platform handling 400k requests/sec.
         - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
-        - Designed query language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
+        - Designed <a href="https://segment.com/docs/api/public-api/query-language/">custom query language</a> to achieve GUI wizard fidelity allowing API reading/writing of compute definitions for 1100+ enterprise customers.
         - Refined design specifications through multiple rounds of stakeholder collaboration and drove consensus between groups across business unit.
         - Implemented ANTLR-based parser & transpiler to convert between validity-checked query language and proprietary internal data representation.
         - Mentored 2 junior engineers and led technical direction for architectural decisions and operational standards.

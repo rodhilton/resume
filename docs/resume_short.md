@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Scala, Git, Groovy, Ruby
-* __Advanced__: Python, Spring, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, JavaScript, Grails, AWS, Go, MySQL, SOAP, Terraform
-* __Novice__: Redis, AngularJS, TypeScript, Thrift, Kubernetes, PostgreSQL, Hadoop, Oracle, SBT, memcached, Jenkins, hazelcast
+* __Accomplished__: Java, Scala, Git, Groovy, Ruby, Spring
+* __Advanced__: Python, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, Go, AWS, JavaScript, Grails, MySQL, Terraform, SOAP, Docker
+* __Novice__: TypeScript, Thrift, Kubernetes, PostgreSQL, Hadoop, Oracle, Azure, SBT, memcached, Jenkins, hazelcast
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----
@@ -38,7 +38,15 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Staff Software Engineer__ - _Twilio_ - 2023-Present
+*  __Staff Software Engineer__ - _Axon_ - 2024-Present
+            
+    * Utilized Java, Spring, Scala, Go, Azure, AWS, Git, Docker, Terraform 
+            
+    * Architecting Axon Storage Abstraction services, a RESTful internal service to provide and manage blob storage for multiple teams
+            
+
+
+*  __Staff Software Engineer__ - _Twilio_ - 2023-2024
             
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform 
             
@@ -47,12 +55,6 @@ __Software Craftsman and Computer Science Geek__
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             
     * Designed query language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
-            
-    * Refined design specifications through multiple rounds of stakeholder collaboration and drove consensus between groups across business unit.
-            
-    * Implemented ANTLR-based parser & transpiler to convert between validity-checked query language and proprietary internal data representation.
-            
-    * Mentored 2 junior engineers and led technical direction for architectural decisions and operational standards.
             
 
 
@@ -63,8 +65,6 @@ __Software Craftsman and Computer Science Geek__
     * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
             
     * Coordinated cross-team initiative to anonymize over 900m accounts to [ensure data retention compliance](https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations) among hundreds of independent services.
-            
-    * Operated [social game services](https://dev.epicgames.com/en-US/services-games) for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
             
 
 

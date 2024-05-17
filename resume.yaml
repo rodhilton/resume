@@ -28,11 +28,22 @@ interests: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 experience:
   summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
   jobs:
+    - company: Axon
+      title: Staff Software Engineer
+      team: Axon Platform X
+      start_time: 05/2024
+      location: Scottsdale, AZ
+      environment: Remote
+      technologies: Java, Spring, Scala, Go, Azure, AWS, Git, Docker, Terraform
+      summary: APX architect, building the platform underpinnings of Axon's software offerings for evidence management
+      icon: axon.png
+      accomplishments:
+        - Architecting Axon Storage Abstraction services, a RESTful internal service to provide and manage blob storage for multiple teams
     - company: Twilio
       title: Staff Software Engineer
       team: Compute Interfaces
       start_time: 06/2023
-      end_time: Present
+      end_time: 05/2024
       location: San Francisco, CA
       environment: Remote
       technologies: Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform

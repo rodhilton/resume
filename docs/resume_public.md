@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Scala, Git, Groovy, Ruby
-* __Advanced__: Python, Spring, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, JavaScript, Grails, AWS, Go, MySQL, SOAP, Terraform
-* __Novice__: Redis, AngularJS, TypeScript, Thrift, Kubernetes, PostgreSQL, Hadoop, Oracle, SBT, memcached, Jenkins, hazelcast
+* __Accomplished__: Java, Scala, Git, Groovy, Ruby, Spring
+* __Advanced__: Python, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, Go, AWS, JavaScript, Grails, MySQL, Terraform, SOAP, Docker
+* __Novice__: TypeScript, Thrift, Kubernetes, PostgreSQL, Hadoop, Oracle, Azure, SBT, memcached, Jenkins, hazelcast
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----
@@ -38,7 +38,15 @@ __Software Craftsman and Computer Science Geek__
 
 
 
-*  __Staff Software Engineer__ - _Twilio_ - 2023-Present
+*  __Staff Software Engineer__ - _Axon_ - 2024-Present
+            
+    * Utilized Java, Spring, Scala, Go, Azure, AWS, Git, Docker, Terraform 
+            
+    * Architecting Axon Storage Abstraction services, a RESTful internal service to provide and manage blob storage for multiple teams
+            
+
+
+*  __Staff Software Engineer__ - _Twilio_ - 2023-2024
             
     * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform 
             

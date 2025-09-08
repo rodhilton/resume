@@ -26,9 +26,9 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Scala, Git, Groovy, Ruby, Spring
-* __Advanced__: Python, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, Go, AWS, JavaScript, Grails, MySQL, Terraform, SOAP, Docker
-* __Novice__: TypeScript, Thrift, Kubernetes, PostgreSQL, Hadoop, Oracle, Azure, SBT, memcached, Jenkins, hazelcast
+* __Accomplished__: Java, Scala, Git, Groovy, Ruby
+* __Advanced__: Python, Spring, Go, ANTLR, AWS, HTML/CSS, LaTeX, REST, Kafka, Mathematica, JavaScript, Grails, Redis, Kubernetes, Terraform
+* __Novice__: Istio, AngularJS, TypeScript, Thrift, PostgreSQL, Hadoop, Oracle, SBT, memcached, Jenkins, hazelcast
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----
@@ -40,9 +40,25 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Axon_ - 2024-Present
             
-    * Utilized Java, Spring, Scala, Go, Azure, AWS, Git, Docker, Terraform 
+    * Utilized Scala, Go, Azure, AWS, Kubernetes, Istio, Redis, Git, Docker, Terraform 
             
-    * Architecting Axon Storage Abstraction services, a RESTful internal service to provide and manage blob storage for multiple teams
+    * Spearheaded company-wide resiliency initiative targeting four-nines availability across 100+ services and 6 engineering pillars.
+            
+    * Coordinated cross-team adoption of resiliency primitives (rate limiting, circuit breakers, retries), aligning delivery across distributed teams.
+            
+    * Drove hardening of edge infrastructure by designing and deploying standardized ingress layer with default-on rate limiting for all external services.
+            
+    * Implemented platform libraries for Scala-based services, enabling integration of resiliency features into existing codebases with minimal friction.
+            
+    * Acted as bar-raiser for 20+ After Action Reviews, driving incident analysis into actionable improvements that prevented recurrence of critical failures.
+            
+    * Served as blocking reviewer for 300+ Tier-1 service deployments, requiring deep knowledge of service interdependencies to prevent incidents.
+            
+    * Mentored 3 engineers in resiliency techniques and career development, working across multiple time zones in the US, UK, and Vietnam.
+            
+    * Presented as a featured speaker at four company-wide technical conferences on building scalable, resilient distributed systems.
+            
+    * Architected Axon Storage Abstraction, a RESTful multi-tenant internal service providing reliable blob storage management for diverse product teams.
             
 
 
@@ -54,7 +70,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             
-    * Designed query language to achieve GUI wizard fidelity allowing API-friendly reading/writing of compute definitions for 1100+ enterprise customers.
+    * Designed [custom query language](https://segment.com/docs/api/public-api/query-language/) to achieve GUI wizard fidelity allowing API reading/writing of compute definitions for 1100+ enterprise customers.
             
     * Refined design specifications through multiple rounds of stakeholder collaboration and drove consensus between groups across business unit.
             

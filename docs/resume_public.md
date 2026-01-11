@@ -27,8 +27,8 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Scala, Git, Groovy, Ruby
-* __Advanced__: Python, Spring, Go, ANTLR, AWS, HTML/CSS, LaTeX, REST, Kafka, Mathematica, JavaScript, Grails, Redis, Kubernetes, Terraform
-* __Novice__: Istio, AngularJS, TypeScript, Thrift, PostgreSQL, Hadoop, Oracle, SBT, memcached, Jenkins, hazelcast
+* __Advanced__: Python, Spring, Go, AWS, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, Azure, Kubernetes, JavaScript, Redis, Grails
+* __Novice__: AngularJS, TypeScript, Thrift, PostgreSQL, Hadoop, Oracle, SBT, memcached, Jenkins, hazelcast
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----

@@ -34,7 +34,7 @@ experience:
       start_time: 05/2024
       location: Scottsdale, AZ
       environment: Remote
-      technologies: Scala, Go, Azure, AWS, Kubernetes, Istio, Redis, Git, Docker, Terraform
+      technologies: Scala, Go, Azure, AWS, Azure, CosmosDB, Kubernetes, Cassandra, gRPC, Istio, Grafana, Redis, Git, Docker, Terraform
       summary: APX architect, building the platform underpinnings of Axon's software offerings with a focus on distributed system resiliency
       icon: axon.png
       accomplishments:
@@ -71,7 +71,7 @@ experience:
       end_time: 06/2023
       location: Cary, NC
       environment: Remote
-      technologies: Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker
+      technologies: Java, Spring, Git, REST, AWS, DynamoDB, Redis, Terraform, Kubernetes, Docker
       summary: Social team lead, building Epic Online Services for friends, messaging, partying, group-forming, clip-sharing within games
       icon: epicgames.png
       accomplishments:

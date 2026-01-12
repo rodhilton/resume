@@ -27,8 +27,8 @@ __Software Craftsman and Computer Science Geek__
 
 
 * __Accomplished__: Java, Scala, Git, Groovy, Ruby
-* __Advanced__: Python, Spring, Go, AWS, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, Azure, Kubernetes, JavaScript, Redis, Grails
-* __Novice__: AngularJS, TypeScript, Thrift, PostgreSQL, Hadoop, Oracle, SBT, memcached, Jenkins, hazelcast
+* __Advanced__: Python, Spring, Go, AWS, Azure, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, JavaScript, Grails, Kubernetes, MySQL
+* __Novice__: TypeScript, gRPC, Thrift, PostgreSQL, Istio, Hadoop, Oracle, Grafana, SBT, memcached, Jenkins, hazelcast
 * __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 ----
@@ -40,7 +40,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Axon_ - 2024-Present
             
-    * Utilized Scala, Go, Azure, AWS, Kubernetes, Istio, Redis, Git, Docker, Terraform 
+    * Utilized Scala, Go, Azure, AWS, Azure, CosmosDB, Kubernetes, Cassandra, gRPC, Istio, Grafana, Redis, Git, Docker, Terraform 
             
     * Spearheaded company-wide resiliency initiative targeting four-nines availability across 100+ services and 6 engineering pillars.
             
@@ -66,7 +66,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Tech Lead, Backend Engineering__ - _Epic Games_ - 2021-2023
             
-    * Utilized Java, Spring, Git, REST, AWS, Redis, Terraform, Kubernetes, Docker 
+    * Utilized Java, Spring, Git, REST, AWS, DynamoDB, Redis, Terraform, Kubernetes, Docker 
             
     * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
             

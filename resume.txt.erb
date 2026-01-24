@@ -22,10 +22,11 @@ Summary:
 
 Technical Skills:
 
-<% skills = calculate_skills(experience.jobs + education.degrees, 0.2, 0.1, 10, 15) %>
-Accomplished: <%= skills[:accomplished] %>
-Advanced: <%= skills[:advanced] %>
-Novice: <%= skills[:novice] %>
+<% skill_weights = calculate_skill_weights(experience.jobs, 0.2, 0.1, 10)
+   skills_grouped = group_by_level(skill_weights, 13) %>
+Accomplished: <%= skills_grouped[:accomplished].join(", ") %>
+Advanced: <%= skills_grouped[:advanced].join(", ") %>
+Novice: <%= skills_grouped[:novice].join(", ") %>
 Desired: <%= interests %>
 
 ----

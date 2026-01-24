@@ -2,21 +2,22 @@
 <h2 class="mb-5">Skills</h2>
 <div class="skill-icons">
   <% 
-     skills = calculate_skills(experience.jobs + education.degrees, 0.2, 0.1, 10, 15)
-     ordered_skills = skills[:accomplished].split(", ") + skills[:advanced].split(", ") + skills[:novice].split(", ")# + interests.split(", ")
+     skill_weights = calculate_skill_weights(experience.jobs + education.degrees + projects + publications, 0.2, 0.1, 10)
+     skills = group_by_level(skill_weights, 13)
+     ordered_skills = skills[:accomplished] + skills[:advanced] + skills[:novice] # + interests.split(", ")
   %>
   <% ordered_skills.each do |skillname| %>
-  <% skill_to_icons = skill_to_icons(skillname) %>
+  <% skill_to_icons = skill_to_icons(skillname, skills_index) %>
     <% skill_to_icons.each do |skillicon| %>
       <span title="<%= skillicon %>" class="devicon-<%= skillicon.downcase %>-plain colored"></span>
     <% end %>
   <% end %>
 </div>
 <p>
+  <% skills_grouped = group_by_category(skill_weights, skills_index, 13) %>
   <ul>
-      <li><b>Accomplished</b>: <%= skills[:accomplished] %></li>
-      <li><b>Advanced</b>: <%= skills[:advanced] %></li>
-      <li><b>Novice</b>: <%= skills[:novice] %></li>
-      <li><b>Desired</b>: <%= interests %></li>
+    <% skills_grouped.each do |category, skills| %>
+    <li><b><%= category %></b>: <%= skills.join(", ") %></li>
+      <% end %>
   </ul>
 </p>

@@ -26,10 +26,13 @@ __Software Craftsman and Computer Science Geek__
 ## Technical Skills
 
 
-* __Accomplished__: Java, Scala, Git, Groovy, Ruby
-* __Advanced__: Python, Spring, Go, AWS, Azure, ANTLR, HTML/CSS, LaTeX, REST, Kafka, Mathematica, JavaScript, Grails, Kubernetes, MySQL
-* __Novice__: TypeScript, gRPC, Thrift, PostgreSQL, Istio, Hadoop, Oracle, Grafana, SBT, memcached, Jenkins, hazelcast
-* __Desired__: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
+* __Languages__: Scala, Java, Go, Groovy, Ruby, JavaScript, TypeScript, Python
+* __Web/API__: Spring, REST, Grails, HTML/CSS, AngularJS, SOAP, Thrift, gRPC
+* __Data & Storage__: Kafka, MySQL, DynamoDB, Redis, CosmosDB, Cassandra, Hadoop, PostgreSQL, Oracle, memcached, hazelcast
+* __AI/LLM__: ChatGPT, OpenAI, Claude, Cursor
+* __Cloud/DevOps__: Azure, AWS, Kubernetes, Docker, Terraform, Istio, Jenkins
+* __Tools & Technologies__: Git, ANTLR, Grafana, SBT
+
 
 ----
 
@@ -40,7 +43,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Axon_ - 2024-Present
             
-    * Utilized Scala, Go, Azure, AWS, Azure, CosmosDB, Kubernetes, Cassandra, gRPC, Istio, Grafana, Redis, Git, Docker, Terraform 
+    * Utilized Scala, Go, Azure, AWS, Azure, ChatGPT, Claude, CosmosDB, Kubernetes, Cassandra, Cursor, gRPC, Istio, Grafana, Redis, Git, Docker, Terraform 
             
     * Spearheaded company-wide resiliency initiative targeting four-nines availability across 100+ services and 6 engineering pillars.
             
@@ -204,13 +207,13 @@ __Software Craftsman and Computer Science Geek__
 ---- 
 ## Certifications 
     
-* __Certified ScrumMaster__ -  2009
+* __Certified ScrumMaster__ -  
     
-* __Sun Certified Java Developer__ - _J2SE 5.0_ -  2008
+* __Sun Certified Java Developer__ - _J2SE 5.0_ -  
     
-* __Sun Certified Web Component Developer__ - _J2EE 1.4_ -  2006
+* __Sun Certified Web Component Developer__ - _J2EE 1.4_ -  
     
-* __Sun Certified Java Programmer__ - _J2SE 5.0_ -  2005
+* __Sun Certified Java Programmer__ - _J2SE 5.0_ -  
     
 
 

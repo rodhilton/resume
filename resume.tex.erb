@@ -140,11 +140,15 @@
 \cvsection{Skills}
 
 \begin{cvskills}
-<% skills = calculate_skills(experience.jobs + education.degrees, 0.2, 0.1, 10, 15) %>
-\cvskill{Accomplished}{<%= skills[:accomplished].gsub(/\#/, "\\#") %>}
-\cvskill{Advanced}{<%= skills[:advanced].gsub(/\#/, "\\#") %>}
-\cvskill{Novice}{<%= skills[:novice].gsub(/\#/, "\\#") %>}
-\cvskill{Interested}{<%= interests.gsub(/\#/, "\\#") %>}
+<% skill_weights = calculate_skill_weights(
+     experience.jobs + education.degrees + projects + publications, 0.1, 0.08, 18) %>
+
+<% skills_grouped = group_by_category(skill_weights, skills_index, 13) %>
+
+<% skills_grouped.each do |category, skills| %>
+
+\cvskill{<%= latex_desc(category) %>}{<%= skills.join(", ").gsub(/\#/, "\\#") %>}
+<% end %>
 \end{cvskills}
 
 
@@ -161,13 +165,14 @@
     {<%= timespan(job.start_time, job.end_time) %>} % Date(s)
     {
       \begin{cvitems}
-      <% unless job.technologies.nil? %>\item {Utilized <%= trim_skills(job.technologies, 16) %>.} <% end %>
-%      <% accomplishments.each do |accomplishment| %>    
-        \item {<%= latex_links(latex_desc(accomplishment)) %>}
-%        <% end %>
+      <%- unless job.technologies.nil? -%>
+      \item {Utilized <%= trim_skills(job.technologies, 16) %>.} <%- end -%>
+      <%- accomplishments.each do |accomplishment| %>
+      \item {<%= latex_links(latex_desc(accomplishment)) %>}<% end %>
       \end{cvitems}
     }
 
+    \hfill \newline
 <% end %>
 
 \end{cventries}
@@ -193,10 +198,12 @@
     <% unless degree.technologies.nil? %>\item {Utilized <%= latex_desc(trim_skills(degree.technologies, 16)) %>.} <% end %>
         \item {<%= latex_links(degree.note) %>}
         \item Coursework: {<%= latex_links(degree.coursework) %>}
-      \end{cvitems} 
-      <% end %>}
+      \end{cvitems}
+      <%- end -%>
+    }
 
-% <% end %>
+    \hfill \newline
+<% end %>
 
 \end{cventries}
 
@@ -212,7 +219,7 @@
     {<%= certification.title %>} % Award
     {<%= certification.subject.nil? ? "" : certification.subject %>} % Event
     {} % Location
-    {<%= certification.time %>} % Date(s)
+    {<%= certification.year %>} % Date(s)
 % <% end %>
 
 
@@ -236,16 +243,10 @@
     {<%= strip_links(latex_desc(pub.title)) %><% unless pub.author.nil? %> {\normalfont by <%= pub.author %>}<% end %>}
     {\Colorhref{<%= pub.url %>}{<%= latex_desc(pub.publisher) %>}} % Location
     {<%= pub.year %>} % Date(s)
-        { 
-        <%- unless pub.summary.nil? -%>
-          \begin{cvitems}
-        \item <%= strip_links(latex_desc(pub.summary)) %>
-      \end{cvitems}
-         <%- end -%>
-        }
-
-%  <% end %>
-
+    {
+      <%= strip_links(latex_desc(pub.summary)) %>
+    }
+<% end %>
 
 \end{cventries}
 
@@ -256,7 +257,7 @@
 %-------------------------------------------------------------------------------
 \begin{cventries}
 
-<% projs = flags[:complete_history] ? projects : trim_by_clout(projects, 8).sort_by {|a| a.time }.reverse %>
+<% projs = flags[:complete_history] ? projects : trim_by_clout(projects, 8).sort_by {|a| a.year }.reverse %>
 % <% projs.each do |project| %>
 
   \cventry
@@ -264,12 +265,10 @@
     {<%= strip_links(latex_desc(project.title)) %>} % Title
     {\Colorhref{<%= project.url %>}{<%= latex_desc(project.location) %>}} % Location
     {<%= project.time %>} % Date(s)
-    {   \begin{cvitems}
-        \item {<%= strip_links(latex_desc(project.description)) %>}
-      \end{cvitems}
-        }
-% <% end %>
-
+    {
+      <%= strip_links(latex_desc(project.description)) %>
+    }
+<% end %>
 
 \end{cventries}
 

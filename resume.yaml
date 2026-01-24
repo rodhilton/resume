@@ -34,7 +34,7 @@ experience:
       start_time: 05/2024
       location: Scottsdale, AZ
       environment: Remote
-      technologies: Scala, Go, Azure, AWS, Azure, CosmosDB, Kubernetes, Cassandra, gRPC, Istio, Grafana, Redis, Git, Docker, Terraform
+      technologies: Scala, Go, Azure, AWS, Azure, ChatGPT, Claude, CosmosDB, Kubernetes, Cassandra, Cursor, gRPC, Istio, Grafana, Redis, Git, Docker, Terraform
       summary: APX architect, building the platform underpinnings of Axon's software offerings with a focus on distributed system resiliency
       icon: axon.png
       accomplishments:
@@ -184,19 +184,19 @@ experience:
 
 certifications:
   - title: Certified ScrumMaster
-    time: 2009
+    year: 2009
     provider: Rally Software
   - title: Sun Certified Java Developer
     subject: J2SE 5.0
-    time: 2008
+    year: 2008
     provider: Sun Microsystems
   - title: Sun Certified Web Component Developer
     subject: J2EE 1.4
-    time: 2006
+    year: 2006
     provider: Sun Microsystems
   - title: Sun Certified Java Programmer
     subject: J2SE 5.0
-    time: 2005
+    year: 2005
     provider: Sun Microsystems
 
 education:
@@ -242,6 +242,7 @@ publications:
     role: Co-author
     url: https://www.oreilly.com/library/view/97-things-every/9781491952689/
     summary: Collection of <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/">short essays</a> full of expert advice and best practices from Java leaders and practitioners in the field
+    technologies: Java
   - title: Predicting Code Hotspots in OSS from OO Metrics Using Machine Learning
     author: Rod Hilton
     publisher: IJSEKE
@@ -251,6 +252,7 @@ publications:
     role: Author
     clout: 10
     summary: <a href="https://www.worldscientific.com/doi/abs/10.1142/S0218194018500110">Paper demonstrating the use of ML</a> to accurately predict areas of Open Source projects needing the most revision based on Object-Oriented metrics
+    technologies: Java, Ruby, LaTeX
   - title: Java Performance, 2nd Edition
     author: Scott Oaks
     publisher: O'Reilly
@@ -260,6 +262,7 @@ publications:
     role: Technical Reviewer
     url: https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/
     summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Guide to understanding JVM internals</a>, JIT optimizaton, garbage collection algorithms, target platform differences, and how to tune applications
+    technologies: Java
   - title: Modern Systems Programming with Scala Native
     author: Richard Whaling
     publisher: Pragmatic
@@ -269,6 +272,7 @@ publications:
     role: Technical Reviewer
     url: https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native
     summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Introduction to utilizing Scala Native</a> for low-level systems and firmware development using functional programming techniques
+    technologies: Scala
   - title: Programing Kotlin
     author: Venkat Subramaniam
     publisher: Pragmatic
@@ -278,6 +282,7 @@ publications:
     role: Technical Reviewer
     url: https://pragprog.com/book/vskotlin/programming-kotlin
     summary: <a href="https://pragprog.com/book/vskotlin/programming-kotlin">Introduction to the Kotlin programming language</a>, how to use it for OOP as well as FP programming, and major differences from Java
+    technologies: Kotlin
   - title: Release It! 2nd Edition
     author: Michael Nygard
     publisher: Pragmatic
@@ -296,6 +301,7 @@ publications:
     role: Technical Reviewer
     url: https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms
     summary: <a href="https://pragprog.com/titles/jwdsal2/a-common-sense-guide-to-data-structures-and-algorithms-second-edition/">Entry-level text</a> introducing undergraduate-level data structures, algorithms, and complexity analysis using Python
+    technologies: Python
   - title: Test-Driving JavaScript Applications
     author: Venkat Subramaniam
     publisher: Pragmatic
@@ -305,6 +311,7 @@ publications:
     role: Technical Reviewer
     url: https://pragprog.com/book/vsjavas/test-driving-javascript-applications
     summary: <a href="https://pragprog.com/book/vsjavas/test-driving-javascript-applications">Guide for developing JavaScript</a> using a Test-Driven Development approach, covering libraries and techniques to improve testability of JS code
+    technologies: JavaScript
   - title: Reactive Programming with RxJS
     author: Sergi Mansilla
     publisher: Pragmatic
@@ -314,6 +321,7 @@ publications:
     role: Technical Reviewer
     url: https://pragprog.com/book/smreactjs/reactive-programming-with-rxjs
     summary: <a href="https://pragprog.com/titles/smreactjs5/reactive-programming-with-rxjs-5/">Tutorial on using Reactive Programming techniques</a> within front-end JavaScript programming using the RxJS library
+    technologies: RxJS
   - title: Agile Web Development with Rails 5
     author: Sam Ruby
     publisher: Pragmatic
@@ -323,6 +331,7 @@ publications:
     role: Technical Reviewer
     url: https://pragprog.com/book/rails5/agile-web-development-with-rails-5
     summary: Updated edition of "<a href="https://pragprog.com/book/rails5/agile-web-development-with-rails-5">the skateboard book</a>" focusing on rapid development of web applications using Ruby on Rails
+    technologies: Rails
   - title: The Way of the Web Tester
     author: Jonathan Rasmusson
     publisher: Pragmatic
@@ -350,6 +359,7 @@ publications:
     role: Technical Reviewer
     url: https://pragprog.com/book/atcrime/your-code-as-a-crime-scene
     summary: <a href="https://pragprog.com/titles/atcrime/your-code-as-a-crime-scene/">Guide to using forensic analysis</a> techniques to discover codebase hotspots for issues and defects to optimize refactoring direction
+    technologies: Java, JUnit
   - title: "CoffeeScript: Accelerated JavaScript Development, Second Edition"
     author: Trevor Burnham
     publisher: Pragmatic
@@ -359,6 +369,7 @@ publications:
     role: Technical Reviewer
     url: https://pragprog.com/book/tbcoffee2/coffeescript
     summary: <a href="https://pragprog.com/book/tbcoffee2/coffeescript">A comprehensive guide to CoffeeScript</a>, the elegant JavaScript simplifier, with updated features and tools for modern web development.
+    technologies: CoffeeScript
   - title: Functional Programming in Scala
     author: Paul Chiusano and Runar Bjarnason
     publisher: Manning
@@ -368,6 +379,7 @@ publications:
     role: Technical Reviewer
     url: http://manning.com/bjarnason/
     summary: Original edition of "<a href="http://manning.com/bjarnason/">the red book</a>" - Scala text with focus on purely functional programming style
+    technologies: Scala
   - title: Neo4j in Action
     author: Jonas Partner, Aleksa Vukotic, and Nicki Watt
     publisher: Manning
@@ -377,6 +389,7 @@ publications:
     role: Technical Reviewer
     url: https://www.manning.com/books/neo4j-in-action
     summary: <a href="https://www.manning.com/books/neo4j-in-action">A guide for developers and architects on using Neo4j</a>, a high-performance graph database, with a focus on modeling and querying.
+    technologies: Neo4j
   - title: Gradle, Beyond the Basics
     author: Tim Berglund
     publisher: O'Reilly
@@ -386,6 +399,7 @@ publications:
     role: Technical Reviewer
     url: http://shop.oreilly.com/product/0636920019923.do
     summary: <a href="http://shop.oreilly.com/product/0636920019923.do">An advanced guide to mastering Gradle</a>, covering file operations, custom plugins, build hooks, and dependency management with code examples.
+    technologies: Gradle
   - title: Functional Programming Patterns in Scala and Clojure
     author: Michael Bevilacqua-Linn
     publisher: Pragmatic
@@ -395,53 +409,140 @@ publications:
     role: Technical Reviewer
     url: http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure
     summary: <a href="http://pragprog.com/book/mbfpp/functional-programming-patterns-in-scala-and-clojure">Exploring advanced functional patterns</a> in Scala and Clojure, emphasizing Memoization and Tail Recursion for efficient problem-solving.
+    technologies: Scala, Clojure
 
 projects:
   - title: JaSoMe (Java Source Metrics)
     role: Maintainer
     location: GitHub
     description: Zero-compilation Object Oriented Metrics analyzer for Java code, <a href="https://github.com/rodhilton/jasome">13 forks on GitHub</a>
-    time: 2018
+    year: 2018
     url: https://github.com/rodhilton/jasome
     license: Apache 2.0
     clout: 10
+    technologies: Java
   - title: console_table
     role: Maintainer
     location: rubygems.org
     description: <a href="https://rubygems.org/gems/console_table/">Ruby gem</a> for formatting and printing tabluar data in commandline scripts, over 100,000 downloads
-    time: 2015
+    year: 2015
     url: https://rubygems.org/gems/console_table/
     license: MIT
     clout: 9
+    technologies: Ruby
   - title: Geneticrypt
     role: Maintainer
     location: GitHub
     description: Extensible framework with CLI and GUI for using genetic algorithms to decrypt messages encrypted with a substitution cipher
-    time: 2012
+    year: 2012
     url: https://github.com/rodhilton/Geneticrypt
     license: GPL v3
     clout: 6
+    technologies: Java
   - title: Gobbles
     role: Maintainer
     location: GitHub
     description: Snake game clone written in Java
-    time: 2014
+    year: 2014
     url: https://github.com/rodhilton/gobbles
     license: GPL v2
     clout: 7
+    technologies: Java
   - title: Rectangle Visibility
     role: Maintainer
     location: GitHub
     description: Uses Genetic Algorithms to search for solutions to Rectangle Visibility problem
-    time: 2013
+    year: 2013
     url: https://github.com/rodhilton/rectangle_visibility
     license: Apache 2.0
     clout: 7
+    technologies: Java
   - title: Trajectories
     role: Maintainer
     location: GitHub
     description: A Scala application that uses Linguistic Geometry concepts to quickly compute trajectory positions for chess boards
-    time: 2012
+    year: 2012
     url: https://github.com/rodhilton/trajectories
     license: GPL v2
     clout: 9
+    technologies: Scala
+
+skills_index:
+  Languages:
+    - name: Java
+    - name: Scala
+    - name: Ruby
+    - name: Python
+    - name: Go
+    - name: Kotlin
+    - name: C#
+    - name: JavaScript
+    - name: TypeScript
+    - name: Groovy
+    - name: Clojure
+    - name: CoffeeScript
+  Web/API:
+    - name: HTML/CSS
+      icons: [html5, css3]
+    - name: Rails
+    - name: Spring
+    - name: Grails
+    - name: JSF
+    - name: Servlets
+    - name: JSP
+    - name: REST
+    - name: SOAP
+    - name: gRPC
+    - name: Thrift
+    - name: AngularJS
+    - name: RxJS
+    - name: AJAX
+    - name: ExtJS
+    - name: Android
+    - name: ColdFusion
+  Data & Storage:
+    - name: Kafka
+      icons: [apachekafka]
+    - name: MySQL
+    - name: PostgreSQL
+    - name: Oracle
+    - name: SQL Server
+    - name: DynamoDB
+    - name: CosmosDB
+    - name: Cassandra
+    - name: Neo4j
+    - name: Hadoop
+    - name: Redis
+    - name: memcached
+    - name: hazelcast
+    - name: Hibernate
+    - name: EclipseLink
+  AI/LLM:
+    - name: OpenAI
+    - name: Cursor
+    - name: Claude
+    - name: ChatGPT
+    - name: Gemini
+  Cloud/DevOps:
+    - name: AWS
+      icons: [amazonwebservices]
+    - name: Azure
+    - name: Docker
+    - name: Kubernetes
+    - name: Istio
+    - name: Terraform
+    - name: Jenkins
+    - name: JBoss
+    - name: Tomcat
+    - name: Geronimo
+  Tools & Technologies:
+    - name: Git
+    - name: Gradle
+    - name: SBT
+    - name: JUnit
+    - name: ANTLR
+    - name: Grafana
+    - name: UML
+    - name: LaTeX
+    - name: Mathematica
+    - name: CPIC

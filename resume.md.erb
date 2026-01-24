@@ -20,12 +20,12 @@ __Software Craftsman and Computer Science Geek__
 ----
 
 ## Technical Skills
+<% skill_weights = calculate_skill_weights(experience.jobs, 0.2, 0.1, 10)
+   skills_grouped = group_by_category(skill_weights, skills_index, 13)%>
 
-<% skills = calculate_skills(experience.jobs + education.degrees, 0.2, 0.1, 10, 15) %>
-* __Accomplished__: <%= skills[:accomplished] %>
-* __Advanced__: <%= skills[:advanced] %>
-* __Novice__: <%= skills[:novice] %>
-* __Desired__: <%= interests %>
+<% skills_grouped.each do |category, skills| -%>
+* __<%= category %>__: <%= skills.join(", ") %>
+<% end %>
 
 ----
 

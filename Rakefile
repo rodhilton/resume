@@ -316,7 +316,8 @@ end
 
 desc "Make public resume PDF (Typst)"
 task :typst_public => ["#{TARGET_DIR}/resume_public_typ.typ", :copy_deps, "profile_circle.png"] do |t|
-  sh "cd #{TARGET_DIR}; typst compile resume_public_typ.typ"
+  FileUtils.cp_r File.join(LATEX_DIR, "fonts"), File.join(TARGET_DIR, "fonts")
+  sh "cd #{TARGET_DIR}; TYPST_FONT_PATHS=./fonts typst compile resume_public_typ.typ"
   rm "#{TARGET_DIR}/resume_public_typ.typ"
 end
 

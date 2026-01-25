@@ -323,6 +323,8 @@ def skill_to_icons(skill_name, skills_index)
     end
   end
 
+  return [want] if out.empty?
+
   out
 end
 

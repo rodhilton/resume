@@ -217,7 +217,14 @@ file "profile.jpg" => [:make_target] do |t|
 end
 
 file "profile_circle.png" => [:make_target] do |t|
-  sh "magick #{File.join(IMAGES_DIR, 'profile.jpg')} -alpha on -resize 512x512^ -gravity center -extent 512x512 \\( -size 512x512 xc:none -fill white -draw \"circle 256,256 256,0\" \\) -compose copyopacity -composite #{TARGET_DIR}/profile_circle.png"
+  source = File.join(IMAGES_DIR, "profile.jpg")
+  mask = "\\( -size 512x512 xc:none -fill white -draw \"circle 256,256 256,0\" \\)"
+  output = "#{TARGET_DIR}/profile_circle.png"
+  if system("command -v magick >/dev/null 2>&1")
+    sh "magick #{source} -alpha on -resize 512x512^ -gravity center -extent 512x512 #{mask} -compose copyopacity -composite #{output}"
+  else
+    sh "convert #{source} -alpha on -resize 512x512^ -gravity center -extent 512x512 #{mask} -compose copyopacity -composite #{output}"
+  end
 end
 
 file "profile.pdf" => [:make_target, "profile.jpg"] do |t|

@@ -160,7 +160,7 @@ desc "Generate full resume HTML"
 task :html => "#{TARGET_DIR}/resume_full.html"
 
 desc "Make base resume outputs"
-task :resume => [:pdf, :parseable, :markdown, :downloadable]
+task :resume => [:pdf, :parseable, :markdown, :downloadable, :html]
 
 desc "Make full resume outputs"
 task :resume_full => [:pdf_full, :markdown_full]

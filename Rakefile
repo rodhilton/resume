@@ -12,6 +12,7 @@ TEMPLATES_DIR="templates"
 RESOURCES_DIR="resources"
 IMAGES_DIR=File.join(RESOURCES_DIR, "images")
 LATEX_DIR=File.join(RESOURCES_DIR, "latex")
+FONTS_DIR=File.join(RESOURCES_DIR, "fonts")
 SITE_RESOURCES_DIR=File.join(RESOURCES_DIR, "site")
 GEMINI_PROMPT_FILE=File.join(TEMPLATES_DIR, "gemini_resume_prompt.txt")
 GEMINI_KEY_FILE=".gemini_api_key"
@@ -112,20 +113,12 @@ def normalize_model_name(model_name)
   "models/#{model_name}"
 end
 
-def read_job_description(job_path, usage_task)
-  if job_path.nil?
-    if STDIN.tty?
-      abort("Usage: rake #{usage_task}[job_description.txt] or cat job.txt | rake \"#{usage_task}[-]\"")
-    end
-    return STDIN.read
+def read_job_description(usage_task)
+  if STDIN.tty?
+    abort("Usage: cat job.txt | rake #{usage_task}")
   end
 
-  if job_path == "-"
-    return STDIN.read
-  end
-
-  abort("Job description file not found: #{job_path}") unless File.exist?(job_path)
-  File.read(job_path)
+  STDIN.read
 end
 
 def gemini_generate(prompt, api_key, model_name)
@@ -237,7 +230,7 @@ end
 
 task :copy_deps do |t|
   FileUtils.cp_r File.join(LATEX_DIR, "." ), File.join(TARGET_DIR, "latex")
-  FileUtils.cp_r File.join(LATEX_DIR, "fonts"), File.join(TARGET_DIR, "fonts")
+  FileUtils.cp_r FONTS_DIR, File.join(TARGET_DIR, "fonts")
 end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
@@ -278,16 +271,6 @@ file "#{TARGET_DIR}/resume_public.html"  => [:make_target] do |t|
     sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.html.erb')} #{public_flags} > #{TARGET_DIR}/resume_public.html"
 end
 
-desc "Make public resume HTML"
-task :html_public => "#{TARGET_DIR}/resume_public.html" do |t|
-  sh "cp #{TARGET_DIR}/resume_public.html #{TARGET_DIR}/index.html"
-end
-
-desc "Make public resume HTML (inlineable)"
-task :html_public_inline => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.html.erb')} #{public_flags} -f inline > #{TARGET_DIR}/resume_public_inline.html"
-end
-
 desc "Make full resume PDF (LaTeX)"
 task :latex_full => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "profile_circle.pdf"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=./latex//:${TEXINPUTS} xelatex resume_public.tex"
@@ -297,7 +280,6 @@ task :latex_full => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "profile_cir
     "#{TARGET_DIR}/resume_public.log",
     "#{TARGET_DIR}/resume_public.out",
     "#{TARGET_DIR}/profile_circle.pdf",
-    "#{TARGET_DIR}/profile_circle.png"
   ]
 end
 
@@ -316,7 +298,7 @@ end
 
 desc "Make public resume PDF (Typst)"
 task :typst_public => ["#{TARGET_DIR}/resume_public_typ.typ", :copy_deps, "profile_circle.png"] do |t|
-  FileUtils.cp_r File.join(LATEX_DIR, "fonts"), File.join(TARGET_DIR, "fonts")
+  FileUtils.cp_r FONTS_DIR, File.join(TARGET_DIR, "fonts")
   sh "cd #{TARGET_DIR}; TYPST_FONT_PATHS=./fonts typst compile resume_public_typ.typ"
   rm "#{TARGET_DIR}/resume_public_typ.typ"
 end
@@ -347,7 +329,7 @@ desc "Make private resume PDF"
 task :resume_private => [:latex_private, :parseable_txt]
 
 desc "Make public resume PDF"
-task :resume_public => [:latex_full, :typst_public, :html_public, "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]
+task :resume_public => [:latex_full, :typst_public, "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]
 
 desc "Make all resumes"
 task :all => [:resume_public, :resume_private]
@@ -372,16 +354,9 @@ def render_markdown_pdf(source_md, output_pdf)
   rm html_path
 end
 
-# Usage examples:
-#   rake tailor[path/to/job_description.txt]
-#   rake "tailor[docs/job_description.txt]"
-#   cat job.txt | rake "tailor[-]"
-# Note: brackets are part of the rake argument syntax, and quotes are needed
-# if your shell treats them specially (spaces or globbing).
 desc "Generate tailored resume and cover letter markdown from a job description file"
-task :tailor, [:job_description] => [:make_target, "#{TARGET_DIR}/resume_full.txt"] do |t, args|
-  job_path = args[:job_description]
-  job_description = read_job_description(job_path, "tailor")
+task :tailor => [:make_target, "#{TARGET_DIR}/resume_full.txt"] do |t, args|
+  job_description = read_job_description("tailor")
 
   api_key = read_gemini_api_key
   if api_key.nil? || api_key.strip.empty?

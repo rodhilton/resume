@@ -37,7 +37,7 @@
 
   # Choose recent jobs vs older
   job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs, 17)
-  recent_jobs = job_list.first(6)
+  recent_jobs = job_list.first(5)
   older_jobs  = (experience.jobs - recent_jobs)
 
   def job_location(job)
@@ -47,9 +47,16 @@
 
 #import "@preview/lavandula:0.1.1": *
 
-#show: lavandula-theme
+#show: lavandula-theme.with(
+  custom-colors: (
+    primary: rgb("#4786b2"),
+    secondary: rgb("#dae7f0")
+  )
+)
 
 #set text(lang: "en")
+#set page(width: 8.5in, height: 11in)
+
 #set document(
   title: "Rod Hilton (CV)",
   author: "Rod Hilton",
@@ -60,7 +67,17 @@
   sidebar-position: "left",
   sidebar: [
     = Rod Hilton
-    ==== <%= title %>
+    #grid(
+      columns: (auto, 1fr),
+      column-gutter: 8pt,
+      align: (center, left),
+      [
+        #image("profile_circle.png", width: 15mm)
+      ],
+      [
+        ==== <%= title %>
+      ],
+    )
 
     #contact-list((
       <% if flags[:email] %>(icon: "at", icon-solid: true, text: link("mailto:<%= flags[:email] %>")[<%= flags[:email].gsub("@","\\@") %>]),<% end %>
@@ -75,7 +92,7 @@
     ))
 
     #sidebar-section(title: "Summary")[
-      #set par(justify: false)
+      #set par(justify: true)
       #show par: it => block(width: 100%, it)
 
       <%= oneline_summary.nil? || strip_links(oneline_summary) %>
@@ -98,49 +115,68 @@
   ],
 
   main-content: [
-    #set align(center)
-    ==== #highlight[<%= traits.join(" • ") %>]
-    #set align(left)
+    == Experience
     <% recent_jobs.each_with_index do |job, i| %>
       <%
-        accomplishments = trim_accomplishments(job.accomplishments, i, 1, 1)
+        accomplishments = trim_accomplishments(job.accomplishments, i, 2, 2)
       %>
 
       #section-element(
         title: [
-          #fa-icon("briefcase") #h(6pt)
-          <%= strip_links("#{job.title} @ #{job.company}") %>
+          <%= strip_links(job.title.to_s) %>
+          #h(2pt)#text(size: sizes.text-s3)[#fa-icon("at", solid: true)]#h(2pt)
+          <%= strip_links(job.company.to_s) %>
         ],
         info: <%= typst_info(timespan(job.start_time, job.end_time)) %>,
         [
-          <%= job.summary %>
           #set text(size: sizes.text-s2)
           #icon-list((
             <% accomplishments.each do |acc| %>
-            (icon: "circle-check", text: [<%= typst_links(acc) %>]),
+            (icon: "angle-right", text: [<%= typst_links(acc) %>]),
             <% end %>
           ))
         ],
       )
       <% end %>
 
+      <% if older_jobs.any? %>
+      === Other Positions
+      #set par(leading: 0.95em)
+      #stack(spacing: 0pt,
+        <% older_jobs.each_with_index do |job, idx| %>
+        [#section-element(
+          title: [
+          <%= strip_links(job.title.to_s) %>
+          #h(2pt)#text(size: sizes.text-s3)[#fa-icon("at", solid: true)]#h(2pt)
+          <%= strip_links(job.company.to_s) %>
+          ],
+          info: <%= typst_info(timespan(job.start_time, job.end_time)) %>,
+          [],
+        )]<%= idx < older_jobs.length - 1 ? "," : "" %>
+        <% end %>
+      )
+      <% end %>
+
+      == Education
       <% education.degrees.each do |degree| %>
       #section-element(
         title: [
-          #fa-icon("graduation-cap") #h(6pt)
-          <%= "#{degree.title} @ #{degree.school}" %>
+          <%= degree.title.to_s %>
+          #h(2pt)#text(size: sizes.text-s3)[#fa-icon("at", solid: true)]#h(2pt)
+          <%= degree.school.to_s %>
         ],
         info: <%= typst_info(extract_year(degree.end_time)) %>,
         [
-          <% if degree.note && !degree.note.empty? %>
-            <%= latex_links(degree.note) %>
-          <% end %>
           #set text(size: sizes.text-s2)
           #icon-list((
-            (icon: "scroll", text: [Coursework: <%= typst_links(degree.coursework) %>]),
+            <% if degree.note && !degree.note.empty? %>
+            (icon: "angle-right", text: [<%= latex_links(degree.note) %>]),
+            <% end %>
+            (icon: "angle-right", text: [Coursework: <%= typst_links(degree.coursework) %>]),
           ))
         ],
       )
       <% end %>
+
   ],
 )

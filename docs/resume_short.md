@@ -10,15 +10,15 @@ __Software Craftsman and Computer Science Geek__
 
 ## Summary
 
-* Polyglot problem-solver with solid Computer Science background.
+* Polyglot problem-solver with a strong computer science foundation.
 
-* Over a decade of experience developing backend server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
+* 20+ years building backend services, web applications, microservices, applets, and client applications with a user-first mindset.
 
-* Specialty in improving existing/legacy codebases and building scalable, performant, fault-tolerant backend systems.
+* Specialize in modernizing legacy codebases and designing scalable, performant, fault-tolerant systems.
 
 * Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
 
-* Polyglot programmer comfortable with object-oriented and functional languages
+* Polyglot programmer comfortable with object-oriented and functional languages.
 
 
 ----
@@ -28,9 +28,9 @@ __Software Craftsman and Computer Science Geek__
 
 * __Languages__: Scala, Java, Go, Groovy, Ruby, JavaScript, TypeScript, Python
 * __Web/API__: Spring, REST, Grails, HTML/CSS, AngularJS, SOAP, Thrift, gRPC
-* __Data & Storage__: Kafka, MySQL, DynamoDB, Redis, CosmosDB, Cassandra, Hadoop, PostgreSQL, Oracle, memcached, hazelcast
-* __Cloud/DevOps__: Azure, AWS, Kubernetes, Docker, Terraform, Istio, Jenkins
-* __Tools__: Git, ANTLR, ChatGPT, OpenAI, Claude, Cursor, Grafana, SBT
+* __Data & Storage__: Kafka, MySQL, DynamoDB, Redis, CosmosDB, Hadoop, Cassandra, PostgreSQL, Oracle, memcached, hazelcast
+* __Cloud/DevOps__: Azure, AWS, Docker, Kubernetes, Terraform, Istio, Jenkins
+* __Tools__: Git, ANTLR, ChatGPT, OpenAI, Copilot, Claude, Cursor, SBT, Grafana
 
 
 ----
@@ -42,7 +42,7 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Axon_ - 2024-Present
             
-    * Utilized Scala, Go, Azure, AWS, Azure, ChatGPT, Claude, CosmosDB, Kubernetes, Cassandra, Cursor, gRPC, Istio, Grafana, Redis, Git, Docker, Terraform 
+    * Utilized Scala, Go, Azure, AWS, Azure, ChatGPT, Claude, CosmosDB, Copilot,Kubernetes, Cassandra, Cursor, gRPC, Istio, Grafana, Redis, Git, Docker, Terraform 
             
     * Spearheaded company-wide resiliency initiative targeting four-nines availability across 100+ services and 6 engineering pillars.
             
@@ -56,9 +56,9 @@ __Software Craftsman and Computer Science Geek__
 
 *  __Staff Software Engineer__ - _Twilio_ - 2023-2024
             
-    * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Kafka, Terraform 
+    * Utilized Go, ANTLR, Git, OpenAI, AWS, TypeScript, Docker, Copilot,Kafka, Terraform 
             
-    * Developed [Compute API](https://docs.segmentapis.com/tag/Audiences) to provide REST interface to largest users of realtime customer segmentation platform handling 400k requests/sec.
+    * Developed [Compute API](https://docs.segmentapis.com/tag/Audiences) to provide REST interface to largest users of real-time customer segmentation platform handling 400k requests/sec.
             
     * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
             
@@ -90,7 +90,7 @@ __Software Craftsman and Computer Science Geek__
             
     * Utilized Scala, Groovy, Grails, Java, Spring, Git, Ruby, AngularJS, JavaScript, PostgreSQL, REST, SOAP, SBT, memcached, Jenkins, HTML/CSS, hazelcast, Oracle 
             
-    * Developed high-availability middleware platform to reduce internal access friction to heterogenous backend services handling over 1k requests/sec.
+    * Developed high-availability middleware platform to reduce internal access friction to heterogeneous backend services handling over 1k requests/sec.
             
     * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
             

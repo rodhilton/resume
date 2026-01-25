@@ -288,7 +288,8 @@ task :html_public_inline => [:make_target] do |t|
   sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.html.erb')} #{public_flags} -f inline > #{TARGET_DIR}/resume_public_inline.html"
 end
 
-task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "profile_circle.pdf"] do |t|
+desc "Make full resume PDF (LaTeX)"
+task :latex_full => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "profile_circle.pdf"] do |t|
   sh "cd #{TARGET_DIR}; TEXINPUTS=./latex//:${TEXINPUTS} xelatex resume_public.tex"
   rm "#{TARGET_DIR}/resume_public.tex"
   FileUtils.rm_f [
@@ -313,21 +314,13 @@ task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "qr_code
   ]
 end
 
+desc "Make public resume PDF (Typst)"
 task :typst_public => ["#{TARGET_DIR}/resume_public_typ.typ", :copy_deps, "profile_circle.png"] do |t|
   sh "cd #{TARGET_DIR}; typst compile resume_public_typ.typ"
   rm "#{TARGET_DIR}/resume_public_typ.typ"
 end
 
 task :resume_full_txt => ["#{TARGET_DIR}/resume_full.txt", :copy_deps] do |t|
-end
-
-task :typst_private => ["#{TARGET_DIR}/resume_private_typ.typ", :copy_deps, "qr_code_contact.png"] do |t|
-  sh "cd #{TARGET_DIR}; typst compile resume_private_typ.typ"
-  rm "#{TARGET_DIR}/resume_private_typ.typ"
-  FileUtils.rm_f "#{TARGET_DIR}/qr_code_contact.png"
-  # sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_private.tex"
-  #rm "#{TARGET_DIR}/resume_private.tex"
-  # FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
 end
 
 task :parseable_txt => ["#{TARGET_DIR}/resume.txt", :copy_deps] do |t|
@@ -353,7 +346,7 @@ desc "Make private resume PDF"
 task :resume_private => [:latex_private, :parseable_txt]
 
 desc "Make public resume PDF"
-task :resume_public => [:latex_public, :html_public, "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]
+task :resume_public => [:latex_full, :typst_public, :html_public, "#{TARGET_DIR}/resume_public.md", "#{TARGET_DIR}/resume_short.md"]
 
 desc "Make all resumes"
 task :all => [:resume_public, :resume_private]

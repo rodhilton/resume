@@ -9,7 +9,7 @@ traits:
   - Accountability
   - Craftsmanship
 
-oneline_summary: Pragmatic problem-solver with solid computer science background and over two decades of industry experience developing scalable backend services, improving legacy codebases, and building web applications with strong focus on user experience.
+oneline_summary: Pragmatic problem-solver with a strong computer science foundation and 20+ years building scalable backend services, modernizing legacy systems, and delivering user-centered web applications.
 
 about_summary:
   - <a href="http://rodhilton.github.io/resume/">Software Engineer</a> working primarily in the JVM with Java, Groovy, and Scala with a lot of Ruby coding <a href="https://github.com/rodhilton">on the side</a>
@@ -17,16 +17,16 @@ about_summary:
   - <a href="http://www.goodreads.com/rodhilton">Voracious reader</a> of technical books and insatiable learner
 
 summary:
-  - Polyglot problem-solver with solid Computer Science background.
-  - Over a decade of experience developing backend server applications, web applications, web services, microservices, applets, and client applications with strong focus on end-user's experience.
-  - Specialty in improving existing/legacy codebases and building scalable, performant, fault-tolerant backend systems.
-  - Follower of good engineering practices such as test-driven design, pair programming, continuous integration, and refactoring.  Committed to good coding principles such as SOLID, DRY, and YAGNI.
-  - Polyglot programmer comfortable with object-oriented and functional languages
+  - Polyglot problem-solver with a strong computer science foundation.
+  - 20+ years building backend services, web applications, microservices, applets, and client applications with a user-first mindset.
+  - Specialize in modernizing legacy codebases and designing scalable, performant, fault-tolerant systems.
+  - Engineering practices: test-driven design, pair programming, continuous integration, and refactoring; principles: SOLID, DRY, and YAGNI.
+  - Polyglot programmer comfortable with object-oriented and functional languages.
 
 interests: Kotlin, ElasticSearch, Spark, Cassandra, GCP, Rust, F#
 
 experience:
-  summary: Passionate, hardworking polyglot programmer with strong CS background and over a decade of experience following good engineering principles (TDD, CI, SOLID, DRY, YAGNI) developing scalable backend services, web applications, and client applications
+  summary: Passionate, hardworking polyglot programmer with a strong CS background and 20+ years applying engineering practices (TDD, CI, SOLID, DRY, YAGNI) to build scalable backend services, web applications, and client applications.
   jobs:
     - company: Axon
       title: Staff Software Engineer
@@ -58,7 +58,7 @@ experience:
       summary: Compute interfaces team member, building segmentation and augmentation tools for customer marketing campaigns
       icon: twilio.png
       accomplishments:
-        - Developed <a href="https://docs.segmentapis.com/tag/Audiences">Compute API</a> to provide REST interface to largest users of realtime customer segmentation platform handling 400k requests/sec.
+        - Developed <a href="https://docs.segmentapis.com/tag/Audiences">Compute API</a> to provide REST interface to largest users of real-time customer segmentation platform handling 400k requests/sec.
         - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
         - Designed <a href="https://segment.com/docs/api/public-api/query-language/">custom query language</a> to achieve GUI wizard fidelity allowing API reading/writing of compute definitions for 1100+ enterprise customers.
         - Refined design specifications through multiple rounds of stakeholder collaboration and drove consensus between groups across business unit.
@@ -72,7 +72,7 @@ experience:
       location: Cary, NC
       environment: Remote
       technologies: Java, Spring, Git, REST, AWS, DynamoDB, Redis, Terraform, Kubernetes, Docker
-      summary: Social team lead, building Epic Online Services for friends, messaging, partying, group-forming, clip-sharing within games
+      summary: Led backend engineering for Epic Online Services social systems (friends, messaging, parties, clip-sharing).
       icon: epicgames.png
       accomplishments:
         - Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
@@ -81,7 +81,7 @@ experience:
         - Architected backend service solution and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a> video clip sharing product, storing over 1m uploads/day.
         - Managed work intake and priority for 10 contract-based engineering staff and supported their development within organization.
         - Developed Interactions Tracking Service for querying interactions <a href="https://www.fortnite.com/news/fortnite-refer-a-friend-3-0-play-together-and-earn-rewards">awards-based campaigns</a> in games supporting 11m CCUs.
-        - Created highly-available asynchronous processor of user-created media with access control utilized by <a href="https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html">UEFN</a> to build over 1.1m projects
+        - Created highly-available asynchronous processor of user-created media with access control utilized by <a href="https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html">UEFN</a> to build over 1.1m projects.
     - company: Twitter
       title: Staff Software Engineer
       team: Core Tweet Service & Developer Platform
@@ -90,7 +90,7 @@ experience:
       location: Boulder, CO
       environment: Hybrid
       technologies: Scala, Java, Git, Kafka, ANTLR, HTML/CSS, MySQL, REST, Thrift, Hadoop, Python
-      summary: Core Tweet Service backend team, storing and serving all Tweets within Twitter at massive scale
+      summary: Worked on Core Tweet Service and Developer Platform, storing and serving Tweets at global scale.
       icon: twitter.png
       accomplishments:
         - Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. 
@@ -112,7 +112,7 @@ experience:
       summary: Cross-Platform team, built Common Services Tier middleware service layer and customer-facing web portals.
       icon: twc.png
       accomplishments:
-        - Developed high-availability middleware platform to reduce internal access friction to heterogenous backend services handling over 1k requests/sec.
+        - Developed high-availability middleware platform to reduce internal access friction to heterogeneous backend services handling over 1k requests/sec.
         - Led rewrite of <a href="https://myservices.timewarnercable.com/">residential customer portal</a>, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4-categories</a> with +10 point improvement in customer satisfaction.
         - Created <a href="https://myaccount.timewarnercable.com">commercial primary care portal</a> application handling 7m logins/month and 45% improvement in registration conversion rate.
         - Built bill reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
@@ -261,7 +261,7 @@ publications:
     clout: 8
     role: Technical Reviewer
     url: https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/
-    summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Guide to understanding JVM internals</a>, JIT optimizaton, garbage collection algorithms, target platform differences, and how to tune applications
+    summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Guide to understanding JVM internals</a>, JIT optimization, garbage collection algorithms, target platform differences, and how to tune applications
     technologies: Java
   - title: Modern Systems Programming with Scala Native
     author: Richard Whaling
@@ -273,7 +273,7 @@ publications:
     url: https://pragprog.com/book/rwscala/modern-systems-programming-with-scala-native
     summary: <a href="https://www.oreilly.com/library/view/java-performance-2nd/9781492056102/">Introduction to utilizing Scala Native</a> for low-level systems and firmware development using functional programming techniques
     technologies: Scala
-  - title: Programing Kotlin
+  - title: Programming Kotlin
     author: Venkat Subramaniam
     publisher: Pragmatic
     year: 2019
@@ -424,7 +424,7 @@ projects:
   - title: console_table
     role: Maintainer
     location: rubygems.org
-    description: <a href="https://rubygems.org/gems/console_table/">Ruby gem</a> for formatting and printing tabluar data in commandline scripts, over 100,000 downloads
+    description: <a href="https://rubygems.org/gems/console_table/">Ruby gem</a> for formatting and printing tabular data in commandline scripts, over 100,000 downloads
     year: 2015
     url: https://rubygems.org/gems/console_table/
     license: MIT

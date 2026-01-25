@@ -228,14 +228,14 @@ __Software Craftsman and Computer Science Geek__
     * Coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
         
 
-* __M.S., Software Engineering__ - _Regis University_ - 2005
+* __M.S., Software Engineering__ - _Regis University_ - 2009
     
     * Utilized Java, C#, LaTeX, UML. 
     * Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>
     * Coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
         
 
-* __B.S., Computer Science__ - _University of Rochester_ - 2000
+* __B.S., Computer Science__ - _University of Rochester_ - 2004
     
     * Utilized Java, C, C++, Assembly, Scheme, Python, JavaScript, LaTeX, Flash, Maya. 
     * Focus on Systems

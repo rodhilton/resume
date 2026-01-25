@@ -8,7 +8,7 @@ public.yaml
 resume*.md
 qr_*.png
 qr_*.txt
-gemini_api_key.txt
+.gemini_api_key
 
 .rake_tasks*
 

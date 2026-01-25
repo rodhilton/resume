@@ -3,14 +3,20 @@ require 'yaml'
 require 'json'
 require 'net/http'
 require 'uri'
+require 'open3'
 
 task :default => [:all]
 
 TARGET_DIR="docs"
-GEMINI_PROMPT_FILE="gemini_resume_prompt.txt"
-GEMINI_KEY_FILE="gemini_api_key.txt"
+TEMPLATES_DIR="templates"
+RESOURCES_DIR="resources"
+IMAGES_DIR=File.join(RESOURCES_DIR, "images")
+LATEX_DIR=File.join(RESOURCES_DIR, "latex")
+SITE_RESOURCES_DIR=File.join(RESOURCES_DIR, "site")
+GEMINI_PROMPT_FILE=File.join(TEMPLATES_DIR, "gemini_resume_prompt.txt")
+GEMINI_KEY_FILE=".gemini_api_key"
 GEMINI_MODEL_OVERRIDE=ENV["GEMINI_MODEL"]
-WEASYPRINT_CSS="weasyprint_resume.css"
+WEASYPRINT_CSS=File.join(RESOURCES_DIR, "css", "weasyprint_resume.css")
 
 CLEAN.include(TARGET_DIR)
 
@@ -191,7 +197,7 @@ task :make_target do |t|
 end
 
 file "qr_code_contact.png" => [:make_target] do |t|
-  sh "templator/templator -d resume.yaml,contact.yaml qr_code_contact.txt.erb > qr_code_contact.txt"
+  sh "templator/templator -d resume.yaml,contact.yaml #{File.join(TEMPLATES_DIR, 'qr_code_contact.txt.erb')} > qr_code_contact.txt"
   sh "cat qr_code_contact.txt | qrencode -o #{TARGET_DIR}/qr_code_contact.png -t png -m 0 --size=20 --foreground=414141"
   rm "qr_code_contact.txt"
 end
@@ -201,17 +207,17 @@ file "qr_code_contact.pdf" => [:make_target, "qr_code_contact.png"] do |t|
 end
 
 file "qr_code_url.png" => [:make_target] do |t|
-  sh "templator/templator -d resume.yaml qr_code_url.txt.erb > qr_code_url.txt"
+  sh "templator/templator -d resume.yaml #{File.join(TEMPLATES_DIR, 'qr_code_url.txt.erb')} > qr_code_url.txt"
   sh "cat qr_code_url.txt | qrencode -o #{TARGET_DIR}/qr_code_url.png -t png -m 0 --size=20 --foreground=414141"
   rm "qr_code_url.txt"
 end
 
 file "profile.jpg" => [:make_target] do |t|
-  sh "cp resources/profile.jpg #{TARGET_DIR}/profile.jpg"
+  sh "cp #{File.join(IMAGES_DIR, 'profile.jpg')} #{TARGET_DIR}/profile.jpg"
 end
 
 file "profile_circle.png" => [:make_target] do |t|
-  sh "magick resources/profile.jpg -alpha on -resize 512x512^ -gravity center -extent 512x512 \\( -size 512x512 xc:none -fill white -draw \"circle 256,256 256,0\" \\) -compose copyopacity -composite #{TARGET_DIR}/profile_circle.png"
+  sh "magick #{File.join(IMAGES_DIR, 'profile.jpg')} -alpha on -resize 512x512^ -gravity center -extent 512x512 \\( -size 512x512 xc:none -fill white -draw \"circle 256,256 256,0\" \\) -compose copyopacity -composite #{TARGET_DIR}/profile_circle.png"
 end
 
 file "profile.pdf" => [:make_target, "profile.jpg"] do |t|
@@ -223,49 +229,47 @@ file "profile_circle.pdf" => [:make_target, "profile_circle.png"] do |t|
 end
 
 task :copy_deps do |t|
-  FileUtils.cp_r File.join("latex", "." ), TARGET_DIR
-  FileUtils.cp_r File.join("resources", "." ), TARGET_DIR
-  # FileUtils.cp_r File.join("fonts", "."), TARGET_DIR
-  #FileUtils.cp_r Dir.glob( "*.png" ), TARGET_DIR
-  #FileUtils.cp_r Dir.glob( "*.eps" ), TARGET_DIR
+  FileUtils.cp_r File.join(LATEX_DIR, "." ), File.join(TARGET_DIR, "latex")
+  FileUtils.cp_r File.join(IMAGES_DIR, "." ), TARGET_DIR
+  FileUtils.cp_r File.join(LATEX_DIR, "fonts"), File.join(TARGET_DIR, "fonts")
 end
 
 file "#{TARGET_DIR}/resume_public.tex"  => [:make_target] do |t|
-  #sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{public_flags} -f highlight:true -f color:33627f -f photo_shape:rectangle -f skills_summary -f socials -f expand_school -f show_projects -f photo:profile_circle > #{TARGET_DIR}/resume_public.tex"
+  #sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.tex.erb')} -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.tex.erb')} -f color #{public_flags} -f highlight:true -f color:33627f -f photo_shape:rectangle -f skills_summary -f socials -f expand_school -f show_projects -f photo:profile_circle > #{TARGET_DIR}/resume_public.tex"
 end
 
 file "#{TARGET_DIR}/resume_private.tex"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.tex.erb -f color #{private_flags} -f highlight:false -f color:414141 -f photo_shape:rectangle -f expand_coursework -f photo:qr_code_contact > #{TARGET_DIR}/resume_private.tex"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.tex.erb')} -f color #{private_flags} -f highlight:false -f color:414141 -f photo_shape:rectangle -f expand_coursework -f photo:qr_code_contact > #{TARGET_DIR}/resume_private.tex"
 end
 
 file "#{TARGET_DIR}/resume_public_typ.typ"  => [:make_target] do |t|
-  #sh "templator/templator -d #{data_files} resume.tex.erb -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
-  sh "templator/templator -d #{data_files} resume.typ.erb -f highlight:true -f color:33627f -f photo_shape:rectangle -f skills_summary -f socials -f show_projects -f photo:profile_circle > #{TARGET_DIR}/resume_public_typ.typ"
+  #sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.tex.erb')} -f photo:qr_code_url > #{TARGET_DIR}/resume_public.tex"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.typ.erb')} -f highlight:true -f color:33627f -f photo_shape:rectangle -f skills_summary -f socials -f show_projects -f photo:profile_circle > #{TARGET_DIR}/resume_public_typ.typ"
 end
 
 file "#{TARGET_DIR}/resume_private_typ.typ"  => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.typ.erb -f color #{private_flags} -f highlight:false -f color:414141 -f photo_shape:rectangle -f expand_coursework -f photo:qr_code_contact.png > #{TARGET_DIR}/resume_private_typ.typ"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.typ.erb')} -f color #{private_flags} -f highlight:false -f color:414141 -f photo_shape:rectangle -f expand_coursework -f photo:qr_code_contact.png > #{TARGET_DIR}/resume_private_typ.typ"
 end
 
 file "#{TARGET_DIR}/resume_public.md" => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.md.erb #{public_flags} > #{TARGET_DIR}/resume_public.md"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.md.erb')} #{public_flags} > #{TARGET_DIR}/resume_public.md"
 end
 
 file "#{TARGET_DIR}/resume_short.md" => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.md.erb > #{TARGET_DIR}/resume_short.md"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.md.erb')} > #{TARGET_DIR}/resume_short.md"
 end
 
 file "#{TARGET_DIR}/resume.txt" => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.txt.erb #{public_flags} > #{TARGET_DIR}/resume.txt"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.txt.erb')} #{public_flags} > #{TARGET_DIR}/resume.txt"
 end
 
 file "#{TARGET_DIR}/resume_full.txt" => [:make_target] do |t|
-  sh "templator/templator -d #{data_files},contact.yaml resume_full.txt.erb -f complete_history -f publications -f certifications > #{TARGET_DIR}/resume_full.txt"
+  sh "templator/templator -d #{data_files},contact.yaml #{File.join(TEMPLATES_DIR, 'resume_full.txt.erb')} -f complete_history -f publications -f certifications > #{TARGET_DIR}/resume_full.txt"
 end
 
 file "#{TARGET_DIR}/resume_public.html"  => [:make_target] do |t|
-    sh "templator/templator -d #{data_files} resume.html.erb #{public_flags} > #{TARGET_DIR}/resume_public.html"
+    sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.html.erb')} #{public_flags} > #{TARGET_DIR}/resume_public.html"
 end
 
 desc "Make public resume HTML"
@@ -275,18 +279,32 @@ end
 
 desc "Make public resume HTML (inlineable)"
 task :html_public_inline => [:make_target] do |t|
-  sh "templator/templator -d #{data_files} resume.html.erb #{public_flags} -f inline > #{TARGET_DIR}/resume_public_inline.html"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'resume.html.erb')} #{public_flags} -f inline > #{TARGET_DIR}/resume_public_inline.html"
 end
 
 task :latex_public => ["#{TARGET_DIR}/resume_public.tex", :copy_deps, "profile_circle.pdf"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_public.tex"
+  sh "cd #{TARGET_DIR}; TEXINPUTS=./latex//:${TEXINPUTS} xelatex resume_public.tex"
   rm "#{TARGET_DIR}/resume_public.tex"
+  FileUtils.rm_f [
+    "#{TARGET_DIR}/resume_public.aux",
+    "#{TARGET_DIR}/resume_public.log",
+    "#{TARGET_DIR}/resume_public.out",
+    "#{TARGET_DIR}/profile_circle.pdf",
+    "#{TARGET_DIR}/profile_circle.png"
+  ]
 end
 
 task :latex_private => ["#{TARGET_DIR}/resume_private.tex", :copy_deps, "qr_code_contact.pdf"] do |t|
-  sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_private.tex"
-  #rm "#{TARGET_DIR}/resume_private.tex"
+  sh "cd #{TARGET_DIR}; TEXINPUTS=./latex//:${TEXINPUTS} xelatex resume_private.tex"
+  rm "#{TARGET_DIR}/resume_private.tex"
   FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
+  FileUtils.rm_f [
+    "#{TARGET_DIR}/resume_private.aux",
+    "#{TARGET_DIR}/resume_private.log",
+    "#{TARGET_DIR}/resume_private.out",
+    "#{TARGET_DIR}/qr_code_contact.pdf",
+    "#{TARGET_DIR}/qr_code_contact.png"
+  ]
 end
 
 task :typst_public => ["#{TARGET_DIR}/resume_public_typ.typ", :copy_deps, "profile_circle.png"] do |t|
@@ -300,6 +318,7 @@ end
 task :typst_private => ["#{TARGET_DIR}/resume_private_typ.typ", :copy_deps, "qr_code_contact.png"] do |t|
   sh "cd #{TARGET_DIR}; typst compile resume_private_typ.typ"
   rm "#{TARGET_DIR}/resume_private_typ.typ"
+  FileUtils.rm_f "#{TARGET_DIR}/qr_code_contact.png"
   # sh "cd #{TARGET_DIR}; TEXINPUTS=latex && xelatex resume_private.tex"
   #rm "#{TARGET_DIR}/resume_private.tex"
   # FileUtils.cp_r File.join(TARGET_DIR, "resume_private.pdf"), File.join(TARGET_DIR, "RodHilton_resume.pdf")
@@ -310,16 +329,18 @@ end
 
 desc "Build single-page web site"
 task :rodhilton_site => [:make_target] do |t|
-  FileUtils.cp_r "rodhilton.com", TARGET_DIR
-  FileUtils.mkdir_p File.join(TARGET_DIR, "rodhilton.com", "img")
-  FileUtils.mkdir_p File.join(TARGET_DIR, "rodhilton.com", "_includes")
-  FileUtils.cp Dir.glob(File.join("resources", "*")), File.join(TARGET_DIR, "rodhilton.com", "img")
-  sh "templator/templator -d #{data_files} rodhilton.index.html.erb > #{TARGET_DIR}/rodhilton.com/index.html"
-  sh "templator/templator -d #{data_files} rodhilton.com.about.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/about.html"
-  sh "templator/templator -d #{data_files} rodhilton.com.experience.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/experience.html"
-  sh "templator/templator -d #{data_files} rodhilton.com.education.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/education.html"
-  sh "templator/templator -d #{data_files} rodhilton.com.skills.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/skills.html"
-  sh "templator/templator -d #{data_files} rodhilton.com.projects.html.erb > #{TARGET_DIR}/rodhilton.com/_includes/projects.html"
+  site_root = File.join(TARGET_DIR, "rodhilton.com")
+  FileUtils.mkdir_p site_root
+  FileUtils.cp_r File.join(SITE_RESOURCES_DIR, "."), site_root
+  FileUtils.mkdir_p File.join(site_root, "img")
+  FileUtils.mkdir_p File.join(site_root, "_includes")
+  FileUtils.cp Dir.glob(File.join(IMAGES_DIR, "*")), File.join(site_root, "img")
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'rodhilton.index.html.erb')} > #{File.join(site_root, 'index.html')}"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'rodhilton.com.about.html.erb')} > #{File.join(site_root, '_includes', 'about.html')}"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'rodhilton.com.experience.html.erb')} > #{File.join(site_root, '_includes', 'experience.html')}"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'rodhilton.com.education.html.erb')} > #{File.join(site_root, '_includes', 'education.html')}"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'rodhilton.com.skills.html.erb')} > #{File.join(site_root, '_includes', 'skills.html')}"
+  sh "templator/templator -d #{data_files} #{File.join(TEMPLATES_DIR, 'rodhilton.com.projects.html.erb')} > #{File.join(site_root, '_includes', 'projects.html')}"
 end
 
 desc "Make private resume PDF"
@@ -333,7 +354,20 @@ task :all => [:resume_public, :resume_private]
 
 def render_markdown_pdf(source_md, output_pdf)
   html_path = source_md.sub(/\.md\z/, ".html")
-  sh "cmark-gfm #{source_md} > #{html_path}"
+  html_body, status = Open3.capture2("cmark-gfm", source_md)
+  abort("cmark-gfm failed for #{source_md}") unless status.success?
+  html = <<~HTML
+    <!doctype html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+      </head>
+      <body>
+    #{html_body}
+      </body>
+    </html>
+  HTML
+  File.write(html_path, html)
   sh "weasyprint #{html_path} #{output_pdf} --stylesheet #{WEASYPRINT_CSS}"
   rm html_path
 end
@@ -365,6 +399,8 @@ task :tailor, [:job_description] => [:make_target, "#{TARGET_DIR}/resume_full.tx
   File.write("#{TARGET_DIR}/cover_letter.md", cover_md)
 
   warn("Gemini response missing cover letter section; wrote full output to resume_tailored.md.") if cover_md.to_s.strip.empty?
+ensure
+  FileUtils.rm_f "#{TARGET_DIR}/resume_full.txt"
 end
 
 desc "Render existing tailored markdown files to PDFs"

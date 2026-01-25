@@ -10,8 +10,13 @@ variables:
 # services such as redis or postgres
 before_script:
   - apt-get update -y
-  - apt-get install qrencode -y
-  - apt-get install texlive texlive-latex-extra -y
+  - apt-get install -y \
+      ghostscript \
+      imagemagick \
+      texlive \
+      texlive-latex-extra \
+      texlive-xetex \
+      typst
   - ruby -v                                   # Print out ruby version for debugging
   # Uncomment next line if your rails app needs a JS runtime:
   # - apt-get update -q && apt-get install nodejs -yqq

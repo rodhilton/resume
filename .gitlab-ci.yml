@@ -26,11 +26,11 @@ pages:
   stage: deploy
   script:
   - rake rodhilton_site
-  - rake latex_full
+  - rake pdf_full
   - mkdir public
   - mkdir public/files
   - mv docs/rodhilton.com/* public
-  - mv docs/resume_public.pdf public/files/resume.pdf
+  - mv docs/resume_full.pdf public/files/resume.pdf
   artifacts:
     paths:
     - public

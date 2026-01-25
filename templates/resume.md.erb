@@ -1,75 +1,97 @@
 <% load 'lib/common.rb' %>
 <%
 def markdown_links(one)
-    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "[\\3](\\2)")
+  one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "[\\3](\\2)")
 end
 %>
 
 # Rod Hilton
-__Software Craftsman and Computer Science Geek__
+__<%= title %>__
 
 [<%= site %>](http://<%= site %>)
+<% if flags[:include_contact] %>
+<% if flags[:email] %>
+Email: <%= flags[:email] %>
+<% end %>
+<% if flags[:phone] %>
+Phone: <%= flags[:phone] %>
+<% end %>
+<% end %>
 
-----
+---
 
 ## Summary
 <% summary.each do |summary_item| %>
-* <%= summary_item %>
+- <%= summary_item %>
 <% end %>
 
-----
+---
 
 ## Technical Skills
-<% skill_weights = calculate_skill_weights(experience.jobs, 0.2, 0.1, 10)
-   skills_grouped = group_by_category(skill_weights, skills_index, 13)%>
-
+<% max_skills = flags[:full] ? 20 : 13
+   skill_weights = calculate_skill_weights(experience.jobs, 0.2, 0.1, 10)
+   skills_grouped = group_by_category(skill_weights, skills_index, max_skills) %>
 <% skills_grouped.each do |category, skills| -%>
-* __<%= category %>__: <%= skills.join(", ") %>
+- **<%= category %>**: <%= skills.join(", ") %>
+<%- end -%>
+<%- if flags[:include_interests] -%>
+- **Interests**: <%= interests %>
 <% end %>
 
-----
+---
 
 ## Work Experience
-
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs) %>
 <% job_list.each_with_index do |job, i| %>
 <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i) %>
-*  __<%= job.title %>__ - _<%= job.company %><% unless job.note.nil? %> (<%= job.note %>)<% end %>_ - <%= timespan(job.start_time, job.end_time) %>
-            <% unless job.technologies.nil? %>
-    * Utilized <%= job.technologies %> <% end %>
-            <% accomplishments.each do |accomplishment| %>
-    * <%= markdown_links(accomplishment) %>
-            <% end %>
+- **<%= job.title %>** — _<%= job.company %><% unless job.note.nil? %> (<%= job.note %>)<% end %>_ — <%= timespan(job.start_time, job.end_time) %>
+  <% if flags[:include_job_meta] %>
+  <% meta = [job.team, job.location, job.environment].compact %>
+  <% if meta.any? %>* <%= meta.join(" | ") %><% end %>
+  <% end %>
+  <% if flags[:include_job_summary] && job.summary %>* <%= job.summary %><% end %>
+  <% if flags[:include_job_tech] && job.technologies %>* Technologies: <%= job.technologies %><% end %>
+  <% accomplishments.each do |accomplishment| %>
+  * <%= markdown_links(accomplishment) %>
+  <% end %>
 <% end %>
 
 <% if flags[:certifications] %>
----- 
-## Certifications 
-    <% certifications.each do |certification| %>
-* __<%= certification.title %>__ - <%= "_#{certification.subject}_ - " unless certification.subject.nil? %> <%= certification.time %>
-    <% end %>
+---
+## Certifications
+<% certifications.each do |certification| %>
+- **<%= certification.title %>**<% if certification.subject %> — <%= certification.subject %><% end %> (<%= certification.year %>)<% if certification.provider %> — <%= certification.provider %><% end %>
+<% end %>
 <% end %>
 
-----
+---
 
 ## Education
-
 <% education.degrees.each do |degree| %>
-* __<%= degree.title %>__ - _<%= degree.school %>_ <%= display_schoolyear(degree, flags[:expand_school ], "- ", "") %><% if flags[:expand_school] %>
-    <% unless degree.technologies.nil? %>
-    * Utilized <%= degree.technologies %>. <% end %>
-    * <%= degree.note %>
-    * Coursework: <%= degree.coursework %>
-        <% end %>
+- **<%= degree.title %>** — _<%= degree.school %>_ <%= display_schoolyear(degree, flags[:expand_school ], "- ", "") %><% if flags[:expand_school] %>
+  <% unless degree.technologies.nil? %>
+  * Technologies: <%= degree.technologies %>. <% end %>
+  * <%= degree.note %>
+  * Coursework: <%= degree.coursework %>
+  <% end %>
+<% end %>
+
+<% if flags[:projects] %>
+---
+## Projects
+<% projects.each do |project| %>
+- **<%= project.title %>** (<%= project.year %>) — <%= project.role %>
+  * <%= markdown_links(project.description.to_s) %>
+  <% if project.url %>* <%= project.url %><% end %>
+  <% if project.technologies %>* Technologies: <%= project.technologies %><% end %>
+<% end %>
 <% end %>
 
 <% if flags[:publications] %>
-----
-## Publications 
-
+---
+## Publications
 <% pubs = flags[:complete_history] ? publications : trim_by_clout(publications, 7).sort_by {|a| a.year }.reverse %>
 <% pubs.each do |pub| %>
-* <%= pub.role %>: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.year %>)_
+- <%= pub.role %>: <%= pub.title %> by <%= pub.author %> _(<%= pub.publisher %>, <%= pub.year %>)_
 <% end %>
-
 <% end %>

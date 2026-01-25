@@ -3,10 +3,9 @@ Use ONLY the information provided in the full resume text. Do not invent facts,
 job titles, dates, skills, employers, education, or achievements.
 
 Goal:
-- Create a tailored, truthful markdown resume and a matching cover letter.
-- Emphasize relevant experience and skills without embellishing.
+- Create a highly tailored, truthful markdown resume and a matching cover letter.
+- Emphasize only the strongest, most relevant experience and skills.
 - Keep the tone professional and concise.
-- Tailored resume should specifically target the job as described in the job description, highlighting overlap and emphasizing strengths
 
 Output format (required):
 ===RESUME===
@@ -14,20 +13,35 @@ Output format (required):
 ===COVER_LETTER===
 <markdown cover letter>
 
+Hard constraints (must follow):
+- Resume length target: 1 page. Prefer brevity over completeness.
+- Experience: include 4–5 most relevant roles only. Omit the rest entirely.
+- Bullet points: 2–4 bullets per role, only the most relevant accomplishments.
+- Skills: include only skills that clearly match the job description (no long lists).
+- Projects/Publications/Certifications: include at most 1–2 total items if highly relevant; otherwise omit the section entirely.
+- Education: include degree + school only; no graduation years.
+
 Guidelines:
-- Resume should include: Name, contact info (separate line), Summary, Skills, Experience, Education, Certifications (if relevant),
-  Publications (if relevant), Projects (if relevant).
-- Summary should be written from scratch based on resume information, well-written and clear, but short, 2-3 sentences at most.
-- Emphasize professional experience over everything else, over-stressing educational pedigree or off-hours projects can come off as inexperienced.
-- The resume should be kept as short as possible, but no shorter. All relevant and tangentially-relevant information should be included in the final resume, but it should not be exhaustive or as long as the inputted full resume.
-- Technologies that seem essential to the role but with which candidate has no experience should be emphasized in the cover letter as an area where candidate would like to grow.
-- Use bullet points for accomplishments.
-- Highlighted accomplishments should, when possible, favor measurable success. Include numbers, percentages, revenue impact, and other quantifiable impact of accomplishments but NEVER make up the numbers.
-- Keep all content accurate to the source resume. Do not embellish or reword, never hallucinate, and check that everything is accurate before outputting.
-- Cover letter should be 3-4 short paragraphs. It should not sound AI generated, avoid all of the traditional "dead giveaways" of AI-generated text.
-- To avoid any issues of ageism, clear indicators of candidate's age should be avoided. Candidate should appear to be old enough to have earned seniority level, but not so old as to be unhireable. For example, avoid including graduation years when outputting education/degree info. Don't go too far back in candidate's career, only go as far back as needed to support candidate's exceptional fit for the particular role.
-- Cover letter should be ready to send as-is, no placeholders that need to be filled in.
-- Avoid any strange unicode-encoding issues
+- Use proper Markdown formatting with clear blank lines between sections.
+- Use `# Name` at the top and keep section headers as `##`.
+- Use bullet lists with `- ` and ensure a blank line before and after lists.
+- Do not smash paragraphs together; separate each paragraph with a blank line.
+- Ensure line breaks between role titles and their bullets for readability.
+- Avoid hype, superlatives, or inflated claims. Do not use phrases like "visionary," "thought leader," or "expert" unless explicitly supported by the resume text.
+- Use measured, factual language; if unsure about a claim, choose a more conservative wording.
+- Summary must be 2–3 sentences, written from scratch, focused on fit for the job.
+- Prefer quantified impact from the resume; never invent numbers.
+- Exclude tangential details even if they appear in the full resume.
+- Cover letter should be 3–4 short paragraphs, ready to send, no placeholders.
+- Both the resume and cover letter should read as human-written; avoid AI giveaways, clichés, and robotic phrasing.
+- If a core requirement is missing, mention it briefly in the cover letter as a growth area.
+- Avoid age indicators (graduation years, very early career details).
+
+Job Description (plain text):
+{{JOB_DESCRIPTION}}
+
+Full Resume (Markdown):
+{{RESUME}}
 
 Job Description:
 {{JOB_DESCRIPTION}}

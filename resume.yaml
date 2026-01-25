@@ -211,7 +211,7 @@ education:
       coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
       technologies: Java, Scala, Python, Groovy, Ruby, LaTeX, Mathematica
       icon: ucd.png
-<% if flags[:expand_school] %>
+<% if flags[:include_regis] %>
     - title: M.S., Software Engineering
       school: Regis University
       location: Denver, CO

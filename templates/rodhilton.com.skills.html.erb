@@ -3,7 +3,7 @@
 <div class="skill-icons">
   <% 
      skill_weights = calculate_skill_weights(experience.jobs + education.degrees + projects + publications, 0.2, 0.1, 10)
-     skills = group_by_level(skill_weights, 13)
+     skills = group_by_level(skill_weights, 40)
      ordered_skills = skills[:accomplished] + skills[:advanced] + skills[:novice] # + interests.split(", ")
   %>
   <% ordered_skills.each do |skillname| %>

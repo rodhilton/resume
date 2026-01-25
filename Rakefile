@@ -237,7 +237,6 @@ end
 
 task :copy_deps do |t|
   FileUtils.cp_r File.join(LATEX_DIR, "." ), File.join(TARGET_DIR, "latex")
-  FileUtils.cp_r File.join(IMAGES_DIR, "." ), TARGET_DIR
   FileUtils.cp_r File.join(LATEX_DIR, "fonts"), File.join(TARGET_DIR, "fonts")
 end
 

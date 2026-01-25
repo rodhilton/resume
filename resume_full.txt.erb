@@ -1,0 +1,78 @@
+<%- load 'common.rb' -%>
+<%-
+def inline_links(text)
+  text.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "\\3 (\\2)")
+end
+-%>
+Rod Hilton
+<%= title %>
+<%= site %>
+<% if email %>Email: <%= email %><% end %>
+<% if phone %>Phone: <%= phone %><% end %>
+
+----
+
+Summary:
+<% summary.each do |summary_item| %>
+  <%= summary_item %>
+<% end %>
+
+----
+
+Technical Skills:
+<% skill_weights = calculate_skill_weights(experience.jobs, 0.2, 0.1, 20)
+   skills_grouped = group_by_category(skill_weights, skills_index, 20) %>
+<% skills_grouped.each do |category, skills| %>
+  <%= category %>: <%= skills.join(", ") %>
+<% end %>
+
+----
+
+Experience:
+
+<% experience.jobs.each do |job| %>
+<%= job.company %> - <%= job.title %> (<%= job.start_time %> - <%= job.end_time || "Present" %>)
+  <%= job.team %><% if job.location %> | <%= job.location %><% end %><% if job.environment %> | <%= job.environment %><% end %>
+  Summary: <%= job.summary %>
+  Technologies: <%= job.technologies %>
+<% (job.accomplishments || []).each do |accomplishment| %>
+  - <%= inline_links(accomplishment) %>
+<% end %>
+
+<% end %>
+
+----
+
+Projects:
+<% projects.each do |project| %>
+<%= project.title %> (<%= project.year %>) - <%= project.role %>
+  <%= inline_links(project.description.to_s) %>
+  URL: <%= project.url %>
+  Technologies: <%= project.technologies %>
+<% end %>
+
+----
+
+Certifications:
+<% certifications.each do |certification| %>
+  <%= certification.title %><% if certification.subject %> - <%= certification.subject %><% end %> (<%= certification.year %>)<% if certification.provider %> - <%= certification.provider %><% end %>
+<% end %>
+
+----
+
+Education:
+<% education.degrees.each do |degree| %>
+<%= degree.title %> - <%= degree.school %> <%= display_schoolyear(degree, true, "- ", "") %>
+  <%= degree.note %>
+  Coursework: <%= degree.coursework %>
+  Technologies: <%= degree.technologies %>
+<% end %>
+
+----
+
+Publications:
+<% publications.each do |pub| %>
+<%= pub.role %>: <%= pub.title %> by <%= pub.author %> (<%= pub.publisher %>, <%= pub.year %>)
+  <%= inline_links(pub.summary.to_s) %>
+  URL: <%= pub.url %>
+<% end %>

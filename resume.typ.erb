@@ -1,211 +1,146 @@
 <% load 'common.rb' %>
 
 <%
-  # Convert HTML anchors to Typst link syntax:
-  # <a href="URL">TEXT</a> -> link("URL")[TEXT]
+  # Convert embedded HTML links to Typst link syntax:
+  # <a href="URL">TEXT</a>  =>  link("URL")[TEXT]
   def latex_links(one)
-    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, 'link("\\2")[\\3]')
+    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, '\#link("\\2")[\\3]')
   end
 
   def typst_links(one)
     one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, '#link("\\2")[\\3]')
   end
 
-  def typst_desc(bla)
-    bla.gsub(/\$/, '\\\\$')
-  end
-
-  # Remove anchors, keep text:
+  # Strip <a> wrappers entirely, keep visible text
   def strip_links(one)
     one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, '\\3')
   end
 
-  # Build author positions (must be a Typst sequence, even with one item)
-  positions_seq = %|(
-    "#{title}",
-  )|
-
-  # Profile picture expression (Typst code as string)
-  profile_pic = if flags[:photo] && !flags[:photo].empty?
-    %|image("#{flags[:photo]}")|
-  else
-    'none'
+  # Helpers to avoid "no text within underscores" warnings
+  # Use for fields that are rendered as `info: [...]` where the content is typically italic.
+  def typst_info(val)
+    s = "#{val}".strip
+    s.empty? ? 'none' : %|[_#{s}_]|
   end
-%>
 
-#import "@preview/modern-cv:0.9.0": *
+  # Use for `info-top-left:` / `info-top-right:` where empty should be `none`, otherwise "text".
+  def typst_info_text(val)
+    s = (val || "").strip
+    s.empty? ? 'none' : %|"#{s}"|
+  end
 
-#show: resume.with(
-  author: (
-    firstname: "Rod",
-    lastname: "Hilton",
-    <% if flags[:email] %>email: "<%= flags[:email] %>",<% end %>
-    <% if flags[:phone] %>phone: "<%= flags[:phone] %>",<% end %>
-    homepage: "https://www.rodhilton.com",
-    github: "rodhilton",
-    linkedin: "rodhilton",
-    <% if flags[:socials] %>
-    twitter: "rodhilton",
-    mastodon: "rodhilton",
-    <% end %>
-    positions: <%= positions_seq %>,
-    custom: (
-      (
-        text: "<%= traits.join(" - ") %>"
-      ),
-    ),
-  ),
-  keywords: (),
-  description: "Resume",
-  profile-picture: none,
-  date: datetime.today().display(),
-  language: "en",
-  colored-headers: true,
-  show-footer: false,
-  show-address-icon: true
-)
-
-= Skills
-
-<%
+  # Build skills map
   skill_weights = calculate_skill_weights(
-    experience.jobs + education.degrees + projects + publications,
-    0.1, 0.08, 18
+    experience.jobs + education.degrees + projects + publications, 0.1, 0.08, 12
   )
-  skills_grouped = group_by_category(skill_weights, skills_index, 9)
-%>
+  skills_grouped = group_by_category(skill_weights, skills_index, 8)
 
-<% skills_grouped.each do |category, skills| %>
-#resume-skill-item(
-  "<%= category %>",
-  (
-    <% skills.each_with_index do |s, idx| %>
-    "<%= s.gsub(/\#/, '\\\\#') %>"<%= idx < skills.length - 1 ? "," : "" %>
-    <% end %>
-  ),
-)
-<% end %>
-
-#block(below: 0.65em)
-
-= Experience
-
-<%
+  # Choose recent jobs vs older
   job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs, 17)
-%>
-<% job_list.each_with_index do |job, i| %>
-<%
-  accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 6, 1)
-  job_location = (job.environment == "Remote" || job.environment == "Hybrid") ? "Remote" : job.location
-  job_title = if job.team.nil?
-    "#{job.title}"
-  else
-    "#{job.title} — #{job.team}"
+  recent_jobs = job_list.first(6)
+  older_jobs  = (experience.jobs - recent_jobs)
+
+  def job_location(job)
+    (job.environment == "Remote" || job.environment == "Hybrid") ? "Remote" : job.location
   end
 %>
-#resume-entry(
-  title: "<%= job.company %>",
-  location: "<%= job_location %>",
-  date: "<%= timespan(job.start_time, job.end_time) %>",
-  description: "<%= job_title %>",
+
+#import "@preview/lavandula:0.1.1": *
+
+#show: lavandula-theme
+
+#set text(lang: "en")
+#set document(
+  title: "Rod Hilton (CV)",
+  author: "Rod Hilton",
+  date: none,
 )
 
-#resume-item[
-  <% unless job.technologies.nil? %>
-  - Utilized <%= trim_skills(job.technologies, 16) %>.
-  <% end %>
-  <% accomplishments.each do |accomplishment| %>
-  - <%= typst_links(typst_desc(accomplishment)) %>
-  <% end %>
-]
-<% end %>
+#cv(
+  sidebar-position: "left",
+  sidebar: [
+    = Rod Hilton
+    ==== <%= title %>
 
-= Education
+    #contact-list((
+      <% if flags[:email] %>(icon: "at", icon-solid: true, text: link("mailto:<%= flags[:email] %>")[<%= flags[:email].gsub("@","\\@") %>]),<% end %>
+      (icon: "globe", icon-solid: true, text: link("https://www.rodhilton.com")[rodhilton.com]),
+      (icon: "github", text: link("https://github.com/rodhilton")[github.com/rodhilton]),
+      (icon: "linkedin", text: link("https://linkedin.com/in/rodhilton")[linkedin.com/in/rodhilton]),
+      <% if flags[:phone] %>(icon: "phone", text: "<%= flags[:phone] %>"),<% end %>
+      <% if flags[:socials] %>
+        (icon: "mastodon", text: "mastodon.social/@rodhilton"),
+        (icon: "bluesky", text: "bsky.app/profile/rodhilton.com"),
+      <% end %>
+    ))
 
-<% education.degrees.each do |degree| %>
-#resume-entry(
-  title: "<%= degree.school %>",
-  location: "<%= degree.location %>",
-  date: "",
-  description: "<%= degree.title %>",
+    #sidebar-section(title: "Summary")[
+      #set par(justify: false)
+      #show par: it => block(width: 100%, it)
+
+      <%= oneline_summary.nil? || strip_links(oneline_summary) %>
+    ]
+
+    #sidebar-section(title: "Technical skills")[
+      <% skills_grouped.each do |category, skills| %>
+      #skill-group(
+        name: "<%= category %>",
+        icon: "<%= category_to_icon(category, skills_index) %>",
+        icon-solid: true,
+        skills: (
+          <% skills.each_with_index do |s, idx| %>
+          "<%= s %>"<%= idx < skills.length - 1 ? "," : "" %>
+          <% end %>
+        )
+      )
+      <% end %>
+    ]
+  ],
+
+  main-content: [
+    #set align(center)
+    ==== #highlight[<%= traits.join(" • ") %>]
+    #set align(left)
+    <% recent_jobs.each_with_index do |job, i| %>
+      <%
+        accomplishments = trim_accomplishments(job.accomplishments, i, 1, 1)
+      %>
+
+      #section-element(
+        title: [
+          #fa-icon("briefcase") #h(6pt)
+          <%= strip_links("#{job.title} @ #{job.company}") %>
+        ],
+        info: <%= typst_info(timespan(job.start_time, job.end_time)) %>,
+        [
+          <%= job.summary %>
+          #set text(size: sizes.text-s2)
+          #icon-list((
+            <% accomplishments.each do |acc| %>
+            (icon: "circle-check", text: [<%= typst_links(acc) %>]),
+            <% end %>
+          ))
+        ],
+      )
+      <% end %>
+
+      <% education.degrees.each do |degree| %>
+      #section-element(
+        title: [
+          #fa-icon("graduation-cap") #h(6pt)
+          <%= "#{degree.title} @ #{degree.school}" %>
+        ],
+        info: <%= typst_info(extract_year(degree.end_time)) %>,
+        [
+          <% if degree.note && !degree.note.empty? %>
+            <%= latex_links(degree.note) %>
+          <% end %>
+          #set text(size: sizes.text-s2)
+          #icon-list((
+            (icon: "scroll", text: [Coursework: <%= typst_links(degree.coursework) %>]),
+          ))
+        ],
+      )
+      <% end %>
+  ],
 )
-
-#resume-item[
-  <% if flags[:expand_school] || flags[:expand_coursework] %>
-    <% unless degree.technologies.nil? %>
-    - Utilized <%= latex_desc(trim_skills(degree.technologies, 16)) %>.
-    <% end %>
-    <% if degree.note && !degree.note.empty? %>
-    - <%= latex_links(degree.note) %>
-    <% end %>
-    <% if degree.coursework && !degree.coursework.empty? %>
-    - Coursework: <%= latex_links(degree.coursework) %>
-    <% end %>
-  <% end %>
-]
-<% end %>
-
-<% if flags[:certifications] %>
-= Certifications
-
-<% certifications.each do |certification| %>
-#resume-entry(
-  title: "<%= certification.title %>",
-  location: "<%= certification.subject.nil? ? "" : certification.subject %>",
-  date: "<%= certification.year %>",
-)
-<% end %>
-<% end %>
-
-= Publications
-
-<%
-  pubs = flags[:complete_history] ? publications : trim_by_clout(publications, 7).sort_by { |a| a.year }.reverse
-%>
-
-<% pubs.each do |pub| %>
-#resume-entry(
-  description: "<%= pub.role %> — <%= latex_desc(pub.type) %>",
-  title: "<%= strip_links(latex_desc(pub.title)) %><% unless pub.author.nil? %> by <%= pub.author %><% end %>",
-  date: "<%= pub.year %>",
-  location: <%=
-    if pub.url && pub.publisher
-      %|link("#{pub.url}")[#{latex_desc(pub.publisher)}]|
-    else
-      %|""|
-    end
-  %>,
-)
-
-<% unless pub.summary.nil? || pub.summary.empty? %>
-#resume-item[
-  - <%= strip_links(latex_desc(pub.summary)) %>
-]
-<% end %>
-<% end %>
-
-= Projects
-
-<%
-  projs = flags[:complete_history] ? projects : trim_by_clout(projects, 8).sort_by { |a| a.year }.reverse
-%>
-
-<% projs.each do |project| %>
-<%
-  proj_loc_expr = if project.url && project.location
-    %|link("#{project.url}")[#{latex_desc(project.location)}]|
-  else
-    %|"#{latex_desc(project.location || "")}"|
-  end
-%>
-#resume-entry(
-  title: "<%= strip_links(latex_desc(project.title)) %>",
-  location: <%= proj_loc_expr %>,
-  date: "<%= project.time %>",
-  description: "<%= project.role %>",
-)
-
-#resume-item[
-  - <%= strip_links(latex_desc(project.description)) %>
-]
-<% end %>

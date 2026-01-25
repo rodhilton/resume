@@ -184,24 +184,45 @@ end
 #   ]
 #
 # Categories with no selected skills are omitted.
+# skills_index (new schema):
+# {
+#   "Languages" => {
+#     icon: "code",
+#     items: [ {name: "Java"}, {name: "Scala"}, ... ]
+#   },
+#   "Web/API" => {
+#     icon: "globe",
+#     items: [ {name: "HTML/CSS", icons: [...]}, ... ]
+#   },
+#   ...
+# }
+
 def group_by_category(skill_weights, skills_index, max = 13)
   normalize = ->(s) { s.to_s.strip }
 
   unless skills_index.is_a?(Hash)
-    raise ArgumentError, "Expected skills_index to be a Hash of category => [skills], got #{skills_index.class}"
+    raise ArgumentError, "Expected skills_index to be a Hash of category => {items: [...]}, got #{skills_index.class}"
   end
 
   # Build lookup: normalized_skill_name -> category (category string preserved as in YAML)
   index = {}
-  skills_index.each do |category, skills|
-    next if skills.nil?
-    unless skills.is_a?(Array)
-      raise ArgumentError, "Expected skills_index[#{category.inspect}] to be an Array, got #{skills.class}"
+  skills_index.each do |category, cfg|
+    unless cfg.is_a?(Hash)
+      raise ArgumentError, "Expected skills_index[#{category.inspect}] to be a Hash with :items, got #{cfg.class}"
+    end
+    items = cfg[:items] || cfg['items']
+    unless items.is_a?(Array)
+      raise ArgumentError, "Expected skills_index[#{category.inspect}][:items] to be an Array, got #{items.class}"
     end
 
-    skills.each do |entry|
-      next unless entry.is_a?(Hash)
-      name = entry[:name] || entry["name"]
+    items.each do |entry|
+      # New schema: entries are hashes with a :name key; accept strings defensively.
+      name =
+        if entry.is_a?(Hash)
+          entry[:name] || entry['name']
+        else
+          entry
+        end
       next if name.nil?
 
       key = normalize.call(name)
@@ -211,7 +232,7 @@ def group_by_category(skill_weights, skills_index, max = 13)
     end
   end
 
-  # Accumulate selections, but keep them keyed by category while we build.
+  # Accumulate selections keyed by category while we build.
   selected = {}
   seen_in_category = Hash.new { |h, k| h[k] = {} }
   missing = {} # preserves insertion order
@@ -250,6 +271,15 @@ def group_by_category(skill_weights, skills_index, max = 13)
   ordered
 end
 
+def category_to_icon(category, skills_index)
+  return nil if skills_index.nil? || category.nil?
+  cfg = skills_index[category] ||
+        skills_index[category.to_s] ||
+        skills_index[category.to_sym]
+  return nil unless cfg.is_a?(Hash)
+  icon = cfg[:icon] || cfg['icon']
+  icon && !icon.to_s.empty? ? icon.to_s : nil
+end
 
 
 def display_schoolyear(degree, expand_school_flag= false, before = "(", after=")") 
@@ -265,32 +295,35 @@ def display_schoolyear(degree, expand_school_flag= false, before = "(", after=")
   end
 end
 
-def skill_to_icons(skillname, skills_index)
-  name = skillname.to_s.strip
-  down = name.downcase
+def skill_to_icons(skill_name, skills_index)
+  return [] if skills_index.nil? || skill_name.nil?
 
-  if skills_index.is_a?(Hash)
-    skills_index.each do |_category, skills|
-      next unless skills.is_a?(Array)
+  want = skill_name.to_s.downcase
+  out  = []
+  seen = {}
 
-      skills.each do |entry|
-        next unless entry.is_a?(Hash)
+  skills_index.each_value do |raw|
+    src =
+      if raw.is_a?(Hash)
+        (raw[:items] || raw['items'] || [])
+      else
+        raw
+      end
 
-        entry_name = entry[:name] || entry["name"]
-        next if entry_name.nil?
+    src.each do |it|
+      name  = it.is_a?(Hash) ? (it[:name] || it['name']).to_s : it.to_s
+      next unless name.downcase == want
 
-        if entry_name.to_s.strip.downcase == down
-          icons = entry[:icons] || entry["icons"]
-          if icons && icons.respond_to?(:any?) && icons.any?
-            return icons.map { |i| i.to_s }
-          end
-          return [down]
-        end
+      icons = it.is_a?(Hash) ? (it[:icons] || it['icons']) : []
+      Array(icons).map(&:to_s).each do |ic|
+        next if ic.empty? || seen[ic]
+        seen[ic] = true
+        out << ic
       end
     end
   end
 
-  [down]
+  out
 end
 
 def unique_skills(skills)

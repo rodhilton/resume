@@ -29,9 +29,8 @@ __Software Craftsman and Computer Science Geek__
 * __Languages__: Scala, Java, Go, Groovy, Ruby, JavaScript, TypeScript, Python
 * __Web/API__: Spring, REST, Grails, HTML/CSS, AngularJS, SOAP, Thrift, gRPC
 * __Data & Storage__: Kafka, MySQL, DynamoDB, Redis, CosmosDB, Cassandra, Hadoop, PostgreSQL, Oracle, memcached, hazelcast
-* __AI/LLM__: ChatGPT, OpenAI, Claude, Cursor
 * __Cloud/DevOps__: Azure, AWS, Kubernetes, Docker, Terraform, Istio, Jenkins
-* __Tools & Technologies__: Git, ANTLR, Grafana, SBT
+* __Tools__: Git, ANTLR, ChatGPT, OpenAI, Claude, Cursor, Grafana, SBT
 
 
 ----

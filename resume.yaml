@@ -9,7 +9,7 @@ traits:
   - Accountability
   - Craftsmanship
 
-oneline_summary: Pragmatic problem-solver with solid computer science background and nearly two decades of industry experience developing scalable backend services, improving legacy codebases, and building web applications with strong focus on user experience.
+oneline_summary: Pragmatic problem-solver with solid computer science background and over two decades of industry experience developing scalable backend services, improving legacy codebases, and building web applications with strong focus on user experience.
 
 about_summary:
   - <a href="http://rodhilton.github.io/resume/">Software Engineer</a> working primarily in the JVM with Java, Groovy, and Scala with a lot of Ruby coding <a href="https://github.com/rodhilton">on the side</a>
@@ -215,8 +215,8 @@ education:
     - title: M.S., Software Engineering
       school: Regis University
       location: Denver, CO
-      start_time: 01/2009
-      end_time: 01/2005
+      start_time: 01/2005
+      end_time: 01/2009
       note: "Thesis: <a href='http://www.rodhilton.com/files/tdd_thesis.pdf'>Quantitatively Evaluating Test-Driven Development by Applying Object-Oriented Quality Metrics to Open Source Projects</a>"
       coursework: Information Systems Concepts, Information Systems Architecture, Object-Oriented Software Engineering, Software Requirements and Processes, Software Design, Enterprise Java Programming with Servlets/JSPs, Advanced Enterprise Java Programming with EJBs.
       icon: regis.png
@@ -225,8 +225,8 @@ education:
     - title: B.S., Computer Science
       school: University of Rochester
       location: Rochester, NY
-      start_time: 01/2004
-      end_time: 01/2000      
+      start_time: 01/2000
+      end_time: 01/2004    
       note: Focus on Systems
       coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms
       icon: rochester.png
@@ -469,80 +469,92 @@ projects:
 
 skills_index:
   Languages:
-    - name: Java
-    - name: Scala
-    - name: Ruby
-    - name: Python
-    - name: Go
-    - name: Kotlin
-    - name: C#
-    - name: JavaScript
-    - name: TypeScript
-    - name: Groovy
-    - name: Clojure
-    - name: CoffeeScript
+    icon: code
+    items:
+      - name: Java
+      - name: Scala
+      - name: Ruby
+      - name: Python
+      - name: Go
+      - name: Kotlin
+      - name: C#
+      - name: JavaScript
+      - name: TypeScript
+      - name: Groovy
+      - name: Clojure
+      - name: CoffeeScript
   Web/API:
-    - name: HTML/CSS
-      icons: [html5, css3]
-    - name: Rails
-    - name: Spring
-    - name: Grails
-    - name: JSF
-    - name: Servlets
-    - name: JSP
-    - name: REST
-    - name: SOAP
-    - name: gRPC
-    - name: Thrift
-    - name: AngularJS
-    - name: RxJS
-    - name: AJAX
-    - name: ExtJS
-    - name: Android
-    - name: ColdFusion
+    icon: globe
+    items:
+      - name: HTML/CSS
+        icons: [html5, css3]
+      - name: Rails
+      - name: Spring
+      - name: Grails
+      - name: JSF
+      - name: Servlets
+      - name: JSP
+      - name: REST
+      - name: SOAP
+      - name: gRPC
+      - name: Thrift
+      - name: AngularJS
+      - name: RxJS
+      - name: AJAX
+      - name: ExtJS
+      - name: Android
+      - name: ColdFusion
   Data & Storage:
-    - name: Kafka
-      icons: [apachekafka]
-    - name: MySQL
-    - name: PostgreSQL
-    - name: Oracle
-    - name: SQL Server
-    - name: DynamoDB
-    - name: CosmosDB
-    - name: Cassandra
-    - name: Neo4j
-    - name: Hadoop
-    - name: Redis
-    - name: memcached
-    - name: hazelcast
-    - name: Hibernate
-    - name: EclipseLink
-  AI/LLM:
-    - name: OpenAI
-    - name: Cursor
-    - name: Claude
-    - name: ChatGPT
-    - name: Gemini
+    icon: database
+    items:
+      - name: Kafka
+        icons: [apachekafka]
+      - name: MySQL
+      - name: PostgreSQL
+      - name: Oracle
+      - name: SQL Server
+      - name: DynamoDB
+      - name: CosmosDB
+      - name: Cassandra
+      - name: Neo4j
+      - name: Hadoop
+      - name: Redis
+      - name: memcached
+      - name: hazelcast
+      - name: Hibernate
+      - name: EclipseLink
   Cloud/DevOps:
-    - name: AWS
-      icons: [amazonwebservices]
-    - name: Azure
-    - name: Docker
-    - name: Kubernetes
-    - name: Istio
-    - name: Terraform
-    - name: Jenkins
-    - name: JBoss
-    - name: Tomcat
-    - name: Geronimo
-  Tools & Technologies:
-    - name: Git
-    - name: Gradle
-    - name: SBT
-    - name: JUnit
-    - name: ANTLR
-    - name: Grafana
-    - name: UML
-    - name: LaTeX
-    - name: Mathematica
-    - name: CPIC
+    icon: cloud
+    icon_solid: true
+    items:
+      - name: AWS
+        icons: [amazonwebservices]
+      - name: Azure
+      - name: Docker
+      - name: Kubernetes
+      - name: Istio
+      - name: Terraform
+      - name: Jenkins
+      - name: JBoss
+      - name: Tomcat
+      - name: Geronimo
+  Tools:
+    icon: screwdriver-wrench
+    icon_solid: true
+    items:
+      - name: Git
+      - name: Gradle
+      - name: SBT
+      - name: JUnit
+      - name: ANTLR
+      - name: Grafana
+      - name: UML
+      - name: LaTeX
+      - name: Mathematica
+      - name: CPIC
+      - name: OpenAI
+      - name: Cursor
+      - name: Claude
+      - name: ChatGPT
+      - name: Gemini
+

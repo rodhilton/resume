@@ -1,0 +1,19 @@
+@page {
+  margin: 0.5in;
+}
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 11pt;
+  line-height: 1.35;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0.6em;
+  margin-bottom: 0.3em;
+}
+
+ul {
+  margin-top: 0.2em;
+  margin-bottom: 0.6em;
+}

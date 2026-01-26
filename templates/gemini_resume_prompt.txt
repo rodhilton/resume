@@ -42,9 +42,3 @@ Job Description (plain text):
 
 Full Resume (Markdown):
 {{RESUME}}
-
-Job Description:
-{{JOB_DESCRIPTION}}
-
-Full Resume:
-{{RESUME}}

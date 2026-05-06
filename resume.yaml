@@ -412,6 +412,15 @@ publications:
     technologies: Scala, Clojure
 
 projects:
+  - title: Caption Crunch
+    role: Maintainer
+    location: GitHub
+    description: MacOS-native tool for live transcription of arbitrary audio sources
+    year: 2026
+    url: https://github.com/rodhilton/CaptionCrunch
+    license: None
+    clout: 8
+    technologies: Java
   - title: JaSoMe (Java Source Metrics)
     role: Maintainer
     location: GitHub

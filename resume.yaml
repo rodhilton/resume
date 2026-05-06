@@ -415,6 +415,7 @@ projects:
   - title: Caption Crunch
     role: Maintainer
     location: GitHub
+    icon: caption-crunch-icon.png
     description: MacOS-native tool for live transcription of arbitrary audio sources
     year: 2026
     url: https://github.com/rodhilton/CaptionCrunch

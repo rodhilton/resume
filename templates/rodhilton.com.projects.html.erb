@@ -10,5 +10,10 @@
         <div class="subheading mb-3"><%= proj.role %></div>
         <p><%= proj.description %></p>
     </div>
+    <% unless proj.icon.nil? %>
+    <div class="resume-date text-md-right">
+        <p><img class="icon" src="img/<%= proj.icon %>"/></p>
+    </div>
+    <% end %>
 </div>
 <% end %>

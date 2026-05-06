@@ -415,6 +415,7 @@ projects:
   - title: JaSoMe (Java Source Metrics)
     role: Maintainer
     location: GitHub
+    icon: jasome-icon.png
     description: Zero-compilation Object Oriented Metrics analyzer for Java code, <a href="https://github.com/rodhilton/jasome">13 forks on GitHub</a>
     year: 2018
     url: https://github.com/rodhilton/jasome
@@ -424,6 +425,7 @@ projects:
   - title: console_table
     role: Maintainer
     location: rubygems.org
+    icon: console-table-icon.png
     description: <a href="https://rubygems.org/gems/console_table/">Ruby gem</a> for formatting and printing tabular data in commandline scripts, over 100,000 downloads
     year: 2015
     url: https://rubygems.org/gems/console_table/
@@ -433,6 +435,7 @@ projects:
   - title: Geneticrypt
     role: Maintainer
     location: GitHub
+    icon: geneticrypt-icon.png
     description: Extensible framework with CLI and GUI for using genetic algorithms to decrypt messages encrypted with a substitution cipher
     year: 2012
     url: https://github.com/rodhilton/Geneticrypt
@@ -442,6 +445,7 @@ projects:
   - title: Gobbles
     role: Maintainer
     location: GitHub
+    icon: gobbles-icon.png
     description: Snake game clone written in Java
     year: 2014
     url: https://github.com/rodhilton/gobbles
@@ -451,6 +455,7 @@ projects:
   - title: Rectangle Visibility
     role: Maintainer
     location: GitHub
+    icon: rectangle-visibility-icon.png
     description: Uses Genetic Algorithms to search for solutions to Rectangle Visibility problem
     year: 2013
     url: https://github.com/rodhilton/rectangle_visibility
@@ -460,6 +465,7 @@ projects:
   - title: Trajectories
     role: Maintainer
     location: GitHub
+    icon: trajectories-icon.png
     description: A Scala application that uses Linguistic Geometry concepts to quickly compute trajectory positions for chess boards
     year: 2012
     url: https://github.com/rodhilton/trajectories

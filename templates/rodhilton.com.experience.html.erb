@@ -1,5 +1,5 @@
 <% load 'lib/common.rb' %>
-<h2 class="mb-5">Experience</h2>
+<h2 id="experience-heading" class="mb-5">Experience</h2>
 <p><%= experience.summary %></p>
 <br/>
 <% job_list = trim_jobs(experience.jobs, 17) %>
@@ -11,7 +11,7 @@
         <p><%= job.summary %></p>
     </div>
     <div class="resume-date text-md-right">
-        <p><img class="icon" src="img/<%= job.icon %>"/></p>
+        <p><img class="icon" src="img/<%= job.icon %>" alt="" aria-hidden="true"/></p>
     </div>
 </div>
 <% end %>

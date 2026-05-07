@@ -1,6 +1,6 @@
 <% load 'lib/common.rb' %>
-<h2 class="mb-5">Skills</h2>
-<div class="skill-icons">
+<h2 id="skills-heading" class="mb-5">Skills</h2>
+<div class="skill-icons" aria-hidden="true">
   <% 
      skill_weights = calculate_skill_weights(experience.jobs + education.degrees + projects + publications, 0.2, 0.1, 10)
      skills = group_by_level(skill_weights, 40)
@@ -13,11 +13,9 @@
     <% end %>
   <% end %>
 </div>
-<p>
-  <% skills_grouped = group_by_category(skill_weights, skills_index, 13) %>
-  <ul>
+<% skills_grouped = group_by_category(skill_weights, skills_index, 13) %>
+<ul>
     <% skills_grouped.each do |category, skills| %>
     <li><b><%= category %></b>: <%= skills.join(", ") %></li>
       <% end %>
-  </ul>
-</p>
+</ul>

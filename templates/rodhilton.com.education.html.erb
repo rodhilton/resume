@@ -1,5 +1,5 @@
 <% load 'lib/common.rb' %>
-<h2 class="mb-5">Education</h2>
+<h2 id="education-heading" class="mb-5">Education</h2>
 <p><%= education.summary %></p>
 <br/>
 <% education.degrees.each do |degree| %>
@@ -10,7 +10,7 @@
         <p><%= degree.note %></p>
     </div>
     <div class="resume-date text-md-right">
-        <p><img class="icon" src="img/<%= degree.icon %>"/></p>
+        <p><img class="icon" src="img/<%= degree.icon %>" alt="" aria-hidden="true"/></p>
     </div>
 </div>
 <% end %>

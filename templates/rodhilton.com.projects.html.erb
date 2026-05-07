@@ -1,5 +1,5 @@
 <% load 'lib/common.rb' %>
-<h2 class="mb-5">Projects</h2>
+<h2 id="projects-heading" class="mb-5">Projects</h2>
 <p>Various public projects I work on from time to time.</p>
 <br/>
 <% projs = projects.sort_by {|a| a.time }.reverse %>
@@ -12,7 +12,7 @@
     </div>
     <% unless proj.icon.nil? %>
     <div class="resume-date text-md-right">
-        <p><img class="icon" src="img/<%= proj.icon %>"/></p>
+        <p><img class="icon" src="img/<%= proj.icon %>" alt="" aria-hidden="true"/></p>
     </div>
     <% end %>
 </div>

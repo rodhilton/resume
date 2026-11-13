@@ -30,7 +30,7 @@ __Staff Software Engineer, Backend & Distributed Systems__
 - **Web/API**: Spring, REST, Grails, HTML/CSS, AngularJS, SOAP, Thrift, gRPC
 - **Data & Storage**: Kafka, MySQL, DynamoDB, Redis, CosmosDB, Hadoop, Cassandra, PostgreSQL, Oracle, memcached, hazelcast
 - **Cloud/DevOps**: Azure, AWS, Docker, Kubernetes, Terraform, Istio, Jenkins
-- **Tools**: Git, ANTLR, ChatGPT, OpenAI, Copilot, Claude, Cursor, SBT, Grafana
+- **Tools**: Git, ANTLR, OpenAI, Copilot, Claude, Cursor, SBT, Grafana
 
 
 ---
@@ -44,13 +44,13 @@ __Staff Software Engineer, Backend & Distributed Systems__
   
   
   
-  * Spearheaded company-wide resiliency initiative targeting four-nines availability across 100+ services and 6 engineering pillars.
+  * Designed new edge architecture, drove cross-pillar edge hardening program adding rate limiting in front of 75% of edge services within organization
+  
+  * Defined multi-year roadmap to retire the legacy nginx edge tier, sizing 8.5 developer-year migration of 662 production routes across five product pillars.
   
   * Coordinated cross-team adoption of resiliency primitives (rate limiting, circuit breakers, retries), aligning delivery across distributed teams.
   
-  * Drove hardening of edge infrastructure by designing and deploying standardized ingress layer with default-on rate limiting for all external services.
-  
-  * Implemented platform libraries for Scala-based services, enabling integration of resiliency features into existing codebases with minimal friction.
+  * Acted as bar-raiser for 30+ incident postmortems, driving analysis into actionable improvements that prevented recurrence of critical failures.
   
 
 

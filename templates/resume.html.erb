@@ -85,7 +85,7 @@
         <% if flags[:expand_school] %>
             <ul>
                 <li><%= degree.note %></li>
-                  <li>Coursework: <%= degree.coursework %></li>
+                  <li>Coursework: <%= format_coursework(degree.coursework) %></li>
             </ul>
         <% end %>
     </li>

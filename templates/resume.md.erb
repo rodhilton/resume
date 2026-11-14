@@ -72,7 +72,7 @@ Phone: <%= flags[:phone] %>
   <% unless degree.technologies.nil? %>
   * Technologies: <%= degree.technologies %>. <% end %>
   * <%= degree.note %>
-  * Coursework: <%= degree.coursework %>
+  * Coursework: <%= format_coursework(degree.coursework) %>
   <% end %>
 <% end %>
 

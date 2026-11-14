@@ -342,6 +342,14 @@ def skill_list(skills, low, high)
 
 end
 
+# Course order and editorial selection live together in the comma-separated source.
+# A trailing * highlights a course for compact output; display text never includes *.
+def format_coursework(coursework, selected: false)
+  courses = coursework.to_s.split(',').map(&:strip).reject(&:empty?)
+  courses = courses.select { |course| course.end_with?('*') } if selected
+  courses.map { |course| course.delete('*').strip.gsub(/\band\b/i, '&') }.join(', ')
+end
+
 def latex_desc(bla)
   bla.gsub(/%/, "\\%").gsub(/\&/, '\\\\&').gsub(/\$/, '\\\\$').gsub(/_/, '\\_').gsub(/#/,'\\#')
 end

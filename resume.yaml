@@ -38,12 +38,12 @@ experience:
       summary: APX architect, building the platform underpinnings of Axon's software offerings with a focus on distributed system resiliency
       icon: axon.png
       accomplishments:
-        - Designed new edge architecture, drove cross-pillar edge hardening program adding rate limiting in front of 75% of edge services within organization
-        - Defined multi-year roadmap to retire the legacy nginx edge tier, sizing 8.5 developer-year migration of 662 production routes across five product pillars.
+        - Designed new edge architecture; drove cross-pillar edge hardening program adding rate limits to 75% of org edge services.
+        - 'Defined multi-year legacy nginx edge-tier retirement roadmap: 8.5 developer-years, 662 production routes, five product pillars.'
         - Coordinated cross-team adoption of resiliency primitives (rate limiting, circuit breakers, retries), aligning delivery across distributed teams.
-        - Acted as bar-raiser for 30+ incident postmortems, driving analysis into actionable improvements that prevented recurrence of critical failures.        
-        - Served as blocking reviewer for 500+ Tier-1 service deployments, requiring deep knowledge of service interdependencies to prevent incidents.        
-        - Implemented platform libraries for Scala-based services, enabling integration of resiliency features into existing codebases with minimal friction.
+        - Bar-raiser for 30+ incident postmortems; turned analysis into actionable improvements preventing recurrence of critical failures.
+        - Blocking reviewer for 500+ Tier-1 service deployments, applying deep service-interdependency knowledge to prevent incidents.
+        - Built Scala platform libraries enabling low-friction integration of resiliency features into existing service codebases.
         - Spearheaded company-wide resiliency initiative targeting four-nines availability across 100+ services and 6 engineering pillars.         
         - Mentored 3 engineers in resiliency techniques and career development, working across multiple time zones in the US, UK, and Vietnam.
         - Presented as a featured speaker at four company-wide technical conferences on building scalable, resilient distributed systems.
@@ -62,9 +62,9 @@ experience:
       accomplishments:
         - Developed <a href="https://docs.segmentapis.com/tag/Audiences">Compute API</a> to provide REST interface to largest users of real-time customer segmentation platform handling 400k requests/sec.
         - Enabled <a href="https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx">Generative AI</a> assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
-        - Designed <a href="https://segment.com/docs/api/public-api/query-language/">custom query language</a> to achieve GUI wizard fidelity allowing API reading/writing of compute definitions for 1100+ enterprise customers.
-        - Refined design specifications through multiple rounds of stakeholder collaboration and drove consensus between groups across business unit.
-        - Implemented ANTLR-based parser & transpiler to convert between validity-checked query language and proprietary internal data representation.
+        - Designed <a href="https://segment.com/docs/api/public-api/query-language/">custom query language</a> with GUI wizard fidelity, enabling compute-definition API reads/writes for 1100+ enterprise customers.
+        - Refined design specs through multiple stakeholder collaboration rounds; drove consensus across business-unit groups.
+        - Built ANTLR parser & transpiler converting validity-checked query language to/from proprietary internal data representation.
         - Mentored 2 junior engineers and led technical direction for architectural decisions and operational standards.
     - company: Epic Games
       title: Tech Lead, Backend Engineering
@@ -77,10 +77,10 @@ experience:
       summary: Led backend engineering for Epic Online Services social systems (friends, messaging, parties, clip-sharing).
       icon: epicgames.png
       accomplishments:
-        - Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
-        - Coordinated cross-team initiative to anonymize over 900m accounts to <a href="https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations">ensure data retention compliance</a> among hundreds of independent services.
+        - Built Data Orchestrator Service coordinating user-record sanitization events and compliance auditing across 50 backend systems.
+        - Coordinated cross-team anonymization of over 900m accounts for <a href="https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations">data retention compliance</a> across hundreds of independent services.
         - Operated <a href="https://dev.epicgames.com/en-US/services-games">social game services</a> for friends, messaging, party-forming, banning, chatting, searching, and group-finding, serving 3m requests/min.
-        - Architected backend service solution and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a> video clip sharing product, storing over 1m uploads/day.
+        - Architected backend and designed public-facing API for <a href="https://www.fortnite.com/news/introducing-postparty-capture-clips-of-fortnite-on-playstation-xbox-nintendo-switch-and-pc">Postparty</a> video-clip sharing, storing over 1m uploads/day.
         - Managed work intake and priority for 10 contract-based engineering staff and supported their development within organization.
         - Developed Interactions Tracking Service for querying interactions <a href="https://www.fortnite.com/news/fortnite-refer-a-friend-3-0-play-together-and-earn-rewards">awards-based campaigns</a> in games supporting 11m CCUs.
         - Created highly-available asynchronous processor of user-created media with access control utilized by <a href="https://en.as.com/meristation_en/2023/03/16/news/1678987066_019557.html">UEFN</a> to build over 1.1m projects.
@@ -95,9 +95,9 @@ experience:
       summary: Worked on Core Tweet Service and Developer Platform, storing and serving Tweets at global scale.
       icon: twitter.png
       accomplishments:
-        - Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA. 
+        - Operated Twitter's Core Tweet Service, storing/serving all tweets at up to 30m requests/sec with 99.97% success-rate SLA.
         - Developed and launched features such as <a href="https://blog.twitter.com/en_us/topics/product/2021/testing-communities">Twitter Communities</a>, <a href="https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/">Conversation Controls</a>, and <a href="https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8">Public Interest Interstitial</a>.
-        - Led Privacy and Data Protection initiatives to annotate cross-service PII, ensure GDPR compliance via mass <a href="https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html">under-13 user erasure</a> of 17m accounts.
+        - 'Led Privacy and Data Protection: cross-service PII annotation; GDPR compliance via mass <a href="https://slate.com/technology/2018/05/twitter-accounts-that-were-made-when-a-user-was-under-13-are-being-banned.html">under-13 erasure</a> of 17m accounts.'
         - Developed <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/overview/powertrack-api">PowerTrack</a> and <a href="https://developer.twitter.com/en/docs/twitter-api/v1/tweets/filter-realtime/api-reference/post-statuses-filter">Statuses/Filter</a>, complex real-time filter engine processing Twitter's 350k tweets/minute data stream.
         - Created new filter operators for Machine-Learning and Natural Language annotations used to <a href="https://www.nature.com/articles/s41598-021-98396-9">predict COVID-19 outbreaks</a> with 81.6% precision.
         - Created rule debugging tool for customer support engineers to assist with isolating issues with complex rule query language.
@@ -114,8 +114,8 @@ experience:
       summary: Cross-Platform team, built Common Services Tier middleware service layer and customer-facing web portals.
       icon: twc.png
       accomplishments:
-        - Developed high-availability middleware platform to reduce internal access friction to heterogeneous backend services handling over 1k requests/sec.
-        - Led rewrite of <a href="https://myservices.timewarnercable.com/">residential customer portal</a>, new version a 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4-categories</a> with +10 point improvement in customer satisfaction.
+        - Built highly available middleware easing internal access to heterogeneous backend services handling over 1k requests/sec.
+        - 'Led rewrite of <a href="https://myservices.timewarnercable.com/">residential customer portal</a>: 2014 <a href="http://www.cablefax.com/the-lists/digital-awards-2014">award finalist in 4 categories</a> with customer satisfaction improved by 10 points.'
         - Created <a href="https://myaccount.timewarnercable.com">commercial primary care portal</a> application handling 7m logins/month and 45% improvement in registration conversion rate.
         - Built bill reporting system aggregating financial data across 3 legacy backends to provide unified REST interface & abstract backend variation.
         - Created distributed tracing system to facilitate error diagnosis and resolution, reduced customer calls by 50% saving an estimated $4m/year.
@@ -210,7 +210,8 @@ education:
       start_time: 01/2011
       end_time: 01/2022
       note: Specialization in Machine Learning, Theory, and Algorithms
-      coursework: Graduate Algorithms, Theory of Distributed Computing, Theory of Automata, Computer Security, Artificial Intelligence, Computational Complexity, Applied Graph Theory, Machine Learning
+      # Append * to courses highlighted in the compact PDF; markers never display.
+      coursework: Graduate Algorithms, Theory of Distributed Computing*, Theory of Automata, Computer Security, Artificial Intelligence*, Computational Complexity*, Applied Graph Theory*, Machine Learning*
       technologies: Java, Scala, Python, Groovy, Ruby, LaTeX, Mathematica
       icon: ucd.png
 <% if flags[:include_regis] %>
@@ -230,7 +231,8 @@ education:
       start_time: 01/2000
       end_time: 01/2004    
       note: Focus on Systems
-      coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation, Parallel and Distributed Systems, Cryptography, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms
+      # Append * to courses highlighted in the compact PDF; markers never display.
+      coursework: Data Structures, Computation and Formal Systems, Computer Networks, Operating Systems, Language Design and Implementation*, Parallel and Distributed Systems*, Cryptography*, Computer Organization, Computer Models and Limitations, Design and Analysis of Efficient Algorithms*
       icon: rochester.png
       technologies: Java, C, C++, Assembly, Scheme, Python, JavaScript, LaTeX, Flash, Maya
 

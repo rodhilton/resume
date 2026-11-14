@@ -1,61 +1,78 @@
-<%- load 'lib/common.rb' -%>
 <%-
-def markdown_links(one)
-    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "[\\3](\\2)")
+load 'lib/common.rb'
+require 'cgi'
+
+def plain_text(value)
+  CGI.unescapeHTML(value.to_s.gsub(/<[^>]*>/, '')).strip
 end
 
-def strip_links(one)
-    one.gsub(/<a href=(["'])(.*?)\1>(.*?)<\/a>/, "\\3")
+# Match the compact PDF's content and ordering, with plain labels and one column.
+# Keep each accomplishment on its own physical line; do not hard-wrap sentences.
+full = flags[:complete_history]
+lines = [plain_text(name), plain_text(title)]
+lines << "Phone: #{flags[:phone]}" if flags[:phone]
+lines << "Email: #{flags[:email]}" if flags[:email]
+lines << 'Website: https://rodhilton.com'
+lines << 'LinkedIn: https://www.linkedin.com/in/rodhilton'
+lines << plain_text(traits.join(' | '))
+lines.concat(['', 'Skills'])
+weights = calculate_skill_weights(experience.jobs + education.degrees + projects + publications, 0.1, 0.08, 15)
+group_by_category(weights, skills_index, 15).each do |category, skills|
+  lines << "#{plain_text(category)}: #{skills.join(', ')}"
+end
+
+lines.concat(['', 'Experience'])
+jobs = full ? experience.jobs : trim_jobs(experience.jobs, 17)
+jobs.each_with_index do |job, index|
+  employer = plain_text(job.company)
+  employer += " (#{plain_text(job.note)})" if job.note
+  location = ['Remote', 'Hybrid'].include?(job.environment) ? 'Remote' : job.location
+  lines.concat(['', employer, plain_text(job.title)])
+  lines << "Team: #{plain_text(job.team)}" if job.team
+  # Month/year dates help distinguish adjacent jobs; missing end dates mean Present.
+  lines << "Dates: #{job.start_time} - #{job.end_time || 'Present'}"
+  lines << "Location: #{plain_text(location)}" if location
+  lines << "- Utilized #{plain_text(trim_skills(job.technologies, 16))}." if full && job.technologies
+  accomplishments = full ? job.accomplishments : trim_accomplishments(job.accomplishments, index, 6, 1)
+  accomplishments.each { |item| lines << "- #{plain_text(item)}" }
+end
+
+lines.concat(['', 'Education'])
+education.degrees.each do |degree|
+  lines.concat(['', plain_text(degree.school), plain_text(degree.title)])
+  lines << "Location: #{plain_text(degree.location)}" if degree.location
+  lines << "- Utilized #{plain_text(trim_skills(degree.technologies, 16))}." if full && degree.technologies
+  lines << "- #{plain_text(degree.note)}" if degree.note
+  coursework = format_coursework(degree.coursework, selected: !full)
+  lines << "Coursework: #{plain_text(coursework)}" unless coursework.empty?
+end
+
+if flags[:certifications]
+  lines.concat(['', 'Certifications'])
+  certifications.each do |certification|
+    parts = [certification.title, certification.subject, certification.year].compact
+    lines << parts.map { |part| plain_text(part) }.reject(&:empty?).join(' - ')
+  end
+end
+
+lines.concat(['', 'Publications'])
+pubs = full ? publications : trim_by_clout(publications, 7).sort_by { |pub| pub.year }.reverse
+pubs.each do |pub|
+  publication_title = plain_text(pub.title)
+  publication_title += " by #{plain_text(pub.author)}" if pub.author
+  lines.concat(['', publication_title, "#{plain_text(pub.role)} - #{plain_text(pub.type)}",
+                "#{plain_text(pub.publisher)} | #{pub.year}"])
+  lines << "URL: #{pub.url}" if pub.url
+  lines << plain_text(pub.summary) if full && pub.summary
+end
+
+lines.concat(['', 'Projects'])
+project_list = full ? projects : trim_by_clout(projects, 8).sort_by { |project| project.year }.reverse
+project_list.each do |project|
+  lines.concat(['', plain_text(project.title), plain_text(project.role)])
+  lines << "Dates: #{plain_text(project.time)}" if project.time && !project.time.to_s.empty?
+  lines << "#{plain_text(project.location)}: #{project.url}" if project.url
+  lines << plain_text(project.description)
 end
 -%>
-Rod Hilton
-Software Craftsman and Computer Science Geek
-
-----
-
-Summary:
-<% summary.each do |summary_item| %>
-    <%= summary_item %>
-<% end %>
-
-----
-
-Technical Skills:
-
-<% skill_weights = calculate_skill_weights(experience.jobs, 0.2, 0.1, 10)
-   skills_grouped = group_by_level(skill_weights, 13) %>
-Accomplished: <%= skills_grouped[:accomplished].join(", ") %>
-Advanced: <%= skills_grouped[:advanced].join(", ") %>
-Novice: <%= skills_grouped[:novice].join(", ") %>
-Desired: <%= interests %>
-
-----
-
-Experience:
-
-<% 
-    job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs)
-    job_list.each_with_index do |job, i| %><% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i) %>
-<%= job.company %> - <%= job.title %> (<%= job.start_time %> - <%= job.end_time %>)
-<% unless job.technologies.nil? %>
-    Utilized <%= job.technologies %>
-<% end %>
-<%- accomplishments.each do |accomplishment| -%>
-    <%= strip_links(accomplishment) %>
-
-<%- end -%>
-<%- end -%>
-
-----
-
-Education:
-
-<% education.degrees.each do |degree| %>
-<%= degree.title %> - <%= degree.school %> <%= display_schoolyear(degree, flags[:expand_school ], "- ", "") %><% if flags[:expand_school] %>
-
-    <%= degree.note %>
-
-    Coursework: <%= degree.coursework %>
-
-<%- end -%>
-<%- end -%>
+<%= lines.join("\n") %>

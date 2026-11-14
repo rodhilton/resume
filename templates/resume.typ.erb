@@ -172,7 +172,7 @@
             <% if degree.note && !degree.note.empty? %>
             (icon: "angle-right", text: [<%= latex_links(degree.note) %>]),
             <% end %>
-            (icon: "angle-right", text: [Coursework: <%= typst_links(degree.coursework) %>]),
+            (icon: "angle-right", text: [Coursework: <%= typst_links(format_coursework(degree.coursework)) %>]),
           ))
         ],
       )

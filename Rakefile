@@ -78,7 +78,7 @@ file "#{TARGET_DIR}/resume.md" => [:make_target] do |t|
   run_cmd "templator/templator -d #{DATA_FILES} #{File.join(TEMPLATES_DIR, 'resume.md.erb')} > #{TARGET_DIR}/resume.md"
 end
 
-file "#{TARGET_DIR}/resume_parseable.txt" => [:make_target] do |t|
+file "#{TARGET_DIR}/resume_parseable.txt" => [:make_target, "#{TEMPLATES_DIR}/resume.txt.erb", DATA_FILES, "lib/common.rb", "contact.yaml"] do |t|
   run_cmd "templator/templator -d #{DATA_FILES} #{File.join(TEMPLATES_DIR, 'resume.txt.erb')} #{base_flags} > #{TARGET_DIR}/resume_parseable.txt"
 end
 

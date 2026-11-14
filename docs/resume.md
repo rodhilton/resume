@@ -44,13 +44,13 @@ __Staff Software Engineer, Backend & Distributed Systems__
   
   
   
-  * Designed new edge architecture, drove cross-pillar edge hardening program adding rate limiting in front of 75% of edge services within organization
+  * Designed new edge architecture; drove cross-pillar edge hardening program adding rate limits to 75% of org edge services.
   
-  * Defined multi-year roadmap to retire the legacy nginx edge tier, sizing 8.5 developer-year migration of 662 production routes across five product pillars.
+  * Defined multi-year legacy nginx edge-tier retirement roadmap: 8.5 developer-years, 662 production routes, five product pillars.
   
   * Coordinated cross-team adoption of resiliency primitives (rate limiting, circuit breakers, retries), aligning delivery across distributed teams.
   
-  * Acted as bar-raiser for 30+ incident postmortems, driving analysis into actionable improvements that prevented recurrence of critical failures.
+  * Bar-raiser for 30+ incident postmortems; turned analysis into actionable improvements preventing recurrence of critical failures.
   
 
 
@@ -63,7 +63,7 @@ __Staff Software Engineer, Backend & Distributed Systems__
   
   * Enabled [Generative AI](https://investors.twilio.com/news/news-details/2023/Twilio-To-Deliver-Customer-Aware-Generative-AI-Through-New-OpenAI-Integration/default.aspx) assistant by migrating from legacy free-form JSON-based specification to precise grammar-based definition.
   
-  * Designed [custom query language](https://segment.com/docs/api/public-api/query-language/) to achieve GUI wizard fidelity allowing API reading/writing of compute definitions for 1100+ enterprise customers.
+  * Designed [custom query language](https://segment.com/docs/api/public-api/query-language/) with GUI wizard fidelity, enabling compute-definition API reads/writes for 1100+ enterprise customers.
   
 
 
@@ -72,9 +72,9 @@ __Staff Software Engineer, Backend & Distributed Systems__
   
   
   
-  * Developed Data Orchestrator Service responsible for coordinating user record sanitization events and compliance auditing over 50 backend systems.
+  * Built Data Orchestrator Service coordinating user-record sanitization events and compliance auditing across 50 backend systems.
   
-  * Coordinated cross-team initiative to anonymize over 900m accounts to [ensure data retention compliance](https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations) among hundreds of independent services.
+  * Coordinated cross-team anonymization of over 900m accounts for [data retention compliance](https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations) across hundreds of independent services.
   
 
 
@@ -83,7 +83,7 @@ __Staff Software Engineer, Backend & Distributed Systems__
   
   
   
-  * Operated Twitter's Core Tweet Service, storing and serving all of the tweets and servicing up to 30m requests/sec with 99.97% success rate SLA.
+  * Operated Twitter's Core Tweet Service, storing/serving all tweets at up to 30m requests/sec with 99.97% success-rate SLA.
   
   * Developed and launched features such as [Twitter Communities](https://blog.twitter.com/en_us/topics/product/2021/testing-communities), [Conversation Controls](https://techcrunch.com/2020/08/11/twitter-now-lets-everyone-limit-replies-to-their-tweets/), and [Public Interest Interstitial](https://www.businessinsider.com/twitter-public-interest-notice-trump-ballot-boxes-2020-8).
   
@@ -94,9 +94,9 @@ __Staff Software Engineer, Backend & Distributed Systems__
   
   
   
-  * Developed high-availability middleware platform to reduce internal access friction to heterogeneous backend services handling over 1k requests/sec.
+  * Built highly available middleware easing internal access to heterogeneous backend services handling over 1k requests/sec.
   
-  * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/), new version a 2014 [award finalist in 4-categories](http://www.cablefax.com/the-lists/digital-awards-2014) with +10 point improvement in customer satisfaction.
+  * Led rewrite of [residential customer portal](https://myservices.timewarnercable.com/): 2014 [award finalist in 4 categories](http://www.cablefax.com/the-lists/digital-awards-2014) with customer satisfaction improved by 10 points.
   
 
 

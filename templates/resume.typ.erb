@@ -47,6 +47,26 @@
 
 #import "@preview/lavandula:0.1.1": *
 
+// Local entry spacing preserves room for the accomplishment progression.
+// Keep the package's typography; avoid changing the cached upstream template.
+#let resume-entry(title: [], info: none, body) = block(
+  inset: (top: 3pt),
+  width: 100%,
+  below: 0.9em,
+  grid(
+    columns: (auto, 1fr),
+    rows: auto,
+    gutter: 9pt,
+    align: (horizon + left, horizon + right),
+    text(weight: "semibold", title),
+    text(size: sizes.text-s3, info),
+    grid.cell(colspan: 2)[
+      #set par(justify: true, spacing: 1em)
+      #body
+    ],
+  ),
+)
+
 #show: lavandula-theme.with(
   custom-colors: (
     primary: rgb("#4786b2"),
@@ -115,13 +135,19 @@
   ],
 
   main-content: [
+    // Keep section spacing proportional to the denser experience list.
+    #show heading.where(level: 2): it => {
+      set text(fill: rgb("#4786b2"), size: sizes.text-b3, weight: "semibold")
+      block(below: 0.6em, it.body)
+    }
     == Experience
     <% recent_jobs.each_with_index do |job, i| %>
       <%
-        accomplishments = trim_accomplishments(job.accomplishments, i, 2, 2)
+        # Count from the oldest detailed position: 1, 2, 3, ... toward the newest.
+        accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, recent_jobs.length, 1)
       %>
 
-      #section-element(
+      #resume-entry(
         title: [
           <%= strip_links(job.title.to_s) %>
           #h(2pt)#text(size: sizes.text-s3)[#fa-icon("at", solid: true)]#h(2pt)
@@ -141,10 +167,11 @@
 
       <% if older_jobs.any? %>
       === Other Positions
+      #block[
       #set par(leading: 0.95em)
       #stack(spacing: 0pt,
         <% older_jobs.each_with_index do |job, idx| %>
-        [#section-element(
+        [#resume-entry(
           title: [
           <%= strip_links(job.title.to_s) %>
           #h(2pt)#text(size: sizes.text-s3)[#fa-icon("at", solid: true)]#h(2pt)
@@ -155,11 +182,13 @@
         )]<%= idx < older_jobs.length - 1 ? "," : "" %>
         <% end %>
       )
+      ]
       <% end %>
 
       == Education
       <% education.degrees.each do |degree| %>
-      #section-element(
+      <% coursework = format_coursework(degree.coursework, selected: !flags[:complete_history]) %>
+      #resume-entry(
         title: [
           <%= degree.title.to_s %>
           #h(2pt)#text(size: sizes.text-s3)[#fa-icon("at", solid: true)]#h(2pt)
@@ -172,7 +201,9 @@
             <% if degree.note && !degree.note.empty? %>
             (icon: "angle-right", text: [<%= latex_links(degree.note) %>]),
             <% end %>
-            (icon: "angle-right", text: [Coursework: <%= typst_links(format_coursework(degree.coursework)) %>]),
+            <% unless coursework.empty? %>
+            (icon: "angle-right", text: [Coursework: <%= typst_links(coursework) %>]),
+            <% end %>
           ))
         ],
       )

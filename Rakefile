@@ -65,7 +65,7 @@ file "#{TARGET_DIR}/resume.tex"  => [:make_target] do |t|
   run_cmd "templator/templator -d #{DATA_FILES} #{File.join(TEMPLATES_DIR, 'resume.tex.erb')} -f color #{base_flags} -f highlight:false -f color:414141 -f photo_shape:rectangle -f expand_coursework -f photo:qr_code_contact > #{TARGET_DIR}/resume.tex"
 end
 
-file "#{TARGET_DIR}/resume_downloadable.typ"  => [:make_target] do |t|
+file "#{TARGET_DIR}/resume_downloadable.typ"  => [:make_target, "#{TEMPLATES_DIR}/resume.typ.erb", DATA_FILES, "lib/common.rb"] do |t|
   #sh "templator/templator -d #{DATA_FILES} #{File.join(TEMPLATES_DIR, 'resume.tex.erb')} -f photo:qr_code_url > #{TARGET_DIR}/resume_full.tex"
   run_cmd "templator/templator -d #{DATA_FILES} #{File.join(TEMPLATES_DIR, 'resume.typ.erb')} -f highlight:true -f color:33627f -f photo_shape:rectangle -f skills_summary -f socials -f show_projects -f photo:profile_circle > #{TARGET_DIR}/resume_downloadable.typ"
 end

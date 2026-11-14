@@ -46,11 +46,11 @@ __Staff Software Engineer, Backend & Distributed Systems__
   
   * Designed new edge architecture; drove cross-pillar edge hardening program adding rate limits to 75% of org edge services.
   
-  * Defined multi-year legacy nginx edge-tier retirement roadmap: 8.5 developer-years, 662 production routes, five product pillars.
-  
   * Coordinated cross-team adoption of resiliency primitives (rate limiting, circuit breakers, retries), aligning delivery across distributed teams.
   
   * Bar-raiser for 30+ incident postmortems; turned analysis into actionable improvements preventing recurrence of critical failures.
+  
+  * Blocking reviewer for 500+ Tier-1 service deployments, applying deep service-interdependency knowledge to prevent incidents.
   
 
 

@@ -187,11 +187,11 @@
 
 \cvsection{Experience}
 
-% Compact accomplishments taper from six for the newest role to one for older roles.
+% Compact accomplishments taper from six for the newest role, with a minimum of two.
 <% job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs,17) %>
 \begin{cventries}
 <% job_list.each_with_index do |job, i| %>
-  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 6, 1) %>
+  <% accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, 6, 2) %>
   \cventry
     {<%= job.title %><% unless job.team.nil? %>{ - \normalfont{\bodyfontlight{<%= latex_desc(job.team) %>}}}<% end %>} % Job title
     {<%= job.company %><% unless job.note.nil? %>{\normalfont{ \color{lighttext} (<%= latex_desc(job.note) %>)}}<% end %>} % Organization

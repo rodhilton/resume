@@ -33,7 +33,7 @@ jobs.each_with_index do |job, index|
   lines << "Dates: #{job.start_time} - #{job.end_time || 'Present'}"
   lines << "Location: #{plain_text(location)}" if location
   lines << "- Utilized #{plain_text(trim_skills(job.technologies, 16))}." if full && job.technologies
-  accomplishments = full ? job.accomplishments : trim_accomplishments(job.accomplishments, index, 6, 1)
+  accomplishments = full ? job.accomplishments : trim_accomplishments(job.accomplishments, index, 6, 2)
   accomplishments.each { |item| lines << "- #{plain_text(item)}" }
 end
 

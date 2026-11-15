@@ -35,10 +35,10 @@
   )
   skills_grouped = group_by_category(skill_weights, skills_index, 8)
 
-  # Choose recent jobs vs older
-  job_list = flags[:complete_history] ? experience.jobs : trim_jobs(experience.jobs, 17)
+  # Public work history is limited by end year, including the 20-year boundary.
+  job_list = trim_jobs(experience.jobs, 20)
   recent_jobs = job_list.first(5)
-  older_jobs  = (experience.jobs - recent_jobs)
+  older_jobs  = job_list.drop(recent_jobs.length)
 
   def job_location(job)
     (job.environment == "Remote" || job.environment == "Hybrid") ? "Remote" : job.location
@@ -86,18 +86,14 @@
 #cv(
   sidebar-position: "left",
   sidebar: [
-    = Rod Hilton
-    #grid(
+    #move(dy: -6pt, grid(
       columns: (auto, 1fr),
       column-gutter: 8pt,
-      align: (center, left),
-      [
-        #image("profile_circle.png", width: 15mm)
-      ],
-      [
-        ==== <%= title %>
-      ],
-    )
+      align: (left + horizon, left + horizon),
+      image("profile_circle.png", width: 10mm),
+      [#context text(size: sizes.text-b4, weight: "semibold", fill: get-color("main-title"))[Rod Hilton]],
+    ))
+    ==== <%= title %>
 
     #contact-list((
       <% if flags[:email] %>(icon: "at", icon-solid: true, text: link("mailto:<%= flags[:email] %>")[<%= flags[:email].gsub("@","\\@") %>]),<% end %>
@@ -143,8 +139,8 @@
     == Experience
     <% recent_jobs.each_with_index do |job, i| %>
       <%
-        # Count from the oldest detailed position: 1, 2, 3, ... toward the newest.
-        accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, recent_jobs.length, 1)
+        # Decrease by one per older detailed position, with a minimum of two.
+        accomplishments = flags[:complete_history] ? job.accomplishments : trim_accomplishments(job.accomplishments, i, recent_jobs.length, 2)
       %>
 
       #resume-entry(
@@ -194,7 +190,7 @@
           #h(2pt)#text(size: sizes.text-s3)[#fa-icon("at", solid: true)]#h(2pt)
           <%= degree.school.to_s %>
         ],
-        info: <%= typst_info(extract_year(degree.end_time)) %>,
+        info: none,
         [
           #set text(size: sizes.text-s2)
           #icon-list((

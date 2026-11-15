@@ -72,9 +72,9 @@ __Staff Software Engineer, Backend & Distributed Systems__
   
   
   
-  * Built Data Orchestrator Service coordinating user-record sanitization events and compliance auditing across 50 backend systems.
-  
   * Coordinated cross-team anonymization of over 900m accounts for [data retention compliance](https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations) across hundreds of independent services.
+  
+  * Operated [social game services](https://dev.epicgames.com/en-US/services-games) for friends, messaging, party-forming, banning, searching, and group-finding, serving 3m requests/min.
   
 
 
